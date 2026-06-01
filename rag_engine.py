@@ -1,4 +1,4 @@
-"""RAG引擎模块 — 可被Web服务import"""
+"""RAG引擎模块 — 支持多会话隔离"""
 import pymupdf
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import chromadb
@@ -6,7 +6,7 @@ from chromadb.api.types import EmbeddingFunction, Documents, Embeddings
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 from dotenv import load_dotenv
-import os, shutil
+import os
 from typing import List
 
 load_dotenv()
@@ -21,9 +21,9 @@ class ChineseEmbedding(EmbeddingFunction):
 
 
 class RAGEngine:
-    """RAG问答引擎"""
+    """RAG问答引擎 — 每个session_id对应独立的向量库，会话间数据隔离"""
     
-    def __init__(self, db_dir: str = "./chroma_db", chunk_size: int = 500, chunk_overlap: int = 100):
+    def __init__(self, db_dir: str = "./chroma_db", chunk_size: int = 300, chunk_overlap: int = 150):
         self.db_dir = db_dir
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
@@ -34,21 +34,24 @@ class RAGEngine:
             base_url="https://api.deepseek.com"
         )
         
-        # 向量库
+        # 向量库客户端（不预加载任何collection）
         self.client = chromadb.PersistentClient(path=db_dir)
-        self.collection = None
-        self._init_collection()
     
-    def _init_collection(self):
-        """初始化或加载collection"""
+    def _collection_name(self, session_id: str) -> str:
+        """会话对应的collection名"""
+        return f"docs_{session_id}"
+    
+    def _get_collection(self, session_id: str):
+        """获取会话的collection，不存在则创建"""
+        name = self._collection_name(session_id)
         try:
-            self.collection = self.client.get_collection(
-                name="documents",
+            return self.client.get_collection(
+                name=name,
                 embedding_function=ChineseEmbedding()
             )
         except Exception:
-            self.collection = self.client.create_collection(
-                name="documents",
+            return self.client.create_collection(
+                name=name,
                 embedding_function=ChineseEmbedding()
             )
     
@@ -64,8 +67,8 @@ class RAGEngine:
             with open(path, "r", encoding="utf-8") as f:
                 return f.read()
     
-    def ingest(self, path: str) -> int:
-        """摄入文档：解析 → 切片 → 向量化 → 入库"""
+    def ingest(self, session_id: str, path: str) -> int:
+        """摄入文档到指定会话：解析 → 切片 → 向量化 → 入库"""
         text = self.load_document(path)
         if not text.strip():
             raise ValueError("文档内容为空")
@@ -77,69 +80,70 @@ class RAGEngine:
         )
         chunks = splitter.split_text(text)
         
-        # 清除旧数据
-        self.client.delete_collection("documents")
-        self._init_collection()
+        # 清除该会话旧数据
+        name = self._collection_name(session_id)
+        try:
+            self.client.delete_collection(name)
+        except Exception:
+            pass
         
-        self.collection.add(
+        col = self._get_collection(session_id)
+        col.add(
             documents=chunks,
             ids=[f"chunk_{i}" for i in range(len(chunks))]
         )
         
         return len(chunks)
     
-    def ask(self, question: str, top_k: int = 3) -> str:
-        """RAG问答"""
-        if self.collection.count() == 0:
-            return "请先摄入文档（ingest）"
+    def document_count(self, session_id: str) -> int:
+        """指定会话的文档块数量"""
+        try:
+            col = self._get_collection(session_id)
+            return col.count()
+        except Exception:
+            return 0
+    
+    def ask(self, session_id: str, question: str, top_k: int = 5) -> str:
+        """RAG问答（按会话隔离）"""
+        col = self._get_collection(session_id)
         
-        # 1. 检索
-        results = self.collection.query(query_texts=[question], n_results=top_k)
-        retrieved = results["documents"][0]
+        # 判断是否为非文档类问题
+        greetings = ["你好", "嗨", "hello", "hi", "你是谁", "你能做什么", "有什么功能", "功能", "能干什么", "可以做什么", "会什么", "自我介绍", "介绍自己", "你是什么"]
+        is_greeting = any(g in question for g in greetings)
         
-        # 2. 拼Prompt
-        context = "\n\n---\n\n".join(retrieved)
-        prompt = f"""根据以下文档内容回答问题。
+        if is_greeting:
+            prompt = question
+        else:
+            if col.count() == 0:
+                return "请先上传文档"
+            
+            # 检索（≤20块时全量检索）
+            if col.count() <= 20:
+                top_k = col.count()
+            results = col.query(query_texts=[question], n_results=top_k)
+            retrieved = results["documents"][0]
+            
+            context = "\n\n---\n\n".join(retrieved)
+            prompt = f"""根据以下文档内容，用你自己的话整理回答，不要照搬原文。
 
 文档内容：
 {context}
 
 问题：{question}
-请直接回答，文档中没有的信息就说"未提及"。不要编造。
+
+要求：
+- 用自己的话重新组织，像跟人介绍一样自然
+- 如果问多项内容，全部列出不遗漏
+- 文档没有的信息如实说"未提及"
 """
         
-        # 3. LLM回答
         resp = self.llm.chat.completions.create(
             model="deepseek-chat",
-            messages=[{"role": "user", "content": prompt}],
+            messages=[
+                {"role": "system", "content": "你是文档问答助手。回答简洁专业。严格禁止使用任何markdown符号：禁止**加粗**、禁止-列表、禁止#标题、禁止`代码块`、禁止*斜体*。回答必须是纯文本，用换行和空格分隔。\n- 自我介绍：一句话\n- 评价简历：只列优缺点各3条，不要复述简历全文\n- 查具体信息：要点式，每条一句话\n- 文档没提到的说未提及"},
+                {"role": "user", "content": prompt}
+            ],
             temperature=0.3,
         )
         
         return resp.choices[0].message.content
-    
-    def search(self, query: str, top_k: int = 3) -> List[str]:
-        """纯检索（不含LLM回答）"""
-        if self.collection.count() == 0:
-            return []
-        results = self.collection.query(query_texts=[query], n_results=top_k)
-        return results["documents"][0]
-    
-    @property
-    def document_count(self) -> int:
-        return self.collection.count() if self.collection else 0
-
-
-# ── 命令行测试 ──
-if __name__ == "__main__":
-    engine = RAGEngine()
-    
-    # 摄入文档
-    path = "/home/her91/简历_黄文浩_修改版.md"
-    count = engine.ingest(path)
-    print(f"📄 摄入: {path} → {count}个文本块")
-    
-    # 测试问答
-    for q in ["参加过什么竞赛？", "会什么编程语言？", "有什么证书？", "实习经历是什么？"]:
-        answer = engine.ask(q)
-        print(f"\n❓ {q}")
-        print(f"💬 {answer}")
