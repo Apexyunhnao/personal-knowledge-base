@@ -206,7 +206,7 @@ class RAGEngine:
 """
         
         resp = self.llm.chat.completions.create(
-            model="deepseek-chat",
+            model="deepseek-v4-pro",
             messages=[
                 {"role": "system", "content": "你是文档问答助手。回答简洁专业。禁止markdown符号。"},
                 {"role": "user", "content": prompt}

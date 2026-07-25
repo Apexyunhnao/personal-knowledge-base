@@ -235,7 +235,7 @@ async def _chat_stream_inner(message, history, file_context):
     msgs.append({"role":"user","content":fm})
     if file_context: yield f"data: {json.dumps({'type':'file_info'})}\n\n"
     for _ in range(5):
-        stream = deepseek.chat.completions.create(model="deepseek-chat",messages=msgs,tools=TOOLS,tool_choice="auto",temperature=0.3,stream=True)
+        stream = deepseek.chat.completions.create(model="deepseek-v4-pro",messages=msgs,tools=TOOLS,tool_choice="auto",temperature=0.3,stream=True)
         cc = ""; tcs = []
         for chunk in stream:
             d = chunk.choices[0].delta
