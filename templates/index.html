@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="zh" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>知识库 · AI 驱动</title>
+<style>
+/* ═══════════════════════════════════════
+   自包含 CSS — 深色科技风 · 聊天版
+   ═══════════════════════════════════════ */
+*,::before,::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0a10; --bg2:#111119; --bg3:#191927; --bg4:#222236;
+  --text:#e0e0ea; --text2:#9898b0; --text3:#5a5a72;
+  --border:#222236; --border2:#333350;
+  --cyan:#00d4aa; --cyan2:rgba(0,212,170,.12); --cyan3:rgba(0,212,170,.05);
+  --purple:#a78bfa; --purple2:rgba(167,139,250,.12);
+  --blue:#60a5fa; --amber:#f59e0b; --red:#f87171;
+  --radius:10px; --radius-sm:6px; --radius-lg:14px;
+  --font:system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono','Cascadia Code','Fira Code',Consolas,monospace;
+  --transition:all .18s cubic-bezier(.4,0,.2,1);
+}
+body{font-family:var(--font);background:var(--bg);color:var(--text);height:100vh;overflow:hidden;-webkit-font-smoothing:antialiased}
+.app{display:flex;height:100vh}
+.sidebar{width:340px;min-width:340px;background:var(--bg2);border-right:1px solid var(--border);display:flex;flex-direction:column;transition:var(--transition);overflow:hidden}
+.sidebar.collapsed{width:0;min-width:0;border-right:none}
+.main{flex:1;display:flex;flex-direction:column;min-width:0}
+.sidebar-header{padding:14px 16px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.sidebar-header .logo{font-size:16px;font-weight:800;letter-spacing:-.3px;background:linear-gradient(135deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+/* 侧栏搜索框 */
+.sidebar-search{padding:8px 12px;border-bottom:1px solid var(--border)}
+.sidebar-search input{width:100%;padding:8px 10px;background:var(--bg);border:1px solid var(--border2);border-radius:var(--radius-sm);color:var(--text);font-size:12px;font-family:var(--font);transition:var(--transition)}
+.sidebar-search input:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 3px var(--cyan2)}
+.sidebar-search input::placeholder{color:var(--text3);font-size:11px}
+.sidebar-search .kbd-hint{position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text3);background:var(--bg3);padding:1px 5px;border-radius:3px;border:1px solid var(--border)}
+.search-results{max-height:240px;overflow-y:auto;font-size:11px}
+.search-result{padding:8px 10px;border-bottom:1px solid var(--border);cursor:pointer;transition:var(--transition);display:flex;justify-content:space-between;align-items:center}
+.search-result:hover{background:var(--bg3)}
+.search-result .sr-title{color:var(--text);font-weight:500}
+.search-result .sr-score{font-size:9px;color:var(--text3)}
+.search-result .sr-source{font-size:9px;padding:1px 5px;border-radius:99px;background:var(--cyan2);color:var(--cyan)}
+.sidebar-stats{display:flex;gap:10px;font-size:11px;color:var(--text2);padding:8px 16px;border-bottom:1px solid var(--border)}
+.sidebar-stats span{color:var(--cyan)}
+.sidebar-browse{padding:8px 12px;flex:1;overflow-y:auto}
+.sidebar-browse .section-title{font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:1px;padding:8px 4px 6px}
+.table-btn{width:100%;text-align:left;padding:8px 10px;border-radius:var(--radius-sm);background:none;border:none;color:var(--text2);cursor:pointer;font-size:12px;font-family:var(--font);transition:var(--transition);display:flex;align-items:center;gap:8px}
+.table-btn:hover{background:var(--bg3);color:var(--text)}
+.table-btn.active{background:var(--cyan2);color:var(--cyan)}
+.table-btn .count{font-size:10px;margin-left:auto;color:var(--text3)}
+.browse-item{padding:8px 10px;border-bottom:1px solid var(--border);cursor:pointer;transition:var(--transition);font-size:12px}
+.browse-item:hover{background:var(--bg3)}
+.browse-item .bi-title{font-weight:500;color:var(--text)}
+.browse-item .bi-meta{font-size:10px;color:var(--text3);margin-top:1px}
+.browse-item .bi-tags{display:flex;gap:3px;flex-wrap:wrap;margin-top:3px}
+.browse-item .bi-tag{padding:1px 6px;border-radius:99px;font-size:9px;background:var(--cyan2);color:var(--cyan)}
+.chat-header{padding:10px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;min-height:48px}
+.chat-header .hint{font-size:12px;color:var(--text3)}
+.chat-header button{background:var(--bg3);border:1px solid var(--border);color:var(--text2);padding:4px 12px;border-radius:var(--radius-sm);cursor:pointer;font-size:12px;font-family:var(--font);transition:var(--transition)}
+.chat-header button:hover{background:var(--bg4);color:var(--text)}
+.chat-messages{flex:1;overflow-y:auto;padding:20px;display:flex;flex-direction:column;gap:16px}
+.chat-input-area{border-top:1px solid var(--border)}
+.file-preview{display:flex;gap:8px;padding:8px 20px 0;flex-wrap:wrap;align-items:center}
+.file-chip{display:flex;align-items:center;gap:6px;padding:4px 10px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:11px;color:var(--text2)}
+.file-chip img{width:28px;height:28px;object-fit:cover;border-radius:4px}
+.file-chip .remove{cursor:pointer;color:var(--red);font-weight:700;margin-left:2px}
+.file-chip .remove:hover{color:#fff}
+.input-row{display:flex;gap:8px;padding:10px 20px 16px;align-items:flex-end}
+.chat-input{flex:1;background:var(--bg2);border:1px solid var(--border2);border-radius:var(--radius);padding:10px 14px;color:var(--text);font-size:13px;font-family:var(--font);resize:none;min-height:42px;max-height:120px;transition:var(--transition)}
+.chat-input:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 3px var(--cyan2)}
+.chat-input::placeholder{color:var(--text3)}
+.upload-btn{padding:10px 12px;border-radius:var(--radius);border:1px solid var(--border2);background:var(--bg2);color:var(--text2);cursor:pointer;font-size:18px;transition:var(--transition);display:flex;align-items:center}
+.upload-btn:hover{background:var(--bg3);border-color:var(--cyan);color:var(--cyan)}
+.send-btn{padding:10px 20px;border-radius:var(--radius);border:none;cursor:pointer;background:linear-gradient(135deg,var(--cyan),#00b894);color:#000;font-weight:700;font-size:13px;font-family:var(--font);transition:var(--transition);white-space:nowrap}
+.send-btn:hover{transform:translateY(-1px);box-shadow:0 4px 15px rgba(0,212,170,.3)}
+.send-btn:disabled{opacity:.4;cursor:not-allowed;transform:none}
+.drop-overlay{position:absolute;inset:0;background:rgba(0,212,170,.08);border:3px dashed var(--cyan);z-index:10;display:none;align-items:center;justify-content:center;font-size:16px;color:var(--cyan);font-weight:700;pointer-events:none}
+.drop-overlay.active{display:flex}
+.msg{max-width:85%;animation:fadeUp .25s ease}
+.msg.user{align-self:flex-end}
+.msg.user .msg-body{background:var(--purple2);border:1px solid rgba(167,139,250,.2);border-radius:var(--radius-lg) var(--radius-lg) 4px var(--radius-lg)}
+.msg.assistant{align-self:flex-start}
+.msg.assistant .msg-body{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg) var(--radius-lg) var(--radius-lg) 4px}
+.msg-body{padding:12px 16px;font-size:13px;line-height:1.65;position:relative}
+.msg-body p{margin-bottom:6px}.msg-body p:last-child{margin-bottom:0}
+.msg-body ul,.msg-body ol{padding-left:18px;margin:4px 0}
+.msg-body code{font-family:var(--mono);font-size:11px;background:var(--bg);padding:1px 5px;border-radius:3px}
+.msg-body pre{background:var(--bg);padding:10px 12px;border-radius:var(--radius-sm);overflow-x:auto;font-size:11px;margin:6px 0;position:relative}
+/* 代码块复制按钮 */
+.copy-btn{position:absolute;top:6px;right:6px;padding:2px 8px;background:var(--bg3);border:1px solid var(--border);border-radius:4px;color:var(--text2);font-size:10px;font-family:var(--font);cursor:pointer;opacity:0;transition:var(--transition)}
+pre:hover .copy-btn{opacity:1}
+.copy-btn:hover{background:var(--cyan2);color:var(--cyan);border-color:var(--cyan)}
+.copy-btn.copied{color:var(--cyan)}
+.msg-files{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.msg-file{display:flex;align-items:center;gap:4px;padding:3px 8px;background:var(--bg3);border-radius:var(--radius-sm);font-size:11px;color:var(--text2)}
+.msg-file img{width:24px;height:24px;object-fit:cover;border-radius:3px}
+.msg-file .is-img{background:var(--cyan2);color:var(--cyan);padding:1px 4px;border-radius:3px;font-size:9px}
+.tool-call{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:10px 14px;margin:4px 0;font-size:12px}
+.tool-call .tc-header{display:flex;align-items:center;gap:6px;cursor:pointer;color:var(--cyan);font-weight:600;font-size:11px}
+.tool-call .tc-body{margin-top:6px;display:none}
+.tool-call.open .tc-body{display:block}
+.tool-call .tc-key{color:var(--text3);font-size:10px}
+.tool-call .tc-result{margin-top:4px;padding:6px 10px;background:var(--bg);border-radius:var(--radius-sm);color:var(--text2);font-size:11px;max-height:180px;overflow-y:auto;font-family:var(--mono);white-space:pre-wrap;word-break:break-all}
+/* 阶段提示 */
+.stage-hint{display:flex;align-items:center;gap:6px;padding:6px 12px;background:var(--cyan3);border:1px solid var(--cyan2);border-radius:var(--radius-sm);font-size:11px;color:var(--cyan);margin:4px 0;align-self:flex-start}
+.stage-hint .dot{animation:blink 1.2s infinite}
+/* Toast 通知 */
+.toast-container{position:fixed;top:16px;right:16px;z-index:200;display:flex;flex-direction:column;gap:8px;pointer-events:none}
+.toast{pointer-events:auto;padding:10px 16px;border-radius:var(--radius-sm);font-size:12px;font-family:var(--font);animation:slideIn .3s ease;max-width:340px;display:flex;align-items:center;gap:8px;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+.toast.info{background:var(--bg2);border:1px solid var(--cyan2);color:var(--cyan)}
+.toast.success{background:rgba(0,212,170,.1);border:1px solid rgba(0,212,170,.3);color:#00d4aa}
+.toast.error{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.3);color:var(--red)}
+.toast.warn{background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.3);color:var(--amber)}
+.toast .toast-close{cursor:pointer;margin-left:auto;opacity:.6;font-size:14px}
+.toast .toast-close:hover{opacity:1}
+@keyframes slideIn{from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1}}
+/* 全局搜索弹窗 */
+.search-overlay{position:fixed;inset:0;z-index:150;display:flex;align-items:flex-start;justify-content:center;padding-top:15vh;background:rgba(0,0,0,.5);backdrop-filter:blur(4px)}
+.search-modal{background:var(--bg2);border:1px solid var(--border2);border-radius:var(--radius-lg);width:560px;max-width:92vw;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.5)}
+.search-modal input{width:100%;padding:14px 18px;background:var(--bg2);border:none;color:var(--text);font-size:16px;font-family:var(--font);outline:none}
+.search-modal input::placeholder{color:var(--text3)}
+.search-modal .sm-results{max-height:360px;overflow-y:auto;border-top:1px solid var(--border)}
+.search-modal .sm-item{padding:12px 18px;border-bottom:1px solid var(--border);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:var(--transition)}
+.search-modal .sm-item:hover,.search-modal .sm-item.focused{background:var(--bg3)}
+.search-modal .sm-item .smi-left{flex:1;min-width:0}
+.search-modal .sm-item .smi-title{font-size:13px;font-weight:500;color:var(--text)}
+.search-modal .sm-item .smi-meta{font-size:10px;color:var(--text3);margin-top:2px}
+.search-modal .sm-item .smi-right{display:flex;gap:6px;align-items:center;flex-shrink:0}
+.search-modal .sm-item .smi-score{font-size:10px;color:var(--text3)}
+.search-modal .sm-item .smi-source{font-size:9px;padding:1px 6px;border-radius:99px;background:var(--cyan2);color:var(--cyan)}
+.search-modal .sm-empty{padding:32px;text-align:center;color:var(--text3);font-size:13px}
+.welcome{text-align:center;padding:60px 20px 30px}
+.welcome h2{font-size:22px;margin-bottom:8px;background:linear-gradient(135deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.welcome p{color:var(--text2);font-size:13px;margin-bottom:20px}
+.suggestions{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:600px;margin:0 auto}
+.suggestion{padding:8px 16px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;font-size:12px;color:var(--text2);transition:var(--transition);font-family:var(--font)}
+.suggestion:hover{background:var(--bg3);border-color:var(--cyan);color:var(--text)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+.typing{animation:blink 1.2s infinite}
+.loading-dots{color:var(--text3);font-size:14px}
+.modal-overlay{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.6);backdrop-filter:blur(4px)}
+.modal-box{background:var(--bg2);border:1px solid var(--border2);border-radius:var(--radius-lg);padding:24px;max-width:600px;width:92%;max-height:75vh;overflow-y:auto}
+.modal-box h3{font-weight:700;margin-bottom:12px}
+[x-cloak]{display:none!important}
+.flex{display:flex}.gap-1{gap:4px}.gap-2{gap:8px}.gap-3{gap:12px}.flex-1{flex:1}.flex-wrap{flex-wrap:wrap}
+.items-center{align-items:center}.justify-between{justify-content:space-between}
+.mt-1{margin-top:4px}.mt-2{margin-top:8px}.mt-3{margin-top:12px}.mb-1{margin-bottom:4px}.mb-2{margin-bottom:8px}
+.text-xs{font-size:11px}.text-sm{font-size:12px}.text-muted{color:var(--text3)}
+.btn-ghost{background:transparent;border:1px solid var(--border);color:var(--text2);padding:5px 12px;border-radius:var(--radius-sm);cursor:pointer;font-size:11px;font-family:var(--font);transition:var(--transition)}
+.btn-ghost:hover{background:var(--bg3);color:var(--text)}
+.btn-accent{background:var(--cyan2);color:var(--cyan);padding:5px 12px;border-radius:var(--radius-sm);border:none;cursor:pointer;font-size:11px;font-family:var(--font)}
+.btn-accent:hover{filter:brightness(1.3)}
+.btn-danger{background:rgba(248,113,113,.15);color:var(--red);padding:5px 12px;border-radius:var(--radius-sm);border:none;cursor:pointer;font-size:11px;font-family:var(--font)}
+.w-full{width:100%}.min-w-0{min-width:0}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.overflow-y-auto{overflow-y:auto}.hidden{display:none}.relative{position:relative}
+
+/* ═══════════════════════════════════════
+   响应式 — 手机/平板适配
+   ═══════════════════════════════════════ */
+@media (max-width: 768px){
+  .sidebar{position:fixed;left:0;top:0;bottom:0;z-index:50;width:300px;min-width:300px;box-shadow:4px 0 20px rgba(0,0,0,.5)}
+  .sidebar.collapsed{transform:translateX(-100%);width:300px;min-width:300px}
+  .chat-header{padding:8px 12px}
+  .chat-header .hint{display:none}
+  .chat-messages{padding:12px;gap:12px}
+  .input-row{padding:8px 12px 12px}
+  .msg{max-width:95%}
+  .msg-body{font-size:12px;padding:10px 12px}
+  .welcome{padding:30px 12px 16px}
+  .welcome h2{font-size:18px}
+  .search-modal{width:96vw;margin:0 2vw}
+  .toast-container{top:8px;right:8px;left:8px}
+  .toast{max-width:100%}
+}
+</style>
+<script defer src="https://cdn.bootcdn.net/ajax/libs/alpinejs/3.13.5/cdn.min.js"></script>
+</head>
+<body x-data="app()" x-init="init()" @dragover.prevent="dragOver=true" @dragleave.prevent="dragOver=false" @drop.prevent="handleDrop($event)" @keydown.window="handleKeyboard($event)">
+
+<!-- Toast 容器 -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- 全局搜索弹窗 -->
+<div x-show="showGlobalSearch" x-cloak class="search-overlay" @click.self="showGlobalSearch=false" @keydown.escape="showGlobalSearch=false">
+  <div class="search-modal">
+    <input type="text" x-ref="globalSearchInput" x-model="globalSearchQuery"
+      @input="globalSearch()"
+      @keydown.arrow-down.prevent="globalSearchNext()"
+      @keydown.arrow-up.prevent="globalSearchPrev()"
+      @keydown.enter.prevent="globalSearchConfirm()"
+      @keydown.escape="showGlobalSearch=false"
+      placeholder="搜索知识库... (FTS5 + 语义向量)">
+    <div class="sm-results">
+      <div x-show="globalSearchResults.length===0&&globalSearchQuery" class="sm-empty">未找到匹配结果</div>
+      <div x-show="globalSearchResults.length===0&&!globalSearchQuery" class="sm-empty">输入关键词开始搜索</div>
+      <template x-for="(r,i) in globalSearchResults" :key="r.id">
+        <div class="sm-item" :class="{focused: i===globalSearchFocus}" @click="globalSearchPick(r)" @mouseenter="globalSearchFocus=i">
+          <div class="smi-left">
+            <div class="smi-title" x-text="r.title"></div>
+            <div class="smi-meta" x-text="r.topic||''"></div>
+          </div>
+          <div class="smi-right">
+            <span class="smi-source" x-text="r.source"></span>
+            <span class="smi-score" x-text="r.score"></span>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
+</div>
+
+<div class="app">
+  <!-- ═══ 侧栏 ═══ -->
+  <aside class="sidebar" :class="{collapsed: !sidebarOpen}">
+    <div class="sidebar-header">
+      <span class="logo">◈ 知识库</span>
+      <button @click="sidebarOpen=false" class="btn-ghost">✕</button>
+    </div>
+    <!-- 侧栏搜索框 -->
+    <div class="sidebar-search relative" x-show="sidebarOpen">
+      <input type="text" x-model="sidebarSearchQuery" @input="sidebarSearch()"
+        @keydown.enter="sidebarSearchConfirm()"
+        placeholder="搜索知识...">
+    </div>
+    <div class="sidebar-stats">📚 <span x-text="stats.notes"></span> 条知识</div>
+    <div class="sidebar-browse">
+      <!-- 侧栏搜索结果 -->
+      <div x-show="sidebarSearchQuery">
+        <div class="section-title">搜索结果</div>
+        <div class="search-results">
+          <div x-show="sidebarSearchResults.length===0" class="text-muted text-xs" style="padding:12px 8px">未找到匹配</div>
+          <template x-for="r in sidebarSearchResults" :key="r.id">
+            <div class="search-result" @click="sidebarOpen=false;viewItemById(r.id)">
+              <span class="sr-title" x-text="r.title"></span>
+              <div class="flex gap-1 items-center">
+                <span class="sr-source" x-text="r.source"></span>
+                <span class="sr-score" x-text="r.score"></span>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+
+      <div x-show="!sidebarSearchQuery">
+        <div class="section-title">浏览</div>
+        <button @click="browseTable='notes';loadBroswe()" :class="{active:browseTable==='notes'}" class="table-btn">📝 知识库 <span class="count" x-text="stats.notes"></span></button>
+        <div class="section-title mt-3">操作</div>
+        <button @click="showTrash=true;loadTrash()" class="table-btn">🗑 回收站</button>
+        <button @click="createBackup()" class="table-btn">💾 创建备份</button>
+        <div class="section-title mt-3" x-show="browseTable==='notes'">知识库</div>
+        <div x-show="!browseItems||browseItems.length===0" class="text-muted text-xs" style="padding:12px 8px">点击上方浏览</div>
+        <template x-for="item in browseItems" :key="item.id">
+          <div class="browse-item" @click="viewItem(item)"><div class="bi-title" x-text="item.title||item.name||item.company"></div><div class="bi-meta" x-text="item.topic||item.tech_stack||item.position"></div><div class="bi-tags"><template x-for="t in (item.tag_list||[])"><span class="bi-tag" x-text="t.name"></span></template></div></div>
+        </template>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ═══ 主聊天区 ═══ -->
+  <main class="main relative" @dragover.prevent @drop.prevent>
+    <div class="drop-overlay" :class="{active: dragOver}">📁 拖放文件到这里上传</div>
+
+    <div class="chat-header">
+      <button x-show="!sidebarOpen" @click="sidebarOpen=true;loadStats()" class="btn-ghost">☰ 资料库</button>
+      <span class="hint">📎 支持上传文档/图片 · AI整理后入库 · Ctrl+K 全局搜索 · Enter 发送</span>
+      <button @click="showGlobalSearch=true;$nextTick(()=>$refs.globalSearchInput?.focus())" class="btn-ghost" style="margin-left:auto;display:flex;align-items:center;gap:4px">
+        🔍 搜索 <span style="font-size:9px;color:var(--text3);background:var(--bg);padding:1px 4px;border-radius:3px">Ctrl+K</span>
+      </button>
+      <button @click="messages=[];history=[]" class="btn-ghost">清空对话</button>
+    </div>
+
+    <!-- 消息区 -->
+    <div class="chat-messages" x-ref="msgContainer" id="msgContainer">
+      <div x-show="messages.length===0" class="welcome">
+        <h2>个人知识库</h2>
+        <p>把文字发给AI → 自动整理归纳 → 存知识库 → 随时检索问答</p>
+        <div class="suggestions">
+          <button @click="sendSuggestion('帮我整理这段话：SMART原则是目标管理方法，S代表具体、M代表可衡量、A代表可实现、R代表相关性、T代表有时限')" class="suggestion">💾 整理一段知识</button>
+          <button @click="sendSuggestion('我学过哪些技术相关的内容？')" class="suggestion">🔍 搜学过什么</button>
+          <button @click="sendSuggestion('帮我看看知识库里有什么')" class="suggestion">📊 知识库统计</button>
+          <button @click="sendSuggestion('删除刚才存的那条')" class="suggestion">🗑 删除知识</button>
+        </div>
+      </div>
+
+      <template x-for="(msg,idx) in messages" :key="idx">
+        <div>
+          <template x-if="msg.role==='user'">
+            <div class="msg user">
+              <div class="msg-body">
+                <div x-show="msg.files&&msg.files.length" class="msg-files">
+                  <template x-for="f in msg.files"><div class="msg-file"><span>📎</span><span x-text="f.name"></span></div></template>
+                </div>
+                <div x-text="msg.content" x-show="msg.content"></div>
+              </div>
+            </div>
+          </template>
+          <template x-if="msg.role==='assistant' && msg.content">
+            <div class="msg assistant"><div class="msg-body" x-html="renderMarkdown(msg.content)"></div></div>
+          </template>
+          <!-- 阶段提示 -->
+          <template x-if="msg.stageHint">
+            <div class="stage-hint"><span class="dot">●</span><span x-text="msg.stageHint"></span></div>
+          </template>
+          <template x-for="tc in (msg.toolCalls||[])">
+            <div class="tool-call" :class="{open: tc.open}" style="max-width:85%;align-self:flex-start">
+              <div class="tc-header" @click="tc.open=!tc.open">
+                <span>🔧</span>
+                <span x-text="{'save_note':'保存笔记','search_knowledge':'搜索','list_items':'列表','get_item':'查看','update_item':'更新','delete_item':'删除','get_stats':'统计'}[tc.name]||tc.name"></span>
+                <span class="text-muted text-xs" style="margin-left:auto" x-text="tc.open?'▾':'▸'"></span>
+              </div>
+              <div class="tc-body"><div class="tc-key">参数：</div><div x-text="JSON.stringify(tc.args,null,2)" style="color:var(--text2);font-size:11px;font-family:var(--mono)"></div><div class="tc-key mt-1">结果：</div><div class="tc-result" x-text="formatToolResult(tc.result)"></div></div>
+            </div>
+          </template>
+          <template x-if="msg.loading"><div class="msg assistant"><div class="msg-body"><span class="loading-dots">●●●</span></div></div></template>
+        </div>
+      </template>
+    </div>
+
+    <!-- 输入区 -->
+    <div class="chat-input-area">
+      <div class="file-preview" x-show="uploadFiles.length>0">
+        <template x-for="(f,i) in uploadFiles" :key="i">
+          <div class="file-chip">
+            <img x-show="f.type.startsWith('image/')" :src="f.preview" style="width:28px;height:28px;object-fit:cover;border-radius:4px">
+            <span x-show="!f.type.startsWith('image/')">📄</span>
+            <span x-text="f.name" style="max-width:120px" class="truncate"></span>
+            <span x-show="f.type.startsWith('image/')" style="color:var(--cyan);font-size:9px">图片</span>
+            <span class="remove" @click="removeFile(i)">✕</span>
+          </div>
+        </template>
+      </div>
+      <div class="input-row">
+        <textarea class="chat-input" x-model="input"
+          @keydown.enter.prevent="if(!$event.shiftKey)send()"
+          @keydown.meta.enter.prevent="send()"
+          @paste="handlePaste($event)"
+          placeholder="输入消息... 支持拖拽/粘贴文件（Enter发送，Shift+Enter换行）"
+          rows="1" :disabled="sending" x-ref="inputEl"></textarea>
+        <input type="file" x-ref="fileInput" @change="handleFileSelect" multiple accept=".pdf,.md,.txt,.py,.js,.ts,.html,.css,.json,.yaml,.png,.jpg,.jpeg,.gif,.webp,.bmp" class="hidden">
+        <button @click="$refs.fileInput.click()" class="upload-btn" title="上传文件/图片">📎</button>
+        <button @click="send()" class="send-btn" :disabled="sending||(!input.trim()&&!uploadFiles.length)">
+          <span x-show="!sending">发送</span><span x-show="sending" class="typing">...</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- ═══ 弹窗 ═══ -->
+  <div x-show="showTrash" x-cloak class="modal-overlay" @click.self="showTrash=false">
+    <div class="modal-box"><div class="flex justify-between items-center mb-2"><h3>🗑 回收站</h3><button @click="showTrash=false" class="btn-ghost">✕</button></div>
+      <div x-show="!trashItems||trashItems.length===0" class="text-center text-muted" style="padding:32px 0">回收站空空如也</div>
+      <template x-for="t in trashItems" :key="t.id"><div style="padding:8px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:12px"><span><span class="text-muted" x-text="'['+t._table_short+']'"></span> <span x-text="t.title||t.name||t.company"></span></span><div class="flex gap-1"><button @click="restoreItem(t._table_short,t.id)" class="btn-accent">恢复</button><button @click="permDelete(t._table_short,t.id)" class="btn-danger">删除</button></div></div></template>
+    </div>
+  </div>
+
+  <div x-show="showDetail" x-cloak class="modal-overlay" @click.self="showDetail=false">
+    <div class="modal-box" style="max-width:700px"><div class="flex justify-between items-center mb-2"><h3 x-text="detailItem?.title||detailItem?.name||'详情'"></h3><button @click="showDetail=false" class="btn-ghost">✕</button></div>
+      <div style="max-height:55vh;overflow-y:auto;font-size:13px;line-height:1.7">
+        <template x-for="(v,k) in detailItem" :key="k"><div x-show="v&&k!=='id'&&k!=='tag_list'&&k!=='backlinks'&&k!=='deleted_at'&&k!=='frontmatter'" style="margin-bottom:6px"><span style="color:var(--text3);font-size:11px" x-text="k+': '"></span><span x-text="typeof v==='string'?v:JSON.stringify(v)"></span></div></template>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function app(){
+  return {
+    sidebarOpen: true,
+    input: '', sending: false,
+    messages: [], history: [],
+    uploadFiles: [], dragOver: false,
+    browseTable: '', browseItems: [],
+    stats: {notes:0},
+    showTrash: false, trashItems: [],
+    showDetail: false, detailItem: null,
+    // 侧栏搜索
+    sidebarSearchQuery: '', sidebarSearchResults: [],
+    // 全局搜索
+    showGlobalSearch: false, globalSearchQuery: '', globalSearchResults: [], globalSearchFocus: -1,
+    // 搜索防抖
+    _searchTimer: null,
+
+    async init(){
+      await this.loadStats();
+      this.$nextTick(() => this.$refs.inputEl?.focus());
+    },
+
+    /* ═══════════════ Toast 通知 ═══════════════ */
+    toast(msg, type='info', duration=2500){
+      const container = document.getElementById('toastContainer');
+      const icons = {info:'ℹ️', success:'✅', error:'❌', warn:'⚠️'};
+      const el = document.createElement('div');
+      el.className = 'toast '+type;
+      el.innerHTML = `<span>${icons[type]||''}</span><span>${msg}</span><span class="toast-close" onclick="this.parentElement.remove()">✕</span>`;
+      container.appendChild(el);
+      setTimeout(()=>{ if(el.parentElement) el.remove(); }, duration);
+    },
+
+    /* ═══════════════ 文件处理 ═══════════════ */
+    handleFileSelect(e){
+      this.addFiles(Array.from(e.target.files));
+      e.target.value = '';
+    },
+    handleDrop(e){
+      this.dragOver = false;
+      if(e.dataTransfer.files.length) this.addFiles(Array.from(e.dataTransfer.files));
+    },
+    handlePaste(e){
+      const items = e.clipboardData?.items;
+      if(!items) return;
+      const files = [];
+      for(const item of items){
+        if(item.kind === 'file') files.push(item.getAsFile());
+      }
+      if(files.length) this.addFiles(files);
+    },
+    addFiles(newFiles){
+      for(const f of newFiles){
+        if(f.type.startsWith('image/')) f.preview = URL.createObjectURL(f);
+        this.uploadFiles.push(f);
+      }
+    },
+    removeFile(i){ this.uploadFiles.splice(i,1); },
+
+    /* ═══════════════ 发送 ═══════════════ */
+    async sendSuggestion(text){ this.input = text; this.send(); },
+    async send(){
+      const msg = this.input.trim();
+      const hasFiles = this.uploadFiles.length > 0;
+      if(!msg && !hasFiles) return;
+      if(this.sending) return;
+
+      this.sending = true;
+
+      const userMsg = {role:'user', content:msg};
+      if(hasFiles) userMsg.files = this.uploadFiles.map(f=>({name:f.name,type:f.type}));
+      this.messages.push(userMsg);
+      this.history.push({role:'user', content:msg || '请处理上传的文件'});
+
+      const filesToSend = [...this.uploadFiles];
+      this.uploadFiles = [];
+      this.input = '';
+
+      // 阶段提示
+      const hasContent = msg.length > 0;
+      const stageMsg = {role:'assistant', content:'', loading:true, stageHint: '正在分析...'};
+      const loadingIdx = this.messages.length;
+      this.messages.push(stageMsg);
+      this.scrollBottom();
+
+      try{
+        const fd = new FormData();
+        fd.append('message', msg);
+        fd.append('history', JSON.stringify(this.history.slice(0,-1)));
+        for(const f of filesToSend) fd.append('files', f, f.name);
+
+        const resp = await fetch('/chat', {method:'POST', body: fd});
+
+        let assistantMsg = this.messages[loadingIdx];
+        assistantMsg.content = '';
+        assistantMsg.loading = false;
+        assistantMsg.toolCalls = [];
+        delete assistantMsg.stageHint;
+
+        let lastToolName = '';
+        const text = await resp.text();
+        const lines = text.split('\n');
+        for(const line of lines){
+          if(!line.startsWith('data: ')) continue;
+          try{
+            const data = JSON.parse(line.slice(6));
+            switch(data.type){
+              case 'text': assistantMsg.content += data.content; break;
+              case 'file_info': break;
+              case 'tool_start':
+                lastToolName = data.name;
+                assistantMsg.toolCalls.push({name:data.name,args:data.args,result:'',open:false});
+                // 阶段提示
+                if(data.name==='save_note') assistantMsg.stageHint = '正在整理归纳...';
+                else if(data.name==='search_knowledge') assistantMsg.stageHint = '搜索知识库...';
+                else if(data.name==='list_items') assistantMsg.stageHint = '获取列表...';
+                else if(data.name==='delete_item') assistantMsg.stageHint = '删除中...';
+                break;
+              case 'tool_result':
+                const tcs = assistantMsg.toolCalls;
+                for(let i=tcs.length-1;i>=0;i--){ if(!tcs[i].result){ tcs[i].result = data.result; break; } }
+                delete assistantMsg.stageHint;
+                break;
+            }
+            this.scrollBottom();
+          }catch(e){}
+        }
+
+        if(assistantMsg.content || assistantMsg.toolCalls?.length){
+          this.history.push({
+            role:'assistant', content: assistantMsg.content,
+            tool_calls: assistantMsg.toolCalls?.map((tc,i) => ({id:'call_'+Date.now()+'_'+i, type:'function', function:{name:tc.name, arguments:JSON.stringify(tc.args)}}))
+          });
+          const fTCs = assistantMsg.toolCalls?.map((tc,i) => ({id:'call_'+Date.now()+'_'+i, type:'function', function:{name:tc.name, arguments:JSON.stringify(tc.args)}})) || [];
+          for(const tc of (assistantMsg.toolCalls||[])){
+            if(tc.result){
+              const callId = fTCs.find(t => t.function.name === tc.name)?.id || 'call_0';
+              this.history.push({role:'tool', tool_call_id: callId, content: tc.result});
+            }
+          }
+        }
+      }catch(e){
+        this.messages[loadingIdx].content = '❌ 请求失败: ' + e.message;
+        this.messages[loadingIdx].loading = false;
+        delete this.messages[loadingIdx].stageHint;
+        this.toast('请求失败', 'error');
+      }
+
+      this.sending = false;
+      this.loadStats();
+      this.$nextTick(() => this.$refs.inputEl?.focus());
+    },
+
+    /* ═══════════════ 侧栏 ═══════════════ */
+    async loadBroswe(){ if(!this.browseTable) return; const r = await (await fetch('/db/'+this.browseTable)).json(); this.browseItems = r.data||[]; },
+    async viewItem(item){ const r = await (await fetch('/db/'+this.browseTable+'/'+item.id)).json(); this.detailItem = r.data||r; this.showDetail = true; },
+    async viewItemById(id){ this.browseTable = 'notes'; const r = await (await fetch('/db/notes/'+id)).json(); this.detailItem = r.data||r; this.showDetail = true; },
+    async loadStats(){ try{ const r = await (await fetch('/db/stats')).json(); this.stats = r; }catch(e){} },
+    async loadTrash(){ const r = await (await fetch('/db/trash')).json(); this.trashItems = r.data||[]; },
+    async restoreItem(t,id){ await fetch('/db/trash/'+t+'/'+id+'/restore',{method:'POST'}); this.loadTrash();this.loadStats(); this.toast('已恢复', 'success'); },
+    async permDelete(t,id){ if(!confirm('永久删除？'))return; await fetch('/db/trash/'+t+'/'+id,{method:'DELETE'}); this.loadTrash(); this.toast('已永久删除', 'warn'); },
+    async createBackup(){ const r = await (await fetch('/db/backup',{method:'POST'})).json(); if(r.ok){ this.toast('备份成功', 'success'); } else { this.toast('备份失败: '+r.error, 'error'); } },
+
+    /* ═══════════════ 侧栏搜索 ═══════════════ */
+    sidebarSearch(){
+      clearTimeout(this._searchTimer);
+      this._searchTimer = setTimeout(()=>this._doSidebarSearch(), 250);
+    },
+    async _doSidebarSearch(){
+      const q = this.sidebarSearchQuery.trim();
+      if(!q){ this.sidebarSearchResults = []; return; }
+      try{
+        const r = await (await fetch('/db/search?keyword='+encodeURIComponent(q)+'&top_k=8')).json();
+        this.sidebarSearchResults = r.data||[];
+      }catch(e){ this.sidebarSearchResults = []; }
+    },
+    sidebarSearchConfirm(){
+      if(this.sidebarSearchResults.length>0){
+        this.viewItemById(this.sidebarSearchResults[0].id);
+      }
+    },
+
+    /* ═══════════════ 全局搜索 (Ctrl+K) ═══════════════ */
+    globalSearch(){
+      clearTimeout(this._searchTimer);
+      this.globalSearchFocus = -1;
+      this._searchTimer = setTimeout(()=>this._doGlobalSearch(), 200);
+    },
+    async _doGlobalSearch(){
+      const q = this.globalSearchQuery.trim();
+      if(!q){ this.globalSearchResults = []; return; }
+      try{
+        const r = await (await fetch('/db/search?keyword='+encodeURIComponent(q)+'&top_k=10')).json();
+        this.globalSearchResults = r.data||[];
+      }catch(e){ this.globalSearchResults = []; }
+    },
+    globalSearchNext(){ if(this.globalSearchResults.length){ this.globalSearchFocus = (this.globalSearchFocus+1)%this.globalSearchResults.length; } },
+    globalSearchPrev(){ if(this.globalSearchResults.length){ this.globalSearchFocus = this.globalSearchFocus<=0 ? this.globalSearchResults.length-1 : this.globalSearchFocus-1; } },
+    globalSearchConfirm(){
+      if(this.globalSearchResults.length>0){
+        const idx = this.globalSearchFocus>=0 ? this.globalSearchFocus : 0;
+        this.globalSearchPick(this.globalSearchResults[idx]);
+      }
+    },
+    globalSearchPick(item){
+      this.showGlobalSearch = false;
+      this.globalSearchQuery = '';
+      this.globalSearchResults = [];
+      this.viewItemById(item.id);
+    },
+
+    /* ═══════════════ 工具 ═══════════════ */
+    scrollBottom(){ this.$nextTick(()=>{ const el = this.$refs.msgContainer||document.getElementById('msgContainer'); if(el) el.scrollTop = el.scrollHeight; }); },
+    renderMarkdown(text){
+      if(!text) return '';
+      // 先处理代码块，嵌入复制按钮
+      let result = text
+        .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+        .replace(/```(\w*)\n([\s\S]*?)```/g, '<pre><code>$2</code><button class="copy-btn" onclick="copyCode(this)">复制</button></pre>')
+        .replace(/`([^`]+)`/g,'<code>$1</code>')
+        .replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')
+        .replace(/\n/g,'<br>')
+        .replace(/- (.+)/g,'• $1');
+      return result;
+    },
+    formatToolResult(raw){ try{ const d = typeof raw === 'string' ? JSON.parse(raw) : raw; if(d.stats) return '知识条目:'+d.stats.notes; if(d.results){ let s=''; for(const [k,v] of Object.entries(d.results)) s+=k+': '+v.length+'条 '; return s||'未找到'; } if(d.items) return '共 '+d.count+' 条：'+d.items.slice(0,5).map(i=>i.title||i.name||i.company).join(', ')+(d.count>5?'...':''); if(d.id) return '✅ 已保存：「'+d.title+'」'; if(d.updated) return '✅ 已更新 #'+d.updated; if(d.deleted) return '✅ 已删除 #'+d.deleted; return raw; }catch(e){return raw} },
+    handleKeyboard(e){
+      // Ctrl+K / Cmd+K → 全局搜索
+      if((e.ctrlKey||e.metaKey) && e.key==='k'){
+        e.preventDefault();
+        this.showGlobalSearch = true;
+        this.$nextTick(() => this.$refs.globalSearchInput?.focus());
+      }
+      // Escape
+      if(e.key==='Escape' && !this.showGlobalSearch){
+        this.showTrash=false; this.showDetail=false;
+      }
+    }
+  }
+}
+
+/* ═══════════════ 全局函数：代码复制 ═══════════════ */
+function copyCode(btn){
+  const code = btn.parentElement.querySelector('code')?.textContent || '';
+  navigator.clipboard.writeText(code).then(()=>{
+    btn.textContent = '已复制';
+    btn.classList.add('copied');
+    setTimeout(()=>{ btn.textContent='复制'; btn.classList.remove('copied'); }, 1500);
+  }).catch(()=>{
+    btn.textContent = '失败';
+    setTimeout(()=>{ btn.textContent='复制'; }, 1500);
+  });
+}
+</script>
+</body>
+</html>

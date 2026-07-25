@@ -4,3 +4,17 @@ chroma_db/
 __pycache__/
 *.pyc
 .DS_Store
+
+# 数据库文件（含WAL和SHM）
+*.db
+*.db-shm
+*.db-wal
+
+# 用户上传
+uploads/
+
+# 备份
+backups/
+
+# 旧版备份代码
+*_old.py

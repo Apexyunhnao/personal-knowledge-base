@@ -1,4 +1,8 @@
-"""RAG引擎模块 — 支持多会话隔离"""
+"""RAG引擎模块 — 支持多会话隔离 + SHA-256增量索引"""
+import hashlib
+import json
+import logging
+import os
 import pymupdf
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import chromadb
@@ -6,10 +10,10 @@ from chromadb.api.types import EmbeddingFunction, Documents, Embeddings
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 from dotenv import load_dotenv
-import os
-from typing import List
+from typing import List, Dict
 
 load_dotenv()
+logger = logging.getLogger(__name__)
 
 # ── 中文语义Embedding ──
 class ChineseEmbedding(EmbeddingFunction):
@@ -21,12 +25,14 @@ class ChineseEmbedding(EmbeddingFunction):
 
 
 class RAGEngine:
-    """RAG问答引擎 — 每个session_id对应独立的向量库，会话间数据隔离"""
+    """RAG问答引擎 — SHA-256增量索引，支持多文件追加（不重建）"""
     
     def __init__(self, db_dir: str = "./chroma_db", chunk_size: int = 300, chunk_overlap: int = 150):
         self.db_dir = db_dir
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
+        self.hash_cache_path = os.path.join(db_dir, "file_hashes.json")
+        self._hash_cache: Dict[str, Dict[str, dict]] = self._load_hash_cache()
         
         # LLM
         self.llm = OpenAI(
@@ -34,32 +40,52 @@ class RAGEngine:
             base_url="https://api.deepseek.com"
         )
         
-        # 向量库客户端（不预加载任何collection）
+        # 向量库客户端
         self.client = chromadb.PersistentClient(path=db_dir)
     
+    # ── 文件哈希缓存 ──
+    
+    def _load_hash_cache(self) -> dict:
+        """加载文件哈希缓存"""
+        if os.path.exists(self.hash_cache_path):
+            try:
+                with open(self.hash_cache_path) as f:
+                    return json.load(f)
+            except Exception:
+                pass
+        return {}
+    
+    def _save_hash_cache(self):
+        """持久化哈希缓存"""
+        os.makedirs(self.db_dir, exist_ok=True)
+        with open(self.hash_cache_path, 'w') as f:
+            json.dump(self._hash_cache, f, indent=2)
+    
+    @staticmethod
+    def _compute_hash(filepath: str) -> str:
+        """计算文件 SHA-256（分块读取，支持大文件）"""
+        sha = hashlib.sha256()
+        with open(filepath, 'rb') as f:
+            for chunk in iter(lambda: f.read(8192), b''):
+                sha.update(chunk)
+        return sha.hexdigest()
+    
+    # ── Collection 管理 ──
+    
     def _collection_name(self, session_id: str) -> str:
-        """会话对应的collection名"""
         return f"docs_{session_id}"
     
     def _get_collection(self, session_id: str):
-        """获取会话的collection，不存在则创建"""
         name = self._collection_name(session_id)
         try:
-            return self.client.get_collection(
-                name=name,
-                embedding_function=ChineseEmbedding()
-            )
+            return self.client.get_collection(name=name, embedding_function=ChineseEmbedding())
         except Exception:
-            return self.client.create_collection(
-                name=name,
-                embedding_function=ChineseEmbedding()
-            )
+            return self.client.create_collection(name=name, embedding_function=ChineseEmbedding())
     
     def load_document(self, path: str) -> str:
-        """加载文档（支持PDF/MD/TXT）"""
+        """加载文档（PDF/MD/TXT）"""
         if not os.path.exists(path):
             raise FileNotFoundError(f"文件不存在: {path}")
-        
         if path.endswith(".pdf"):
             doc = pymupdf.open(path)
             return "\n".join([page.get_text() for page in doc])
@@ -67,8 +93,24 @@ class RAGEngine:
             with open(path, "r", encoding="utf-8") as f:
                 return f.read()
     
-    def ingest(self, session_id: str, path: str) -> int:
-        """摄入文档到指定会话：解析 → 切片 → 向量化 → 入库"""
+    def ingest(self, session_id: str, path: str) -> dict:
+        """摄入文档：SHA-256增量索引 + 追加模式（不重建）
+        
+        Returns:
+            {"chunks": int, "skipped": bool, "total_chunks": int}
+        """
+        # 1. 计算哈希，检查是否已索引
+        file_hash = self._compute_hash(path)
+        session_cache = self._hash_cache.get(session_id, {})
+        
+        if path in session_cache and session_cache[path].get("hash") == file_hash:
+            return {
+                "chunks": session_cache[path]["chunks"],
+                "skipped": True,
+                "total_chunks": self.document_count(session_id),
+            }
+        
+        # 2. 加载并切片
         text = self.load_document(path)
         if not text.strip():
             raise ValueError("文档内容为空")
@@ -80,35 +122,62 @@ class RAGEngine:
         )
         chunks = splitter.split_text(text)
         
-        # 清除该会话旧数据
+        # 3. 如果是更新已有文件，先删除旧chunks
+        col = self._get_collection(session_id)
+        if path in session_cache:
+            old_count = session_cache[path].get("chunks", 0)
+            old_ids = [f"{path}_chunk_{i}" for i in range(old_count)]
+            try:
+                col.delete(ids=old_ids)
+            except Exception:
+                pass
+        
+        # 4. 追加新chunks（用文件路径做ID前缀避免冲突）
+        chunk_ids = [f"{path}_chunk_{i}" for i in range(len(chunks))]
+        col.add(documents=chunks, ids=chunk_ids)
+        
+        # 5. 更新缓存
+        if session_id not in self._hash_cache:
+            self._hash_cache[session_id] = {}
+        self._hash_cache[session_id][path] = {
+            "hash": file_hash,
+            "chunks": len(chunks),
+        }
+        self._save_hash_cache()
+        
+        return {
+            "chunks": len(chunks),
+            "skipped": False,
+            "total_chunks": col.count(),
+        }
+    
+    def document_count(self, session_id: str) -> int:
+        try:
+            return self._get_collection(session_id).count()
+        except Exception:
+            return 0
+    
+    def session_files(self, session_id: str) -> list:
+        """列出会话中已索引的文件"""
+        session_cache = self._hash_cache.get(session_id, {})
+        return [{"path": p, "chunks": v["chunks"], "hash": v["hash"][:8]}
+                for p, v in session_cache.items()]
+    
+    def clear_session(self, session_id: str):
+        """清除会话所有数据"""
         name = self._collection_name(session_id)
         try:
             self.client.delete_collection(name)
         except Exception:
             pass
-        
-        col = self._get_collection(session_id)
-        col.add(
-            documents=chunks,
-            ids=[f"chunk_{i}" for i in range(len(chunks))]
-        )
-        
-        return len(chunks)
-    
-    def document_count(self, session_id: str) -> int:
-        """指定会话的文档块数量"""
-        try:
-            col = self._get_collection(session_id)
-            return col.count()
-        except Exception:
-            return 0
+        self._hash_cache.pop(session_id, None)
+        self._save_hash_cache()
     
     def ask(self, session_id: str, question: str, top_k: int = 5) -> str:
         """RAG问答（按会话隔离）"""
         col = self._get_collection(session_id)
         
-        # 判断是否为非文档类问题
-        greetings = ["你好", "嗨", "hello", "hi", "你是谁", "你能做什么", "有什么功能", "功能", "能干什么", "可以做什么", "会什么", "自我介绍", "介绍自己", "你是什么"]
+        greetings = ["你好", "嗨", "hello", "hi", "你是谁", "你能做什么", "有什么功能"]
         is_greeting = any(g in question for g in greetings)
         
         if is_greeting:
@@ -117,7 +186,6 @@ class RAGEngine:
             if col.count() == 0:
                 return "请先上传文档"
             
-            # 检索（≤20块时全量检索）
             if col.count() <= 20:
                 top_k = col.count()
             results = col.query(query_texts=[question], n_results=top_k)
@@ -140,7 +208,7 @@ class RAGEngine:
         resp = self.llm.chat.completions.create(
             model="deepseek-chat",
             messages=[
-                {"role": "system", "content": "你是文档问答助手。回答简洁专业。严格禁止使用任何markdown符号：禁止**加粗**、禁止-列表、禁止#标题、禁止`代码块`、禁止*斜体*。回答必须是纯文本，用换行和空格分隔。\n- 自我介绍：一句话\n- 评价简历：只列优缺点各3条，不要复述简历全文\n- 查具体信息：要点式，每条一句话\n- 文档没提到的说未提及"},
+                {"role": "system", "content": "你是文档问答助手。回答简洁专业。禁止markdown符号。"},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.3,
