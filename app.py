@@ -74,15 +74,15 @@ async def graph_page():
     return "<h1>知识图谱</h1><p>模板文件缺失</p>"
 
 
-@app.get("/ar", response_class=HTMLResponse)
-async def ar_demo():
-    """AR 知识助手 Demo"""
+@app.get("/vision", response_class=HTMLResponse)
+async def vision_demo():
+    """视觉识别 — 拍照 → Qwen-VL 识别 → 知识库检索"""
     import os as _os
-    template_path = _os.path.join(_os.path.dirname(__file__), "templates", "ar-demo.html")
+    template_path = _os.path.join(_os.path.dirname(__file__), "templates", "vision-demo.html")
     if _os.path.exists(template_path):
         with open(template_path) as f:
             return f.read()
-    return "<h1>AR 知识助手</h1><p>模板文件缺失</p>"
+    return "<h1>视觉识别</h1><p>模板文件缺失</p>"
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 # 个人资料库
 
-基于 DeepSeek 的 AI 知识管理系统。支持聊天式知识存入、混合检索（全文+语义）、自动整理归纳、拍照识别（AR）、语音输入。
+基于 DeepSeek 的 AI 知识管理系统。支持聊天式知识存入、混合检索（全文+语义）、自动整理归纳、视觉识别、语音输入。
 
 ## 核心能力
 
@@ -9,7 +9,7 @@
 - **自动合并整理**：同主题内容自动合并到已有笔记，避免碎片化
 - **混合检索**：FTS5 全文搜索 + ChromaDB 语义搜索（RRF 融合排序）
 - **文件支持**：上传 PDF/Markdown/TXT/图片，自动提取文字
-- **拍照识别（AR）**：摄像头拍照 → Qwen-VL 识别 → 知识库检索回答
+- **视觉识别**：摄像头拍照 → Qwen-VL 识别 → 知识库检索回答
 - **语音输入**：录音 → ASR 转文字 → 直接提问或一键整理成笔记
 - **知识图谱**：WikiLinks 双向链接 + D3.js 力导向图可视化
 - **监控反馈**：问答质量记录 + 好/差评反馈，自动识别 Bad Case
@@ -50,7 +50,7 @@ python3 -m uvicorn app:app --host 0.0.0.0 --port 8000
 ├── personal_db.py          # 个人知识库管理
 ├── routers/                # API 路由
 │   ├── chat.py             #   聊天端点（核心）
-│   ├── vision.py           #   拍照识别（AR 视觉搜索）
+│   ├── vision.py           #   视觉识别（拍照 → 知识库检索）
 │   ├── voice.py            #   语音识别（ASR + 整理存笔记）
 │   ├── database.py         #   数据库 CRUD
 │   ├── tags.py             #   标签管理
@@ -61,7 +61,7 @@ python3 -m uvicorn app:app --host 0.0.0.0 --port 8000
 │   ├── links.py            #   知识图谱
 │   └── monitor.py          #   问答质量监控
 ├── repositories/           # 数据访问层
-├── templates/              # 前端页面（含 AR 页 / 知识图谱页）
+├── templates/              # 前端页面（含视觉识别页 / 知识图谱页）
 └── tests/                  # 测试
 ```
 
@@ -83,7 +83,7 @@ python3 -m uvicorn app:app --host 0.0.0.0 --port 8000
 提问 → FTS5 关键词 + ChromaDB 语义 → RRF 融合排序 → DeepSeek 基于结果回答
 ```
 
-拍照识别（AR）：
+视觉识别：
 
 ```
 拍照 → Qwen-VL 识别图片内容 → DeepSeek 提取关键词
