@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>知识图谱 · 个人知识库</title>
+<style>
+*,::before,::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0a10; --bg2:#111119; --text:#e0e0ea; --text2:#9898b0;
+  --cyan:#00d4aa; --purple:#a78bfa; --blue:#60a5fa; --amber:#f59e0b;
+  --radius:10px; --font:system-ui,-apple-system,sans-serif;
+}
+body{font-family:var(--font);background:var(--bg);color:var(--text);height:100vh;overflow:hidden;-webkit-font-smoothing:antialiased}
+
+/* 顶部栏 */
+.topbar{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  height:56px;background:var(--bg2);
+  border-bottom:1px solid #222236;
+  display:flex;align-items:center;padding:0 20px;
+  justify-content:space-between;
+}
+.topbar .logo{
+  font-size:16px;font-weight:800;letter-spacing:-.3px;
+  background:linear-gradient(135deg,var(--cyan),var(--purple));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.topbar .stats{font-size:13px;color:var(--text2)}
+.topbar .stats span{color:var(--cyan);font-weight:600}
+.back-btn{
+  background:var(--bg);border:1px solid #333350;color:var(--text2);
+  padding:7px 16px;border-radius:var(--radius);font-size:13px;
+  cursor:pointer;transition:all .15s;text-decoration:none;
+}
+.back-btn:hover{color:var(--cyan);border-color:var(--cyan)}
+
+/* 画布 */
+#graph{width:100%;height:calc(100vh - 56px);margin-top:56px}
+
+/* 节点 */
+.node{cursor:pointer;transition:opacity .2s}
+.node circle{stroke:#222236;stroke-width:2;transition:all .2s}
+.node:hover circle{stroke:var(--cyan);stroke-width:3;filter:drop-shadow(0 0 8px rgba(0,212,170,.4))}
+.node text{font-size:12px;fill:var(--text2);pointer-events:none;text-anchor:middle;transition:fill .2s}
+.node:hover text{fill:var(--text)}
+
+/* 图例 */
+.legend{
+  position:fixed;bottom:24px;left:24px;
+  background:var(--bg2);border:1px solid #222236;
+  border-radius:var(--radius);padding:12px 16px;
+  display:flex;gap:20px;font-size:12px;color:var(--text2);
+}
+.legend-item{display:flex;align-items:center;gap:8px}
+.legend-dot{width:12px;height:12px;border-radius:50%}
+.legend-dot.notes{background:var(--cyan)}
+.legend-dot.projects{background:var(--purple)}
+.legend-dot.apps{background:var(--blue)}
+
+/* 提示 */
+.tooltip{
+  position:fixed;pointer-events:none;opacity:0;
+  background:var(--bg2);border:1px solid #333350;
+  border-radius:var(--radius);padding:8px 14px;
+  font-size:13px;color:var(--text);max-width:280px;
+  box-shadow:0 8px 24px rgba(0,0,0,.5);
+  transition:opacity .15s;z-index:200;
+}
+.tooltip .tt-title{font-weight:700;color:var(--cyan);margin-bottom:3px}
+.tooltip .tt-topic{font-size:11px;color:var(--text2)}
+.tooltip .tt-id{font-size:11px;color:var(--text2);margin-top:2px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div>
+    <span class="logo">知识图谱</span>
+    <span class="stats" id="stats">加载中...</span>
+  </div>
+  <a href="/" class="back-btn">← 返回知识库</a>
+</div>
+
+<div id="graph"></div>
+
+<div class="legend">
+  <div class="legend-item"><span class="legend-dot notes"></span> 笔记</div>
+  <div class="legend-item"><span class="legend-dot projects"></span> 项目</div>
+  <div class="legend-item"><span class="legend-dot apps"></span> 求职</div>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+// ── 配色 ──
+const COLORS = {
+  notes: '#00d4aa',
+  projects: '#a78bfa',
+  applications: '#60a5fa'
+};
+const GROUP_LABELS = {
+  notes: '笔记',
+  projects: '项目',
+  applications: '求职'
+};
+
+// ── SVG 容器 ──
+const container = document.getElementById('graph');
+const width = container.clientWidth;
+const height = container.clientHeight;
+
+const svg = d3.select('#graph')
+  .append('svg')
+  .attr('width', width)
+  .attr('height', height);
+
+const g = svg.append('g');
+
+// 缩放
+svg.call(d3.zoom()
+  .scaleExtent([0.3, 4])
+  .on('zoom', (event) => {
+    g.attr('transform', event.transform);
+  }));
+
+// ── 加载数据 ──
+window.addEventListener('DOMContentLoaded', () => {
+  fetch('/db/graph')
+    .then(r => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    })
+    .then(res => {
+      if (!res.ok) { showError('数据加载失败: ' + JSON.stringify(res)); return; }
+      const { nodes, edges } = res.data;
+      render(nodes, edges);
+    })
+    .catch(e => showError('无法连接知识库: ' + e.message));
+});
+
+function showError(msg) {
+  document.getElementById('stats').textContent = '⚠ ' + msg;
+  // 显示醒目的错误提示
+  const container = document.getElementById('graph');
+  const div = document.createElement('div');
+  div.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;color:#9898b0;font-size:14px;line-height:2;max-width:400px';
+  div.innerHTML = `<div style="font-size:48px;margin-bottom:16px">⚠️</div>
+    <div style="color:#f59e0b;font-size:16px;font-weight:600;margin-bottom:12px">${msg}</div>
+    <div>这个页面需要在<strong>电脑浏览器</strong>中打开：</div>
+    <div style="color:#00d4aa;font-size:15px;margin:8px 0">http://localhost:8000/graph</div>
+    <div style="font-size:12px;color:#5a5a72">手机微信WebView无法访问本机服务</div>`;
+  container.parentNode.appendChild(div);
+}
+
+function render(nodes, edges) {
+  // 更新统计
+  document.getElementById('stats').innerHTML =
+    `<span>${nodes.length}</span> 节点 · <span>${edges.length}</span> 连线`;
+
+  // 无连线时做虚拟连接让节点聚拢（基于 group）
+  const hasEdges = edges.length > 0;
+  const realLinks = hasEdges ? edges.map(e => ({
+    source: e.source, target: e.target
+  })) : [];
+
+  // 力模拟
+  const simulation = d3.forceSimulation(nodes)
+    .force('charge', d3.forceManyBody().strength(-600))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('collision', d3.forceCollide().radius(60))
+    .force('x', d3.forceX(width / 2).strength(0.03))
+    .force('y', d3.forceY(height / 2).strength(0.03));
+
+  if (hasEdges) {
+    simulation.force('link', d3.forceLink(realLinks).id(d => d.id).distance(150));
+  }
+
+  // ── 连线 ──
+  const link = g.append('g')
+    .selectAll('line')
+    .data(realLinks)
+    .join('line')
+    .attr('stroke', '#333350')
+    .attr('stroke-width', 1.5)
+    .attr('stroke-opacity', 0.6);
+
+  // ── 节点 ──
+  const node = g.append('g')
+    .selectAll('.node')
+    .data(nodes)
+    .join('g')
+    .attr('class', 'node')
+    .call(drag(simulation));
+
+  // 圆 — 按 group 配色，按笔记数调大小（有连线的大一些）
+  node.append('circle')
+    .attr('r', d => hasEdges ? 18 : (d.group === 'projects' ? 22 : d.group === 'applications' ? 20 : 16))
+    .attr('fill', d => COLORS[d.group] || '#5a5a72')
+    .attr('fill-opacity', 0.85);
+
+  // 图标文字
+  node.append('text')
+    .attr('dy', 4)
+    .attr('fill', '#0a0a10')
+    .attr('font-size', '11px')
+    .attr('text-anchor', 'middle')
+    .attr('font-weight', '700')
+    .text(d => d.group === 'projects' ? 'P' : d.group === 'applications' ? 'A' : 'N');
+
+  // 标题标签
+  node.append('text')
+    .attr('dy', 32)
+    .text(d => d.title.length > 14 ? d.title.slice(0,13) + '…' : d.title);
+
+  // ── 交互 ──
+  const tooltip = document.getElementById('tooltip');
+
+  node.on('mouseenter', function(event, d) {
+    const [mx, my] = d3.pointer(event, svg.node());
+    tooltip.innerHTML = `
+      <div class="tt-title">${d.title}</div>
+      <div class="tt-topic">${GROUP_LABELS[d.group] || d.group} · #${d.id.split(':')[1]}</div>
+    `;
+    tooltip.style.opacity = '1';
+    tooltip.style.left = (mx + 16) + 'px';
+    tooltip.style.top = (my - 10) + 'px';
+  })
+  .on('mousemove', function(event) {
+    const [mx, my] = d3.pointer(event, svg.node());
+    tooltip.style.left = (mx + 16) + 'px';
+    tooltip.style.top = (my - 10) + 'px';
+  })
+  .on('mouseleave', () => { tooltip.style.opacity = '0'; });
+
+  // ── 模拟 tick ──
+  simulation.on('tick', () => {
+    link
+      .attr('x1', d => d.source.x)
+      .attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x)
+      .attr('y2', d => d.target.y);
+
+    node.attr('transform', d => `translate(${d.x},${d.y})`);
+  });
+
+  // 预热动画：初始缩小再缓入
+  g.attr('opacity', 0);
+  g.transition().duration(800).attr('opacity', 1);
+}
+
+// ── 拖拽 ──
+function drag(simulation) {
+  return d3.drag()
+    .on('start', (event, d) => {
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      d.fx = d.x; d.fy = d.y;
+    })
+    .on('drag', (event, d) => {
+      d.fx = event.x; d.fy = event.y;
+    })
+    .on('end', (event, d) => {
+      if (!event.active) simulation.alphaTarget(0);
+      d.fx = null; d.fy = null;
+    });
+}
+
+// ── 响应式 ──
+window.addEventListener('resize', () => {
+  const w = container.clientWidth;
+  const h = container.clientHeight;
+  svg.attr('width', w).attr('height', h);
+});
+</script>
+</body>
+</html>

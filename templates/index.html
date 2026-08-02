@@ -69,6 +69,8 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);height:100vh
 .chat-input{flex:1;background:var(--bg2);border:1px solid var(--border2);border-radius:var(--radius);padding:10px 14px;color:var(--text);font-size:13px;font-family:var(--font);resize:none;min-height:42px;max-height:120px;transition:var(--transition)}
 .chat-input:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 3px var(--cyan2)}
 .chat-input::placeholder{color:var(--text3)}
+.recording{animation:recPulse 1s infinite}
+@keyframes recPulse{0%,100%{box-shadow:0 0 0 0 rgba(248,113,113,.5)}50%{box-shadow:0 0 0 6px rgba(248,113,113,.15)}}
 .upload-btn{padding:10px 12px;border-radius:var(--radius);border:1px solid var(--border2);background:var(--bg2);color:var(--text2);cursor:pointer;font-size:18px;transition:var(--transition);display:flex;align-items:center}
 .upload-btn:hover{background:var(--bg3);border-color:var(--cyan);color:var(--cyan)}
 .send-btn{padding:10px 20px;border-radius:var(--radius);border:none;cursor:pointer;background:linear-gradient(135deg,var(--cyan),#00b894);color:#000;font-weight:700;font-size:13px;font-family:var(--font);transition:var(--transition);white-space:nowrap}
@@ -149,6 +151,8 @@ pre:hover .copy-btn{opacity:1}
 .text-xs{font-size:11px}.text-sm{font-size:12px}.text-muted{color:var(--text3)}
 .btn-ghost{background:transparent;border:1px solid var(--border);color:var(--text2);padding:5px 12px;border-radius:var(--radius-sm);cursor:pointer;font-size:11px;font-family:var(--font);transition:var(--transition)}
 .btn-ghost:hover{background:var(--bg3);color:var(--text)}
+.graph-link{color:var(--text3);text-decoration:none;font-size:11px;padding:5px 10px;border-radius:var(--radius-sm);transition:var(--transition);margin-left:8px}
+.graph-link:hover{color:var(--cyan);background:var(--cyan3)}
 .btn-accent{background:var(--cyan2);color:var(--cyan);padding:5px 12px;border-radius:var(--radius-sm);border:none;cursor:pointer;font-size:11px;font-family:var(--font)}
 .btn-accent:hover{filter:brightness(1.3)}
 .btn-danger{background:rgba(248,113,113,.15);color:var(--red);padding:5px 12px;border-radius:var(--radius-sm);border:none;cursor:pointer;font-size:11px;font-family:var(--font)}
@@ -214,6 +218,8 @@ pre:hover .copy-btn{opacity:1}
   <aside class="sidebar" :class="{collapsed: !sidebarOpen}">
     <div class="sidebar-header">
       <span class="logo">◈ 知识库</span>
+      <a href="/graph" class="graph-link" title="知识图谱">◉ 图谱</a>
+      <a href="/ar" class="graph-link" title="AR 知识助手" style="color:var(--purple)">◉ AR</a>
       <button @click="sidebarOpen=false" class="btn-ghost">✕</button>
     </div>
     <!-- 侧栏搜索框 -->
@@ -266,7 +272,8 @@ pre:hover .copy-btn{opacity:1}
       <button @click="showGlobalSearch=true;$nextTick(()=>$refs.globalSearchInput?.focus())" class="btn-ghost" style="margin-left:auto;display:flex;align-items:center;gap:4px">
         🔍 搜索 <span style="font-size:9px;color:var(--text3);background:var(--bg);padding:1px 4px;border-radius:3px">Ctrl+K</span>
       </button>
-      <button @click="messages=[];history=[]" class="btn-ghost">清空对话</button>
+      <button @click="messages=[];history=[];localStorage.removeItem('kb_chat_history')" class="btn-ghost">清空对话</button>
+      <button @click="loadMonitorStats()" class="btn-ghost" style="display:flex;align-items:center;gap:4px">📊 监控</button>
     </div>
 
     <!-- 消息区 -->
@@ -295,7 +302,14 @@ pre:hover .copy-btn{opacity:1}
             </div>
           </template>
           <template x-if="msg.role==='assistant' && msg.content">
-            <div class="msg assistant"><div class="msg-body" x-html="renderMarkdown(msg.content)"></div></div>
+            <div class="msg assistant">
+              <div class="msg-body" x-html="renderMarkdown(msg.content)"></div>
+              <!-- 反馈按钮 -->
+              <div x-show="qaLogId !== null && idx === messages.length - 1" style="display:flex;gap:6px;padding:4px 16px 0">
+                <button @click="submitFeedback(1)" class="btn-ghost" style="font-size:14px;padding:2px 8px" title="有帮助">👍</button>
+                <button @click="submitFeedback(-1)" class="btn-ghost" style="font-size:14px;padding:2px 8px" title="没帮助">👎</button>
+              </div>
+            </div>
           </template>
           <!-- 阶段提示 -->
           <template x-if="msg.stageHint">
@@ -318,6 +332,11 @@ pre:hover .copy-btn{opacity:1}
 
     <!-- 输入区 -->
     <div class="chat-input-area">
+      <div x-show="recording" style="display:flex;align-items:center;gap:8px;padding:6px 12px;margin-bottom:8px;background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.3);border-radius:var(--radius);font-size:12px;color:var(--red)">
+        <span style="width:8px;height:8px;border-radius:50%;background:var(--red);animation:recPulse 1s infinite"></span>
+        <span>🔴 录音中… 说完点击 ⏹ 停止</span>
+        <span style="margin-left:auto;font-weight:700;font-family:monospace" x-text="recSeconds + 's'"></span>
+      </div>
       <div class="file-preview" x-show="uploadFiles.length>0">
         <template x-for="(f,i) in uploadFiles" :key="i">
           <div class="file-chip">
@@ -338,6 +357,11 @@ pre:hover .copy-btn{opacity:1}
           rows="1" :disabled="sending" x-ref="inputEl"></textarea>
         <input type="file" x-ref="fileInput" @change="handleFileSelect" multiple accept=".pdf,.md,.txt,.py,.js,.ts,.html,.css,.json,.yaml,.png,.jpg,.jpeg,.gif,.webp,.bmp" class="hidden">
         <button @click="$refs.fileInput.click()" class="upload-btn" title="上传文件/图片">📎</button>
+        <button @click="openCamera()" class="upload-btn" title="拍照识别" style="background:rgba(167,139,250,.15);color:var(--purple)">📷</button>
+        <button @click="toggleRecord()" class="upload-btn" :title="recording ? '点击停止录音' : '点击开始录音'" :class="{'recording': recording}" style="background:rgba(56,189,248,.15);color:var(--cyan)">
+          <span x-show="!recording">🎤</span><span x-show="recording" style="color:var(--red)">⏹</span>
+        </button>
+        <button x-show="showSaveNote" @click="saveNoteFromInput()" class="upload-btn" title="把刚才识别的内容整理成笔记" style="background:rgba(52,211,153,.15);color:var(--green)">📥 存为笔记</button>
         <button @click="send()" class="send-btn" :disabled="sending||(!input.trim()&&!uploadFiles.length)">
           <span x-show="!sending">发送</span><span x-show="sending" class="typing">...</span>
         </button>
@@ -353,10 +377,71 @@ pre:hover .copy-btn{opacity:1}
     </div>
   </div>
 
+  <!-- 摄像头弹窗 -->
+  <div x-show="showCamera" x-cloak class="modal-overlay" @click.self="closeCamera()">
+    <div class="modal-box" style="max-width:420px;padding:0;overflow:hidden">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border)">
+        <span style="font-size:13px;color:var(--purple);font-weight:600">📷 拍照识别</span>
+        <button @click="closeCamera()" class="btn-ghost">✕</button>
+      </div>
+      <video id="arCamera" autoplay playsinline style="width:100%;max-height:50vh;object-fit:cover;background:#000"></video>
+      <canvas id="arCanvas" style="display:none"></canvas>
+      <div style="padding:12px;display:flex;gap:8px;justify-content:center">
+        <button @click="capturePhoto()" class="btn-accent" style="width:100%" :disabled="!cameraReady">📸 拍照识别</button>
+      </div>
+    </div>
+  </div>
+
   <div x-show="showDetail" x-cloak class="modal-overlay" @click.self="showDetail=false">
     <div class="modal-box" style="max-width:700px"><div class="flex justify-between items-center mb-2"><h3 x-text="detailItem?.title||detailItem?.name||'详情'"></h3><button @click="showDetail=false" class="btn-ghost">✕</button></div>
       <div style="max-height:55vh;overflow-y:auto;font-size:13px;line-height:1.7">
         <template x-for="(v,k) in detailItem" :key="k"><div x-show="v&&k!=='id'&&k!=='tag_list'&&k!=='backlinks'&&k!=='deleted_at'&&k!=='frontmatter'" style="margin-bottom:6px"><span style="color:var(--text3);font-size:11px" x-text="k+': '"></span><span x-text="typeof v==='string'?v:JSON.stringify(v)"></span></div></template>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ 监控面板 ═══ -->
+  <div x-show="showMonitor" x-cloak class="modal-overlay" @click.self="showMonitor=false">
+    <div class="modal-box" style="max-width:800px;max-height:85vh">
+      <div class="flex justify-between items-center mb-2">
+        <h3>📊 监控面板</h3>
+        <button @click="showMonitor=false" class="btn-ghost">✕</button>
+      </div>
+      <!-- 统计卡片 -->
+      <div x-show="monitorStats" style="display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap">
+        <div style="flex:1;min-width:100px;background:var(--bg3);padding:14px;border-radius:var(--radius);text-align:center">
+          <div style="font-size:24px;font-weight:700" x-text="monitorStats.total"></div>
+          <div style="font-size:11px;color:var(--text3);margin-top:4px">总问答</div>
+        </div>
+        <div style="flex:1;min-width:100px;background:var(--cyan3);padding:14px;border-radius:var(--radius);text-align:center">
+          <div style="font-size:24px;font-weight:700;color:var(--cyan)" x-text="monitorStats.helpful"></div>
+          <div style="font-size:11px;color:var(--text3);margin-top:4px">👍 有帮助</div>
+        </div>
+        <div style="flex:1;min-width:100px;background:rgba(248,113,113,.08);padding:14px;border-radius:var(--radius);text-align:center">
+          <div style="font-size:24px;font-weight:700;color:var(--red)" x-text="monitorStats.not_helpful"></div>
+          <div style="font-size:11px;color:var(--text3);margin-top:4px">👎 没帮助</div>
+        </div>
+        <div style="flex:1;min-width:100px;background:var(--bg3);padding:14px;border-radius:var(--radius);text-align:center">
+          <div style="font-size:24px;font-weight:700;color:var(--amber)" x-text="monitorStats.avg_latency_ms+'ms'"></div>
+          <div style="font-size:11px;color:var(--text3);margin-top:4px">平均延迟</div>
+        </div>
+      </div>
+      <!-- Bad Case 列表 -->
+      <div style="margin-top:12px">
+        <h4 style="font-size:13px;margin-bottom:8px">👎 需要改进的问答 (<span x-text="badCases.length"></span>)</h4>
+        <div x-show="badCases.length===0" style="text-align:center;padding:24px;color:var(--text3)">暂无 Bad Case，系统运行良好 🎉</div>
+        <div style="max-height:45vh;overflow-y:auto">
+          <template x-for="bc in badCases" :key="bc.id">
+            <div style="background:var(--bg3);border-radius:var(--radius);padding:12px;margin-bottom:8px;font-size:12px">
+              <div style="color:var(--text2);margin-bottom:4px">
+                <span style="color:var(--text3)">#<span x-text="bc.id"></span></span>
+                <span style="margin-left:8px;color:var(--text3);font-size:10px" x-text="bc.created_at?.slice(0,16)"></span>
+              </div>
+              <div style="margin-bottom:6px"><span style="color:var(--purple)">Q:</span> <span x-text="bc.question" style="color:var(--text)"></span></div>
+              <div style="color:var(--text2);max-height:120px;overflow-y:auto;white-space:pre-wrap"><span style="color:var(--cyan)">A:</span> <span x-text="bc.answer"></span></div>
+            </div>
+          </template>
+        </div>
       </div>
     </div>
   </div>
@@ -379,9 +464,17 @@ function app(){
     showGlobalSearch: false, globalSearchQuery: '', globalSearchResults: [], globalSearchFocus: -1,
     // 搜索防抖
     _searchTimer: null,
+    // 监控反馈
+    qaLogId: null,
+    showMonitor: false, monitorStats: null, badCases: [],
+    // 摄像头
+    showCamera: false, cameraReady: false, cameraStream: null,
+    // 语音
+    recording: false, _mediaRecorder: null, _recordChunks: [], showSaveNote: false, recSeconds: 0, _recTimer: null,
 
     async init(){
       await this.loadStats();
+      this.loadConversation();
       this.$nextTick(() => this.$refs.inputEl?.focus());
     },
 
@@ -513,6 +606,10 @@ function app(){
 
       this.sending = false;
       this.loadStats();
+      // 记录问答日志
+      if (assistantMsg.content && this.qaLogId == null) {
+        this.logQA(msg, assistantMsg.content);
+      }
       this.$nextTick(() => this.$refs.inputEl?.focus());
     },
 
@@ -589,6 +686,45 @@ function app(){
       return result;
     },
     formatToolResult(raw){ try{ const d = typeof raw === 'string' ? JSON.parse(raw) : raw; if(d.stats) return '知识条目:'+d.stats.notes; if(d.results){ let s=''; for(const [k,v] of Object.entries(d.results)) s+=k+': '+v.length+'条 '; return s||'未找到'; } if(d.items) return '共 '+d.count+' 条：'+d.items.slice(0,5).map(i=>i.title||i.name||i.company).join(', ')+(d.count>5?'...':''); if(d.id) return '✅ 已保存：「'+d.title+'」'; if(d.updated) return '✅ 已更新 #'+d.updated; if(d.deleted) return '✅ 已删除 #'+d.deleted; return raw; }catch(e){return raw} },
+    /* ═══════════════ 监控反馈 ═══════════════ */
+    async logQA(question, answer) {
+      try {
+        const r = await (await fetch('/monitor/log', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ question, answer }),
+        })).json();
+        if (r.ok) this.qaLogId = r.id;
+      } catch (e) { /* 静默失败，不影响主流程 */ }
+    },
+    async submitFeedback(val) {
+      if (!this.qaLogId) return;
+      try {
+        await fetch('/monitor/feedback', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: this.qaLogId, feedback: val }),
+        });
+        this.qaLogId = null;
+        this.toast(val === 1 ? '感谢反馈 👍' : '已记录，我们会改进 👎', val === 1 ? 'success' : 'warn');
+      } catch (e) { this.toast('反馈提交失败', 'error'); }
+    },
+    async loadMonitorStats() {
+      try {
+        const r = await (await fetch('/monitor/stats')).json();
+        this.monitorStats = r.data;
+        await this.loadBadCases();
+        this.showMonitor = true;
+      } catch (e) { this.toast('加载监控数据失败', 'error'); }
+    },
+    async loadBadCases() {
+      try {
+        const r = await (await fetch('/monitor/bad-cases?limit=20')).json();
+        this.badCases = r.data || [];
+      } catch (e) { this.badCases = []; }
+    },
+
+    /* ═══════════════ 键盘 ═══════════════ */
     handleKeyboard(e){
       // Ctrl+K / Cmd+K → 全局搜索
       if((e.ctrlKey||e.metaKey) && e.key==='k'){
@@ -598,9 +734,185 @@ function app(){
       }
       // Escape
       if(e.key==='Escape' && !this.showGlobalSearch){
-        this.showTrash=false; this.showDetail=false;
+        this.showTrash=false; this.showDetail=false; this.showCamera=false;
+        if(this.cameraStream){ this.cameraStream.getTracks().forEach(t=>t.stop()); this.cameraStream=null; }
       }
-    }
+    },
+
+    /* ═══════════════ 摄像头 ═══════════════ */
+    async openCamera() {
+      this.showCamera = true;
+      this.cameraReady = false;
+      this.$nextTick(async () => {
+        try {
+          this.cameraStream = await navigator.mediaDevices.getUserMedia({
+            video: { facingMode: 'environment', width: { ideal: 1280 } },
+            audio: false
+          });
+          const video = document.getElementById('arCamera');
+          video.srcObject = this.cameraStream;
+          this.cameraReady = true;
+        } catch(e) {
+          this.toast('摄像头不可用', 'error');
+          this.showCamera = false;
+        }
+      });
+    },
+    closeCamera() {
+      if(this.cameraStream){ this.cameraStream.getTracks().forEach(t=>t.stop()); this.cameraStream=null; }
+      this.showCamera = false;
+      this.cameraReady = false;
+    },
+    async capturePhoto() {
+      if(!this.cameraStream) return;
+      const video = document.getElementById('arCamera');
+      const canvas = document.getElementById('arCanvas');
+      canvas.width = video.videoWidth || 640;
+      canvas.height = video.videoHeight || 480;
+      canvas.getContext('2d').drawImage(video, 0, 0);
+      const imageBase64 = canvas.toDataURL('image/jpeg', 0.8);
+      this.closeCamera();
+
+      // 加用户消息
+      this.messages.push({ role: 'user', content: '📷 拍照识别中...' });
+      this.messages.push({ role: 'assistant', content: '', loading: true });
+      this.scrollToBottom();
+
+      try {
+        const resp = await fetch('/vision-search', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ image_base64: imageBase64 })
+        });
+        const data = await resp.json();
+        // 移除临时消息
+        this.messages = this.messages.filter(m => !m.loading && m.content !== '📷 拍照识别中...');
+
+        if(data.ok && data.data.answer) {
+          this.messages.push({ role: 'assistant', content: data.data.answer });
+        } else {
+          this.messages.push({ role: 'assistant', content: '📭 未识别到相关内容' });
+        }
+        this.scrollToBottom();
+        this.saveConversation();
+      } catch(e) {
+        this.messages = this.messages.filter(m => !m.loading && m.content !== '📷 拍照识别中...');
+        this.messages.push({ role: 'assistant', content: '⚠️ 网络错误' });
+      }
+    },
+
+    /* ═══════════════ 语音识别 ═══════════════ */
+    async toggleRecord() {
+      if (this.recording) { this.stopRecord(); return; }
+      this._recordChunks = [];
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        // 优先 webm/opus，备选 ogg
+        const mime = MediaRecorder.isTypeSupported('audio/webm;codecs=opus') ? 'audio/webm;codecs=opus'
+                   : MediaRecorder.isTypeSupported('audio/webm') ? 'audio/webm'
+                   : MediaRecorder.isTypeSupported('audio/ogg;codecs=opus') ? 'audio/ogg;codecs=opus' : '';
+        this._mediaRecorder = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
+        this._mediaRecorder.ondataavailable = e => { if(e.data.size > 0) this._recordChunks.push(e.data); };
+        this._mediaRecorder.onstop = () => {
+          stream.getTracks().forEach(t => t.stop());
+          this._uploadAudio();
+        };
+        this._mediaRecorder.start();
+        this.recording = true;
+        this.showSaveNote = false;
+        this.recSeconds = 0;
+        clearInterval(this._recTimer);
+        this._recTimer = setInterval(() => {
+          this.recSeconds++;
+          // 5分钟上限，防文件过大
+          if (this.recSeconds >= 300) this.stopRecord();
+        }, 1000);
+        this.toast('🔴 录音中… 点击 ⏹ 停止', 'info', 60000);
+      } catch(e) {
+        this.toast('麦克风不可用', 'error');
+      }
+    },
+    stopRecord() {
+      if (this.recording && this._mediaRecorder && this._mediaRecorder.state !== 'inactive') {
+        this.recording = false;
+        clearInterval(this._recTimer);
+        this._mediaRecorder.stop();
+      }
+    },
+    async _uploadAudio() {
+      if (!this._recordChunks.length) { this.toast('没有录到声音', 'warn'); return; }
+      const blob = new Blob(this._recordChunks, { type: this._recordChunks[0].type || 'audio/webm' });
+      const reader = new FileReader();
+      reader.onload = async () => {
+        const base64 = reader.result; // data:audio/webm;base64,...
+        this.toast('🎤 识别中...', 'info', 5000);
+        try {
+          const resp = await fetch('/voice/recognize', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ audio_base64: base64 })
+          });
+          const data = await resp.json();
+          if (data.ok) {
+            this.input = data.data.text;
+            this.showSaveNote = true;
+            this.$nextTick(() => this.$refs.inputEl?.focus());
+            this.toast('✅ 已识别，可发送或存为笔记', 'success');
+          } else {
+            this.toast('识别失败: ' + (data.error || '未知错误'), 'error');
+          }
+        } catch(e) {
+          this.toast('网络错误', 'error');
+        }
+      };
+      reader.readAsDataURL(blob);
+    },
+    async saveNoteFromInput() {
+      const text = (this.input || '').trim();
+      if (!text) { this.toast('输入框是空的', 'warn'); return; }
+      this.toast('📥 整理笔记中...', 'info', 8000);
+      try {
+        const resp = await fetch('/voice/note', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text: text })
+        });
+        const data = await resp.json();
+        if (data.ok) {
+          const d = data.data;
+          if (d.saved) {
+            this.toast(d.merged ? `✅ 已合并到 #${d.id}「${d.title}」` : `✅ 已存 #${d.id}「${d.title}」`, 'success');
+            this.input = '';
+            this.showSaveNote = false;
+          } else {
+            this.toast('🗣 识别: ' + (d.text || '').slice(0, 50) + (d.reason ? '（未存：'+d.reason+'）' : ''), 'info', 6000);
+          }
+        } else {
+          this.toast('保存失败: ' + (data.error || '未知错误'), 'error');
+        }
+      } catch(e) {
+        this.toast('网络错误', 'error');
+      }
+    },
+
+    /* ═══════════════ 对话保存 ═══════════════ */
+    saveConversation() {
+      const key = 'kb_chat_history';
+      const msgs = this.messages.filter(m => !m.loading && m.content);
+      try { localStorage.setItem(key, JSON.stringify(msgs)); } catch(e) {}
+    },
+    loadConversation() {
+      try {
+        const saved = localStorage.getItem('kb_chat_history');
+        if(saved) { this.messages = JSON.parse(saved); this.scrollToBottom(); }
+      } catch(e) {}
+    },
+    scrollToBottom() {
+      this.$nextTick(() => {
+        const el = this.$refs.msgContainer;
+        if(el) el.scrollTop = el.scrollHeight;
+      });
+    },
   }
 }
 

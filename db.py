@@ -7,7 +7,7 @@ DB_PATH = os.path.join(os.path.dirname(__file__), "personal.db")
 
 def get_conn():
     """获取数据库连接"""
-    c = sqlite3.connect(DB_PATH)
+    c = sqlite3.connect(DB_PATH, timeout=10)
     c.row_factory = sqlite3.Row
     c.execute("PRAGMA journal_mode=WAL")
     c.execute("PRAGMA foreign_keys=ON")

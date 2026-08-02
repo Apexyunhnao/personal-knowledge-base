@@ -254,6 +254,15 @@ async def _chat_stream_inner(message, history, file_context):
         else:
             cleaned_msgs.append(m)
     msgs = list(reversed(cleaned_msgs))
+    # 重建 seen_tool_ids，确保和清理后的消息一致
+    seen_tool_ids = set()
+    for m in msgs:
+        if m["role"] == "tool" and m.get("tool_call_id"):
+            seen_tool_ids.add(m["tool_call_id"])
+        if m.get("tool_calls"):
+            for tc in m["tool_calls"]:
+                if tc.get("id"):
+                    seen_tool_ids.add(tc["id"])
     msgs.append({"role":"user","content":fm})
     if file_context: yield f"data: {json.dumps({'type':'file_info'})}\n\n"
     for _ in range(5):
@@ -271,7 +280,9 @@ async def _chat_stream_inner(message, history, file_context):
                         if tc.function.arguments: tcs[tc.index]["function"]["arguments"] += tc.function.arguments
         if not tcs: yield f"data: {json.dumps({'type':'done'})}\n\n"; return
         for tc2 in tcs:
-            if tc2["id"] in seen_tool_ids: tc2["id"] = f"{tc2['id']}_{_}"
+            while tc2["id"] in seen_tool_ids:
+                tc2["id"] = f"{tc2['id']}_{_}"
+            seen_tool_ids.add(tc2["id"])
         msgs.append({"role":"assistant","content":cc,"tool_calls":tcs})
         for tc in tcs:
             fn = tc["function"]["name"]
@@ -281,8 +292,6 @@ async def _chat_stream_inner(message, history, file_context):
             res = execute_tool(fn, fa)
             yield f"data: {json.dumps({'type':'tool_result','name':fn,'result':res})}\n\n"
             tid = tc["id"]
-            if tid in seen_tool_ids: tid = f"{tid}_{_}"
-            seen_tool_ids.add(tid)
             msgs.append({"role":"tool","tool_call_id":tid,"content":res})
     yield f"data: {json.dumps({'type':'done'})}\n\n"
 

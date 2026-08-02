@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>AR 知识助手 · Demo</title>
+<style>
+*,::before,::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0a10; --text:#e0e0ea; --cyan:#00d4aa; --purple:#a78bfa;
+  --radius:10px; --font:system-ui,sans-serif;
+}
+body{font-family:var(--font);background:#000;color:var(--text);height:100dvh;overflow:hidden;}
+
+/* 全屏摄像头 */
+#camera{width:100%;height:100%;object-fit:cover;position:fixed;top:0;left:0;z-index:1}
+
+/* 顶部状态栏 */
+.topbar{
+  position:fixed;top:0;left:0;right:0;z-index:10;
+  padding:12px 16px;display:flex;justify-content:space-between;align-items:center;
+  background:linear-gradient(180deg,rgba(0,0,0,.7) 0%,transparent 100%);
+}
+.topbar .title{
+  font-size:14px;font-weight:600;
+  background:linear-gradient(135deg,var(--cyan),var(--purple));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.topbar .status{font-size:11px;color:rgba(255,255,255,.5)}
+
+/* 底部控制 */
+.bottombar{
+  position:fixed;bottom:0;left:0;right:0;z-index:10;
+  padding:16px;display:flex;justify-content:center;gap:12px;
+  background:linear-gradient(0deg,rgba(0,0,0,.7) 0%,transparent 100%);
+}
+.btn{
+  border:none;border-radius:var(--radius);padding:10px 24px;font-size:14px;
+  font-family:var(--font);cursor:pointer;transition:all .15s;
+}
+.btn-capture{
+  background:var(--cyan);color:#000;font-weight:700;
+  box-shadow:0 0 20px rgba(0,212,170,.3);
+}
+.btn-capture:active{transform:scale(.95)}
+.btn-capture:disabled{opacity:.4;transform:none}
+.btn-back{
+  background:rgba(255,255,255,.1);color:var(--text);
+  text-decoration:none;display:flex;align-items:center;
+}
+
+/* 结果浮层 */
+.overlay{
+  position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+  z-index:5;width:92%;max-width:420px;max-height:80vh;
+  opacity:0;pointer-events:none;transition:opacity .3s;
+}
+.overlay.active{opacity:1;pointer-events:auto}
+.overlay-close{
+  background:rgba(255,255,255,.1);border:none;color:rgba(255,255,255,.5);
+  width:28px;height:28px;border-radius:50%;font-size:14px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+}
+.overlay-close:hover{background:rgba(255,255,255,.2);color:#fff}
+
+/* 对话面板 */
+.chat-panel{
+  background:rgba(17,17,25,.95);border:1px solid rgba(0,212,170,.25);
+  border-radius:var(--radius);backdrop-filter:blur(12px);
+  box-shadow:0 8px 32px rgba(0,0,0,.5);display:flex;flex-direction:column;
+  max-height:70vh;
+}
+.chat-header{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.08);
+  font-size:13px;color:var(--cyan);font-weight:600;
+}
+.chat-messages{
+  flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px;
+  max-height:45vh;min-height:100px;
+}
+.chat-input-row{
+  display:flex;padding:8px 12px;border-top:1px solid rgba(255,255,255,.08);gap:8px;
+}
+.chat-input-row input{
+  flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+  border-radius:20px;padding:8px 14px;color:#fff;font-size:13px;outline:none;
+  font-family:var(--font);
+}
+.chat-input-row input:focus{border-color:var(--cyan)}
+.chat-input-row button{
+  background:var(--cyan);border:none;color:#000;padding:8px 16px;
+  border-radius:20px;font-size:13px;font-weight:600;cursor:pointer;
+}
+
+/* 聊天气泡 */
+.msg-row{display:flex;flex-direction:column;max-width:90%}
+.msg-row.user{align-self:flex-end}
+.msg-row.assistant{align-self:flex-start}
+.msg-bubble{
+  padding:8px 12px;border-radius:12px;font-size:13px;line-height:1.6;
+}
+.msg-row.user .msg-bubble{background:rgba(0,212,170,.15);color:#e0e0ea;border-bottom-right-radius:4px}
+.msg-row.assistant .msg-bubble{background:rgba(255,255,255,.06);color:#e0e0ea;border-bottom-left-radius:4px}
+.msg-sources{font-size:10px;color:rgba(255,255,255,.25);padding:2px 8px;margin-top:2px}
+.msg-loading{color:rgba(0,212,170,.6);font-size:12px;padding:8px;display:flex;align-items:center;gap:6px}
+
+.result-card{
+  background:rgba(17,17,25,.92);border:1px solid rgba(0,212,170,.3);
+  border-radius:var(--radius);padding:16px;backdrop-filter:blur(12px);
+  box-shadow:0 8px 32px rgba(0,0,0,.5);
+}
+.result-card .recognized{
+  font-size:12px;color:var(--purple);margin-bottom:8px;
+  display:flex;align-items:center;gap:6px;
+}
+.result-card .recognized::before{content:'👁️'}
+.result-card .note-title{
+  font-size:15px;font-weight:700;color:var(--cyan);margin-bottom:6px;
+}
+.result-card .note-preview{
+  font-size:12px;color:rgba(255,255,255,.6);line-height:1.6;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+}
+.result-card .note-id{font-size:10px;color:rgba(255,255,255,.3);margin-top:8px}
+.result-card .no-match{text-align:center;color:rgba(255,255,255,.4);font-size:13px;padding:8px 0}
+
+/* 加载动画 */
+.loading{
+  text-align:center;color:var(--cyan);font-size:13px;padding:16px;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.spinner{
+  width:16px;height:16px;border:2px solid rgba(0,212,170,.2);
+  border-top-color:var(--cyan);border-radius:50%;
+  animation:spin .6s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* 多个结果 */
+.result-list{display:flex;flex-direction:column;gap:8px}
+.result-item{
+  background:rgba(0,212,170,.05);border:1px solid rgba(0,212,170,.15);
+  border-radius:8px;padding:10px 12px;cursor:pointer;transition:all .15s;
+}
+.result-item:hover{background:rgba(0,212,170,.1);border-color:rgba(0,212,170,.3)}
+.result-item .item-title{font-size:13px;font-weight:600;color:var(--cyan)}
+.result-item .item-topic{font-size:10px;color:rgba(255,255,255,.4);margin-top:3px}
+.result-item .item-preview{font-size:11px;color:rgba(255,255,255,.5);margin-top:4px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* 相机未就绪 */
+.camera-error{
+  position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;
+  text-align:center;color:rgba(255,255,255,.5);font-size:14px;
+  background:rgba(0,0,0,.8);padding:24px 32px;border-radius:var(--radius);
+}
+.camera-error .icon{font-size:48px;margin-bottom:12px}
+</style>
+</head>
+<body>
+
+<!-- 摄像头 -->
+<video id="camera" autoplay playsinline></video>
+<canvas id="canvas" style="display:none"></canvas>
+
+<!-- 顶部 -->
+<div class="topbar">
+  <span class="title">AR 知识助手</span>
+  <span class="status" id="status">对准文字/物品</span>
+</div>
+
+<!-- 对话面板 -->
+<div class="overlay" id="overlay">
+  <div class="chat-panel">
+    <div class="chat-header">
+      <span>AR 对话</span>
+      <button class="overlay-close" onclick="closeOverlay()">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <div class="chat-input-row">
+      <input type="text" id="chatInput" placeholder="追问..." onkeydown="if(event.key==='Enter')sendMessage()">
+      <button onclick="sendMessage()">发送</button>
+    </div>
+  </div>
+</div>
+
+<!-- 底部 -->
+<div class="bottombar">
+  <a href="/" class="btn btn-back">← 返回</a>
+  <button class="btn btn-capture" id="captureBtn" onclick="capture()">📸 识别</button>
+</div>
+
+<script>
+const video = document.getElementById('camera');
+const canvas = document.getElementById('canvas');
+const overlay = document.getElementById('overlay');
+const chatMessages = document.getElementById('chatMessages');
+const chatInput = document.getElementById('chatInput');
+const captureBtn = document.getElementById('captureBtn');
+const statusEl = document.getElementById('status');
+
+let stream = null;
+let convHistory = [];       // [{role, content}]
+let knowledgeContext = '';  // 知识库笔记内容
+
+// 启动摄像头
+async function startCamera() {
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({
+      video: { facingMode: 'environment', width: { ideal: 1280 }, height: { ideal: 720 } },
+      audio: false
+    });
+    video.srcObject = stream;
+    statusEl.textContent = '摄像头就绪';
+  } catch (e) {
+    statusEl.textContent = '⚠ 摄像头不可用';
+    captureBtn.disabled = true;
+    // 显示错误提示
+    const errDiv = document.createElement('div');
+    errDiv.className = 'camera-error';
+    errDiv.innerHTML = `<div class="icon">📷</div>
+      <div>摄像头未授权或不可用</div>
+      <div style="font-size:11px;margin-top:8px">请用 HTTPS 或在电脑上使用</div>`;
+    document.body.appendChild(errDiv);
+  }
+}
+
+// 拍照并识别
+async function capture() {
+  if (!stream) return;
+  captureBtn.disabled = true;
+  captureBtn.textContent = '⏳ 识别中...';
+  statusEl.textContent = '正在识别...';
+
+  // 清空对话
+  convHistory = [];
+  knowledgeContext = '';
+  chatMessages.innerHTML = '';
+  overlay.classList.add('active');
+  addMessage('assistant', '<div class="msg-loading"><div class="spinner"></div>分析中...</div>');
+
+  canvas.width = video.videoWidth || 640;
+  canvas.height = video.videoHeight || 480;
+  canvas.getContext('2d').drawImage(video, 0, 0);
+  const imageBase64 = canvas.toDataURL('image/jpeg', 0.8);
+
+  try {
+    const resp = await fetch('/vision-search', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ image_base64: imageBase64 })
+    });
+    const data = await resp.json();
+    if (!data.ok) {
+      chatMessages.innerHTML = '';
+      addMessage('assistant', '⚠️ ' + (data.error || '识别失败'));
+      statusEl.textContent = '识别失败';
+    } else {
+      showResult(data.data);
+    }
+  } catch (e) {
+    chatMessages.innerHTML = '';
+    addMessage('assistant', '⚠️ 网络错误: ' + e.message);
+  }
+  captureBtn.disabled = false;
+  captureBtn.textContent = '📸 识别';
+}
+
+function showResult(data) {
+  const { description, answer, sources } = data;
+  statusEl.textContent = `👁️ ${description}`;
+
+  // 保存上下文
+  convHistory = [{ role: 'user', content: description }];
+  knowledgeContext = (sources || []).map(s => `#${s.id} ${s.title}`).join('\n');
+
+  // 清空并显示
+  chatMessages.innerHTML = '';
+  addMessage('user', description);
+
+  if (answer) {
+    addMessage('assistant', answer);
+    convHistory.push({ role: 'assistant', content: answer });
+    // 小标签
+    if (sources && sources.length > 0) {
+      const srcTags = sources.map(s => `<span class="source-tag">#${s.id} ${escapeHtml(s.title).slice(0,12)}</span>`).join(' ');
+      const el = chatMessages.lastElementChild;
+      if (el) {
+        const div = document.createElement('div');
+        div.className = 'msg-sources';
+        div.innerHTML = '📚 ' + srcTags;
+        el.appendChild(div);
+      }
+    }
+  } else {
+    addMessage('assistant', '📭 知识库中没有匹配的笔记');
+  }
+}
+
+// 追问
+async function sendMessage() {
+  const text = chatInput.value.trim();
+  if (!text) return;
+
+  addMessage('user', text);
+  convHistory.push({ role: 'user', content: text });
+  chatInput.value = '';
+
+  addMessage('assistant', '<div class="msg-loading"><div class="spinner"></div>思考中...</div>', 'loading');
+
+  try {
+    const resp = await fetch('/vision-chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages: convHistory, context: knowledgeContext })
+    });
+    const data = await resp.json();
+    // 移除 loading 行
+    const loadingEl = document.querySelector('.msg-row.loading');
+    if (loadingEl) loadingEl.remove();
+
+    if (data.ok) {
+      addMessage('assistant', data.data.answer);
+      convHistory.push({ role: 'assistant', content: data.data.answer });
+    } else {
+      addMessage('assistant', '⚠️ ' + (data.error || '失败'));
+    }
+  } catch (e) {
+    const loadingEl = document.querySelector('.msg-row.loading');
+    if (loadingEl) loadingEl.remove();
+    addMessage('assistant', '⚠️ 网络错误');
+  }
+}
+
+function addMessage(role, content, extraClass) {
+  const row = document.createElement('div');
+  row.className = 'msg-row ' + role + (extraClass ? ' ' + extraClass : '');
+  row.innerHTML = `<div class="msg-bubble">${content}</div>`;
+  chatMessages.appendChild(row);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function closeOverlay() {
+  overlay.classList.remove('active');
+  convHistory = [];
+  knowledgeContext = '';
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+// 开始
+startCamera();
+</script>
+</body>
+</html>

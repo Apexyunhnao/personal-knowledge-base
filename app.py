@@ -13,6 +13,9 @@ from routers.backup import router as backup_router
 from routers.notes_md import router as notes_md_router
 from routers.links import router as links_router
 from routers.chat import router as chat_router
+from routers.monitor import router as monitor_router
+from routers.vision import router as vision_router
+from routers.voice import router as voice_router
 
 app = FastAPI(title="个人资料库")
 
@@ -34,6 +37,9 @@ app.include_router(links_router)      # /db/graph, /db/{table}/{id}/backlinks
 app.include_router(docs_router)       # /db/{table}/{id}/documents
 app.include_router(db_router)         # /db/stats, /db/search, /db/{table}...（最后）
 app.include_router(chat_router)       # /chat — DeepSeek 直连
+app.include_router(monitor_router)   # /monitor — 监控反馈环
+app.include_router(vision_router)   # /vision-search — AR 视觉搜索
+app.include_router(voice_router)    # /voice/recognize, /voice/note — 语音识别
 
 
 @app.on_event("startup")
@@ -55,6 +61,28 @@ async def index():
         with open(template_path) as f:
             return f.read()
     return "<h1>个人资料库</h1><p>模板文件缺失</p>"
+
+
+@app.get("/graph", response_class=HTMLResponse)
+async def graph_page():
+    """知识图谱可视化页面"""
+    import os as _os
+    template_path = _os.path.join(_os.path.dirname(__file__), "templates", "graph.html")
+    if _os.path.exists(template_path):
+        with open(template_path) as f:
+            return f.read()
+    return "<h1>知识图谱</h1><p>模板文件缺失</p>"
+
+
+@app.get("/ar", response_class=HTMLResponse)
+async def ar_demo():
+    """AR 知识助手 Demo"""
+    import os as _os
+    template_path = _os.path.join(_os.path.dirname(__file__), "templates", "ar-demo.html")
+    if _os.path.exists(template_path):
+        with open(template_path) as f:
+            return f.read()
+    return "<h1>AR 知识助手</h1><p>模板文件缺失</p>"
 
 
 if __name__ == "__main__":
