@@ -248,6 +248,8 @@ def hybrid_search(query: str, top_k: int = 10, include_low_confidence: bool = Fa
         # 排序公式: rrf × 标签加权 × (1 + user_feedback) × 来源权重
         #   feedback cap ±0.15 → 最多 ±15% 调整
         #   source_weight 按来源可信度加权: book>note>forum>novel（AI 优先原则，高可信卡排前面）
+        #   v1.2.2 曾试过低质惩罚（forum/novel 低置信度 ×0.6），评估 86%→57% 暴跌——
+        #   天涯/网文就是库内主题主力，惩罚=把相关结果挤出 Top10。已回滚。
         score = round(rrf[nid] * _tag_boost(tags_str, terms) * (1 + feedback) * _source_weight(row["frontmatter"]), 5)
         sources = []
         if nid in fts_scores: sources.append("fts5")
@@ -370,6 +372,9 @@ def _source_type(frontmatter_str: str | None) -> str:
 # 系数依据来源可信度区间中值（book 0.775 / note 0.75 / forum 0.6 / novel 0.5）拉开的档位
 # v1.2.1: novel 0.7→0.5——bge 语义强后小说卡（占库26%）顶爆 Top10，压权重让低质卡让位
 SOURCE_WEIGHTS = {"book": 1.3, "note": 1.2, "forum": 0.85, "novel": 0.5}
+# 注意：v1.2.2 曾试过"低质惩罚"（forum/novel+conf<0.65 额外 ×0.6），评估 86%→57% 暴跌，
+# 已回滚。forum/novel 虽 confidence 低，但天涯/网文就是本库查询主题（金融/职场/谈判）的内容
+# 主力——"置信度低"≠"不相关"。教训见项目文档踩坑记录第 13 条。
 
 
 def _source_weight(frontmatter_str: str | None) -> float:

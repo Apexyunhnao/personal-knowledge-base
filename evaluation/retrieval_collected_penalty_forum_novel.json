@@ -1,0 +1,2297 @@
+[
+ {
+  "query": "谈判 合同 陷阱",
+  "results": [
+   {
+    "id": 154,
+    "title": "当对方表现出完美无缺的真诚和专业性时，反",
+    "score": 0.01107,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 160,
+    "title": "在危机中，将情绪对象（如敌人）视为'需要",
+    "score": 0.01055,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场竞争, 职场谈判"
+   },
+   {
+    "id": 172,
+    "title": "当资源不足以正面应对危机时，第一步是精确",
+    "score": 0.01038,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 职场谈判"
+   },
+   {
+    "id": 179,
+    "title": "当外部施压方带着专业团队（如法务、风控）",
+    "score": 0.00993,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理, 商业对抗"
+   },
+   {
+    "id": 183,
+    "title": "在高压谈判中，若对方试图用热情或表演占据",
+    "score": 0.00964,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理, 商业博弈"
+   },
+   {
+    "id": 189,
+    "title": "在高压谈判中，当对方占据信息优势时，不要",
+    "score": 0.00888,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈, 危机沟通, 社交冲突"
+   },
+   {
+    "id": 191,
+    "title": "当对方用抽象术语（如金融产品名称）包装复",
+    "score": 0.00865,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 公共演讲"
+   },
+   {
+    "id": 156,
+    "title": "在决策时，应基于对方建议的客观合理性（如",
+    "score": 0.00653,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业合作, 人际沟通"
+   },
+   {
+    "id": 175,
+    "title": "在高压决策中，先锁定唯一关键目标（如合同",
+    "score": 0.00604,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理"
+   },
+   {
+    "id": 181,
+    "title": "在高压对抗中，掌握节奏的一方往往拥有心理",
+    "score": 0.00587,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理"
+   }
+  ]
+ },
+ {
+  "query": "谈判 筹码 主动权",
+  "results": [
+   {
+    "id": 154,
+    "title": "当对方表现出完美无缺的真诚和专业性时，反",
+    "score": 0.01107,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 160,
+    "title": "在危机中，将情绪对象（如敌人）视为'需要",
+    "score": 0.01055,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场竞争, 职场谈判"
+   },
+   {
+    "id": 172,
+    "title": "当资源不足以正面应对危机时，第一步是精确",
+    "score": 0.01038,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 职场谈判"
+   },
+   {
+    "id": 179,
+    "title": "当外部施压方带着专业团队（如法务、风控）",
+    "score": 0.00993,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理, 商业对抗"
+   },
+   {
+    "id": 183,
+    "title": "在高压谈判中，若对方试图用热情或表演占据",
+    "score": 0.00964,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理, 商业博弈"
+   },
+   {
+    "id": 189,
+    "title": "在高压谈判中，当对方占据信息优势时，不要",
+    "score": 0.00888,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈, 危机沟通, 社交冲突"
+   },
+   {
+    "id": 191,
+    "title": "当对方用抽象术语（如金融产品名称）包装复",
+    "score": 0.00865,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 公共演讲"
+   },
+   {
+    "id": 156,
+    "title": "在决策时，应基于对方建议的客观合理性（如",
+    "score": 0.00653,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业合作, 人际沟通"
+   },
+   {
+    "id": 175,
+    "title": "在高压决策中，先锁定唯一关键目标（如合同",
+    "score": 0.00604,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理"
+   },
+   {
+    "id": 181,
+    "title": "在高压对抗中，掌握节奏的一方往往拥有心理",
+    "score": 0.00587,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理"
+   }
+  ]
+ },
+ {
+  "query": "谈判 底线 原则",
+  "results": [
+   {
+    "id": 154,
+    "title": "当对方表现出完美无缺的真诚和专业性时，反",
+    "score": 0.01107,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 160,
+    "title": "在危机中，将情绪对象（如敌人）视为'需要",
+    "score": 0.01055,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场竞争, 职场谈判"
+   },
+   {
+    "id": 172,
+    "title": "当资源不足以正面应对危机时，第一步是精确",
+    "score": 0.01038,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 职场谈判"
+   },
+   {
+    "id": 179,
+    "title": "当外部施压方带着专业团队（如法务、风控）",
+    "score": 0.00993,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理, 商业对抗"
+   },
+   {
+    "id": 183,
+    "title": "在高压谈判中，若对方试图用热情或表演占据",
+    "score": 0.00964,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理, 商业博弈"
+   },
+   {
+    "id": 189,
+    "title": "在高压谈判中，当对方占据信息优势时，不要",
+    "score": 0.00888,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈, 危机沟通, 社交冲突"
+   },
+   {
+    "id": 191,
+    "title": "当对方用抽象术语（如金融产品名称）包装复",
+    "score": 0.00865,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 公共演讲"
+   },
+   {
+    "id": 156,
+    "title": "在决策时，应基于对方建议的客观合理性（如",
+    "score": 0.00653,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业合作, 人际沟通"
+   },
+   {
+    "id": 175,
+    "title": "在高压决策中，先锁定唯一关键目标（如合同",
+    "score": 0.00604,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理"
+   },
+   {
+    "id": 181,
+    "title": "在高压对抗中，掌握节奏的一方往往拥有心理",
+    "score": 0.00587,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理"
+   }
+  ]
+ },
+ {
+  "query": "谈判 让步 交换",
+  "results": [
+   {
+    "id": 154,
+    "title": "当对方表现出完美无缺的真诚和专业性时，反",
+    "score": 0.01107,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 160,
+    "title": "在危机中，将情绪对象（如敌人）视为'需要",
+    "score": 0.01055,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场竞争, 职场谈判"
+   },
+   {
+    "id": 172,
+    "title": "当资源不足以正面应对危机时，第一步是精确",
+    "score": 0.01038,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 职场谈判"
+   },
+   {
+    "id": 179,
+    "title": "当外部施压方带着专业团队（如法务、风控）",
+    "score": 0.00993,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理, 商业对抗"
+   },
+   {
+    "id": 183,
+    "title": "在高压谈判中，若对方试图用热情或表演占据",
+    "score": 0.00964,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理, 商业博弈"
+   },
+   {
+    "id": 189,
+    "title": "在高压谈判中，当对方占据信息优势时，不要",
+    "score": 0.00888,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈, 危机沟通, 社交冲突"
+   },
+   {
+    "id": 191,
+    "title": "当对方用抽象术语（如金融产品名称）包装复",
+    "score": 0.00865,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 公共演讲"
+   },
+   {
+    "id": 156,
+    "title": "在决策时，应基于对方建议的客观合理性（如",
+    "score": 0.00653,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业合作, 人际沟通"
+   },
+   {
+    "id": 175,
+    "title": "在高压决策中，先锁定唯一关键目标（如合同",
+    "score": 0.00604,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理"
+   },
+   {
+    "id": 181,
+    "title": "在高压对抗中，掌握节奏的一方往往拥有心理",
+    "score": 0.00587,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理"
+   }
+  ]
+ },
+ {
+  "query": "谈判 破裂 挽回",
+  "results": [
+   {
+    "id": 154,
+    "title": "当对方表现出完美无缺的真诚和专业性时，反",
+    "score": 0.01107,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 160,
+    "title": "在危机中，将情绪对象（如敌人）视为'需要",
+    "score": 0.01055,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场竞争, 职场谈判"
+   },
+   {
+    "id": 172,
+    "title": "当资源不足以正面应对危机时，第一步是精确",
+    "score": 0.01038,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 职场谈判"
+   },
+   {
+    "id": 179,
+    "title": "当外部施压方带着专业团队（如法务、风控）",
+    "score": 0.00993,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理, 商业对抗"
+   },
+   {
+    "id": 183,
+    "title": "在高压谈判中，若对方试图用热情或表演占据",
+    "score": 0.00964,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理, 商业博弈"
+   },
+   {
+    "id": 189,
+    "title": "在高压谈判中，当对方占据信息优势时，不要",
+    "score": 0.00888,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈, 危机沟通, 社交冲突"
+   },
+   {
+    "id": 191,
+    "title": "当对方用抽象术语（如金融产品名称）包装复",
+    "score": 0.00865,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 公共演讲"
+   },
+   {
+    "id": 156,
+    "title": "在决策时，应基于对方建议的客观合理性（如",
+    "score": 0.00653,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业合作, 人际沟通"
+   },
+   {
+    "id": 175,
+    "title": "在高压决策中，先锁定唯一关键目标（如合同",
+    "score": 0.00604,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理"
+   },
+   {
+    "id": 181,
+    "title": "在高压对抗中，掌握节奏的一方往往拥有心理",
+    "score": 0.00587,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理"
+   }
+  ]
+ },
+ {
+  "query": "危机 决策 冷静",
+  "results": [
+   {
+    "id": 154,
+    "title": "当对方表现出完美无缺的真诚和专业性时，反",
+    "score": 0.01055,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 172,
+    "title": "当资源不足以正面应对危机时，第一步是精确",
+    "score": 0.00925,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 职场谈判"
+   },
+   {
+    "id": 179,
+    "title": "当外部施压方带着专业团队（如法务、风控）",
+    "score": 0.00888,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理, 商业对抗"
+   },
+   {
+    "id": 151,
+    "title": "在陌生或危险环境中突然醒来时，先控制身体",
+    "score": 0.00664,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 安全防护"
+   },
+   {
+    "id": 152,
+    "title": "当信息不足时，决策应以‘是否存在即时威胁",
+    "score": 0.00653,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 风险管理"
+   },
+   {
+    "id": 157,
+    "title": "在高压危机中，决策者容易因情绪崩溃而采取",
+    "score": 0.00623,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 心理韧性"
+   },
+   {
+    "id": 162,
+    "title": "判断合作者或对手是否'够格'时，可依据其",
+    "score": 0.00614,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场合作, 投资决策"
+   },
+   {
+    "id": 164,
+    "title": "在信息不对称的博弈中，识别'缝隙'（即系",
+    "score": 0.00604,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 市场交易, 战略决策"
+   },
+   {
+    "id": 165,
+    "title": "在危机中，决策者应优先依赖内部可靠数据（",
+    "score": 0.00596,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 危机管理"
+   },
+   {
+    "id": 168,
+    "title": "在高压谈判或危机沟通中，当对方情绪崩溃时",
+    "score": 0.00579,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 团队管理"
+   }
+  ]
+ },
+ {
+  "query": "危机 现金流 生存",
+  "results": [
+   {
+    "id": 172,
+    "title": "当资源不足以正面应对危机时，第一步是精确",
+    "score": 0.00978,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 职场谈判"
+   },
+   {
+    "id": 179,
+    "title": "当外部施压方带着专业团队（如法务、风控）",
+    "score": 0.00951,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理, 商业对抗"
+   },
+   {
+    "id": 189,
+    "title": "在高压谈判中，当对方占据信息优势时，不要",
+    "score": 0.00888,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈, 危机沟通, 社交冲突"
+   },
+   {
+    "id": 151,
+    "title": "在陌生或危险环境中突然醒来时，先控制身体",
+    "score": 0.00664,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 安全防护"
+   },
+   {
+    "id": 152,
+    "title": "当信息不足时，决策应以‘是否存在即时威胁",
+    "score": 0.00653,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 风险管理"
+   },
+   {
+    "id": 157,
+    "title": "在高压危机中，决策者容易因情绪崩溃而采取",
+    "score": 0.00633,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 心理韧性"
+   },
+   {
+    "id": 165,
+    "title": "在危机中，决策者应优先依赖内部可靠数据（",
+    "score": 0.00623,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 危机管理"
+   },
+   {
+    "id": 168,
+    "title": "在高压谈判或危机沟通中，当对方情绪崩溃时",
+    "score": 0.00614,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 团队管理"
+   },
+   {
+    "id": 169,
+    "title": "面对'逃跑还是留下'的两难选择时，不依据",
+    "score": 0.00604,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场危机, 商业决策"
+   },
+   {
+    "id": 175,
+    "title": "在高压决策中，先锁定唯一关键目标（如合同",
+    "score": 0.00579,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理"
+   }
+  ]
+ },
+ {
+  "query": "危机 沟通 信任",
+  "results": [
+   {
+    "id": 172,
+    "title": "当资源不足以正面应对危机时，第一步是精确",
+    "score": 0.00964,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 职场谈判"
+   },
+   {
+    "id": 179,
+    "title": "当外部施压方带着专业团队（如法务、风控）",
+    "score": 0.00925,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理, 商业对抗"
+   },
+   {
+    "id": 189,
+    "title": "在高压谈判中，当对方占据信息优势时，不要",
+    "score": 0.00865,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈, 危机沟通, 社交冲突"
+   },
+   {
+    "id": 151,
+    "title": "在陌生或危险环境中突然醒来时，先控制身体",
+    "score": 0.00664,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 安全防护"
+   },
+   {
+    "id": 152,
+    "title": "当信息不足时，决策应以‘是否存在即时威胁",
+    "score": 0.00653,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 风险管理"
+   },
+   {
+    "id": 156,
+    "title": "在决策时，应基于对方建议的客观合理性（如",
+    "score": 0.00633,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业合作, 人际沟通"
+   },
+   {
+    "id": 157,
+    "title": "在高压危机中，决策者容易因情绪崩溃而采取",
+    "score": 0.00623,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 心理韧性"
+   },
+   {
+    "id": 165,
+    "title": "在危机中，决策者应优先依赖内部可靠数据（",
+    "score": 0.00614,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 危机管理"
+   },
+   {
+    "id": 168,
+    "title": "在高压谈判或危机沟通中，当对方情绪崩溃时",
+    "score": 0.00604,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 团队管理"
+   },
+   {
+    "id": 169,
+    "title": "面对'逃跑还是留下'的两难选择时，不依据",
+    "score": 0.00596,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场危机, 商业决策"
+   }
+  ]
+ },
+ {
+  "query": "危机 银行 挤兑",
+  "results": [
+   {
+    "id": 172,
+    "title": "当资源不足以正面应对危机时，第一步是精确",
+    "score": 0.00978,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 职场谈判"
+   },
+   {
+    "id": 179,
+    "title": "当外部施压方带着专业团队（如法务、风控）",
+    "score": 0.00951,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理, 商业对抗"
+   },
+   {
+    "id": 189,
+    "title": "在高压谈判中，当对方占据信息优势时，不要",
+    "score": 0.00888,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈, 危机沟通, 社交冲突"
+   },
+   {
+    "id": 151,
+    "title": "在陌生或危险环境中突然醒来时，先控制身体",
+    "score": 0.00664,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 安全防护"
+   },
+   {
+    "id": 152,
+    "title": "当信息不足时，决策应以‘是否存在即时威胁",
+    "score": 0.00653,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 风险管理"
+   },
+   {
+    "id": 157,
+    "title": "在高压危机中，决策者容易因情绪崩溃而采取",
+    "score": 0.00633,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 心理韧性"
+   },
+   {
+    "id": 165,
+    "title": "在危机中，决策者应优先依赖内部可靠数据（",
+    "score": 0.00623,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 危机管理"
+   },
+   {
+    "id": 168,
+    "title": "在高压谈判或危机沟通中，当对方情绪崩溃时",
+    "score": 0.00614,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 团队管理"
+   },
+   {
+    "id": 169,
+    "title": "面对'逃跑还是留下'的两难选择时，不依据",
+    "score": 0.00604,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场危机, 商业决策"
+   },
+   {
+    "id": 175,
+    "title": "在高压决策中，先锁定唯一关键目标（如合同",
+    "score": 0.00579,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理"
+   }
+  ]
+ },
+ {
+  "query": "投资 止损 割肉",
+  "results": [
+   {
+    "id": 54,
+    "title": "财商内容批判：回流系统/财富飞轮的逻辑漏洞",
+    "score": 0.0177,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "财商,批判思维,幸存者偏差,被动收入,消费vs投资"
+   },
+   {
+    "id": 154,
+    "title": "当对方表现出完美无缺的真诚和专业性时，反",
+    "score": 0.01089,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 228,
+    "title": "当一笔交易的风险评估基于历史概率且对手行",
+    "score": 0.00978,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 职场谈判"
+   },
+   {
+    "id": 266,
+    "title": "当市场数据出现异常（如成交量与价格背离）",
+    "score": 0.00938,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 市场分析"
+   },
+   {
+    "id": 270,
+    "title": "在信息不对称环境中，通过非正式渠道获取内",
+    "score": 0.00912,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 280,
+    "title": "当需要评估一位资深决策者为何错失明显机会",
+    "score": 0.009,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 组织行为分析"
+   },
+   {
+    "id": 295,
+    "title": "在重大决策中，若已基于充分数据建立核心判",
+    "score": 0.00865,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 项目管理"
+   },
+   {
+    "id": 297,
+    "title": "陷阱：在正确方向下因短期波动或他人意见而",
+    "score": 0.00844,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 创业管理"
+   },
+   {
+    "id": 162,
+    "title": "判断合作者或对手是否'够格'时，可依据其",
+    "score": 0.00643,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场合作, 投资决策"
+   },
+   {
+    "id": 165,
+    "title": "在危机中，决策者应优先依赖内部可靠数据（",
+    "score": 0.00633,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 危机管理"
+   }
+  ]
+ },
+ {
+  "query": "投资 抄底 时机",
+  "results": [
+   {
+    "id": 54,
+    "title": "财商内容批判：回流系统/财富飞轮的逻辑漏洞",
+    "score": 0.0177,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "财商,批判思维,幸存者偏差,被动收入,消费vs投资"
+   },
+   {
+    "id": 154,
+    "title": "当对方表现出完美无缺的真诚和专业性时，反",
+    "score": 0.01089,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 228,
+    "title": "当一笔交易的风险评估基于历史概率且对手行",
+    "score": 0.00978,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 职场谈判"
+   },
+   {
+    "id": 266,
+    "title": "当市场数据出现异常（如成交量与价格背离）",
+    "score": 0.00938,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 市场分析"
+   },
+   {
+    "id": 270,
+    "title": "在信息不对称环境中，通过非正式渠道获取内",
+    "score": 0.00912,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 280,
+    "title": "当需要评估一位资深决策者为何错失明显机会",
+    "score": 0.009,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 组织行为分析"
+   },
+   {
+    "id": 295,
+    "title": "在重大决策中，若已基于充分数据建立核心判",
+    "score": 0.00865,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 项目管理"
+   },
+   {
+    "id": 297,
+    "title": "陷阱：在正确方向下因短期波动或他人意见而",
+    "score": 0.00844,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 创业管理"
+   },
+   {
+    "id": 162,
+    "title": "判断合作者或对手是否'够格'时，可依据其",
+    "score": 0.00643,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场合作, 投资决策"
+   },
+   {
+    "id": 165,
+    "title": "在危机中，决策者应优先依赖内部可靠数据（",
+    "score": 0.00633,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 危机管理"
+   }
+  ]
+ },
+ {
+  "query": "资金 杠杆 风险",
+  "results": [
+   {
+    "id": 211,
+    "title": "警惕因贪婪而忽视风险对冲的陷阱。在交易中",
+    "score": 0.01071,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融交易, 风险管理"
+   },
+   {
+    "id": 229,
+    "title": "判断交易是否值得时，若对手行为与自身认知",
+    "score": 0.01055,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场决策, 风险管理"
+   },
+   {
+    "id": 277,
+    "title": "当面对一个信息不明的强大对手时，不要被其",
+    "score": 0.00844,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 商业竞争, 风险评估"
+   },
+   {
+    "id": 152,
+    "title": "当信息不足时，决策应以‘是否存在即时威胁",
+    "score": 0.00664,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 风险管理"
+   },
+   {
+    "id": 159,
+    "title": "在资源极度短缺时，决策锚点应是'最小化不",
+    "score": 0.00653,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 风险管理, 个人财务"
+   },
+   {
+    "id": 231,
+    "title": "当面临证据暴露风险时，第一步是物理隔离关",
+    "score": 0.00614,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 风险管理"
+   },
+   {
+    "id": 232,
+    "title": "在信息不对称环境中，决策者依据'是否会被",
+    "score": 0.00604,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 风险评估, 金融行业"
+   },
+   {
+    "id": 234,
+    "title": "掩盖真相时，决策者容易陷入'只要不被发现",
+    "score": 0.00596,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 风险管理, 金融操作"
+   },
+   {
+    "id": 236,
+    "title": "判断对方是否值得信任或是否在隐瞒时，观察",
+    "score": 0.00587,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场判断, 风险评估"
+   },
+   {
+    "id": 237,
+    "title": "在信息交换中，不要轻易相信对方的安抚性言",
+    "score": 0.00579,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场沟通, 风险管理"
+   }
+  ]
+ },
+ {
+  "query": "市场 恐慌 机会",
+  "results": [
+   {
+    "id": 263,
+    "title": "识别隐蔽减仓：当成交量异常放大但价格跌幅",
+    "score": 0.01107,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融市场分析, 组织内部信号识别"
+   },
+   {
+    "id": 266,
+    "title": "当市场数据出现异常（如成交量与价格背离）",
+    "score": 0.01071,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 市场分析"
+   },
+   {
+    "id": 651,
+    "title": "市场流动性具有稀释效应：个体交易或事件在",
+    "score": 0.01007,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融市场, 系统思维"
+   },
+   {
+    "id": 723,
+    "title": "常见陷阱是‘逻辑真实但行动错误’：基本面",
+    "score": 0.00993,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 市场分析"
+   },
+   {
+    "id": 725,
+    "title": "当面对一份可能影响市场的报告时，不要纠结",
+    "score": 0.00978,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融市场, 信息分析"
+   },
+   {
+    "id": 739,
+    "title": "反身性原理：市场参与者的偏见会影响市场走",
+    "score": 0.00951,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 市场博弈, 系统思维, 战略规划, 市场分析"
+   },
+   {
+    "id": 792,
+    "title": "判断市场真实状态时，应优先参考掌握内部信",
+    "score": 0.00865,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 市场分析, 信息甄别"
+   },
+   {
+    "id": 797,
+    "title": "当单一指标出现异常波动时，不要孤立解读，",
+    "score": 0.00854,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融市场分析, 风险管理"
+   },
+   {
+    "id": 800,
+    "title": "不要将价格波动归因于基本面，而忽视流动性",
+    "score": 0.00844,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 市场分析"
+   },
+   {
+    "id": 265,
+    "title": "在信息不对称环境中，表面平静往往是刻意维",
+    "score": 0.00653,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 市场分析, 组织变革预判"
+   }
+  ]
+ },
+ {
+  "query": "风险管理 仓位 建仓",
+  "results": [
+   {
+    "id": 817,
+    "title": "在资产价格快速上涨且市场情绪一致看多时，",
+    "score": 0.0119,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 风险管理"
+   },
+   {
+    "id": 211,
+    "title": "警惕因贪婪而忽视风险对冲的陷阱。在交易中",
+    "score": 0.01071,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融交易, 风险管理"
+   },
+   {
+    "id": 229,
+    "title": "判断交易是否值得时，若对手行为与自身认知",
+    "score": 0.01055,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场决策, 风险管理"
+   },
+   {
+    "id": 493,
+    "title": "当面对一个异常成功的交易者时，不要被结果",
+    "score": 0.01014,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 风险管理"
+   },
+   {
+    "id": 295,
+    "title": "在重大决策中，若已基于充分数据建立核心判",
+    "score": 0.00781,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 项目管理"
+   },
+   {
+    "id": 893,
+    "title": "在盈利仓位管理中，采用分批清仓策略：先出",
+    "score": 0.00769,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 项目管理"
+   },
+   {
+    "id": 208,
+    "title": "在谈判中，若己方掌握对方未知的关键信息，",
+    "score": 0.00746,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融交易, 职场谈判"
+   },
+   {
+    "id": 549,
+    "title": "构建多层次仓位策略：以期货为主仓获取核心",
+    "score": 0.00738,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 风险管理"
+   },
+   {
+    "id": 297,
+    "title": "陷阱：在正确方向下因短期波动或他人意见而",
+    "score": 0.00735,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 创业管理"
+   },
+   {
+    "id": 897,
+    "title": "当已有盈利时，不要满足于现状，而是基于对",
+    "score": 0.00726,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 风险管理"
+   }
+  ]
+ },
+ {
+  "query": "爆仓 风险控制",
+  "results": [
+   {
+    "id": 817,
+    "title": "在资产价格快速上涨且市场情绪一致看多时，",
+    "score": 0.0082,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 风险管理"
+   },
+   {
+    "id": 208,
+    "title": "在谈判中，若己方掌握对方未知的关键信息，",
+    "score": 0.00781,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融交易, 职场谈判"
+   },
+   {
+    "id": 295,
+    "title": "在重大决策中，若已基于充分数据建立核心判",
+    "score": 0.00769,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 项目管理"
+   },
+   {
+    "id": 297,
+    "title": "陷阱：在正确方向下因短期波动或他人意见而",
+    "score": 0.00758,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 创业管理"
+   },
+   {
+    "id": 364,
+    "title": "在危机中，当成交量异常放大（如超过日均数",
+    "score": 0.00735,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 危机管理"
+   },
+   {
+    "id": 493,
+    "title": "当面对一个异常成功的交易者时，不要被结果",
+    "score": 0.00725,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 风险管理"
+   },
+   {
+    "id": 211,
+    "title": "警惕因贪婪而忽视风险对冲的陷阱。在交易中",
+    "score": 0.00714,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融交易, 风险管理"
+   },
+   {
+    "id": 229,
+    "title": "判断交易是否值得时，若对手行为与自身认知",
+    "score": 0.00703,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场决策, 风险管理"
+   },
+   {
+    "id": 794,
+    "title": "当出现巨额浮盈时，不要立即将其转化为长期",
+    "score": 0.00676,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 职场晋升"
+   },
+   {
+    "id": 893,
+    "title": "在盈利仓位管理中，采用分批清仓策略：先出",
+    "score": 0.00641,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 项目管理"
+   }
+  ]
+ },
+ {
+  "query": "债务 危机 处理",
+  "results": [
+   {
+    "id": 526,
+    "title": "在评估一个陷入危机的实体（公司/项目）时",
+    "score": 0.0123,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 危机管理, 职场危机"
+   },
+   {
+    "id": 564,
+    "title": "在资源有限且时间紧迫的危机中，决策者应依",
+    "score": 0.0121,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 危机管理"
+   },
+   {
+    "id": 547,
+    "title": "在危机中，先整理所有相关材料（时间线、资",
+    "score": 0.0119,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 职场谈判"
+   },
+   {
+    "id": 161,
+    "title": "面对死局时，立即进行三问审计：当前资产的",
+    "score": 0.01172,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 个人财务危机, 项目管理"
+   },
+   {
+    "id": 886,
+    "title": "当你想向处于潜在危机中的人提供帮助或合作",
+    "score": 0.01154,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机沟通"
+   },
+   {
+    "id": 318,
+    "title": "在危机沟通中，当对方因恐慌而准备行动时，",
+    "score": 0.01136,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 投资决策"
+   },
+   {
+    "id": 531,
+    "title": "在危机中，不要只关注资产的实际价值，而要",
+    "score": 0.01119,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 危机管理"
+   },
+   {
+    "id": 1047,
+    "title": "在危机初期，当关键风险指标（如信用利差）",
+    "score": 0.01103,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 投资决策"
+   },
+   {
+    "id": 364,
+    "title": "在危机中，当成交量异常放大（如超过日均数",
+    "score": 0.01087,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 危机管理"
+   },
+   {
+    "id": 341,
+    "title": "在危机沟通中，先量化自身资源与缺口，区分",
+    "score": 0.01042,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机公关, 金融沟通"
+   }
+  ]
+ },
+ {
+  "query": "商业 博弈 对手 心理",
+  "results": [
+   {
+    "id": 245,
+    "title": "当面对资源远超己方的对手时，不要试图在对",
+    "score": 0.01964,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 商业竞争, 职场博弈"
+   },
+   {
+    "id": 173,
+    "title": "判断对手方行为是否具有表演性：如果对手方",
+    "score": 0.01336,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场博弈, 心理战"
+   },
+   {
+    "id": 210,
+    "title": "信息不对称下的诱饵策略：利用对方贪婪与信",
+    "score": 0.01226,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融, 博弈论"
+   },
+   {
+    "id": 284,
+    "title": "面对高位者主动接触时，先剥离其头衔和资源",
+    "score": 0.0121,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 权力博弈"
+   },
+   {
+    "id": 248,
+    "title": "避免陷入对手设定的战场。若对手是庞然大物",
+    "score": 0.01174,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 商业竞争, 冲突解决"
+   },
+   {
+    "id": 302,
+    "title": "当个体面对巨头时，不直接对抗，而是识别拥",
+    "score": 0.01154,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈"
+   },
+   {
+    "id": 660,
+    "title": "当面临与强势方的冲突时，先量化对方的控制",
+    "score": 0.01071,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业决策"
+   },
+   {
+    "id": 183,
+    "title": "在高压谈判中，若对方试图用热情或表演占据",
+    "score": 0.01023,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理, 商业博弈"
+   },
+   {
+    "id": 189,
+    "title": "在高压谈判中，当对方占据信息优势时，不要",
+    "score": 0.00993,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈, 危机沟通, 社交冲突"
+   },
+   {
+    "id": 443,
+    "title": "当面对资源远胜于己的对手时，不要试图在资",
+    "score": 0.00987,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业竞争"
+   }
+  ]
+ },
+ {
+  "query": "信息不对称 决策",
+  "results": [
+   {
+    "id": 238,
+    "title": "在信息不对称环境中，决策者应首先明确公开",
+    "score": 0.01262,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场决策, 金融交易"
+   },
+   {
+    "id": 1109,
+    "title": "在信息不对称的决策中，判断信号可信度的标",
+    "score": 0.01119,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场决策, 市场分析"
+   },
+   {
+    "id": 154,
+    "title": "当对方表现出完美无缺的真诚和专业性时，反",
+    "score": 0.01107,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 270,
+    "title": "在信息不对称环境中，通过非正式渠道获取内",
+    "score": 0.01042,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 228,
+    "title": "当一笔交易的风险评估基于历史概率且对手行",
+    "score": 0.00951,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 职场谈判"
+   },
+   {
+    "id": 351,
+    "title": "在信息不对称的环境中，优先关注关键行动者",
+    "score": 0.00938,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 危机管理"
+   },
+   {
+    "id": 229,
+    "title": "判断交易是否值得时，若对手行为与自身认知",
+    "score": 0.00938,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场决策, 风险管理"
+   },
+   {
+    "id": 170,
+    "title": "在信息不对称的紧急情况下，向掌握关键信息",
+    "score": 0.00703,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 信息收集, 紧急决策"
+   },
+   {
+    "id": 988,
+    "title": "在信息不对称时，决策锚点不应是专家共识或",
+    "score": 0.00692,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 危机管理"
+   },
+   {
+    "id": 162,
+    "title": "判断合作者或对手是否'够格'时，可依据其",
+    "score": 0.00653,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场合作, 投资决策"
+   }
+  ]
+ },
+ {
+  "query": "权力 站队 博弈",
+  "results": [
+   {
+    "id": 183,
+    "title": "在高压谈判中，若对方试图用热情或表演占据",
+    "score": 0.01089,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理, 商业博弈"
+   },
+   {
+    "id": 302,
+    "title": "当个体面对巨头时，不直接对抗，而是识别拥",
+    "score": 0.01071,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈"
+   },
+   {
+    "id": 189,
+    "title": "在高压谈判中，当对方占据信息优势时，不要",
+    "score": 0.01055,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈, 危机沟通, 社交冲突"
+   },
+   {
+    "id": 204,
+    "title": "在谈判中，当对方占据绝对优势时，不要试图",
+    "score": 0.01023,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈"
+   },
+   {
+    "id": 867,
+    "title": "当被权力上位者引荐进入新圈子时，先识别引",
+    "score": 0.00974,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场晋升, 权力场域, 社交博弈"
+   },
+   {
+    "id": 245,
+    "title": "当面对资源远超己方的对手时，不要试图在对",
+    "score": 0.00938,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 商业竞争, 职场博弈"
+   },
+   {
+    "id": 284,
+    "title": "面对高位者主动接触时，先剥离其头衔和资源",
+    "score": 0.009,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 权力博弈"
+   },
+   {
+    "id": 291,
+    "title": "在谈判或博弈中，当对方做出一个看似不合理",
+    "score": 0.00854,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈"
+   },
+   {
+    "id": 590,
+    "title": "在权力不对等的初次沟通中，主动暴露自身非",
+    "score": 0.00781,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 初次会面"
+   },
+   {
+    "id": 839,
+    "title": "当决策者面临外部权威（如知名机构）与内部",
+    "score": 0.00735,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 组织决策, 风险管理"
+   }
+  ]
+ },
+ {
+  "query": "领导力 团队 管理",
+  "results": [
+   {
+    "id": 52,
+    "title": "乌合之众：群体心理学核心观点",
+    "score": 0.01875,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "乌合之众,群体心理,独立思考,决策"
+   },
+   {
+    "id": 42,
+    "title": "《纳瓦尔宝典》核心框架：财富与幸福",
+    "score": 0.01846,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "纳瓦尔宝典,财富,幸福,杠杆,专长,判断力,个人成长"
+   },
+   {
+    "id": 55,
+    "title": "RAG 企业级架构全景（课程PPT提炼）",
+    "score": 0.0169,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "RAG,检索增强生成,企业级架构,面试,知识库"
+   },
+   {
+    "id": 29,
+    "title": "Agent 设计知识体系",
+    "score": 0.01644,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "Agent, Agent设计, 系统设计, 工具调用, 状态管理, 记忆系统, 规划器, Workflow, 熔断, 安全策略, 知识体系, Demo到生产, 断层, 可观测性, tracing, 容错, 降级, 预算控制, human-in-the-loop, ToolCalling, 职责边界, 模型vs程序, Harness, 状态归属"
+   },
+   {
+    "id": 161,
+    "title": "面对死局时，立即进行三问审计：当前资产的",
+    "score": 0.01023,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 个人财务危机, 项目管理"
+   },
+   {
+    "id": 172,
+    "title": "当资源不足以正面应对危机时，第一步是精确",
+    "score": 0.00951,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 职场谈判"
+   },
+   {
+    "id": 1062,
+    "title": "不要因对方在宏观层面的权威性而默认其微观",
+    "score": 0.00949,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 风险管理, 领导力"
+   },
+   {
+    "id": 179,
+    "title": "当外部施压方带着专业团队（如法务、风控）",
+    "score": 0.00912,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机管理, 商业对抗"
+   },
+   {
+    "id": 183,
+    "title": "在高压谈判中，若对方试图用热情或表演占据",
+    "score": 0.00888,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理, 商业博弈"
+   },
+   {
+    "id": 546,
+    "title": "在外部压力下，团队容易陷入恐慌性反应，过",
+    "score": 0.00726,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 团队管理, 危机沟通"
+   }
+  ]
+ },
+ {
+  "query": "压力 决策 时间",
+  "results": [
+   {
+    "id": 154,
+    "title": "当对方表现出完美无缺的真诚和专业性时，反",
+    "score": 0.01107,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 228,
+    "title": "当一笔交易的风险评估基于历史概率且对手行",
+    "score": 0.00938,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 职场谈判"
+   },
+   {
+    "id": 229,
+    "title": "判断交易是否值得时，若对手行为与自身认知",
+    "score": 0.00925,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场决策, 风险管理"
+   },
+   {
+    "id": 932,
+    "title": "在高压决策中，判断是否采取公开行动的标准",
+    "score": 0.00794,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 战略规划, 领导力"
+   },
+   {
+    "id": 1029,
+    "title": "在高压决策中，当正式分析工具失效时，可私",
+    "score": 0.00726,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场决策, 危机管理"
+   },
+   {
+    "id": 539,
+    "title": "当外部压力（如舆论危机）来袭时，决策者应",
+    "score": 0.00703,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 危机管理, 职场决策"
+   },
+   {
+    "id": 677,
+    "title": "在时间压力下，决策者容易将外部质疑视为干",
+    "score": 0.00692,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 时间压力, 风险管理"
+   },
+   {
+    "id": 162,
+    "title": "判断合作者或对手是否'够格'时，可依据其",
+    "score": 0.00653,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场合作, 投资决策"
+   },
+   {
+    "id": 482,
+    "title": "在高压决策场景中，先允许自己短暂体验情绪",
+    "score": 0.00652,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 个人决策"
+   },
+   {
+    "id": 164,
+    "title": "在信息不对称的博弈中，识别'缝隙'（即系",
+    "score": 0.00643,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 市场交易, 战略决策"
+   }
+  ]
+ },
+ {
+  "query": "情绪 控制 交易",
+  "results": [
+   {
+    "id": 208,
+    "title": "在谈判中，若己方掌握对方未知的关键信息，",
+    "score": 0.02089,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融交易, 职场谈判"
+   },
+   {
+    "id": 420,
+    "title": "执行不可逆操作时，若因情绪波动或犹豫不决",
+    "score": 0.0124,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融交易, 高压决策"
+   },
+   {
+    "id": 818,
+    "title": "决策时依据内部核算表上的实际收益和预设的",
+    "score": 0.01225,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 职场谈判, 风险管理, 金融交易, 商业决策"
+   },
+   {
+    "id": 155,
+    "title": "面对复杂合同，应坚持逐条审阅关键条款，尤",
+    "score": 0.01107,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 法律事务, 金融交易"
+   },
+   {
+    "id": 211,
+    "title": "警惕因贪婪而忽视风险对冲的陷阱。在交易中",
+    "score": 0.01071,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融交易, 风险管理"
+   },
+   {
+    "id": 649,
+    "title": "在博弈或交易中，先厘清对手盘的真实构成：",
+    "score": 0.00951,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融交易, 职场谈判"
+   },
+   {
+    "id": 748,
+    "title": "在金融或商业操作中，直接向对手方表达对特",
+    "score": 0.00938,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融交易, 商业策略"
+   },
+   {
+    "id": 749,
+    "title": "在需要做空特定目标时，通过构建包含多个相",
+    "score": 0.00925,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融交易, 职场谈判"
+   },
+   {
+    "id": 750,
+    "title": "选择交易对手时，不能仅依据报价便宜，必须",
+    "score": 0.00912,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融交易, 风险管理"
+   },
+   {
+    "id": 1347,
+    "title": "当对手方拒绝承接极端风险时，先判断决策层",
+    "score": 0.00844,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 金融交易"
+   }
+  ]
+ },
+ {
+  "query": "决策 信息 收集",
+  "results": [
+   {
+    "id": 295,
+    "title": "在重大决策中，若已基于充分数据建立核心判",
+    "score": 0.0119,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 项目管理"
+   },
+   {
+    "id": 154,
+    "title": "当对方表现出完美无缺的真诚和专业性时，反",
+    "score": 0.01107,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 1056,
+    "title": "决策者评估外部信息时，应区分'内容正确性",
+    "score": 0.01027,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 决策分析, 信息评估"
+   },
+   {
+    "id": 960,
+    "title": "在决策中，应区分信息内容与信息传递者的动",
+    "score": 0.01,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 信息评估"
+   },
+   {
+    "id": 518,
+    "title": "当被问及决策依据时，先区分对方是寻求具体",
+    "score": 0.00987,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 228,
+    "title": "当一笔交易的风险评估基于历史概率且对手行",
+    "score": 0.00951,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 职场谈判"
+   },
+   {
+    "id": 229,
+    "title": "判断交易是否值得时，若对手行为与自身认知",
+    "score": 0.00938,
+    "source": "",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场决策, 风险管理"
+   },
+   {
+    "id": 798,
+    "title": "在信息不完整时，决策应基于趋势的确定性而",
+    "score": 0.00726,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 战略决策, 危机管理"
+   },
+   {
+    "id": 726,
+    "title": "在信息不确定时，决策依据应基于可观测的市",
+    "score": 0.00672,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 风险管理, 决策制定"
+   },
+   {
+    "id": 618,
+    "title": "当自身无法理解专业内容时，决策依据不应是",
+    "score": 0.00662,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 专家咨询, 决策支持"
+   }
+  ]
+ },
+ {
+  "query": "复盘 自我审计",
+  "results": [
+   {
+    "id": 54,
+    "title": "财商内容批判：回流系统/财富飞轮的逻辑漏洞",
+    "score": 0.01579,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "财商,批判思维,幸存者偏差,被动收入,消费vs投资"
+   },
+   {
+    "id": 57,
+    "title": "Agent面试：项目讲清楚比背八股重要",
+    "score": 0.01519,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "面试,Agent,求职,CoT,多Agent"
+   },
+   {
+    "id": 155,
+    "title": "面对复杂合同，应坚持逐条审阅关键条款，尤",
+    "score": 0.0082,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 法律事务, 金融交易"
+   },
+   {
+    "id": 161,
+    "title": "面对死局时，立即进行三问审计：当前资产的",
+    "score": 0.00806,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 个人财务危机, 项目管理"
+   },
+   {
+    "id": 522,
+    "title": "评估一家机构或个体的风险时，不要只关注账",
+    "score": 0.00781,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融分析, 危机管理"
+   },
+   {
+    "id": 1153,
+    "title": "当需要传递敏感结论但避免承担立场风险时，",
+    "score": 0.00769,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 政治决策, 风险管理"
+   },
+   {
+    "id": 493,
+    "title": "当面对一个异常成功的交易者时，不要被结果",
+    "score": 0.00746,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 风险管理"
+   },
+   {
+    "id": 191,
+    "title": "当对方用抽象术语（如金融产品名称）包装复",
+    "score": 0.00735,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 公共演讲"
+   },
+   {
+    "id": 977,
+    "title": "当公开一个判断时，先自问：这个信息是否已",
+    "score": 0.00714,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 投资决策"
+   },
+   {
+    "id": 280,
+    "title": "当需要评估一位资深决策者为何错失明显机会",
+    "score": 0.00667,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 组织行为分析"
+   }
+  ]
+ },
+ {
+  "query": "玄幻 修仙 功法",
+  "results": [
+   {
+    "id": 42,
+    "title": "《纳瓦尔宝典》核心框架：财富与幸福",
+    "score": 0.01967,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "纳瓦尔宝典,财富,幸福,杠杆,专长,判断力,个人成长"
+   },
+   {
+    "id": 51,
+    "title": "凯利公式：最优下注比例",
+    "score": 0.0169,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "凯利公式,概率,决策,对赌"
+   },
+   {
+    "id": 46,
+    "title": "四道隐形贫穷陷阱 - 公子峻铭（第61集）",
+    "score": 0.01622,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "认知,思维,财富,公子峻铭"
+   },
+   {
+    "id": 54,
+    "title": "财商内容批判：回流系统/财富飞轮的逻辑漏洞",
+    "score": 0.01558,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "财商,批判思维,幸存者偏差,被动收入,消费vs投资"
+   },
+   {
+    "id": 40,
+    "title": "工具系统实战：注册中心 + 容错 + 追踪",
+    "score": 0.01519,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "Agent, 工具系统, 注册中心, MCP, 重试, 熔断, 降级, 全链路追踪, 实战"
+   },
+   {
+    "id": 235,
+    "title": "在信息敏感场景中，采用'三步试探法'：先",
+    "score": 0.00781,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 信息收集"
+   },
+   {
+    "id": 817,
+    "title": "在资产价格快速上涨且市场情绪一致看多时，",
+    "score": 0.00746,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 风险管理"
+   },
+   {
+    "id": 189,
+    "title": "在高压谈判中，当对方占据信息优势时，不要",
+    "score": 0.00685,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈, 危机沟通, 社交冲突"
+   },
+   {
+    "id": 590,
+    "title": "在权力不对等的初次沟通中，主动暴露自身非",
+    "score": 0.00625,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 初次会面"
+   },
+   {
+    "id": 1105,
+    "title": "在对话中，若想将话题从理论转向实战，先以",
+    "score": 0.00484,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 咨询沟通"
+   }
+  ]
+ },
+ {
+  "query": "恋爱 感情 分手",
+  "results": [
+   {
+    "id": 235,
+    "title": "在信息敏感场景中，采用'三步试探法'：先",
+    "score": 0.00781,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 信息收集"
+   },
+   {
+    "id": 555,
+    "title": "在面试或谈判中，若对方曾对你有偏见，不要",
+    "score": 0.00704,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场面试, 谈判博弈"
+   },
+   {
+    "id": 828,
+    "title": "当对手方极力挽留时，先分析其挽留背后的利",
+    "score": 0.00649,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业合作"
+   },
+   {
+    "id": 831,
+    "title": "警惕对手方以‘合作’或‘关系’为名进行的",
+    "score": 0.00492,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 人际博弈"
+   },
+   {
+    "id": 667,
+    "title": "当对方以情感恳求（如民族情怀、个人苦难）",
+    "score": 0.00484,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机公关"
+   },
+   {
+    "id": 1141,
+    "title": "在职场中，当对方暴露个人想法时，若立即用",
+    "score": 0.00462,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场沟通, 情感管理"
+   },
+   {
+    "id": 1080,
+    "title": "在谈判中，若因情绪（如愤怒）而急于拒绝或",
+    "score": 0.00455,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 冲突管理"
+   },
+   {
+    "id": 276,
+    "title": "在信息不对称情境下，切忌因对方身份不明而",
+    "score": 0.00448,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机沟通"
+   },
+   {
+    "id": 664,
+    "title": "在谈判中若理性筹码尽失，可主动放弃强势姿",
+    "score": 0.00441,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机沟通"
+   },
+   {
+    "id": 1105,
+    "title": "在对话中，若想将话题从理论转向实战，先以",
+    "score": 0.00435,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 咨询沟通"
+   }
+  ]
+ },
+ {
+  "query": "美食 菜谱 做饭",
+  "results": [
+   {
+    "id": 42,
+    "title": "《纳瓦尔宝典》核心框架：财富与幸福",
+    "score": 0.01967,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "纳瓦尔宝典,财富,幸福,杠杆,专长,判断力,个人成长"
+   },
+   {
+    "id": 49,
+    "title": "GitHub求职面试资源清单",
+    "score": 0.01935,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "求职,面试,GitHub,资源"
+   },
+   {
+    "id": 46,
+    "title": "四道隐形贫穷陷阱 - 公子峻铭（第61集）",
+    "score": 0.01791,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "认知,思维,财富,公子峻铭"
+   },
+   {
+    "id": 51,
+    "title": "凯利公式：最优下注比例",
+    "score": 0.01538,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "凯利公式,概率,决策,对赌"
+   },
+   {
+    "id": 817,
+    "title": "在资产价格快速上涨且市场情绪一致看多时，",
+    "score": 0.00781,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 投资决策, 风险管理"
+   },
+   {
+    "id": 155,
+    "title": "面对复杂合同，应坚持逐条审阅关键条款，尤",
+    "score": 0.00725,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 法律事务, 金融交易"
+   },
+   {
+    "id": 749,
+    "title": "在需要做空特定目标时，通过构建包含多个相",
+    "score": 0.00694,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融交易, 职场谈判"
+   },
+   {
+    "id": 667,
+    "title": "当对方以情感恳求（如民族情怀、个人苦难）",
+    "score": 0.00476,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机公关"
+   },
+   {
+    "id": 212,
+    "title": "在博弈中，当对方提供看似无代价的‘免费午",
+    "score": 0.00462,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 商业博弈"
+   },
+   {
+    "id": 276,
+    "title": "在信息不对称情境下，切忌因对方身份不明而",
+    "score": 0.00455,
+    "source": "vector",
+    "is_low_confidence": false,
+    "tags": "小说萃取, 从做空次贷危机开始收割世界, 职场谈判, 危机沟通"
+   }
+  ]
+ }
+]
