@@ -44,12 +44,32 @@ app.include_router(voice_router)    # /voice/recognize, /voice/note — 语音�
 
 @app.on_event("startup")
 async def startup_build_embeddings():
-    """启动时全量重建向量索引"""
+    """启动时校验向量索引；不一致才重建（幂等启动）。
+
+    原来无条件全量重建 19000+ 条，text2vec CPU 计算要 10-30 分钟，每次重启都白等。
+    向量数 == 笔记数时跳过；不匹配（新增/删库/半截重建）才重建。
+    """
     try:
-        from hybrid_search import build_all_embeddings
+        from hybrid_search import build_all_embeddings, _get_notes_collection
+        import sqlite3
+        from db import get_conn
+        conn = get_conn()
+        note_count = conn.execute(
+            "SELECT COUNT(*) FROM learning_notes WHERE deleted_at IS NULL"
+        ).fetchone()[0]
+        vec_count = _get_notes_collection().count()
+        if vec_count == note_count:
+            print(f"✅ 向量索引一致 ({vec_count} == {note_count})，跳过重建")
+            return
+        print(f"⚠️ 向量数({vec_count}) != 笔记数({note_count})，开始重建...")
         build_all_embeddings()
-    except Exception:
-        pass  # 首次启动chroma_db为空，静默跳过
+    except Exception as e:
+        # 首次启动 chroma_db 为空时静默；其他错误必须暴露
+        import os
+        if os.path.exists("chroma_db") and os.listdir("chroma_db"):
+            print(f"⚠️ 向量重建失败: {e}")
+        else:
+            pass
 
 
 # ── Web 页面 ──

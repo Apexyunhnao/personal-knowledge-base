@@ -7,6 +7,9 @@ import pymupdf
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import chromadb
 from chromadb.api.types import EmbeddingFunction, Documents, Embeddings
+# 国内镜像 + 强制离线（模型本地缓存；与 hybrid_search.py 保持一致）
+os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
+os.environ.setdefault("HF_HUB_OFFLINE", "1")
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -15,13 +18,22 @@ from typing import List, Dict
 load_dotenv()
 logger = logging.getLogger(__name__)
 
+# 与 hybrid_search.py 共用同一模型（2026-08-26 升级 bge-base-zh-v1.5，本地路径）
+EMBEDDING_MODEL = os.environ.get(
+    "RAG_EMBEDDING_MODEL",
+    os.path.join(os.path.dirname(__file__), "models", "bge-base-zh-v1.5"),
+)
+
 # ── 中文语义Embedding ──
 class ChineseEmbedding(EmbeddingFunction):
     def __init__(self):
-        self.model = SentenceTransformer("shibing624/text2vec-base-chinese")
+        import torch
+        self._device = "cuda" if torch.cuda.is_available() else "cpu"
+        self.model = SentenceTransformer(EMBEDDING_MODEL, device=self._device)
     
     def __call__(self, texts: Documents) -> Embeddings:
-        return self.model.encode(texts, normalize_embeddings=True).tolist()
+        batch = 64 if self._device == "cuda" else 32
+        return self.model.encode(texts, normalize_embeddings=True, batch_size=batch).tolist()
 
 
 class RAGEngine:

@@ -42,6 +42,10 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);height:100vh
 .search-result .sr-source{font-size:9px;padding:1px 5px;border-radius:99px;background:var(--cyan2);color:var(--cyan)}
 .sidebar-stats{display:flex;gap:10px;font-size:11px;color:var(--text2);padding:8px 16px;border-bottom:1px solid var(--border)}
 .sidebar-stats span{color:var(--cyan)}
+.sidebar-scenes{padding:8px 12px;border-bottom:1px solid var(--border)}
+.scene-chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+.scene-chip{font-size:10px;padding:2px 8px;border-radius:99px;background:var(--bg3);border:1px solid var(--border2);color:var(--text2);cursor:pointer}
+.scene-chip:hover,.scene-chip.active{background:var(--cyan2);color:var(--cyan);border-color:var(--cyan)}
 .sidebar-browse{padding:8px 12px;flex:1;overflow-y:auto}
 .sidebar-browse .section-title{font-size:10px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:1px;padding:8px 4px 6px}
 .table-btn{width:100%;text-align:left;padding:8px 10px;border-radius:var(--radius-sm);background:none;border:none;color:var(--text2);cursor:pointer;font-size:12px;font-family:var(--font);transition:var(--transition);display:flex;align-items:center;gap:8px}
@@ -128,10 +132,22 @@ pre:hover .copy-btn{opacity:1}
 .search-modal .sm-item .smi-title{font-size:13px;font-weight:500;color:var(--text)}
 .search-modal .sm-item .smi-meta{font-size:10px;color:var(--text3);margin-top:2px}
 .search-modal .sm-item .smi-right{display:flex;gap:6px;align-items:center;flex-shrink:0}
+.search-modal .sm-group{display:flex;align-items:center;gap:8px;padding:6px 18px;background:var(--bg3);border-bottom:1px solid var(--border);cursor:pointer;font-size:11px}
+.search-modal .sm-group .smg-label{color:var(--cyan);font-weight:600}
+.search-modal .sm-group .smg-meta{color:var(--text3);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.search-modal .sm-group .smg-toggle{color:var(--text3);font-size:9px}
+.search-modal .sm-group.expanded{background:var(--cyan2)}
 .search-modal .sm-item .smi-score{font-size:10px;color:var(--text3)}
 .search-modal .sm-item .smi-source{font-size:9px;padding:1px 6px;border-radius:99px;background:var(--cyan2);color:var(--cyan)}
 .search-modal .sm-empty{padding:32px;text-align:center;color:var(--text3);font-size:13px}
 .welcome{text-align:center;padding:60px 20px 30px}
+.daily-box{max-width:520px;margin:16px auto 24px;text-align:left;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:12px 16px}
+.daily-head{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--text2);margin-bottom:8px}
+.daily-list{display:flex;flex-direction:column;gap:6px}
+.daily-item{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 10px;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius-sm);cursor:pointer;font-family:var(--font)}
+.daily-item:hover{border-color:var(--cyan)}
+.daily-title{font-size:12px;color:var(--text);flex:1;text-align:left}
+.daily-meta{font-size:10px;color:var(--text3);flex-shrink:0}
 .welcome h2{font-size:22px;margin-bottom:8px;background:linear-gradient(135deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .welcome p{color:var(--text2);font-size:13px;margin-bottom:20px}
 .suggestions{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:600px;margin:0 auto}
@@ -194,19 +210,48 @@ pre:hover .copy-btn{opacity:1}
       @keydown.enter.prevent="globalSearchConfirm()"
       @keydown.escape="showGlobalSearch=false"
       placeholder="搜索知识库... (FTS5 + 语义向量)">
+    <label style="display:flex;align-items:center;gap:6px;padding:8px 18px;font-size:12px;color:var(--text3);border-bottom:1px solid var(--border);cursor:pointer">
+      <input type="checkbox" x-model="includeLowConfidence" @change="globalSearch()" style="accent-color:var(--cyan)">
+      包含低置信度卡片（小说萃取·模型自评置信度&lt;0.6）
+    </label>
     <div class="sm-results">
-      <div x-show="globalSearchResults.length===0&&globalSearchQuery" class="sm-empty">未找到匹配结果</div>
-      <div x-show="globalSearchResults.length===0&&!globalSearchQuery" class="sm-empty">输入关键词开始搜索</div>
-      <template x-for="(r,i) in globalSearchResults" :key="r.id">
-        <div class="sm-item" :class="{focused: i===globalSearchFocus}" @click="globalSearchPick(r)" @mouseenter="globalSearchFocus=i">
-          <div class="smi-left">
-            <div class="smi-title" x-text="r.title"></div>
-            <div class="smi-meta" x-text="r.topic||''"></div>
+      <div x-show="globalSearchGroups.length===0&&globalSearchQuery" class="sm-empty">未找到匹配结果</div>
+      <div x-show="globalSearchGroups.length===0&&!globalSearchQuery" class="sm-empty">输入关键词开始搜索</div>
+      <template x-for="(g, gi) in globalSearchGroups" :key="g.key">
+        <div>
+          <div class="sm-group" :class="{expanded: g.expanded}" @click="toggleGroup(g)">
+            <span class="smg-label" x-text="g.label||'其他'"></span>
+            <span class="smg-meta" x-text="(g.items.length>1?'同主题 '+g.items.length+' 条 · ':'')+g.typeSummary"></span>
+            <span class="smg-toggle" x-text="g.expanded?'▲':'▼'"></span>
           </div>
-          <div class="smi-right">
-            <span class="smi-source" x-text="r.source"></span>
-            <span class="smi-score" x-text="r.score"></span>
+          <div class="sm-item" @click="globalSearchPick(g.items[0])">
+            <div class="smi-left">
+              <div class="smi-title" x-text="g.items[0].title"></div>
+              <div class="smi-meta" x-text="g.items[0].topic||''"></div>
+            </div>
+            <div class="smi-right">
+              <span class="smi-source" x-text="g.items[0].source"></span>
+              <span class="smi-score" x-text="g.items[0].score"></span>
+              <span class="smi-score" x-show="g.items[0].user_feedback" x-text="'反馈'+g.items[0].user_feedback" style="color:var(--green)"></span>
+              <button @click.stop="feedback(g.items[0], 1)" title="有用" style="background:none;border:none;cursor:pointer;font-size:12px">👍</button>
+              <button @click.stop="feedback(g.items[0], -1)" title="无用" style="background:none;border:none;cursor:pointer;font-size:12px">👎</button>
+            </div>
           </div>
+          <template x-for="(r, i) in g.items.slice(1)" :key="r.id">
+            <div class="sm-item" x-show="g.expanded" @click="globalSearchPick(r)">
+              <div class="smi-left">
+                <div class="smi-title" x-text="r.title"></div>
+                <div class="smi-meta" x-text="r.topic||''"></div>
+              </div>
+              <div class="smi-right">
+                <span class="smi-source" x-text="r.source"></span>
+                <span class="smi-score" x-text="r.score"></span>
+                <span class="smi-score" x-show="r.user_feedback" x-text="'反馈'+r.user_feedback" style="color:var(--green)"></span>
+                <button @click.stop="feedback(r, 1)" title="有用" style="background:none;border:none;cursor:pointer;font-size:12px">👍</button>
+                <button @click.stop="feedback(r, -1)" title="无用" style="background:none;border:none;cursor:pointer;font-size:12px">👎</button>
+              </div>
+            </div>
+          </template>
         </div>
       </template>
     </div>
@@ -229,6 +274,22 @@ pre:hover .copy-btn{opacity:1}
         placeholder="搜索知识...">
     </div>
     <div class="sidebar-stats">📚 <span x-text="stats.notes"></span> 条知识</div>
+    <!-- 场景浏览（核心标签分布） -->
+    <div class="sidebar-scenes" x-show="sidebarOpen">
+      <div class="section-title">场景</div>
+      <div class="scene-chips">
+        <template x-for="s in sceneTags" :key="s.tag">
+          <button class="scene-chip" :class="{active: activeScene===s.tag}" @click="loadTagNotes(s.tag)" x-text="s.tag+' '+s.count"></button>
+        </template>
+      </div>
+      <div class="search-results" x-show="tagNotes.length">
+        <template x-for="n in tagNotes" :key="n.id">
+          <div class="search-result" @click="sidebarOpen=false;viewItemById(n.id)">
+            <span class="sr-title" x-text="n.title"></span>
+          </div>
+        </template>
+      </div>
+    </div>
     <div class="sidebar-browse">
       <!-- 侧栏搜索结果 -->
       <div x-show="sidebarSearchQuery">
@@ -281,6 +342,20 @@ pre:hover .copy-btn{opacity:1}
       <div x-show="messages.length===0" class="welcome">
         <h2>个人知识库</h2>
         <p>把文字发给AI → 自动整理归纳 → 存知识库 → 随时检索问答</p>
+        <div class="daily-box" x-show="dailyNotes.length">
+          <div class="daily-head">
+            <span>🎲 今日回顾（随机 3 张方法论卡）</span>
+            <button @click="loadDailyNotes()" class="btn-ghost" style="font-size:11px">换一批</button>
+          </div>
+          <div class="daily-list">
+            <template x-for="n in dailyNotes" :key="n.id">
+              <button class="daily-item" @click="viewItemById(n.id)">
+                <span class="daily-title" x-text="n.title"></span>
+                <span class="daily-meta" x-text="n.source||''"></span>
+              </button>
+            </template>
+          </div>
+        </div>
         <div class="suggestions">
           <button @click="sendSuggestion('帮我整理这段话：SMART原则是目标管理方法，S代表具体、M代表可衡量、A代表可实现、R代表相关性、T代表有时限')" class="suggestion">💾 整理一段知识</button>
           <button @click="sendSuggestion('我学过哪些技术相关的内容？')" class="suggestion">🔍 搜学过什么</button>
@@ -460,8 +535,13 @@ function app(){
     showDetail: false, detailItem: null,
     // 侧栏搜索
     sidebarSearchQuery: '', sidebarSearchResults: [],
+    // 场景浏览
+    sceneTags: [], tagNotes: [], activeScene: '',
+    // 每日回顾
+    dailyNotes: [],
     // 全局搜索
     showGlobalSearch: false, globalSearchQuery: '', globalSearchResults: [], globalSearchFocus: -1,
+    globalSearchGroups: [], includeLowConfidence: false, _fbPending: false,
     // 搜索防抖
     _searchTimer: null,
     // 监控反馈
@@ -474,8 +554,33 @@ function app(){
 
     async init(){
       await this.loadStats();
+      this.loadSceneTags();
+      this.loadDailyNotes();
       this.loadConversation();
       this.$nextTick(() => this.$refs.inputEl?.focus());
+    },
+
+    /* ═══════════════ 每日回顾 ═══════════════ */
+    async loadDailyNotes(){
+      try{
+        const r = await (await fetch('/db/random-notes?limit=3')).json();
+        this.dailyNotes = r.data||[];
+      }catch(e){ this.dailyNotes = []; }
+    },
+
+    /* ═══════════════ 场景浏览 ═══════════════ */
+    async loadSceneTags(){
+      try{
+        const r = await (await fetch('/db/tags/stats?limit=25')).json();
+        this.sceneTags = r.data||[];
+      }catch(e){}
+    },
+    async loadTagNotes(tag){
+      this.activeScene = tag;
+      try{
+        const r = await (await fetch('/db/tags/'+encodeURIComponent(tag)+'/notes?limit=30')).json();
+        this.tagNotes = r.data||[];
+      }catch(e){ this.tagNotes = []; }
     },
 
     /* ═══════════════ Toast 通知 ═══════════════ */
@@ -632,7 +737,7 @@ function app(){
       const q = this.sidebarSearchQuery.trim();
       if(!q){ this.sidebarSearchResults = []; return; }
       try{
-        const r = await (await fetch('/db/search?keyword='+encodeURIComponent(q)+'&top_k=8')).json();
+        const r = await (await fetch('/db/search-hybrid?keyword='+encodeURIComponent(q)+'&top_k=8&include_low_confidence='+this.includeLowConfidence)).json();
         this.sidebarSearchResults = r.data||[];
       }catch(e){ this.sidebarSearchResults = []; }
     },
@@ -650,25 +755,77 @@ function app(){
     },
     async _doGlobalSearch(){
       const q = this.globalSearchQuery.trim();
-      if(!q){ this.globalSearchResults = []; return; }
+      if(!q){ this.globalSearchResults = []; this.globalSearchGroups = []; return; }
       try{
-        const r = await (await fetch('/db/search?keyword='+encodeURIComponent(q)+'&top_k=10')).json();
+        const r = await (await fetch('/db/search-hybrid?keyword='+encodeURIComponent(q)+'&top_k=20&include_low_confidence='+this.includeLowConfidence)).json();
         this.globalSearchResults = r.data||[];
-      }catch(e){ this.globalSearchResults = []; }
+        this.globalSearchGroups = this.groupResults(this.globalSearchResults);
+      }catch(e){ this.globalSearchResults = []; this.globalSearchGroups = []; }
     },
-    globalSearchNext(){ if(this.globalSearchResults.length){ this.globalSearchFocus = (this.globalSearchFocus+1)%this.globalSearchResults.length; } },
-    globalSearchPrev(){ if(this.globalSearchResults.length){ this.globalSearchFocus = this.globalSearchFocus<=0 ? this.globalSearchResults.length-1 : this.globalSearchFocus-1; } },
+
+    /* 检索结果折叠: 按第一个核心标签分组(同主题变体聚一起), 组内默认显示1条, 点击展开 */
+    groupResults(items){
+      const groups = new Map();
+      for(const r of items){
+        const tags = (r.tags||'').split(',').map(t=>t.trim()).filter(Boolean);
+        let key, label;
+        if(r.tags && r.tags.startsWith('小说萃取') && tags.length >= 3){
+          key = tags[2];          // 第一个核心标签 = 主主题
+          label = tags[2];
+        } else {
+          key = 'id' + r.id;
+          label = tags[0] || '';
+        }
+        if(!groups.has(key)) groups.set(key, {key, label, items: []});
+        groups.get(key).items.push(r);
+      }
+      return [...groups.values()].map(g => {
+        g.items.sort((a,b)=>b.score-a.score);
+        const types = {};
+        for(const it of g.items){
+          const t = it.node_type || 'methodology';
+          types[t] = (types[t]||0) + 1;
+        }
+        g.typeSummary = Object.entries(types).map(([k,v])=>this.nodeTypeName(k)+' '+v).join(' · ');
+        g.expanded = false;
+        return g;
+      });
+    },
+    nodeTypeName(t){ return ({methodology:'方法', judgment:'判断', principle:'道理', pitfall:'避坑'})[t] || t; },
+    toggleGroup(g){ g.expanded = !g.expanded; },
+    globalSearchNext(){},  // 折叠模式下方向键导航停用
+    globalSearchPrev(){},
     globalSearchConfirm(){
-      if(this.globalSearchResults.length>0){
-        const idx = this.globalSearchFocus>=0 ? this.globalSearchFocus : 0;
-        this.globalSearchPick(this.globalSearchResults[idx]);
+      if(this.globalSearchGroups.length>0){
+        this.globalSearchPick(this.globalSearchGroups[0].items[0]);
       }
     },
     globalSearchPick(item){
       this.showGlobalSearch = false;
       this.globalSearchQuery = '';
       this.globalSearchResults = [];
+      this.globalSearchGroups = [];
       this.viewItemById(item.id);
+    },
+
+    /* ═══════════════ 质量反馈 ═══════════════ */
+    async feedback(item, vote){
+      if(this._fbPending) return;
+      this._fbPending = true;
+      try{
+        const r = await (await fetch('/db/notes/'+item.id+'/feedback', {
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body: JSON.stringify({vote})
+        })).json();
+        if(r.ok){
+          item.user_feedback = r.user_feedback;
+          this.toast(vote>0?'已标记有用':'已标记无用', 'success');
+        } else {
+          this.toast('反馈失败: '+r.error, 'error');
+        }
+      }catch(e){ this.toast('反馈失败', 'error'); }
+      this._fbPending = false;
     },
 
     /* ═══════════════ 工具 ═══════════════ */

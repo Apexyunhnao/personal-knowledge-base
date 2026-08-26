@@ -41,7 +41,7 @@ COLUMN_WHITELIST = {
         "notes", "salary_range", "contact_info", "tags",
     },
     "learning_notes": {
-        "title", "topic", "tags", "content", "source", "format",
+        "title", "topic", "tags", "content", "source", "format", "frontmatter",
     },
 }
 
