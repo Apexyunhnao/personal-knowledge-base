@@ -3,10 +3,15 @@
 - 章节序号+标题 → 0001_章节名.txt
 - 去掉 # 标题行、空行压缩、清理残留 md 符号
 """
-import os, re, sys, unicodedata
+import os, re, sys, unicodedata, argparse
 
-SRC = "/mnt/e/Projects/rag-qa-project/tmp_weread_exporter/weread-exporter-main/output/81232dc0719502df812cbba/chapters"
-BOOK = "打破你的学生思维"
+ap = argparse.ArgumentParser()
+ap.add_argument("src", nargs="?", default="/mnt/e/Projects/rag-qa-project/tmp_weread_exporter/weread-exporter-main/output/81232dc0719502df812cbba/chapters")
+ap.add_argument("book", nargs="?", default="打破你的学生思维")
+args = ap.parse_args()
+
+SRC = args.src
+BOOK = args.book
 DST = f"/mnt/e/Projects/rag-qa-project/inputs/{BOOK}"
 
 def clean_text(text):

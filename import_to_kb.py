@@ -147,7 +147,10 @@ def _source_type_for(book: str) -> str:
     """按书名映射来源类型：网文/微信读书/天涯帖/原创"""
     if "从做空次贷" in book or "小说" in book:
         return "novel"      # 网文萃取
-    if "学生思维" in book or "微信读书" in book:
+    if any(k in book for k in (
+        "学生思维", "微信读书",
+        "人情世故", "人性的弱点", "这就是人性",  # 2026-08-27 新增微信读书实体书
+    )):
         return "book"       # 出版书籍（微信读书）
     if "天涯" in book:
         return "forum"      # 天涯帖子

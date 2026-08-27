@@ -23,7 +23,12 @@ from openai import OpenAI
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import extract_pipeline as ep
 
-BOOK = "天涯神贴精选"
+# 2026-08-27: 三本微信读书实体书轮换萃取（18:00 后半价）：
+#   1. 别人不说，你一定要懂的人情世故（37章）✅ 完成 186卡
+#   2. 人性的弱点（40章）✅ 完成 166卡
+#   3. 这就是人性（85章）← 当前
+# 每次换书改这一行即可（outputs/ 按书名隔离）
+BOOK = "这就是人性"
 INPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "inputs", BOOK)
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "outputs", BOOK)
 
