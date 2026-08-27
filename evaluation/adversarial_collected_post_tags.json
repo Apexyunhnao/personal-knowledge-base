@@ -1,0 +1,2758 @@
+[
+ {
+  "query": "炒股一直亏，晚上睡不着觉，要不要彻底清仓认输？",
+  "category": "投资心态",
+  "results": [
+   {
+    "id": 19285,
+    "title": "贪念是亏损根源",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 防骗"
+   },
+   {
+    "id": 14695,
+    "title": "建议前先确认对方风险承受力",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策"
+   },
+   {
+    "id": 13565,
+    "title": "达到盈利目标后立即清仓",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资交易, 盈利管理"
+   },
+   {
+    "id": 14453,
+    "title": "重建信心前先小规模验证",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 职业转型"
+   },
+   {
+    "id": 13501,
+    "title": "牛市中的认知偏差",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资心理, 行为金融"
+   },
+   {
+    "id": 13413,
+    "title": "以盈亏结果论方法优劣",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 自我评估"
+   },
+   {
+    "id": 13471,
+    "title": "高收益预期掩盖高风险认知",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 个人成长"
+   },
+   {
+    "id": 17440,
+    "title": "避免频繁操作与损失厌恶",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 决策心理"
+   },
+   {
+    "id": 18034,
+    "title": "被套时先评估心态影响",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
+   },
+   {
+    "id": 13900,
+    "title": "动态调整仓位以应对突发风险",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理"
+   }
+  ]
+ },
+ {
+  "query": "基金跌了30%，越补仓跌得越多，现在该不该割肉？",
+  "category": "投资心态",
+  "results": [
+   {
+    "id": 14057,
+    "title": "暴跌初期果断止损保命",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理"
+   },
+   {
+    "id": 14695,
+    "title": "建议前先确认对方风险承受力",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策"
+   },
+   {
+    "id": 14815,
+    "title": "心理防线崩溃导致非理性割肉",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资, 危机管理"
+   },
+   {
+    "id": 14204,
+    "title": "补仓前先定总仓位上限",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 项目管理"
+   },
+   {
+    "id": 14447,
+    "title": "极端行情下以流动性为锚止损",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理"
+   },
+   {
+    "id": 13500,
+    "title": "警惕满仓踏空陷阱",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
+   },
+   {
+    "id": 14649,
+    "title": "极端行情下先确认流动性",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理"
+   },
+   {
+    "id": 13975,
+    "title": "以可覆盖性为决策锚点",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制"
+   },
+   {
+    "id": 13900,
+    "title": "动态调整仓位以应对突发风险",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理"
+   },
+   {
+    "id": 13990,
+    "title": "主动退出优于被动爆仓",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制"
+   }
+  ]
+ },
+ {
+  "query": "看到别人牛市赚钱，自己一进去就被套，怎么克服这种赌徒心理？",
+  "category": "投资心态",
+  "results": [
+   {
+    "id": 13501,
+    "title": "牛市中的认知偏差",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资心理, 行为金融"
+   },
+   {
+    "id": 14528,
+    "title": "避免盲目跟风大资金",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为陷阱"
+   },
+   {
+    "id": 13623,
+    "title": "避免侥幸心理，预设止损",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制"
+   },
+   {
+    "id": 17481,
+    "title": "避免盲目跟随主流",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 群体心理"
+   },
+   {
+    "id": 18034,
+    "title": "被套时先评估心态影响",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
+   },
+   {
+    "id": 13943,
+    "title": "牛市急跌中幻想反弹导致套牢",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制"
+   },
+   {
+    "id": 14183,
+    "title": "避免因贪婪陷入赌博心态",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 商业谈判"
+   },
+   {
+    "id": 14853,
+    "title": "赢时见好就收的自我评估",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 商业谈判"
+   },
+   {
+    "id": 14815,
+    "title": "心理防线崩溃导致非理性割肉",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资, 危机管理"
+   },
+   {
+    "id": 14695,
+    "title": "建议前先确认对方风险承受力",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策"
+   }
+  ]
+ },
+ {
+  "query": "做短线总是追涨杀跌，管不住手，有什么办法强制止损？",
+  "category": "投资心态",
+  "results": [
+   {
+    "id": 13623,
+    "title": "避免侥幸心理，预设止损",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制"
+   },
+   {
+    "id": 14200,
+    "title": "短线交易三步法：筛选、择时、控险",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 风险决策"
+   },
+   {
+    "id": 13578,
+    "title": "强势股分批止盈法",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 股市交易, 投资决策"
+   },
+   {
+    "id": 14836,
+    "title": "控制幻觉陷阱",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 领导力"
+   },
+   {
+    "id": 14202,
+    "title": "追高陷阱：怕踏空导致被套",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 冲动控制"
+   },
+   {
+    "id": 15951,
+    "title": "识别坐庄模式并设止损",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 股市投资, 投机交易"
+   },
+   {
+    "id": 14651,
+    "title": "幻想反弹导致延误操作",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理陷阱"
+   },
+   {
+    "id": 14695,
+    "title": "建议前先确认对方风险承受力",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策"
+   },
+   {
+    "id": 13889,
+    "title": "选择小盘股以增强控制力",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 市场交易"
+   },
+   {
+    "id": 14815,
+    "title": "心理防线崩溃导致非理性割肉",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资, 危机管理"
+   }
+  ]
+ },
+ {
+  "query": "投资亏了钱不想认赔，总觉得会涨回来，怎么克服这种心态？",
+  "category": "投资心态",
+  "results": [
+   {
+    "id": 54,
+    "title": "财商内容批判：回流系统/财富飞轮的逻辑漏洞",
+    "score": 0.0177,
+    "source": "",
+    "source_type": "note",
+    "confidence": 0.65,
+    "is_low_confidence": false,
+    "tags": "财商,批判思维,幸存者偏差,被动收入,消费vs投资"
+   },
+   {
+    "id": 13790,
+    "title": "翻本心理致二次损失",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 心理陷阱"
+   },
+   {
+    "id": 19285,
+    "title": "贪念是亏损根源",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 防骗"
+   },
+   {
+    "id": 14453,
+    "title": "重建信心前先小规模验证",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 职业转型"
+   },
+   {
+    "id": 14695,
+    "title": "建议前先确认对方风险承受力",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策"
+   },
+   {
+    "id": 14457,
+    "title": "避免因回本心理导致越陷越深",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理陷阱"
+   },
+   {
+    "id": 14091,
+    "title": "损失既定后改用认知重评降痛",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理调节"
+   },
+   {
+    "id": 13501,
+    "title": "牛市中的认知偏差",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资心理, 行为金融"
+   },
+   {
+    "id": 18024,
+    "title": "用闲钱投资保持心态优势",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险决策"
+   },
+   {
+    "id": 17440,
+    "title": "避免频繁操作与损失厌恶",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 决策心理"
+   }
+  ]
+ },
+ {
+  "query": "加杠杆炒股真的能赚更多吗？",
+  "category": "投资心态",
+  "results": [
+   {
+    "id": 14080,
+    "title": "杠杆加仓的复利幻觉与爆仓风险",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制"
+   },
+   {
+    "id": 13852,
+    "title": "牛市杠杆持仓的滚动操作法",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
+   },
+   {
+    "id": 17843,
+    "title": "牛市用杠杆基金替代个股追涨",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 市场交易"
+   },
+   {
+    "id": 13935,
+    "title": "忽视市场风险易导致杠杆爆仓",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
+   },
+   {
+    "id": 14616,
+    "title": "小本金高杠杆的幻觉",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资心理, 风险控制"
+   },
+   {
+    "id": 17844,
+    "title": "杠杆工具需先确认市场趋势",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理"
+   },
+   {
+    "id": 15144,
+    "title": "避免杠杆和借贷炒股",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资风险, 财务安全"
+   },
+   {
+    "id": 13566,
+    "title": "高杠杆下分批建仓与T+0降成本",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 股票交易, 高杠杆投资"
+   },
+   {
+    "id": 14083,
+    "title": "杠杆放大风险，剩余资本需谨慎",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
+   },
+   {
+    "id": 14940,
+    "title": "两次杠杆实现资金倍增",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理"
+   }
+  ]
+ },
+ {
+  "query": "民办本科投了100份简历没人理，是不是这辈子就这样了？",
+  "category": "职场焦虑",
+  "results": [
+   {
+    "id": 5976,
+    "title": "淘汰不等于表现差，匹配才是关键",
+    "score": 0.02063,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场面试, 职业规划"
+   },
+   {
+    "id": 5606,
+    "title": "避免因单一外部条件忽视岗位匹配度",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 求职陷阱, 职业决策"
+   },
+   {
+    "id": 5965,
+    "title": "学历非关键，匹配才是核心",
+    "score": 0.01857,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 招聘面试"
+   },
+   {
+    "id": 5457,
+    "title": "择业时优先看能力成长",
+    "score": 0.01831,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场选择, 职业规划"
+   },
+   {
+    "id": 5389,
+    "title": "平衡理想与现实，动态调整",
+    "score": 0.01781,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 求职策略, 心态调整"
+   },
+   {
+    "id": 5938,
+    "title": "面试前用三步法厘清能力与目标匹配度",
+    "score": 0.01757,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 求职面试, 自我认知"
+   },
+   {
+    "id": 6184,
+    "title": "避免裸辞风险的低调求职策略",
+    "score": 0.01733,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 求职, 风险管理"
+   },
+   {
+    "id": 5567,
+    "title": "避免仅强调兴趣而忽视能力",
+    "score": 0.01688,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场面试, 求职沟通"
+   },
+   {
+    "id": 5707,
+    "title": "以空杯心态应对职场",
+    "score": 0.01625,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场适应, 学习成长"
+   },
+   {
+    "id": 5380,
+    "title": "简历原则+三项目数字速查",
+    "score": 0.01519,
+    "source": "vector",
+    "source_type": "note",
+    "confidence": 0.65,
+    "is_low_confidence": false,
+    "tags": "面试,简历,求职,三项目,速查"
+   }
+  ]
+ },
+ {
+  "query": "现在的工作学不到东西，想跳槽又怕空窗期，怎么破局？",
+  "category": "职场焦虑",
+  "results": [
+   {
+    "id": 6189,
+    "title": "离职前先做资源盘点",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 职业规划"
+   },
+   {
+    "id": 6071,
+    "title": "主动收集内部信息消除盲区",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场沟通, 信息收集"
+   },
+   {
+    "id": 5707,
+    "title": "以空杯心态应对职场",
+    "score": 0.02,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场适应, 学习成长"
+   },
+   {
+    "id": 6183,
+    "title": "长期任职者跳槽信心重建法",
+    "score": 0.01831,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 求职, 职业转型"
+   },
+   {
+    "id": 5796,
+    "title": "实习期以态度补技能短板",
+    "score": 0.01757,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场新人, 实习评价"
+   },
+   {
+    "id": 5779,
+    "title": "技能差距分析锚定转型路径",
+    "score": 0.01688,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场转型, 技能提升"
+   },
+   {
+    "id": 5383,
+    "title": "用经验者规律弥补自身盲区",
+    "score": 0.01667,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 导师咨询"
+   },
+   {
+    "id": 6376,
+    "title": "停滞期跳槽三步法",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职业规划, 跳槽决策"
+   },
+   {
+    "id": 6468,
+    "title": "低薪期以积累换跳槽资本",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 职业规划"
+   },
+   {
+    "id": 6420,
+    "title": "职场学习突破三无限制",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场学习, 自我提升"
+   }
+  ]
+ },
+ {
+  "query": "领导PUA打压我，天天让我打杂，该忍还是该撕破脸走人？",
+  "category": "职场焦虑",
+  "results": [
+   {
+    "id": 6038,
+    "title": "保持职业主动权以缓冲压力",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 职场生存"
+   },
+   {
+    "id": 7512,
+    "title": "权力更迭时主动离场而非被动挨打",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场跳槽, 组织变革"
+   },
+   {
+    "id": 6792,
+    "title": "展示价值并暗示不傻",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 向上管理"
+   },
+   {
+    "id": 6937,
+    "title": "评估自身能量与对方报复力",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 权力博弈"
+   },
+   {
+    "id": 7716,
+    "title": "避免极端反应导致内耗",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 人际冲突"
+   },
+   {
+    "id": 11787,
+    "title": "职场中见招拆招不主动内斗",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 团队协作"
+   },
+   {
+    "id": 12574,
+    "title": "以面子为代价换取关系修复",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 人际冲突"
+   },
+   {
+    "id": 9203,
+    "title": "分离情感与职责，适应环境",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场合作, 人际冲突"
+   },
+   {
+    "id": 10686,
+    "title": "避免主动发起内斗",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场竞争, 人际冲突"
+   },
+   {
+    "id": 11767,
+    "title": "止损优先于修复关系",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 职业规划"
+   }
+  ]
+ },
+ {
+  "query": "35岁被裁员，投递简历全被已读不回，还能干点什么？",
+  "category": "职场焦虑",
+  "results": [
+   {
+    "id": 6184,
+    "title": "避免裸辞风险的低调求职策略",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 求职, 风险管理"
+   },
+   {
+    "id": 6183,
+    "title": "长期任职者跳槽信心重建法",
+    "score": 0.01912,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 求职, 职业转型"
+   },
+   {
+    "id": 5697,
+    "title": "求职困境中先核实政策底线",
+    "score": 0.01831,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场求职, 法律咨询"
+   },
+   {
+    "id": 5383,
+    "title": "用经验者规律弥补自身盲区",
+    "score": 0.01757,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 导师咨询"
+   },
+   {
+    "id": 6189,
+    "title": "离职前先做资源盘点",
+    "score": 0.01667,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 职业规划"
+   },
+   {
+    "id": 5623,
+    "title": "跨专业求职的曲线救国路径",
+    "score": 0.01646,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场求职, 职业转型"
+   },
+   {
+    "id": 6657,
+    "title": "横向拓展阅历以少走弯路",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场发展, 人际沟通"
+   },
+   {
+    "id": 6753,
+    "title": "用写作固化思维积累求职资本",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场转型, 个人成长"
+   },
+   {
+    "id": 6376,
+    "title": "停滞期跳槽三步法",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职业规划, 跳槽决策"
+   },
+   {
+    "id": 11424,
+    "title": "跳槽前先评估平台需求匹配度",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场跳槽, 职业规划"
+   }
+  ]
+ },
+ {
+  "query": "经济不好，普通人怎么保住自己的工作？",
+  "category": "职场焦虑",
+  "results": [
+   {
+    "id": 5658,
+    "title": "经济受限时先自筹资金",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 教育规划, 财务独立"
+   },
+   {
+    "id": 6000,
+    "title": "扎根内职业生涯应对恶劣环境",
+    "score": 0.01688,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.65,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场发展, 职业规划"
+   },
+   {
+    "id": 18941,
+    "title": "经济压力下先保障生存再谋发展",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场规划, 个人理财"
+   },
+   {
+    "id": 19190,
+    "title": "夹缝中调整策略而非放弃行动",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 创业生存, 逆境适应"
+   },
+   {
+    "id": 16692,
+    "title": "宏观悲观时优先保障生存",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 经济下行应对, 风险管理"
+   },
+   {
+    "id": 15685,
+    "title": "经济下行期选择服务业切入点",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.65,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 创业方向, 经济周期"
+   },
+   {
+    "id": 15810,
+    "title": "资源匮乏时先副业试水",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场转型, 创业起步"
+   },
+   {
+    "id": 18693,
+    "title": "稳定与冒险的渐进式平衡",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职业规划, 家庭决策"
+   },
+   {
+    "id": 6671,
+    "title": "兴趣追求前先确保生存底线",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职业转型, 创业决策"
+   },
+   {
+    "id": 6753,
+    "title": "用写作固化思维积累求职资本",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场转型, 个人成长"
+   }
+  ]
+ },
+ {
+  "query": "跟同事合作项目，他划水摸鱼，最后汇报全抢我功劳，怎么办？",
+  "category": "人际博弈",
+  "results": [
+   {
+    "id": 19722,
+    "title": "先问原因再提建议",
+    "score": 0.01781,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 人性的弱点, 职场管理, 安全监督"
+   },
+   {
+    "id": 19589,
+    "title": "以面子换合作",
+    "score": 0.01646,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场谈判, 家庭沟通"
+   },
+   {
+    "id": 12010,
+    "title": "被抢功时先沉默后补位",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 团队协作"
+   },
+   {
+    "id": 7890,
+    "title": "推功揽过保安全",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 团队协作"
+   },
+   {
+    "id": 7884,
+    "title": "功劳提及前先评估领导类型",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 向上管理"
+   },
+   {
+    "id": 9284,
+    "title": "下属高估自身筹码易遭反噬",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场晋升, 权力博弈"
+   },
+   {
+    "id": 7701,
+    "title": "盲目拉人下水反噬风险",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 职场协作, 沟通技巧"
+   },
+   {
+    "id": 10873,
+    "title": "成果被抢占时的三步应对",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 上下级关系"
+   },
+   {
+    "id": 7698,
+    "title": "任务捆绑：拉人下水促共赢",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场协作, 项目管理"
+   },
+   {
+    "id": 7893,
+    "title": "张扬招损先出头",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 权力博弈"
+   }
+  ]
+ },
+ {
+  "query": "面试官问'你为什么从上家公司离职'，怎么回答既真实又不得罪人？",
+  "category": "人际博弈",
+  "results": [
+   {
+    "id": 6087,
+    "title": "身离心不离保持存在感",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场沟通, 远程协作"
+   },
+   {
+    "id": 5962,
+    "title": "面试全程细节皆考察点",
+    "score": 0.01857,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场面试, 求职技巧"
+   },
+   {
+    "id": 5905,
+    "title": "高压面试中迂回表达观点",
+    "score": 0.01831,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场面试, 高压沟通"
+   },
+   {
+    "id": 5958,
+    "title": "回答问题时紧扣岗位价值",
+    "score": 0.01781,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 求职面试, 职场谈判"
+   },
+   {
+    "id": 6181,
+    "title": "识别领导挽留的诚意三要素",
+    "score": 0.01733,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 离职决策"
+   },
+   {
+    "id": 5940,
+    "title": "面试准备需先研究岗位需求与招聘流程",
+    "score": 0.01625,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 求职面试, 行业研究"
+   },
+   {
+    "id": 12256,
+    "title": "职场去留沟通三步法",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 职业规划"
+   },
+   {
+    "id": 6247,
+    "title": "跳槽前评估岗位真实定位",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场跳槽, 职业规划"
+   },
+   {
+    "id": 10517,
+    "title": "用间接试探代替直接质问",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 家庭沟通"
+   },
+   {
+    "id": 7516,
+    "title": "离职时维护前关系",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场离职, 职业发展"
+   }
+  ]
+ },
+ {
+  "query": "跟老板提涨薪被画大饼，下次怎么谈才能让他没法拒绝？",
+  "category": "人际博弈",
+  "results": [
+   {
+    "id": 6181,
+    "title": "识别领导挽留的诚意三要素",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 离职决策"
+   },
+   {
+    "id": 19722,
+    "title": "先问原因再提建议",
+    "score": 0.01781,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 人性的弱点, 职场管理, 安全监督"
+   },
+   {
+    "id": 11637,
+    "title": "拒绝建议时先肯定对方付出",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 社交互动"
+   },
+   {
+    "id": 11623,
+    "title": "委婉拒绝建议的三步法",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 社交互动"
+   },
+   {
+    "id": 11262,
+    "title": "婉拒协助请求时转移话题",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 社交互动"
+   },
+   {
+    "id": 8758,
+    "title": "承认优势以换取谈判筹码",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 人际沟通"
+   },
+   {
+    "id": 9351,
+    "title": "用反问界定模糊请求",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 人际交往"
+   },
+   {
+    "id": 12886,
+    "title": "用历史事实反击拉拢",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 人际冲突"
+   },
+   {
+    "id": 19302,
+    "title": "职场中拒绝权威盲从",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场发展, 个人成长"
+   },
+   {
+    "id": 6467,
+    "title": "拒绝额外任务可能错失成长机会",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场决策, 职业发展"
+   }
+  ]
+ },
+ {
+  "query": "朋友老是找我借钱，不想伤感情又想拒绝，话术怎么搞？",
+  "category": "人际博弈",
+  "results": [
+   {
+    "id": 19621,
+    "title": "拒绝朋友借钱时先亮明自身难处",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 朋友相处, 财务边界"
+   },
+   {
+    "id": 19623,
+    "title": "避免朋友间经济往来模糊边界",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 朋友相处, 财务风险"
+   },
+   {
+    "id": 19622,
+    "title": "以关系长期健康为决策锚点",
+    "score": 0.0194,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 人际关系, 决策原则"
+   },
+   {
+    "id": 19887,
+    "title": "施助前先确认对方需求与意愿",
+    "score": 0.01857,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 这就是人性, 职场协作, 家庭沟通, 社交关系"
+   },
+   {
+    "id": 6098,
+    "title": "敷衍不如沉默",
+    "score": 0.01625,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场沟通, 人际交往"
+   },
+   {
+    "id": 16053,
+    "title": "危机中先确认对方核心数据",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 家庭沟通"
+   },
+   {
+    "id": 11262,
+    "title": "婉拒协助请求时转移话题",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 社交互动"
+   },
+   {
+    "id": 19234,
+    "title": "借贷风险控制：设定上限与拒绝话术",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 借贷管理, 人际边界"
+   },
+   {
+    "id": 18086,
+    "title": "避免私人借贷破坏关系",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 家庭沟通, 社交礼仪"
+   },
+   {
+    "id": 11623,
+    "title": "委婉拒绝建议的三步法",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 社交互动"
+   }
+  ]
+ },
+ {
+  "query": "都快30岁了，要房没房要车没车，感觉人生好失败，怎么调整？",
+  "category": "人生规划",
+  "results": [
+   {
+    "id": 5401,
+    "title": "迷茫时先做自我盘点",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+   },
+   {
+    "id": 19836,
+    "title": "三步破除自我中心幻想",
+    "score": 0.01912,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通, 个人成长"
+   },
+   {
+    "id": 5651,
+    "title": "资源受限时调整短期目标并管理情绪",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 学业压力, 职业规划"
+   },
+   {
+    "id": 5403,
+    "title": "避免被外部机会迷惑",
+    "score": 0.01857,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 决策心理"
+   },
+   {
+    "id": 19929,
+    "title": "培养独立性以直面人生课题",
+    "score": 0.01806,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 这就是人性, 个人成长, 职业规划"
+   },
+   {
+    "id": 5583,
+    "title": "用自我提问厘清职业方向",
+    "score": 0.01757,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+   },
+   {
+    "id": 11226,
+    "title": "警惕社会比较引发的盲目奋斗",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场竞争, 个人成长"
+   },
+   {
+    "id": 9208,
+    "title": "痛苦源于主客观不一致",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 个人成长, 职业规划"
+   },
+   {
+    "id": 17007,
+    "title": "阶段转折时用目标对比驱散空落感",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职业转型, 人生规划"
+   },
+   {
+    "id": 12313,
+    "title": "用随缘心态化解失败感",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 求职面试, 项目竞标"
+   }
+  ]
+ },
+ {
+  "query": "每天上班像上坟，提不起劲，怎么找回工作的动力？",
+  "category": "人生规划",
+  "results": [
+   {
+    "id": 6055,
+    "title": "将工作融入生活以降低心理冲突",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场压力, 时间管理"
+   },
+   {
+    "id": 5505,
+    "title": "先问Why再问How",
+    "score": 0.02,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+   },
+   {
+    "id": 6038,
+    "title": "保持职业主动权以缓冲压力",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 职场生存"
+   },
+   {
+    "id": 6056,
+    "title": "用清单法提升工作效率减少加班",
+    "score": 0.0194,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.65,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场效率, 时间管理"
+   },
+   {
+    "id": 5519,
+    "title": "五问定向法：从内在动机找方向",
+    "score": 0.01912,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+   },
+   {
+    "id": 6087,
+    "title": "身离心不离保持存在感",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场沟通, 远程协作"
+   },
+   {
+    "id": 6057,
+    "title": "以心理承受力为工作安排底线",
+    "score": 0.01757,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.55,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 打破你的学生思维, 职场决策, 自我管理"
+   },
+   {
+    "id": 5389,
+    "title": "平衡理想与现实，动态调整",
+    "score": 0.01667,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 求职策略, 心态调整"
+   },
+   {
+    "id": 5792,
+    "title": "三步自我梳理法应对同辈压力",
+    "score": 0.01646,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 学业决策"
+   },
+   {
+    "id": 5822,
+    "title": "将实习转化为能力修炼场",
+    "score": 0.01625,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场起步, 实习管理"
+   }
+  ]
+ },
+ {
+  "query": "想转行做AI产品经理，但零基础，不知道怎么迈出第一步。",
+  "category": "人生规划",
+  "results": [
+   {
+    "id": 5460,
+    "title": "职业转型的迂回策略",
+    "score": 0.02746,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 转行"
+   },
+   {
+    "id": 5984,
+    "title": "岗位选择先看核心对象",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 职场选择"
+   },
+   {
+    "id": 5571,
+    "title": "避免一蹴而就的幻想",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划"
+   },
+   {
+    "id": 5779,
+    "title": "技能差距分析锚定转型路径",
+    "score": 0.02063,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场转型, 技能提升"
+   },
+   {
+    "id": 5526,
+    "title": "避免人云亦云的学习陷阱",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 学习规划, 自我提升"
+   },
+   {
+    "id": 5781,
+    "title": "避免因行业热度盲目转型",
+    "score": 0.02,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业选择, 教育决策"
+   },
+   {
+    "id": 5495,
+    "title": "用专业背景撬动非技术岗位",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业转型, 专业应用"
+   },
+   {
+    "id": 5486,
+    "title": "以他人需求为起点定位个人方向",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+   },
+   {
+    "id": 5494,
+    "title": "迷茫期先盘点自身优势",
+    "score": 0.01733,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 自我认知"
+   },
+   {
+    "id": 6174,
+    "title": "转职前先问人生目标",
+    "score": 0.01646,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+   }
+  ]
+ },
+ {
+  "query": "30岁了还没明确的职业方向，晚不晚？",
+  "category": "人生规划",
+  "results": [
+   {
+    "id": 5494,
+    "title": "迷茫期先盘点自身优势",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 自我认知"
+   },
+   {
+    "id": 5423,
+    "title": "职业规划四步法：优势与兴趣先行",
+    "score": 0.02063,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 自我认知"
+   },
+   {
+    "id": 5712,
+    "title": "破解职业迷茫的三步分析法",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 教育选择"
+   },
+   {
+    "id": 5457,
+    "title": "择业时优先看能力成长",
+    "score": 0.02,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场选择, 职业规划"
+   },
+   {
+    "id": 5401,
+    "title": "迷茫时先做自我盘点",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+   },
+   {
+    "id": 6200,
+    "title": "职业规划双视角分析法",
+    "score": 0.01912,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.65,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+   },
+   {
+    "id": 5519,
+    "title": "五问定向法：从内在动机找方向",
+    "score": 0.01857,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+   },
+   {
+    "id": 5583,
+    "title": "用自我提问厘清职业方向",
+    "score": 0.01831,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+   },
+   {
+    "id": 5383,
+    "title": "用经验者规律弥补自身盲区",
+    "score": 0.01806,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 导师咨询"
+   },
+   {
+    "id": 5414,
+    "title": "迷茫时主动向外求教",
+    "score": 0.01781,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 个人成长"
+   }
+  ]
+ },
+ {
+  "query": "定好的计划总是坚持不过三天，是不是我意志力太差了？",
+  "category": "执行力",
+  "results": [
+   {
+    "id": 20062,
+    "title": "区分自律与自虐，调整目标设定",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 这就是人性, 个人成长, 习惯养成"
+   },
+   {
+    "id": 5850,
+    "title": "计划草率导致执行失控",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 项目管理, 个人效率"
+   },
+   {
+    "id": 6057,
+    "title": "以心理承受力为工作安排底线",
+    "score": 0.01806,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.55,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 打破你的学生思维, 职场决策, 自我管理"
+   },
+   {
+    "id": 5431,
+    "title": "决策锚定个人与家庭约束",
+    "score": 0.01733,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 家庭决策"
+   },
+   {
+    "id": 6117,
+    "title": "识别退缩背后的具体恐惧",
+    "score": 0.01711,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 个人成长, 职场执行"
+   },
+   {
+    "id": 5654,
+    "title": "重大选择前先问目的与条件",
+    "score": 0.01625,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 教育决策"
+   },
+   {
+    "id": 6346,
+    "title": "缺乏策划导致行动低效",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职业规划, 执行策略"
+   },
+   {
+    "id": 19099,
+    "title": "磨刀不误砍柴工",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 个人成长, 决策准备"
+   },
+   {
+    "id": 7007,
+    "title": "过度思考计划导致执行瘫痪",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 目标管理, 自我管理"
+   },
+   {
+    "id": 14432,
+    "title": "患得患失导致执行偏差",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 自我管理, 团队执行"
+   }
+  ]
+ },
+ {
+  "query": "工作堆成山，不知道先干哪个，每天加班还挨骂，怎么安排优先级？",
+  "category": "执行力",
+  "results": [
+   {
+    "id": 6056,
+    "title": "用清单法提升工作效率减少加班",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.65,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职场效率, 时间管理"
+   },
+   {
+    "id": 5626,
+    "title": "以优势为起点选择入门岗位",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 求职面试"
+   },
+   {
+    "id": 6129,
+    "title": "优先级筛选与渐进扩展",
+    "score": 0.02,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 时间管理, 团队管理"
+   },
+   {
+    "id": 5792,
+    "title": "三步自我梳理法应对同辈压力",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 学业决策"
+   },
+   {
+    "id": 6057,
+    "title": "以心理承受力为工作安排底线",
+    "score": 0.0194,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.55,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 打破你的学生思维, 职场决策, 自我管理"
+   },
+   {
+    "id": 5505,
+    "title": "先问Why再问How",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+   },
+   {
+    "id": 5984,
+    "title": "岗位选择先看核心对象",
+    "score": 0.01711,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 职场选择"
+   },
+   {
+    "id": 6200,
+    "title": "职业规划双视角分析法",
+    "score": 0.01646,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.65,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+   },
+   {
+    "id": 6738,
+    "title": "区分任务类型以定效率策略",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 项目管理"
+   },
+   {
+    "id": 10854,
+    "title": "职场生存策略二选一",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场选择, 个人定位"
+   }
+  ]
+ },
+ {
+  "query": "看了很多书，当时觉得很对，过两天全忘光了，怎么变成自己的？",
+  "category": "执行力",
+  "results": [
+   {
+    "id": 19694,
+    "title": "两遍阅读法：速览后精读",
+    "score": 0.02,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 人性的弱点, 阅读学习, 知识管理"
+   },
+   {
+    "id": 12477,
+    "title": "积极阅读观：深度内化知识",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 学习提升, 知识管理"
+   },
+   {
+    "id": 12363,
+    "title": "用笔记弥补记忆短板",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 学习提升, 知识管理"
+   },
+   {
+    "id": 12190,
+    "title": "区分娱乐与实用阅读，锚定现实目标",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 个人成长, 学习策略"
+   },
+   {
+    "id": 10412,
+    "title": "阅读后主动关联现实场景",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 个人成长, 职场应用"
+   },
+   {
+    "id": 14560,
+    "title": "盲目模仿成功者忽视自身条件",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 职业规划"
+   },
+   {
+    "id": 12231,
+    "title": "深度阅读四步法：从厚到薄再内化",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 个人学习, 知识管理"
+   },
+   {
+    "id": 6591,
+    "title": "反思时避免全盘否定",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 个人成长, 决策制定"
+   },
+   {
+    "id": 10413,
+    "title": "避免一次性阅读后遗忘",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 学习习惯"
+   },
+   {
+    "id": 12431,
+    "title": "按认知阶段选阅读材料",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 家庭教育, 阅读指导"
+   }
+  ]
+ },
+ {
+  "query": "遇到一点挫折就想放弃，怎么让自己变得皮实一点？",
+  "category": "执行力",
+  "results": [
+   {
+    "id": 19836,
+    "title": "三步破除自我中心幻想",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通, 个人成长"
+   },
+   {
+    "id": 20062,
+    "title": "区分自律与自虐，调整目标设定",
+    "score": 0.01831,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 这就是人性, 个人成长, 习惯养成"
+   },
+   {
+    "id": 19575,
+    "title": "口无遮拦易致人际挫折",
+    "score": 0.01733,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场沟通, 日常社交"
+   },
+   {
+    "id": 19929,
+    "title": "培养独立性以直面人生课题",
+    "score": 0.01667,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 这就是人性, 个人成长, 职业规划"
+   },
+   {
+    "id": 5884,
+    "title": "恐惧时先迈小步再评估",
+    "score": 0.01646,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 求职, 决策"
+   },
+   {
+    "id": 14831,
+    "title": "挫折后远观亲友以保平静",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 情感管理, 家庭沟通"
+   },
+   {
+    "id": 11231,
+    "title": "反求诸己：转向内在调节",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职业发展, 个人成长"
+   },
+   {
+    "id": 16448,
+    "title": "过度依赖外部认可致脆弱",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场竞争, 人际关系"
+   },
+   {
+    "id": 19099,
+    "title": "磨刀不误砍柴工",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 个人成长, 决策准备"
+   },
+   {
+    "id": 15584,
+    "title": "坚韧应对压力",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 压力管理, 危机应对"
+   }
+  ]
+ },
+ {
+  "query": "怎么判断一个人说的话靠不靠谱？",
+  "category": "认知鉴别",
+  "results": [
+   {
+    "id": 19495,
+    "title": "以后果和人性为决策锚点",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 社交沟通, 职场交流"
+   },
+   {
+    "id": 19980,
+    "title": "追问信息源以辨真伪",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 这就是人性, 职场决策, 家庭沟通"
+   },
+   {
+    "id": 19571,
+    "title": "判断实话是否该说的隐性标准",
+    "score": 0.01912,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场谈判, 人际交往"
+   },
+   {
+    "id": 19494,
+    "title": "评价他人忌盖棺定论",
+    "score": 0.01831,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场评价, 人际观察"
+   },
+   {
+    "id": 19551,
+    "title": "判断说服效果看对方是否自愿",
+    "score": 0.01757,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 管理沟通, 教育引导"
+   },
+   {
+    "id": 19035,
+    "title": "以实质回答作为可信度标准",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 公众辩论"
+   },
+   {
+    "id": 11712,
+    "title": "以人品为信任锚点",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场合作, 家庭沟通"
+   },
+   {
+    "id": 12156,
+    "title": "先确认直接原因再下结论",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 团队协作"
+   },
+   {
+    "id": 16319,
+    "title": "以信息可靠性判断对话价值",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 社交沟通, 谈判"
+   },
+   {
+    "id": 18624,
+    "title": "听其言观其行，验证一致性",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 职场沟通"
+   }
+  ]
+ },
+ {
+  "query": "为什么越是老实人越容易被欺负？",
+  "category": "认知鉴别",
+  "results": [
+   {
+    "id": 20133,
+    "title": "好为人师引发隐性冲突",
+    "score": 0.01757,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 这就是人性, 日常社交, 管理场景"
+   },
+   {
+    "id": 20000,
+    "title": "过度张扬引祸端",
+    "score": 0.01711,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 这就是人性, 职场生存, 社交场合"
+   },
+   {
+    "id": 19880,
+    "title": "回避现实规律导致被动",
+    "score": 0.01688,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通"
+   },
+   {
+    "id": 6850,
+    "title": "避免被贴上老好人标签",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场形象, 人际边界"
+   },
+   {
+    "id": 6517,
+    "title": "老好人陷阱",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 团队协作"
+   },
+   {
+    "id": 6631,
+    "title": "警惕人性弱点导致受骗",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 防骗指南, 自我提升"
+   },
+   {
+    "id": 9606,
+    "title": "道德底线与现实警觉并存",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场伦理, 个人发展"
+   },
+   {
+    "id": 7399,
+    "title": "强大但立场错误将招致群起攻之",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场权力斗争, 国际关系"
+   },
+   {
+    "id": 10355,
+    "title": "虚名易损，实利难夺",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 博弈论, 个人发展"
+   },
+   {
+    "id": 10640,
+    "title": "盲目厚黑学导致反效果",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场关系, 人际沟通"
+   }
+  ]
+ },
+ {
+  "query": "老板画大饼怎么办？怎么判断公司是在真发展还是忽悠？",
+  "category": "认知鉴别",
+  "results": [
+   {
+    "id": 6182,
+    "title": "企业平台发展潜力评估清单",
+    "score": 0.01625,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 企业选择"
+   },
+   {
+    "id": 10089,
+    "title": "避免过度美化承诺",
+    "score": 0.01393,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 销售沟通"
+   },
+   {
+    "id": 6314,
+    "title": "以资源兑现度衡量承诺",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 长期职业规划"
+   },
+   {
+    "id": 10082,
+    "title": "画大饼的短期有效与长期风险",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场管理, 创业团队"
+   },
+   {
+    "id": 6315,
+    "title": "画饼陷阱：以踏实换认可",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场心理, 组织行为"
+   },
+   {
+    "id": 6790,
+    "title": "识别领导类型以调整策略",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 上下级关系"
+   },
+   {
+    "id": 6503,
+    "title": "用细节检验专业深度",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 自我评估, 面试判断"
+   },
+   {
+    "id": 6810,
+    "title": "以能力平衡度判断发展潜力",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 人才评估, 自我认知"
+   },
+   {
+    "id": 6788,
+    "title": "以利益维护为真实意图锚点",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场判断, 人际识别"
+   },
+   {
+    "id": 16409,
+    "title": "内部愿景与外部沟通分离",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 创业沟通, 团队管理"
+   }
+  ]
+ }
+]

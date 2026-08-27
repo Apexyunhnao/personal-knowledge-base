@@ -310,7 +310,7 @@ def import_book(book: str, limit: int = 0, dry_run: bool = False, no_merge: bool
             data = build_note_data(adapted, book, chapter, ref, h)
             from personal_db import _create
             note_id = _create("notes", data)
-            sync_note_embedding(note_id, data["title"], data["content"])
+            sync_note_embedding(note_id, data["title"], data["content"], data.get("tags", ""))
         time.sleep(0.1)
 
     return stats

@@ -72,7 +72,7 @@ def _get_notes_collection():
         return client.create_collection(name=NOTES_COLLECTION, embedding_function=_get_embedding_fn())
 
 
-def sync_note_embedding(note_id: int, title: str, content: str):
+def sync_note_embedding(note_id: int, title: str, content: str, tags: str = ""):
     """
     同步笔记到向量库（创建或更新）。
     从 ChromaDB 删除旧向量后重新插入。
@@ -81,8 +81,14 @@ def sync_note_embedding(note_id: int, title: str, content: str):
         col = _get_notes_collection()
         # 删除旧向量
         col.delete(ids=[str(note_id)])
-        # 插入新向量：标题+内容拼接
-        text = f"{title}\n{content}" if content else title
+        # 插入新向量：标题+内容+场景标签拼接（v1.2.2: tags 进向量——scenario_tags 萃取了但之前没拼进向量，
+        # 导致"同事抢功"这类场景词匹配不到卡片。tags 含场景标签[职场谈判/家庭沟通]，拼入建立语义桥梁）
+        if content and tags:
+            text = f"{title}\n{content}\n标签: {tags}"
+        elif content:
+            text = f"{title}\n{content}"
+        else:
+            text = title
         col.add(
             ids=[str(note_id)],
             documents=[text],
@@ -109,7 +115,7 @@ def build_all_embeddings():
 
     conn = get_conn()
     notes = conn.execute(
-        "SELECT id, title, COALESCE(content,'') as content FROM learning_notes WHERE deleted_at IS NULL"
+        "SELECT id, title, COALESCE(content,'') as content, COALESCE(tags,'') as tags FROM learning_notes WHERE deleted_at IS NULL"
     ).fetchall()
 
     col = _get_notes_collection()
@@ -124,7 +130,13 @@ def build_all_embeddings():
     ids = []; docs = []; metas = []
     for n in notes:
         ids.append(str(n["id"]))
-        docs.append(f"{n['title']}\n{n['content']}")
+        # v1.2.2: tags 进向量（含场景标签），见 sync_note_embedding 注释
+        if n["content"] and n["tags"]:
+            docs.append(f"{n['title']}\n{n['content']}\n标签: {n['tags']}")
+        elif n["content"]:
+            docs.append(f"{n['title']}\n{n['content']}")
+        else:
+            docs.append(n["title"])
         metas.append({"title": n["title"], "note_id": n["id"]})
 
     # 分批插入（ChromaDB 批量 add 有批次上限，一次全插会静默截断）
@@ -371,7 +383,9 @@ def _source_type(frontmatter_str: str | None) -> str:
 # 来源可信度权重（RRF 融合后乘到最终得分；AI 优先原则，高可信来源排前面）
 # 系数依据来源可信度区间中值（book 0.775 / note 0.75 / forum 0.6 / novel 0.5）拉开的档位
 # v1.2.1: novel 0.7→0.5——bge 语义强后小说卡（占库26%）顶爆 Top10，压权重让低质卡让位
-SOURCE_WEIGHTS = {"book": 1.3, "note": 1.2, "forum": 0.85, "novel": 0.5}
+# v1.2.2: novel 0.5→0.6——tags 进向量后复测，novel 仍 0 条进 Top10（占库25%被系统性抹杀），
+#         0.5 是"清零"不是"降权"。微调到 0.6 让小说卡回池（豆包第二轮建议，先试 0.6 不回到 0.7）
+SOURCE_WEIGHTS = {"book": 1.3, "note": 1.2, "forum": 0.85, "novel": 0.6}
 # 注意：v1.2.2 曾试过"低质惩罚"（forum/novel+conf<0.65 额外 ×0.6），评估 86%→57% 暴跌，
 # 已回滚。forum/novel 虽 confidence 低，但天涯/网文就是本库查询主题（金融/职场/谈判）的内容
 # 主力——"置信度低"≠"不相关"。教训见项目文档踩坑记录第 13 条。
