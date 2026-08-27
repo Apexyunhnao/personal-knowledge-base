@@ -265,7 +265,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资心理, 行为金融",
     "content_excerpt": "投资者常因‘越涨越不敢买’的心理错失机会，或因‘满仓踏空’而焦虑，导致在牛市亏损。需克服对高位的恐惧，基于主力行为而非情绪决策，同时避免盲目追涨。",
-    "label": "partial"
+    "label": "relevant"
    },
    {
     "id": 14528,
@@ -349,7 +349,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 商业谈判",
     "content_excerpt": "面对盈利时，需主动问自己：如果现在离场，是否满足？若答案是否定的，则需警惕贪婪。可操作步骤：预设一个‘满足点’（如收益率或绝对金额），达到后强制暂停交易，并记录当时的心理状态，用于后续对比。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 14815,
@@ -529,7 +529,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资理财, 心理陷阱",
     "content_excerpt": "骗局中，受害者常因亏损后急于翻本而继续投入，导致损失扩大。识别骗局后，应避免被‘翻本’话术诱导，及时止损，而非追加资金。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 19285,
@@ -1255,7 +1255,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场跳槽, 职业规划",
     "content_excerpt": "在更换平台前，需分析目标组织的核心痛点或决策者的当前关注点，判断自身能力是否为其急需。若仅因平台名气大而加入，可能陷入边缘化。操作上，可通过行业信息、内部人脉或公开资料，列出对方最紧迫的3个问题，并准备针对性解决方案。",
-    "label": "partial"
+    "label": "irrelevant"
    }
   ]
  },
@@ -1333,7 +1333,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 创业方向, 经济周期",
     "content_excerpt": "在经济不景气时创业，应优先选择服务业，尤其是需求刚性且供给不足的细分领域。例如空调清洗换液、白蚁防治等，这些服务需求受经济周期影响小，且可通过外包师傅分包轻资产运营。",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
     "id": 15810,
@@ -1345,7 +1345,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场转型, 创业起步",
     "content_excerpt": "当个人资源不足且环境不利时，不急于全职创业，而是利用业余时间开展小规模副业（如设柜台、接策划），在低风险下积累经验、人脉和资金，同时保持主业稳定，待能力提升后再考虑扩大。",
-    "label": "partial"
+    "label": "relevant"
    },
    {
     "id": 18693,
@@ -1357,7 +1357,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职业规划, 家庭决策",
     "content_excerpt": "当面临稳定工作与创业的两难时，不采取非此即彼的极端选择。先评估自身性格是否适合冒险，若不确定，可采取一人留守、一人尝试，或利用业余时间兼职创业，以最小成本验证可行性，避免因冲动辞职而失去保障。",
-    "label": "partial"
+    "label": "relevant"
    },
    {
     "id": 6671,
@@ -1389,30 +1389,6 @@
   "query": "跟同事合作项目，他划水摸鱼，最后汇报全抢我功劳，怎么办？",
   "category": "人际博弈",
   "results": [
-   {
-    "id": 19722,
-    "title": "先问原因再提建议",
-    "score": 0.01781,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 人性的弱点, 职场管理, 安全监督",
-    "content_excerpt": "当发现对方违规时，先以询问方式探查客观原因（如工具不适、条件限制），而非直接批评。这能降低对方的防御心理，为后续建议铺路。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 19589,
-    "title": "以面子换合作",
-    "score": 0.01646,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场谈判, 家庭沟通",
-    "content_excerpt": "当对方将面子视为核心价值时，主动给予尊重和认可，可换取对方的信任与合作。具体操作：先观察对方对面子的敏感度，再在公开场合给予正面评价，避免任何可能被视为羞辱的言行。",
-    "label": "irrelevant"
-   },
    {
     "id": 12010,
     "title": "被抢功时先沉默后补位",
@@ -1508,6 +1484,30 @@
     "tags": "小说萃取, 天涯神贴精选, 职场谈判, 权力博弈",
     "content_excerpt": "过度张扬个人贡献或利益诉求，易成为众矢之的，引发上级猜忌和同事反感。避免在成功时抢功，在失败时推责，否则会失去支持。",
     "label": "partial"
+   },
+   {
+    "id": 7881,
+    "title": "功成后谦逊以待回报",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场晋升, 领导关系",
+    "content_excerpt": "在职场中完成重大贡献后，不要立即利用时机向领导施压或索取利益，而应保持谦逊，不炫耀功绩，不彰显才能。通过低调行为传递忠诚信号，让领导主动给予回报，避免因要挟引发领导的反感或猜忌。具体操作：主动归功于团队或领导，避免在公开场合强调个人作用，等",
+    "label": "partial"
+   },
+   {
+    "id": 11090,
+    "title": "用功劳框架化解攻击意图",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 冲突调解",
+    "content_excerpt": "当决策者因他人功劳而想采取攻击行动时，先肯定其行动的前提（如对方功劳），再指出攻击行为会损害其声誉，从而引导其放弃攻击。操作上分三步：先认同对方立场，再重新定义局势为‘对方已立功’，最后点出负面后果（如‘显得不义’）。",
+    "label": "irrelevant"
    }
   ]
  },
@@ -1654,18 +1654,6 @@
     "label": "relevant"
    },
    {
-    "id": 19722,
-    "title": "先问原因再提建议",
-    "score": 0.01781,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 人性的弱点, 职场管理, 安全监督",
-    "content_excerpt": "当发现对方违规时，先以询问方式探查客观原因（如工具不适、条件限制），而非直接批评。这能降低对方的防御心理，为后续建议铺路。",
-    "label": "irrelevant"
-   },
-   {
     "id": 11637,
     "title": "拒绝建议时先肯定对方付出",
     "score": 0.01393,
@@ -1735,7 +1723,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场谈判, 人际冲突",
     "content_excerpt": "当对方以高地位或利益拉拢时，先列举自身经历中的具体待遇差异（如职位、资源、尊重程度），以此作为拒绝依据。这能有效暴露对方论点的漏洞，同时强化自身立场的合理性。",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
     "id": 19302,
@@ -1750,9 +1738,21 @@
     "label": "relevant"
    },
    {
+    "id": 6315,
+    "title": "画饼陷阱：以踏实换认可",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场心理, 组织行为",
+    "content_excerpt": "在缺乏明确晋升通道和资源支持的环境中，单方面追求‘踏实工作’以换取认可，容易陷入被动等待。若公司未提供成长反馈或资源倾斜，持续投入可能只是沉没成本累积。需定期主动核对承诺兑现情况，而非仅靠个人表现等待。",
+    "label": "relevant"
+   },
+   {
     "id": 6467,
     "title": "拒绝额外任务可能错失成长机会",
-    "score": 0.01214,
+    "score": 0.01197,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -1768,57 +1768,9 @@
   "category": "人际博弈",
   "results": [
    {
-    "id": 19621,
-    "title": "拒绝朋友借钱时先亮明自身难处",
-    "score": 0.02131,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 朋友相处, 财务边界",
-    "content_excerpt": "当朋友提出经济请求而自己无法满足时，直接说明自身经济紧张，避免编造借口。坦诚能减少猜疑，同时可主动提供非金钱的帮助（如出主意或陪伴），以维持情感连接。",
-    "label": "relevant"
-   },
-   {
-    "id": 19623,
-    "title": "避免朋友间经济往来模糊边界",
-    "score": 0.0197,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 朋友相处, 财务风险",
-    "content_excerpt": "朋友间频繁经济往来易引发纠纷，甚至反目。应事先明确借贷规则或尽量规避金钱纠葛，以保护关系。",
-    "label": "partial"
-   },
-   {
-    "id": 19622,
-    "title": "以关系长期健康为决策锚点",
-    "score": 0.0194,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 人际关系, 决策原则",
-    "content_excerpt": "在朋友间经济往来中，优先考虑关系能否持续，而非短期取悦对方。拒绝时以诚实和尊重为前提，避免因勉强借贷导致后续矛盾。",
-    "label": "relevant"
-   },
-   {
-    "id": 19887,
-    "title": "施助前先确认对方需求与意愿",
-    "score": 0.01857,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场协作, 家庭沟通, 社交关系",
-    "content_excerpt": "在提供帮助前，先判断对方是否明确请求或暗示需要帮助。若未请求，应主动询问对方需求，而非直接采取行动。基于自身假设的帮助可能被视为打扰或侵犯，导致善意被拒。具体操作：先问'你需要帮助吗？'或'你希望我怎么帮你？'，再决定行动。",
-    "label": "irrelevant"
-   },
-   {
     "id": 6098,
     "title": "敷衍不如沉默",
-    "score": 0.01625,
+    "score": 0.01711,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.7,
@@ -1830,7 +1782,7 @@
    {
     "id": 16053,
     "title": "危机中先确认对方核心数据",
-    "score": 0.01371,
+    "score": 0.01393,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -1842,19 +1794,19 @@
    {
     "id": 11262,
     "title": "婉拒协助请求时转移话题",
-    "score": 0.01349,
+    "score": 0.01371,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场沟通, 社交互动",
     "content_excerpt": "当对方主动提出协助但自身无需求时，先直接表明现状（如'目前没有计划'），再询问对方个人情况（如'你在哪个城市'），将对话焦点从请求转移到对方身上，既明确拒绝又保留善意。",
-    "label": "partial"
+    "label": "relevant"
    },
    {
     "id": 19234,
     "title": "借贷风险控制：设定上限与拒绝话术",
-    "score": 0.01328,
+    "score": 0.01349,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -1866,7 +1818,7 @@
    {
     "id": 18086,
     "title": "避免私人借贷破坏关系",
-    "score": 0.01308,
+    "score": 0.01328,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -1878,14 +1830,62 @@
    {
     "id": 11623,
     "title": "委婉拒绝建议的三步法",
-    "score": 0.0125,
+    "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场沟通, 社交互动",
     "content_excerpt": "当他人提出建议但你认为不可行时，先具体感谢对方的付出（如'专门注册ID'），再用自谦式提问表达疑虑（如'是不是有点不敢承担'），最后将拒绝归因于外部因素（如'泛滥'），避免直接否定对方。全程保持讨论姿态，可有效维护关系。",
+    "label": "partial"
+   },
+   {
+    "id": 11637,
+    "title": "拒绝建议时先肯定对方付出",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 社交互动",
+    "content_excerpt": "当他人提出建议但需拒绝时，先具体指出对方行为中的积极点（如专门注册ID），表达真诚感谢，再委婉提出顾虑。这能降低对方抵触情绪，为后续讨论留出空间。",
+    "label": "partial"
+   },
+   {
+    "id": 16054,
+    "title": "求助前先算清付出账",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 家庭沟通",
+    "content_excerpt": "向朋友求助前，先自问：对方是否有必要帮我？我过去曾付出过什么？如果付出不足，则降低期望；如果付出很多，也要接受对方可能不回报。决策锚点是关系的长期价值，而非短期对等。这能避免因期望落空而破坏友谊。",
     "label": "irrelevant"
+   },
+   {
+    "id": 16055,
+    "title": "被拒后保持风度留后路",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 家庭沟通",
+    "content_excerpt": "当朋友在你困难时未提供帮助，即使你曾付出很多，也不要记恨或表露情绪。正确做法：1) 主动表示理解；2) 维持朋友关系；3) 将付出视为自愿行为，不要求回报。这样朋友仍是朋友，未来在你需要时仍可能伸出援手。若记恨，则付出白费且关系破裂。",
+    "label": "irrelevant"
+   },
+   {
+    "id": 9042,
+    "title": "拒绝借用时转移焦点至对方要务",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场资源分配, 日常人际",
+    "content_excerpt": "当他人借用你的稀缺资源时，先指出对方当前更紧迫的事务，使其意识到自身优先级，从而主动放弃请求。例如，提醒对方有更紧急的手术或截止日期，将焦点从你的资源转移到对方责任上。",
+    "label": "partial"
    }
   ]
  },
@@ -1906,21 +1906,9 @@
     "label": "partial"
    },
    {
-    "id": 19836,
-    "title": "三步破除自我中心幻想",
-    "score": 0.01912,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通, 个人成长",
-    "content_excerpt": "面对人际或事业困境，先识别自己是否持有'努力必成功'、'付出必回报'等绝对化假设。然后主动收集反例证据，用客观数据替代主观臆想。最后接受现实边界，将目标调整为基于自身能力范围的可实现步骤。",
-    "label": "relevant"
-   },
-   {
     "id": 5651,
     "title": "资源受限时调整短期目标并管理情绪",
-    "score": 0.01884,
+    "score": 0.01912,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.6,
@@ -1932,7 +1920,7 @@
    {
     "id": 5403,
     "title": "避免被外部机会迷惑",
-    "score": 0.01857,
+    "score": 0.01884,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.6,
@@ -1942,21 +1930,9 @@
     "label": "partial"
    },
    {
-    "id": 19929,
-    "title": "培养独立性以直面人生课题",
-    "score": 0.01806,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 个人成长, 职业规划",
-    "content_excerpt": "独立性是强者思维的基础。要收回人生主动权，不再盲目活在他人期待中，而是独立做出选择并承担责任。具体做法：明确个人目标，不依附他人，为自己的追求竭尽全力，不在意他人眼光。",
-    "label": "relevant"
-   },
-   {
     "id": 5583,
     "title": "用自我提问厘清职业方向",
-    "score": 0.01757,
+    "score": 0.01806,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.6,
@@ -1964,6 +1940,18 @@
     "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策",
     "content_excerpt": "面对大城市与家乡的抉择，先不急于比较外部条件，而是通过自问'我想要什么'来明确核心诉求。将诉求分为两类：追求技能与视野的积累，或追求安逸与稳定。根据答案，再匹配相应的城市、行业与生活模式，避免盲目跟风。",
     "label": "partial"
+   },
+   {
+    "id": 5792,
+    "title": "三步自我梳理法应对同辈压力",
+    "score": 0.01646,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 打破你的学生思维, 职业规划, 学业决策",
+    "content_excerpt": "当面临同辈竞争压力时，先区分压力来源（能力不足还是比较焦虑），然后从目标清单、客观能力、资源三个维度进行自我梳理，最后基于梳理结果决定行动（如考证），避免盲目跟风。",
+    "label": "relevant"
    },
    {
     "id": 11226,
@@ -2012,6 +2000,18 @@
     "tags": "小说萃取, 天涯神贴精选, 求职面试, 项目竞标",
     "content_excerpt": "在遭遇拒绝或失败时，主动将原因归结为‘时机’或‘缘分’，而非个人能力不足。这种归因方式能降低自我否定，维持心理稳定。但需注意，仅适用于非关键性目标，若涉及核心能力提升，仍需客观复盘。",
     "label": "relevant"
+   },
+   {
+    "id": 7150,
+    "title": "有金刚钻未必能揽瓷器活",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 能力评估, 项目管理",
+    "content_excerpt": "即使具备能力，也可能因时机、资源或人际因素而无法成功。需评估外部条件，避免盲目自信。",
+    "label": "partial"
    }
   ]
  },
@@ -2137,7 +2137,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 打破你的学生思维, 职场起步, 实习管理",
     "content_excerpt": "面对看似低价值的工作，不被动执行，而是主动切换视角：把每项任务视为体验样本。操作上分三步：1) 执行时记录关键细节与情绪反应；2) 事后复盘，提炼可迁移的技能或认知；3) 将提炼结果纳入个人能力库，与职业目标对齐。此方法可避免陷入怀才不遇的",
-    "label": "irrelevant"
+    "label": "partial"
    }
   ]
  },
@@ -2398,21 +2398,9 @@
   "category": "执行力",
   "results": [
    {
-    "id": 20062,
-    "title": "区分自律与自虐，调整目标设定",
-    "score": 0.02131,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 个人成长, 习惯养成",
-    "content_excerpt": "当自律计划频繁失败时，先审视目标是否超出当前能力范围。将宏大目标拆解为每日可完成的最小动作，如从'每天跑步20分钟'改为'每周三次快走10分钟'，降低启动门槛，减少心理抗拒。",
-    "label": "relevant"
-   },
-   {
     "id": 5850,
     "title": "计划草率导致执行失控",
-    "score": 0.02031,
+    "score": 0.02063,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.7,
@@ -2424,7 +2412,7 @@
    {
     "id": 6057,
     "title": "以心理承受力为工作安排底线",
-    "score": 0.01806,
+    "score": 0.01831,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.55,
@@ -2436,7 +2424,7 @@
    {
     "id": 5431,
     "title": "决策锚定个人与家庭约束",
-    "score": 0.01733,
+    "score": 0.01757,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.6,
@@ -2448,7 +2436,7 @@
    {
     "id": 6117,
     "title": "识别退缩背后的具体恐惧",
-    "score": 0.01711,
+    "score": 0.01733,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.6,
@@ -2460,7 +2448,7 @@
    {
     "id": 5654,
     "title": "重大选择前先问目的与条件",
-    "score": 0.01625,
+    "score": 0.01646,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.6,
@@ -2472,7 +2460,7 @@
    {
     "id": 6346,
     "title": "缺乏策划导致行动低效",
-    "score": 0.01371,
+    "score": 0.01393,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -2484,19 +2472,19 @@
    {
     "id": 19099,
     "title": "磨刀不误砍柴工",
-    "score": 0.01349,
+    "score": 0.01371,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.5,
     "is_low_confidence": true,
     "tags": "小说萃取, 天涯神贴精选, 个人成长, 决策准备",
     "content_excerpt": "在行动前先提升认知和心态，通过阅读和学习来准备，避免盲目投入。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 7007,
     "title": "过度思考计划导致执行瘫痪",
-    "score": 0.01308,
+    "score": 0.01328,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -2508,7 +2496,7 @@
    {
     "id": 14432,
     "title": "患得患失导致执行偏差",
-    "score": 0.01288,
+    "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -2516,6 +2504,18 @@
     "tags": "小说萃取, 天涯神贴精选, 自我管理, 团队执行",
     "content_excerpt": "多数参与者因过度权衡利弊而偏离既定模式，导致行动滞后或变形。需通过纪律性训练消除情绪干扰，确保执行与模型一致。",
     "label": "partial"
+   },
+   {
+    "id": 6738,
+    "title": "区分任务类型以定效率策略",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 项目管理",
+    "content_excerpt": "面对任务时，先判断其性质：若为简单重复或标准化工作，可追求效率；若为个性化、创造性或涉及观念转变的任务，则需放慢节奏，以平和心态用时间熬，辅以技巧，避免拔苗助长。",
+    "label": "irrelevant"
    }
   ]
  },
@@ -2650,18 +2650,6 @@
   "category": "执行力",
   "results": [
    {
-    "id": 19694,
-    "title": "两遍阅读法：速览后精读",
-    "score": 0.02,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 人性的弱点, 阅读学习, 知识管理",
-    "content_excerpt": "第一遍快速浏览全书或章节，获取整体框架和兴趣点；第二遍回到开头逐章精读，深入理解细节。此方法虽初看耗时，但长期能节省时间并提升理解深度，适用于复杂知识的学习。",
-    "label": "partial"
-   },
-   {
     "id": 12477,
     "title": "积极阅读观：深度内化知识",
     "score": 0.01393,
@@ -2712,7 +2700,7 @@
    {
     "id": 14560,
     "title": "盲目模仿成功者忽视自身条件",
-    "score": 0.01288,
+    "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.7,
@@ -2724,7 +2712,7 @@
    {
     "id": 12231,
     "title": "深度阅读四步法：从厚到薄再内化",
-    "score": 0.01269,
+    "score": 0.01288,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.7,
@@ -2736,7 +2724,7 @@
    {
     "id": 6591,
     "title": "反思时避免全盘否定",
-    "score": 0.0125,
+    "score": 0.01269,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -2748,7 +2736,7 @@
    {
     "id": 10413,
     "title": "避免一次性阅读后遗忘",
-    "score": 0.01232,
+    "score": 0.0125,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -2760,13 +2748,25 @@
    {
     "id": 12431,
     "title": "按认知阶段选阅读材料",
-    "score": 0.01214,
+    "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 家庭教育, 阅读指导",
     "content_excerpt": "为孩子选书时，优先选择符合其认知发展阶段的历史原著白话本或简本，避免成人视角的复杂解读。这能降低理解门槛，同时保留历史思维的启蒙价值。具体操作：先选通史简本（如《上下五千年》），再逐步过渡到朝代小说，最后才接触成人分析类书籍。",
+    "label": "irrelevant"
+   },
+   {
+    "id": 6906,
+    "title": "脱离实际的纯思辨导致糊涂",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 学术研究, 技能提升",
+    "content_excerpt": "若长期沉浸于抽象概念而不与生活联系，会逐渐丧失对理论的真实理解，甚至产生自我封闭。例如，周易研究者因缺乏现实观察，无法识别真正的高手，反而误认外行为内行。避免方法：定期用现实案例检验理论，若无法应用则重新审视研究路径。",
     "label": "irrelevant"
    }
   ]
@@ -2776,57 +2776,9 @@
   "category": "执行力",
   "results": [
    {
-    "id": 19836,
-    "title": "三步破除自我中心幻想",
-    "score": 0.01884,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通, 个人成长",
-    "content_excerpt": "面对人际或事业困境，先识别自己是否持有'努力必成功'、'付出必回报'等绝对化假设。然后主动收集反例证据，用客观数据替代主观臆想。最后接受现实边界，将目标调整为基于自身能力范围的可实现步骤。",
-    "label": "partial"
-   },
-   {
-    "id": 20062,
-    "title": "区分自律与自虐，调整目标设定",
-    "score": 0.01831,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 个人成长, 习惯养成",
-    "content_excerpt": "当自律计划频繁失败时，先审视目标是否超出当前能力范围。将宏大目标拆解为每日可完成的最小动作，如从'每天跑步20分钟'改为'每周三次快走10分钟'，降低启动门槛，减少心理抗拒。",
-    "label": "partial"
-   },
-   {
-    "id": 19575,
-    "title": "口无遮拦易致人际挫折",
-    "score": 0.01733,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场沟通, 日常社交",
-    "content_excerpt": "直率不等于口无遮拦，在情绪不佳时随意回应他人问候，或对一知半解的事滔滔不绝，都会让人反感，导致人际关系受损。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 19929,
-    "title": "培养独立性以直面人生课题",
-    "score": 0.01667,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 个人成长, 职业规划",
-    "content_excerpt": "独立性是强者思维的基础。要收回人生主动权，不再盲目活在他人期待中，而是独立做出选择并承担责任。具体做法：明确个人目标，不依附他人，为自己的追求竭尽全力，不在意他人眼光。",
-    "label": "partial"
-   },
-   {
     "id": 5884,
     "title": "恐惧时先迈小步再评估",
-    "score": 0.01646,
+    "score": 0.01733,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.6,
@@ -2857,7 +2809,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职业发展, 个人成长",
     "content_excerpt": "当向外求（如追求物质、认可）持续受挫时，主动将注意力转向内心，通过自我反思调整期望和认知。具体步骤：1) 承认外部目标暂时不可得；2) 列出当前可掌控的内在资源（如心态、技能）；3) 将行动焦点转移到内在提升或简单乐趣上，如欣赏自然、培养爱",
-    "label": "partial"
+    "label": "relevant"
    },
    {
     "id": 16448,
@@ -2869,7 +2821,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场竞争, 人际关系",
     "content_excerpt": "若个体将自我价值主要建立在他人评价或社会地位上，则易在遭受否定时崩溃。避免方法：定期进行自我价值盘点，列出不依赖外界的成就与特质，强化内在认同。",
-    "label": "partial"
+    "label": "relevant"
    },
    {
     "id": 19099,
@@ -2894,6 +2846,54 @@
     "tags": "小说萃取, 天涯神贴精选, 压力管理, 危机应对",
     "content_excerpt": "在高压或困境中，保持心理韧性，以'人可以被打死，不能被吓死'为原则，即面对外部打击或威胁，不屈服于恐惧，而是坚持行动。具体操作：在压力情境下，重复此原则，将恐惧转化为行动动力。",
     "label": "relevant"
+   },
+   {
+    "id": 12313,
+    "title": "用随缘心态化解失败感",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 求职面试, 项目竞标",
+    "content_excerpt": "在遭遇拒绝或失败时，主动将原因归结为‘时机’或‘缘分’，而非个人能力不足。这种归因方式能降低自我否定，维持心理稳定。但需注意，仅适用于非关键性目标，若涉及核心能力提升，仍需客观复盘。",
+    "label": "relevant"
+   },
+   {
+    "id": 11932,
+    "title": "以内心强大为决策锚点",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场竞争, 个人成长",
+    "content_excerpt": "在成败与手段的冲突中，优先选择能增强内心韧性的路径，而非追求短期成功或外部认可。若选择不择手段追求成败，可能导致内心脆弱、一蹶不振；反之，按部就班虽慢，但能维持心理稳定。决策时问自己：哪条路让我在失败后仍能保持动力？",
+    "label": "relevant"
+   },
+   {
+    "id": 6279,
+    "title": "挫折期转向实用知识储备",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职业发展, 个人成长",
+    "content_excerpt": "当遭遇连续失败（如考试不第）时，不沉溺于抱怨，而是主动将精力投入经世致用之学，系统学习历史、地理、军事、经济、水利等实用领域，形成跨学科知识结构，为未来机会奠定基础。",
+    "label": "partial"
+   },
+   {
+    "id": 13639,
+    "title": "用高处静坐戒除浮躁",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 情绪管理, 重大决策前",
+    "content_excerpt": "当情绪剧烈波动时，主动前往高处开阔空间（如塔顶、山顶），进行至少一小时的静坐。物理高度和风声等感官刺激能强制转移注意力，长时间凝视远景可降低皮质醇水平，使决策者从'想不开'过渡到'安宁'，避免在冲动下做二次决策。",
+    "label": "partial"
    }
   ]
  },
@@ -2902,69 +2902,9 @@
   "category": "认知鉴别",
   "results": [
    {
-    "id": 19495,
-    "title": "以后果和人性为决策锚点",
-    "score": 0.02131,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 社交沟通, 职场交流",
-    "content_excerpt": "判断是否说某话时，考虑其是否可能造成不可逆伤害，以及是否违背人性中爱听好话的倾向。若真话无益且招嫌，不如选择悦耳之言。",
-    "label": "partial"
-   },
-   {
-    "id": 19980,
-    "title": "追问信息源以辨真伪",
-    "score": 0.02031,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场决策, 家庭沟通",
-    "content_excerpt": "当听到‘人家说’或类似转述时，主动追问‘这个‘人家’是谁？’并核实其背景、语境和可信度。避免接受无法追溯来源的信息，区分行家见解与道听途说。具体操作：列出信息源、评估其权威性、检查是否被曲解。",
-    "label": "relevant"
-   },
-   {
-    "id": 19571,
-    "title": "判断实话是否该说的隐性标准",
-    "score": 0.01912,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场谈判, 人际交往",
-    "content_excerpt": "决策者在面对是否说出实话时，应依据三个标准：1) 对方是否主动寻求反馈；2) 实话是否涉及不可改变的缺陷；3) 表达方式是否尊重对方尊严。若任一条件不满足，则优先选择沉默或委婉表达，以维护长期关系。",
-    "label": "partial"
-   },
-   {
-    "id": 19494,
-    "title": "评价他人忌盖棺定论",
-    "score": 0.01831,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场评价, 人际观察",
-    "content_excerpt": "避免对他人作出‘一辈子没出息’等绝对化判断，因为人生充满变数，过早定论可能失准，且易引发反感。保持开放态度，不把话说满。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 19551,
-    "title": "判断说服效果看对方是否自愿",
-    "score": 0.01757,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 管理沟通, 教育引导",
-    "content_excerpt": "说服成功的标志不是对方口头答应，而是对方在思考后自愿改变行为。决策锚点：当对方在引导下自己说出关键结论时，说明其内心已认同，此时说服效果最牢固。",
-    "label": "irrelevant"
-   },
-   {
     "id": 19035,
     "title": "以实质回答作为可信度标准",
-    "score": 0.01349,
+    "score": 0.01371,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -2976,7 +2916,7 @@
    {
     "id": 11712,
     "title": "以人品为信任锚点",
-    "score": 0.01288,
+    "score": 0.01328,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -2988,19 +2928,19 @@
    {
     "id": 12156,
     "title": "先确认直接原因再下结论",
-    "score": 0.01269,
+    "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场沟通, 团队协作",
     "content_excerpt": "在职场或人际沟通中，当对方行为引发疑虑时，先核实该行为的直接触发因素，而非依赖关系亲疏或表面印象。例如，若同事推荐某人但被误认为有异动，应确认其真实动机（如为团队利益）而非直接归咎于忠诚问题。操作上，可主动询问或观察行为发生的具体情境，避免",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
     "id": 16319,
     "title": "以信息可靠性判断对话价值",
-    "score": 0.01232,
+    "score": 0.01288,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -3012,13 +2952,73 @@
    {
     "id": 18624,
     "title": "听其言观其行，验证一致性",
-    "score": 0.01214,
+    "score": 0.01269,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 职场沟通",
     "content_excerpt": "在接收任何投资建议或市场分析时，不要仅关注对方明确表达的内容，还要挖掘其未说出的隐含信息，并观察其实际资金操作是否与言论相符。若言行不一，则需警惕信息失真。",
+    "label": "relevant"
+   },
+   {
+    "id": 18602,
+    "title": "以实践经历为信任锚点",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场指导, 投资咨询",
+    "content_excerpt": "当面对专家建议时，先考察其是否有一线操作经验。有实际经历的人更可能提供可落地的建议，而非理论空谈。判断标准：发言者是否明确说明自己的实践背景，是否强调‘没靠关系’等独立性，是否避免‘装神弄鬼’的术语。",
+    "label": "relevant"
+   },
+   {
+    "id": 12839,
+    "title": "推测需符合动机与逻辑",
+    "score": 0.01197,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 决策分析, 历史解读",
+    "content_excerpt": "在信息不全时，判断推测是否合理，应看其是否与人物利益、行为模式及事件发展逻辑一致，而非仅凭想象。",
+    "label": "partial"
+   },
+   {
+    "id": 11863,
+    "title": "压力下的行为一致性判断",
+    "score": 0.01181,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 人际判断",
+    "content_excerpt": "判断一个人是否值得信任，关键看其在高压或突发情境下的行为是否与平时一致。若对方在压力下仍能保持稳定表现，则可信度较高；若出现情绪崩溃或行为反常，则需警惕。此标准比单纯依赖言辞或履历更可靠。",
+    "label": "relevant"
+   },
+   {
+    "id": 19014,
+    "title": "识别空谈者的信号",
+    "score": 0.01164,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 学术讨论",
+    "content_excerpt": "判断一个讨论者是否值得认真对待，可观察其是否提供具体、可操作的信息。若对方只进行人身攻击或泛泛而谈（如'不要信口开河'），却无法给出具体方案，则大概率是空谈者。此时可要求其提供细节（'具体讲讲'），以暴露其知识空白。",
+    "label": "relevant"
+   },
+   {
+    "id": 13291,
+    "title": "观察信息源自身行为作为信号",
+    "score": 0.01133,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 商业合作",
+    "content_excerpt": "在评估他人建议时，不仅听其言，更观其行。若建议者愿意投入真金白银或承担实际风险（如卖房筹钱），则其建议的可信度显著提升。此判断依据可应用于识别虚假承诺或过度自信的建议者，但需警惕行为可能出于非理性狂热。",
     "label": "relevant"
    }
   ]
@@ -3027,42 +3027,6 @@
   "query": "为什么越是老实人越容易被欺负？",
   "category": "认知鉴别",
   "results": [
-   {
-    "id": 20133,
-    "title": "好为人师引发隐性冲突",
-    "score": 0.01757,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 日常社交, 管理场景",
-    "content_excerpt": "常见陷阱：出于善意或展示优越感，在他人未求助时强行指导，导致对方感到被贬低，表面接受但内心抵触，破坏关系。规避方法：每次开口前自问‘对方需要吗？我有资格吗？’若答案否定，则转为倾听。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 20000,
-    "title": "过度张扬引祸端",
-    "score": 0.01711,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场生存, 社交场合",
-    "content_excerpt": "在群体中，若个人能力或财富过于突出，且未适当隐藏，容易成为他人嫉妒的目标，导致不必要的敌意和攻击。即使才能出众，也应保持低调，避免因优越感引发众怒。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 19880,
-    "title": "回避现实规律导致被动",
-    "score": 0.01688,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通",
-    "content_excerpt": "若因残酷而回避利益驱动规律，会陷入自我欺骗，无法适应变化。常见错误：坚持‘人性本善’的固定观念，忽视利益变化，导致受伤或关系破裂。正确做法是接受现实，主动调整策略。",
-    "label": "partial"
-   },
    {
     "id": 6850,
     "title": "避免被贴上老好人标签",
@@ -3073,7 +3037,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场形象, 人际边界",
     "content_excerpt": "若一味追求八面玲珑、不得罪人，易被贴上‘老好人’、‘马屁精’标签，导致他人敬而远之，限制发展。需警惕：过度迎合他人会丧失个性，反而降低信任。应通过适度冲突和暴露弱点来维持真实感。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 6517,
@@ -3145,6 +3109,42 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场关系, 人际沟通",
     "content_excerpt": "若将示弱误解为无原则的索取或伤害他人，则适得其反。正确做法是示弱仅用于改正缺点、接受意见或学习，而非向他人索取利益。否则会引发厌恶，破坏关系，最终无法达成目标。",
+    "label": "partial"
+   },
+   {
+    "id": 13199,
+    "title": "匹夫之勇不足为勇",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场情商, 个人成长",
+    "content_excerpt": "真正的勇敢不是冲动反击，而是能在受辱时保持冷静，权衡利弊。在职场中，遇事易怒并立即爆发的人往往被视为不成熟，难以担当重任。应培养情绪控制能力，将愤怒转化为建设性行动。",
+    "label": "partial"
+   },
+   {
+    "id": 10547,
+    "title": "避免误判：能力强者未必道德，但淘汰好人现象普遍",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场晋升, 人际竞争",
+    "content_excerpt": "职场中常见误区是认为‘正确’必然带来回报，但现实是能力突出但道德有瑕疵的人常能晋升。决策者需警惕这种偏差，不要因坚持原则而忽视实力对比。若你处于弱势，应避免正面冲突，而是通过提升自身不可替代性来改变力量天平。",
+    "label": "partial"
+   },
+   {
+    "id": 9733,
+    "title": "忽视报复心强的隐患",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场冲突, 人际交往",
+    "content_excerpt": "强势者若报复心强，可能因小事引发极端行为，导致职场或关系彻底崩溃。在合作或交往前，需评估其报复倾向，并避免触发其敏感点，否则可能付出沉重代价。",
     "label": "irrelevant"
    }
   ]
@@ -3153,18 +3153,6 @@
   "query": "老板画大饼怎么办？怎么判断公司是在真发展还是忽悠？",
   "category": "认知鉴别",
   "results": [
-   {
-    "id": 6182,
-    "title": "企业平台发展潜力评估清单",
-    "score": 0.01625,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 企业选择",
-    "content_excerpt": "判断是否留下时，考察企业是否具备健全的人才评估系统、梯队培养计划、持续学习文化，以及是否善用轮岗、培训等机会。若企业处于创业期且管理者不投入员工发展，则平台成长性差，应果断离开。",
-    "label": "relevant"
-   },
    {
     "id": 10089,
     "title": "避免过度美化承诺",
@@ -3175,7 +3163,7 @@
     "is_low_confidence": true,
     "tags": "小说萃取, 天涯神贴精选, 职场谈判, 销售沟通",
     "content_excerpt": "将'画大饼'美化为'企业愿景'时，需注意不要掩盖其不确定性，否则可能误导他人。操作上，在术语化后应补充风险提示，明确愿景的达成条件，防止信任透支。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 6314,
@@ -3199,7 +3187,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场管理, 创业团队",
     "content_excerpt": "画大饼（欺骗性承诺）在短期内能低成本获取支持，但长期可能因真相暴露而失去信任。常见陷阱：过度依赖单一叙事、忽视可验证性、未准备后续兑现。建议在实施时预留退路或逐步兑现部分承诺。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 6315,
@@ -3272,6 +3260,18 @@
     "tags": "小说萃取, 天涯神贴精选, 创业沟通, 团队管理",
     "content_excerpt": "对内用宏大愿景激励自己和团队（画大饼），但对外沟通时保持务实，避免被投资者或合作方视为不切实际。具体做法：内部使用愿景语言，外部使用数据、模式、可执行步骤。",
     "label": "partial"
+   },
+   {
+    "id": 13787,
+    "title": "高收益宣传先查推销动机",
+    "score": 0.01181,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 防骗识别",
+    "content_excerpt": "当遇到高收益投资机会时，先问：若收益真实且暴利，为何需要主动推销？对比合法高收益产品（如余额宝）无需推销即可吸引资金。若宣传方疯狂追着陌生人推销，则大概率是骗局，因为真实暴利行业会闷声发财，避免竞争。",
+    "label": "irrelevant"
    }
   ]
  }
