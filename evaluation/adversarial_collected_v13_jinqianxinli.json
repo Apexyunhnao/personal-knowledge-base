@@ -11,7 +11,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损"
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策"
    },
    {
     "id": 19285,
@@ -54,19 +54,9 @@
     "tags": "小说萃取, 天涯神贴精选, 投资心理, 行为金融"
    },
    {
-    "id": 14022,
-    "title": "拖延导致丧失主动权",
-    "score": 0.01288,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资陷阱, 危机应对, 强平,止损"
-   },
-   {
     "id": 17627,
     "title": "刚学财务知识就实战易亏损",
-    "score": 0.01269,
+    "score": 0.01288,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -76,12 +66,22 @@
    {
     "id": 13471,
     "title": "高收益预期掩盖高风险认知",
-    "score": 0.0125,
+    "score": 0.01269,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 个人成长"
+   },
+   {
+    "id": 14022,
+    "title": "拖延导致丧失主动权",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资陷阱, 危机应对"
    },
    {
     "id": 14453,
@@ -91,7 +91,7 @@
     "source_type": "forum",
     "confidence": 0.5,
     "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 金融投资, 职业转型, 仓位"
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 职业转型"
    },
    {
     "id": 13500,
@@ -101,7 +101,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 仓位"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
    }
   ]
  },
@@ -117,7 +117,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 杠杆,爆仓,强平,止损"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理"
    },
    {
     "id": 14695,
@@ -127,7 +127,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损"
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策"
    },
    {
     "id": 14204,
@@ -140,24 +140,24 @@
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 项目管理"
    },
    {
-    "id": 14815,
-    "title": "心理防线崩溃导致非理性割肉",
+    "id": 14447,
+    "title": "极端行情下以流动性为锚止损",
     "score": 0.01328,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资, 危机管理, 止损"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理"
    },
    {
-    "id": 14447,
-    "title": "极端行情下以流动性为锚止损",
+    "id": 14815,
+    "title": "心理防线崩溃导致非理性割肉",
     "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 止损"
+    "tags": "小说萃取, 天涯神贴精选, 投资, 危机管理"
    },
    {
     "id": 19366,
@@ -187,27 +187,27 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 仓位"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
    },
    {
-    "id": 13975,
-    "title": "以可覆盖性为决策锚点",
+    "id": 13990,
+    "title": "主动退出优于被动爆仓",
     "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 止损"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制"
    },
    {
-    "id": 13670,
-    "title": "权威信息与市场信号背离时以市场为准",
+    "id": 13633,
+    "title": "评估补充资金的临界点",
     "score": 0.01214,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 做空,杠杆,爆仓,仓位"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机应对"
    }
   ]
  },
@@ -246,19 +246,9 @@
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
    },
    {
-    "id": 14528,
-    "title": "避免盲目跟风大资金",
-    "score": 0.01328,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为陷阱, 套牢"
-   },
-   {
     "id": 14183,
     "title": "避免因贪婪陷入赌博心态",
-    "score": 0.01308,
+    "score": 0.01328,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -268,12 +258,22 @@
    {
     "id": 13943,
     "title": "牛市急跌中幻想反弹导致套牢",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制"
+   },
+   {
+    "id": 13887,
+    "title": "避免从众心理延迟决策",
     "score": 0.01288,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 止损"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理陷阱"
    },
    {
     "id": 14695,
@@ -283,22 +283,12 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损"
-   },
-   {
-    "id": 13887,
-    "title": "避免从众心理延迟决策",
-    "score": 0.0125,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理陷阱"
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策"
    },
    {
     "id": 14315,
     "title": "避免被市场情绪裹挟",
-    "score": 0.01232,
+    "score": 0.0125,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -308,12 +298,22 @@
    {
     "id": 14708,
     "title": "避免被套牢后的卧倒装死心态",
-    "score": 0.01214,
+    "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.5,
     "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 投资心理, 群体行为, 止损,套牢"
+    "tags": "小说萃取, 天涯神贴精选, 投资心理, 群体行为"
+   },
+   {
+    "id": 14528,
+    "title": "避免盲目跟风大资金",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为陷阱"
    }
   ]
  },
@@ -322,104 +322,104 @@
   "category": "投资心态",
   "results": [
    {
-    "id": 13623,
-    "title": "避免侥幸心理，预设止损",
-    "score": 0.0209,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 止损"
-   },
-   {
-    "id": 15258,
-    "title": "设置强制止损与退出机制",
-    "score": 0.02024,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 项目管理, 止损"
-   },
-   {
-    "id": 15198,
-    "title": "避免情绪化追涨杀跌",
-    "score": 0.01962,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 止损"
-   },
-   {
-    "id": 14670,
-    "title": "止损纪律与现金积累",
-    "score": 0.01932,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股市投资, 风险管理, 止损"
-   },
-   {
-    "id": 14695,
-    "title": "建议前先确认对方风险承受力",
-    "score": 0.01903,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损"
-   },
-   {
-    "id": 14815,
-    "title": "心理防线崩溃导致非理性割肉",
-    "score": 0.01821,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资, 危机管理, 止损"
-   },
-   {
-    "id": 15145,
-    "title": "死守或止损的二选一策略",
-    "score": 0.01747,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资策略, 止损纪律, 止损"
-   },
-   {
-    "id": 13943,
-    "title": "牛市急跌中幻想反弹导致套牢",
-    "score": 0.01723,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 止损"
-   },
-   {
-    "id": 13611,
-    "title": "预设止损线防止情绪失控",
-    "score": 0.01678,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 风险管理, 项目管理, 止损"
-   },
-   {
     "id": 18020,
     "title": "设定具体止盈目标及时兑现",
-    "score": 0.01371,
+    "score": 0.01393,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资理财, 目标管理"
+   },
+   {
+    "id": 13623,
+    "title": "避免侥幸心理，预设止损",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制"
+   },
+   {
+    "id": 15258,
+    "title": "设置强制止损与退出机制",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 项目管理"
+   },
+   {
+    "id": 14200,
+    "title": "短线交易三步法：筛选、择时、控险",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 风险决策"
+   },
+   {
+    "id": 14670,
+    "title": "止损纪律与现金积累",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 股市投资, 风险管理"
+   },
+   {
+    "id": 14202,
+    "title": "追高陷阱：怕踏空导致被套",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 冲动控制"
+   },
+   {
+    "id": 14695,
+    "title": "建议前先确认对方风险承受力",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策"
+   },
+   {
+    "id": 13578,
+    "title": "强势股分批止盈法",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 股市交易, 投资决策"
+   },
+   {
+    "id": 14192,
+    "title": "动态止盈：目标位失效时降级卖出",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 股票交易, 风险决策"
+   },
+   {
+    "id": 13889,
+    "title": "选择小盘股以增强控制力",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 市场交易"
    }
   ]
  },
@@ -430,7 +430,7 @@
    {
     "id": 22833,
     "title": "投资亏损时用热爱支撑坚持",
-    "score": 0.01905,
+    "score": 0.01935,
     "source": "vector",
     "source_type": "note",
     "confidence": 0.6,
@@ -465,17 +465,17 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理陷阱, 止损"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理陷阱"
    },
    {
     "id": 14695,
     "title": "建议前先确认对方风险承受力",
-    "score": 0.01371,
+    "score": 0.01349,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损"
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策"
    },
    {
     "id": 14091,
@@ -485,7 +485,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理调节, 抄底"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理调节"
    },
    {
     "id": 19285,
@@ -498,9 +498,19 @@
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 防骗"
    },
    {
+    "id": 14453,
+    "title": "重建信心前先小规模验证",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 职业转型"
+   },
+   {
     "id": 13501,
     "title": "牛市中的认知偏差",
-    "score": 0.01269,
+    "score": 0.0125,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -508,24 +518,14 @@
     "tags": "小说萃取, 天涯神贴精选, 投资心理, 行为金融"
    },
    {
-    "id": 15082,
-    "title": "峰值幻觉导致决策瘫痪",
-    "score": 0.0125,
+    "id": 18627,
+    "title": "侥幸心理与1%幻觉",
+    "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资心理, 风险控制, 止损"
-   },
-   {
-    "id": 14453,
-    "title": "重建信心前先小规模验证",
-    "score": 0.01232,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 金融投资, 职业转型, 仓位"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险认知"
    }
   ]
  },
@@ -536,102 +536,102 @@
    {
     "id": 14080,
     "title": "杠杆加仓的复利幻觉与爆仓风险",
-    "score": 0.0209,
+    "score": 0.01393,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 杠杆"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制"
    },
    {
-    "id": 14616,
-    "title": "小本金高杠杆的幻觉",
-    "score": 0.02024,
+    "id": 17843,
+    "title": "牛市用杠杆基金替代个股追涨",
+    "score": 0.01371,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资心理, 风险控制, 杠杆"
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 市场交易"
    },
    {
     "id": 15144,
     "title": "避免杠杆和借贷炒股",
-    "score": 0.01992,
+    "score": 0.01349,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资风险, 财务安全, 杠杆,爆仓"
+    "tags": "小说萃取, 天涯神贴精选, 投资风险, 财务安全"
+   },
+   {
+    "id": 14616,
+    "title": "小本金高杠杆的幻觉",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资心理, 风险控制"
    },
    {
     "id": 13852,
     "title": "牛市杠杆持仓的滚动操作法",
-    "score": 0.01962,
+    "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 杠杆,止损,仓位"
-   },
-   {
-    "id": 13935,
-    "title": "忽视市场风险易导致杠杆爆仓",
-    "score": 0.01932,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 杠杆"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
    },
    {
     "id": 14940,
     "title": "两次杠杆实现资金倍增",
-    "score": 0.01903,
+    "score": 0.01288,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理, 杠杆,止损"
-   },
-   {
-    "id": 14083,
-    "title": "杠杆放大风险，剩余资本需谨慎",
-    "score": 0.01875,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 杠杆,爆仓,强平,股灾"
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理"
    },
    {
     "id": 14485,
     "title": "高杠杆操作需严格止损",
-    "score": 0.01848,
+    "score": 0.01269,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理, 杠杆,止损"
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理"
+   },
+   {
+    "id": 14083,
+    "title": "杠杆放大风险，剩余资本需谨慎",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
+   },
+   {
+    "id": 13935,
+    "title": "忽视市场风险易导致杠杆爆仓",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
    },
    {
     "id": 13566,
     "title": "高杠杆下分批建仓与T+0降成本",
-    "score": 0.01821,
+    "score": 0.01214,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股票交易, 高杠杆投资, 杠杆,仓位"
-   },
-   {
-    "id": 13528,
-    "title": "高杠杆放大风险与收益不对称性",
-    "score": 0.01771,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险认知, 杠杆,强平"
+    "tags": "小说萃取, 天涯神贴精选, 股票交易, 高杠杆投资"
    }
   ]
  },
@@ -2770,24 +2770,24 @@
     "tags": "小说萃取, 天涯神贴精选, 投资理财, 个人财务规划"
    },
    {
-    "id": 15693,
-    "title": "投资时机看市场周期信号",
+    "id": 17458,
+    "title": "全民狂热时入场易被套牢",
     "score": 0.01371,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 房产投资, 市场分析, 杠杆"
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 职场决策"
    },
    {
-    "id": 17458,
-    "title": "全民狂热时入场易被套牢",
+    "id": 15693,
+    "title": "投资时机看市场周期信号",
     "score": 0.01349,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资理财, 职场决策"
+    "tags": "小说萃取, 天涯神贴精选, 房产投资, 市场分析"
    },
    {
     "id": 13501,
@@ -2827,22 +2827,12 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 个人理财, 杠杆,融资"
-   },
-   {
-    "id": 14695,
-    "title": "建议前先确认对方风险承受力",
-    "score": 0.0125,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 个人理财"
    },
    {
     "id": 18659,
     "title": "避免盲目跟风投资",
-    "score": 0.01232,
+    "score": 0.0125,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -2852,12 +2842,22 @@
    {
     "id": 15298,
     "title": "宏观政策解读与保本优先",
-    "score": 0.01214,
+    "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
+   },
+   {
+    "id": 18366,
+    "title": "投资前先判断目标群体",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险决策"
    }
   ]
  },
@@ -2868,52 +2868,22 @@
    {
     "id": 13952,
     "title": "下跌途中勿盲目抄底",
-    "score": 0.02024,
+    "score": 0.01349,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 抄底"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理"
    },
    {
     "id": 13965,
     "title": "避免在极端下跌中盲目抄底",
-    "score": 0.01992,
+    "score": 0.01328,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.5,
     "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为金融, 抄底"
-   },
-   {
-    "id": 14216,
-    "title": "暴跌中筛选相对强势股",
-    "score": 0.01932,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股市投资, 危机决策, 抄底"
-   },
-   {
-    "id": 14093,
-    "title": "股灾全程在场且试图抄底",
-    "score": 0.01903,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为金融, 抄底"
-   },
-   {
-    "id": 14092,
-    "title": "市场免疫利好时停止常规操作",
-    "score": 0.01747,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.65,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 抄底"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为金融"
    },
    {
     "id": 13980,
@@ -2923,17 +2893,37 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 止损,抄底"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制"
+   },
+   {
+    "id": 14093,
+    "title": "股灾全程在场且试图抄底",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为金融"
    },
    {
     "id": 14041,
     "title": "避免被市场共识绑架",
-    "score": 0.0125,
+    "score": 0.01269,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.5,
     "is_low_confidence": true,
     "tags": "小说萃取, 天涯神贴精选, 投资心理, 决策偏差"
+   },
+   {
+    "id": 13650,
+    "title": "用规则约束抄底冲动",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制"
    },
    {
     "id": 13377,
@@ -2953,17 +2943,27 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 杠杆,爆仓,强平,止损"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理"
    },
    {
-    "id": 13650,
-    "title": "用规则约束抄底冲动",
+    "id": 14216,
+    "title": "暴跌中筛选相对强势股",
     "score": 0.01181,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 仓位,抄底"
+    "tags": "小说萃取, 天涯神贴精选, 股市投资, 危机决策"
+   },
+   {
+    "id": 14788,
+    "title": "极端行情中先确认市场环境",
+    "score": 0.01164,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
    }
   ]
  },
@@ -4642,24 +4642,24 @@
     "tags": "小说萃取, 天涯神贴精选, 职场谈判, 公共演讲"
    },
    {
-    "id": 15262,
-    "title": "执着劝说可能触发逆反心理",
+    "id": 10317,
+    "title": "忽视对方信仰体系导致劝谏失败",
     "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 沟通技巧, 冲突管理, 止损"
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 家庭沟通"
    },
    {
-    "id": 10317,
-    "title": "忽视对方信仰体系导致劝谏失败",
+    "id": 12909,
+    "title": "用间接媒介降低防御",
     "score": 0.01288,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 家庭沟通"
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 家庭沟通"
    }
   ]
  },
@@ -4667,36 +4667,6 @@
   "query": "金融危机来了，普通人应该囤现金还是囤黄金？",
   "category": "金融危机",
   "results": [
-   {
-    "id": 15896,
-    "title": "分散配置，兼顾流动性与抗通胀",
-    "score": 0.01992,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 资产配置, 个人理财, 黄金"
-   },
-   {
-    "id": 16960,
-    "title": "避免盲目投机黄金",
-    "score": 0.01932,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资风险, 个人理财, 黄金"
-   },
-   {
-    "id": 16958,
-    "title": "选择负责任央行货币及股票",
-    "score": 0.01614,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 外汇投资, 股票配置, 黄金"
-   },
    {
     "id": 16957,
     "title": "通胀时持有现金而非房产",
@@ -4718,6 +4688,16 @@
     "tags": "小说萃取, 天涯神贴精选, 个人理财, 经济危机应对"
    },
    {
+    "id": 15896,
+    "title": "分散配置，兼顾流动性与抗通胀",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 资产配置, 个人理财"
+   },
+   {
     "id": 15817,
     "title": "持有现金对抗通胀的误区",
     "score": 0.01308,
@@ -4726,6 +4706,16 @@
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 财务规划, 通胀应对"
+   },
+   {
+    "id": 16960,
+    "title": "避免盲目投机黄金",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资风险, 个人理财"
    },
    {
     "id": 18634,
@@ -4766,6 +4756,16 @@
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 个人理财, 风险管理"
+   },
+   {
+    "id": 19468,
+    "title": "通缩环境下优先持币观望",
+    "score": 0.01181,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 职业规划"
    }
   ]
  },
@@ -4814,9 +4814,19 @@
     "tags": "小说萃取, 天涯神贴精选, 投资, 商业决策"
    },
    {
+    "id": 14695,
+    "title": "建议前先确认对方风险承受力",
+    "score": 0.01164,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策"
+   },
+   {
     "id": 14649,
     "title": "极端行情下先确认流动性",
-    "score": 0.01164,
+    "score": 0.01149,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4826,7 +4836,7 @@
    {
     "id": 14455,
     "title": "利用外部信号捕捉出逃窗口",
-    "score": 0.01149,
+    "score": 0.01133,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4836,7 +4846,7 @@
    {
     "id": 7078,
     "title": "制造稀缺恐慌提升转化",
-    "score": 0.01133,
+    "score": 0.01118,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.7,
@@ -4844,24 +4854,14 @@
     "tags": "小说萃取, 天涯神贴精选, 市场营销, 品牌推广"
    },
    {
-    "id": 14695,
-    "title": "建议前先确认对方风险承受力",
-    "score": 0.01118,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损"
-   },
-   {
     "id": 16268,
     "title": "危机中主动寻找价值洼地",
-    "score": 0.01104,
+    "score": 0.0109,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 仓位"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理"
    },
    {
     "id": 4396,
@@ -4879,26 +4879,6 @@
   "query": "做空是怎么操作的？普通人能玩吗？",
   "category": "金融危机",
   "results": [
-   {
-    "id": 14777,
-    "title": "识别双重角色操纵模式",
-    "score": 0.01962,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 政策分析, 做空"
-   },
-   {
-    "id": 13667,
-    "title": "识别官方信号与市场背离",
-    "score": 0.01875,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 政策解读, 做空"
-   },
    {
     "id": 18015,
     "title": "模拟盘验证后再实盘",
@@ -4920,6 +4900,16 @@
     "tags": "小说萃取, 天涯神贴精选, 股市投资, 风险规避"
    },
    {
+    "id": 15951,
+    "title": "识别坐庄模式并设止损",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 股市投资, 投机交易"
+   },
+   {
     "id": 13786,
     "title": "盲目跟风高位唱多",
     "score": 0.01288,
@@ -4930,19 +4920,9 @@
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为陷阱"
    },
    {
-    "id": 15951,
-    "title": "识别坐庄模式并设止损",
-    "score": 0.01269,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股市投资, 投机交易, 止损"
-   },
-   {
     "id": 14678,
     "title": "投机市场中的分层策略选择",
-    "score": 0.01181,
+    "score": 0.01214,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4952,7 +4932,7 @@
    {
     "id": 17479,
     "title": "转折点双向操作",
-    "score": 0.01164,
+    "score": 0.01197,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4962,22 +4942,42 @@
    {
     "id": 14369,
     "title": "超短打板操作法：快进快出",
-    "score": 0.01149,
+    "score": 0.01181,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股市交易, 高频决策, 止损,套牢"
+    "tags": "小说萃取, 天涯神贴精选, 股市交易, 高频决策"
    },
    {
     "id": 14468,
     "title": "学习游资手法但保持独立",
-    "score": 0.01104,
+    "score": 0.01133,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.5,
     "is_low_confidence": true,
     "tags": "小说萃取, 天涯神贴精选, 股市投资, 技术分析"
+   },
+   {
+    "id": 13889,
+    "title": "选择小盘股以增强控制力",
+    "score": 0.01118,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 市场交易"
+   },
+   {
+    "id": 13608,
+    "title": "利用盘面挂单特征进行高抛低吸",
+    "score": 0.01104,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 金融交易, 投资决策"
    }
   ]
  },
@@ -4985,36 +4985,6 @@
   "query": "听说日本汇率崩了，对普通中国人有什么影响？",
   "category": "金融危机",
   "results": [
-   {
-    "id": 18658,
-    "title": "汇率变动影响资本流动",
-    "score": 0.01992,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 宏观经济, 外汇风险, 汇率"
-   },
-   {
-    "id": 17302,
-    "title": "黑市汇率作为资本外逃预警",
-    "score": 0.01678,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 宏观经济监测, 风险管理, 汇率"
-   },
-   {
-    "id": 18688,
-    "title": "以汇率趋势为锚",
-    "score": 0.01635,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 金融分析, 汇率"
-   },
    {
     "id": 18522,
     "title": "汇率变动影响双轨评估",
@@ -5044,6 +5014,16 @@
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 行业分析"
+   },
+   {
+    "id": 18658,
+    "title": "汇率变动影响资本流动",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 宏观经济, 外汇风险"
    },
    {
     "id": 17856,
@@ -5084,6 +5064,26 @@
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
+   },
+   {
+    "id": 18871,
+    "title": "避免被崩溃论或无敌论误导",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 风险认知, 心态管理"
+   },
+   {
+    "id": 17493,
+    "title": "贬值预期下提前购汇",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 出境旅游, 外汇管理"
    }
   ]
  },
@@ -5122,24 +5122,24 @@
     "tags": "小说萃取, 天涯神贴精选, 股市投资, 信息分析"
    },
    {
-    "id": 15159,
-    "title": "以每日希望维持长期参与",
+    "id": 13670,
+    "title": "权威信息与市场信号背离时以市场为准",
     "score": 0.01328,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 用户留存, 激励机制"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理"
    },
    {
-    "id": 13670,
-    "title": "权威信息与市场信号背离时以市场为准",
+    "id": 15159,
+    "title": "以每日希望维持长期参与",
     "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 做空,杠杆,爆仓,仓位"
+    "tags": "小说萃取, 天涯神贴精选, 用户留存, 激励机制"
    },
    {
     "id": 14785,
@@ -5189,7 +5189,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股市交易, 高杠杆操作, 仓位"
+    "tags": "小说萃取, 天涯神贴精选, 股市交易, 高杠杆操作"
    }
   ]
  },

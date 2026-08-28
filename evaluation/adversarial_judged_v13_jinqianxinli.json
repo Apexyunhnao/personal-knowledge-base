@@ -11,7 +11,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损",
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策",
     "content_excerpt": "在给出投资建议前，需了解对方的成本价、持仓时间及心理承受能力。若对方已处于亏损且恐慌，应优先评估反弹概率，而非简单安抚。可建议设置止损点，减少后续责任。",
     "label": "partial"
    },
@@ -64,21 +64,9 @@
     "label": "irrelevant"
    },
    {
-    "id": 14022,
-    "title": "拖延导致丧失主动权",
-    "score": 0.01288,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资陷阱, 危机应对, 强平,止损",
-    "content_excerpt": "在下跌趋势中，犹豫不决会错失止损时机，导致后续无法操作。当市场连续跌停时，想清仓已不可能，只能被动接受强制平仓。应设定止损触发点并果断执行，避免因侥幸心理拖延。",
-    "label": "partial"
-   },
-   {
     "id": 17627,
     "title": "刚学财务知识就实战易亏损",
-    "score": 0.01269,
+    "score": 0.01288,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -90,13 +78,25 @@
    {
     "id": 13471,
     "title": "高收益预期掩盖高风险认知",
-    "score": 0.0125,
+    "score": 0.01269,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 个人成长",
     "content_excerpt": "决策者常因'以为炒股更轻松、收益更高'而忽视实际风险，且社会负面评价（如'炒股没地位'）会加剧心理压力，导致判断扭曲。破局方法是先量化最坏情景（如本金全损、时间浪费），再与现有稳定收益对比，避免被乐观预期主导。",
+    "label": "partial"
+   },
+   {
+    "id": 14022,
+    "title": "拖延导致丧失主动权",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资陷阱, 危机应对",
+    "content_excerpt": "在下跌趋势中，犹豫不决会错失止损时机，导致后续无法操作。当市场连续跌停时，想清仓已不可能，只能被动接受强制平仓。应设定止损触发点并果断执行，避免因侥幸心理拖延。",
     "label": "partial"
    },
    {
@@ -107,7 +107,7 @@
     "source_type": "forum",
     "confidence": 0.5,
     "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 金融投资, 职业转型, 仓位",
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 职业转型",
     "content_excerpt": "经历重大亏损后，决策者常怀疑自身能力，但直接放弃或盲目回归都不可取。可执行做法：先以小额资金或模拟盘进行低风险交易，记录决策和结果，连续多次达到预期后，再逐步增加仓位。这能客观检验市场敏感度，避免因情绪化判断而二次受伤。",
     "label": "relevant"
    },
@@ -119,7 +119,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 仓位",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理",
     "content_excerpt": "当市场出现‘只赚指数不赚钱’现象时，需审视持仓是否与主力资金流向一致。若持仓不在大涨板块中，应果断调整，而非固守原仓位。同时，追涨需谨慎，需确认趋势持续性，避免高位接盘。",
     "label": "irrelevant"
    }
@@ -137,7 +137,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 杠杆,爆仓,强平,止损",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理",
     "content_excerpt": "在极端市场下跌中，若持仓杠杆过高或接近强制平仓线，应优先考虑立即止损离场，而非等待反弹。快速割肉虽损失部分本金，但可避免后续爆仓或长期钝刀割肉式的更大消耗。操作上需在暴跌初期设定明确止损点，并严格执行。",
     "label": "relevant"
    },
@@ -149,7 +149,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损",
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策",
     "content_excerpt": "在给出投资建议前，需了解对方的成本价、持仓时间及心理承受能力。若对方已处于亏损且恐慌，应优先评估反弹概率，而非简单安抚。可建议设置止损点，减少后续责任。",
     "label": "partial"
    },
@@ -166,28 +166,28 @@
     "label": "partial"
    },
    {
-    "id": 14815,
-    "title": "心理防线崩溃导致非理性割肉",
+    "id": 14447,
+    "title": "极端行情下以流动性为锚止损",
     "score": 0.01328,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资, 危机管理, 止损",
-    "content_excerpt": "在持续压力下，投资者易因心理崩溃而放弃理性判断，急于保本或离场，正中对手下怀。避免方法：预设明确的止损线，并坚持执行；避免在情绪低谷时做重大决策，可设置冷静期。",
-    "label": "partial"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理",
+    "content_excerpt": "当资产连续跌停且卖单巨大时，不要等待价格反弹，而是观察跌停板上的挂单量。若挂单量远超买盘承接能力，预期继续跌停，应提前设定心理止损价。一旦跌停打开，立即根据分时成交量确认出逃窗口，果断清仓，避免更大损失。",
+    "label": "relevant"
    },
    {
-    "id": 14447,
-    "title": "极端行情下以流动性为锚止损",
+    "id": 14815,
+    "title": "心理防线崩溃导致非理性割肉",
     "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 止损",
-    "content_excerpt": "当资产连续跌停且卖单巨大时，不要等待价格反弹，而是观察跌停板上的挂单量。若挂单量远超买盘承接能力，预期继续跌停，应提前设定心理止损价。一旦跌停打开，立即根据分时成交量确认出逃窗口，果断清仓，避免更大损失。",
-    "label": "relevant"
+    "tags": "小说萃取, 天涯神贴精选, 投资, 危机管理",
+    "content_excerpt": "在持续压力下，投资者易因心理崩溃而放弃理性判断，急于保本或离场，正中对手下怀。避免方法：预设明确的止损线，并坚持执行；避免在情绪低谷时做重大决策，可设置冷静期。",
+    "label": "partial"
    },
    {
     "id": 19366,
@@ -221,33 +221,33 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 仓位",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理",
     "content_excerpt": "当市场出现‘只赚指数不赚钱’现象时，需审视持仓是否与主力资金流向一致。若持仓不在大涨板块中，应果断调整，而非固守原仓位。同时，追涨需谨慎，需确认趋势持续性，避免高位接盘。",
     "label": "irrelevant"
    },
    {
-    "id": 13975,
-    "title": "以可覆盖性为决策锚点",
+    "id": 13990,
+    "title": "主动退出优于被动爆仓",
     "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 止损",
-    "content_excerpt": "判断是否继续投入时，不依据对市场反弹的预期，而是依据资金缺口是否可被自身及可借资源覆盖。若缺口不可覆盖，则任何追加都是无效的，应止损。",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制",
+    "content_excerpt": "当市场环境恶化且自身资源有限时，主动割肉或减仓以保留部分本金，比被动等待爆仓更优。决策依据是计算最坏情况下的剩余价值：若停牌股复牌后可能补跌，则当前剩余价值可能归零，此时应果断退出。",
     "label": "relevant"
    },
    {
-    "id": 13670,
-    "title": "权威信息与市场信号背离时以市场为准",
+    "id": 13633,
+    "title": "评估补充资金的临界点",
     "score": 0.01214,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 做空,杠杆,爆仓,仓位",
-    "content_excerpt": "当官方媒体或监管机构持续发布乐观言论，但市场实际交易数据（如做空量、杠杆爆仓率）显示相反趋势时，应优先依据市场信号调整仓位。操作上：每日对比官方表态与盘面数据，若背离持续超过3个交易日，视为高风险信号，启动减仓流程。",
-    "label": "irrelevant"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机应对",
+    "content_excerpt": "当面临追加保证金时，不要盲目补仓。先计算在极端情况下（如连续跌停）所需资金量，并评估自身资金实力。若补充后仍无法承受进一步下跌，则放弃补仓，接受损失，避免陷入更深困境。",
+    "label": "partial"
    }
   ]
  },
@@ -265,7 +265,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资心理, 行为金融",
     "content_excerpt": "投资者常因‘越涨越不敢买’的心理错失机会，或因‘满仓踏空’而焦虑，导致在牛市亏损。需克服对高位的恐惧，基于主力行为而非情绪决策，同时避免盲目追涨。",
-    "label": "partial"
+    "label": "relevant"
    },
    {
     "id": 17481,
@@ -277,7 +277,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 群体心理",
     "content_excerpt": "市场惯性使原有走势狂热，但主导因素已脆弱。若盲目跟随主流，可能在转折点被套。应警惕共识，独立判断偏差极端性。",
-    "label": "partial"
+    "label": "relevant"
    },
    {
     "id": 18034,
@@ -292,21 +292,9 @@
     "label": "relevant"
    },
    {
-    "id": 14528,
-    "title": "避免盲目跟风大资金",
-    "score": 0.01328,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为陷阱, 套牢",
-    "content_excerpt": "小投资者常因羡慕大资金收益而模仿其策略，但忽视自身条件差异。大资金可操纵市场或承受短期亏损，小资金则易被套牢。应避免跟风，专注自身能力圈。",
-    "label": "partial"
-   },
-   {
     "id": 14183,
     "title": "避免因贪婪陷入赌博心态",
-    "score": 0.01308,
+    "score": 0.01328,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -318,13 +306,25 @@
    {
     "id": 13943,
     "title": "牛市急跌中幻想反弹导致套牢",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制",
+    "content_excerpt": "在牛市中，急跌常被视为'洗盘'，投资者因损失厌恶和沉没成本，倾向于认为'再涨涨就解套'，从而拒绝止损。但急跌往往伴随流动性枯竭（如千股跌停），一旦错过初期逃生窗口，后续将无法卖出。可执行策略：设定硬性止损线（如亏损10%），并提前演练执行流",
+    "label": "relevant"
+   },
+   {
+    "id": 13887,
+    "title": "避免从众心理延迟决策",
     "score": 0.01288,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 止损",
-    "content_excerpt": "在牛市中，急跌常被视为'洗盘'，投资者因损失厌恶和沉没成本，倾向于认为'再涨涨就解套'，从而拒绝止损。但急跌往往伴随流动性枯竭（如千股跌停），一旦错过初期逃生窗口，后续将无法卖出。可执行策略：设定硬性止损线（如亏损10%），并提前演练执行流",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理陷阱",
+    "content_excerpt": "当市场普遍认为上涨将持续时，往往正是主力出货的时机。若因嘲笑主力过早离场而坚持持仓，可能面临暴跌风险。应克服从众心理，以主力行为而非市场共识为决策依据。",
     "label": "relevant"
    },
    {
@@ -335,26 +335,14 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损",
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策",
     "content_excerpt": "在给出投资建议前，需了解对方的成本价、持仓时间及心理承受能力。若对方已处于亏损且恐慌，应优先评估反弹概率，而非简单安抚。可建议设置止损点，减少后续责任。",
-    "label": "partial"
-   },
-   {
-    "id": 13887,
-    "title": "避免从众心理延迟决策",
-    "score": 0.0125,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理陷阱",
-    "content_excerpt": "当市场普遍认为上涨将持续时，往往正是主力出货的时机。若因嘲笑主力过早离场而坚持持仓，可能面临暴跌风险。应克服从众心理，以主力行为而非市场共识为决策依据。",
     "label": "partial"
    },
    {
     "id": 14315,
     "title": "避免被市场情绪裹挟",
-    "score": 0.01232,
+    "score": 0.0125,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -366,13 +354,25 @@
    {
     "id": 14708,
     "title": "避免被套牢后的卧倒装死心态",
-    "score": 0.01214,
+    "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.5,
     "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 投资心理, 群体行为, 止损,套牢",
+    "tags": "小说萃取, 天涯神贴精选, 投资心理, 群体行为",
     "content_excerpt": "当多数投资者因套牢而选择不交易时，市场流动性枯竭，反弹无力。决策者若跟随这种心态，可能错失止损时机。应主动评估自身风险，而非被动等待市场回暖。",
+    "label": "relevant"
+   },
+   {
+    "id": 14528,
+    "title": "避免盲目跟风大资金",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为陷阱",
+    "content_excerpt": "小投资者常因羡慕大资金收益而模仿其策略，但忽视自身条件差异。大资金可操纵市场或承受短期亏损，小资金则易被套牢。应避免跟风，专注自身能力圈。",
     "label": "partial"
    }
   ]
@@ -382,117 +382,9 @@
   "category": "投资心态",
   "results": [
    {
-    "id": 13623,
-    "title": "避免侥幸心理，预设止损",
-    "score": 0.0209,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 止损",
-    "content_excerpt": "面对利空消息，不要因个体差异（如自己持有的股票可能受影响较小）而心存侥幸，应基于整体板块风险预设止损线，防止损失扩大。",
-    "label": "relevant"
-   },
-   {
-    "id": 15258,
-    "title": "设置强制止损与退出机制",
-    "score": 0.02024,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 项目管理, 止损",
-    "content_excerpt": "为避免在市场中因情绪或沉没成本而持续受损，应在入场前制定明确的止损线和时间框架，并严格执行。例如，设定最大亏损比例或投资期限，一旦触发即无条件退出，防止陷入长期消耗。此方法适用于任何高风险投机场景。",
-    "label": "relevant"
-   },
-   {
-    "id": 15198,
-    "title": "避免情绪化追涨杀跌",
-    "score": 0.01962,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 止损",
-    "content_excerpt": "在市场狂热或恐慌时，情绪化决策往往导致高买低卖。决策者应预设明确的止损和止盈规则，并严格执行，以纪律性应对市场波动。",
-    "label": "relevant"
-   },
-   {
-    "id": 14670,
-    "title": "止损纪律与现金积累",
-    "score": 0.01932,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股市投资, 风险管理, 止损",
-    "content_excerpt": "在投机市场中，设定明确的止损比例（如浮亏20%即割肉），避免情绪化持有。通过高抛低吸操作，保持股数不变而增加现金，以降低持仓风险并积累操作经验。",
-    "label": "relevant"
-   },
-   {
-    "id": 14695,
-    "title": "建议前先确认对方风险承受力",
-    "score": 0.01903,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损",
-    "content_excerpt": "在给出投资建议前，需了解对方的成本价、持仓时间及心理承受能力。若对方已处于亏损且恐慌，应优先评估反弹概率，而非简单安抚。可建议设置止损点，减少后续责任。",
-    "label": "partial"
-   },
-   {
-    "id": 14815,
-    "title": "心理防线崩溃导致非理性割肉",
-    "score": 0.01821,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资, 危机管理, 止损",
-    "content_excerpt": "在持续压力下，投资者易因心理崩溃而放弃理性判断，急于保本或离场，正中对手下怀。避免方法：预设明确的止损线，并坚持执行；避免在情绪低谷时做重大决策，可设置冷静期。",
-    "label": "relevant"
-   },
-   {
-    "id": 15145,
-    "title": "死守或止损的二选一策略",
-    "score": 0.01747,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资策略, 止损纪律, 止损",
-    "content_excerpt": "面对市场波动，散户只能采取两种策略之一：一是选择优质股票并长期持有，不轻易卖出；二是设置止损点，一旦走势不利立即离场或锁定利润。关键在于执行一致性，避免犹豫不决。",
-    "label": "relevant"
-   },
-   {
-    "id": 13943,
-    "title": "牛市急跌中幻想反弹导致套牢",
-    "score": 0.01723,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 止损",
-    "content_excerpt": "在牛市中，急跌常被视为'洗盘'，投资者因损失厌恶和沉没成本，倾向于认为'再涨涨就解套'，从而拒绝止损。但急跌往往伴随流动性枯竭（如千股跌停），一旦错过初期逃生窗口，后续将无法卖出。可执行策略：设定硬性止损线（如亏损10%），并提前演练执行流",
-    "label": "relevant"
-   },
-   {
-    "id": 13611,
-    "title": "预设止损线防止情绪失控",
-    "score": 0.01678,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 风险管理, 项目管理, 止损",
-    "content_excerpt": "在重仓或重大投入前，预先设定明确的止损阈值（如总体跌幅8%减仓，40%强制退出），并严格执行。这能避免因市场波动或沉没成本而做出非理性决策，确保在极端情况下保住部分本金，为后续机会留有余地。",
-    "label": "relevant"
-   },
-   {
     "id": 18020,
     "title": "设定具体止盈目标及时兑现",
-    "score": 0.01371,
+    "score": 0.01393,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.7,
@@ -500,6 +392,114 @@
     "tags": "小说萃取, 天涯神贴精选, 投资理财, 目标管理",
     "content_excerpt": "设定具体、可量化的盈利目标，如每周赚1%或每只股票赚3%即出局。目标越具体越好，实现后必须知足并兑现利润，避免因贪婪而错失离场时机。此方法适用于任何需要纪律性止盈的场景。",
     "label": "partial"
+   },
+   {
+    "id": 13623,
+    "title": "避免侥幸心理，预设止损",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制",
+    "content_excerpt": "面对利空消息，不要因个体差异（如自己持有的股票可能受影响较小）而心存侥幸，应基于整体板块风险预设止损线，防止损失扩大。",
+    "label": "relevant"
+   },
+   {
+    "id": 15258,
+    "title": "设置强制止损与退出机制",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 项目管理",
+    "content_excerpt": "为避免在市场中因情绪或沉没成本而持续受损，应在入场前制定明确的止损线和时间框架，并严格执行。例如，设定最大亏损比例或投资期限，一旦触发即无条件退出，防止陷入长期消耗。此方法适用于任何高风险投机场景。",
+    "label": "relevant"
+   },
+   {
+    "id": 14200,
+    "title": "短线交易三步法：筛选、择时、控险",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 风险决策",
+    "content_excerpt": "在短线交易中，首先筛选具有延续性的强势板块和主力深度介入的个股，放弃一日游机会。其次，在主升浪阶段介入，利用杠杆但需在涨停板部分出货锁定利润，再浮盈加仓。最后，操作前必须规划安全退出路径，避免追高被套，若行情不利及时收手。",
+    "label": "partial"
+   },
+   {
+    "id": 14670,
+    "title": "止损纪律与现金积累",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 股市投资, 风险管理",
+    "content_excerpt": "在投机市场中，设定明确的止损比例（如浮亏20%即割肉），避免情绪化持有。通过高抛低吸操作，保持股数不变而增加现金，以降低持仓风险并积累操作经验。",
+    "label": "relevant"
+   },
+   {
+    "id": 14202,
+    "title": "追高陷阱：怕踏空导致被套",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 冲动控制",
+    "content_excerpt": "在行情上涨时，因害怕错过机会而追高买入，但若主力已获利出货，追高者将面临无利润且无法及时卖出的风险，一旦开板或低开，即被套牢。因此，应避免因情绪驱动追高，需等待更安全的介入点。",
+    "label": "relevant"
+   },
+   {
+    "id": 14695,
+    "title": "建议前先确认对方风险承受力",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策",
+    "content_excerpt": "在给出投资建议前，需了解对方的成本价、持仓时间及心理承受能力。若对方已处于亏损且恐慌，应优先评估反弹概率，而非简单安抚。可建议设置止损点，减少后续责任。",
+    "label": "partial"
+   },
+   {
+    "id": 13578,
+    "title": "强势股分批止盈法",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 股市交易, 投资决策",
+    "content_excerpt": "在持有强势股时，当股价冲高回落或跌破关键支撑位（如前日收盘价），应分批卖出以锁定利润。先卖出弱势品种，保留强势品种，但一旦强势股也出现回落信号，立即减仓。卖出后若股价未持续上涨，避免因贪婪追高，等待回调或确认趋势后再行动。",
+    "label": "partial"
+   },
+   {
+    "id": 14192,
+    "title": "动态止盈：目标位失效时降级卖出",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 股票交易, 风险决策",
+    "content_excerpt": "在短线交易中，预设一个理想卖出位（如涨幅9%），但若价格多次冲击该位未果且高点递减，表明动能不足。此时应放弃原目标，在次优位置（如涨幅4.5%）果断卖出，以锁定利润，避免回吐。操作步骤：1) 设定初始目标；2) 观察冲击次数与高点变化；3)",
+    "label": "partial"
+   },
+   {
+    "id": 13889,
+    "title": "选择小盘股以增强控制力",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 市场交易",
+    "content_excerpt": "当资金量较大时，优先选择小盘股或成交量较小的标的，因为资金足以推动价格至涨停并封板，且次日出货相对容易。避免大盘股因流动性过强而无法影响价格，导致操作失败。",
+    "label": "irrelevant"
    }
   ]
  },
@@ -510,7 +510,7 @@
    {
     "id": 22833,
     "title": "投资亏损时用热爱支撑坚持",
-    "score": 0.01905,
+    "score": 0.01935,
     "source": "vector",
     "source_type": "note",
     "confidence": 0.6,
@@ -551,19 +551,19 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理陷阱, 止损",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理陷阱",
     "content_excerpt": "在亏损后，投资者容易产生回本执念，不断加仓试图摊平成本，但若市场持续恶化，可能造成更大损失。应设定止损线，避免情绪化决策。",
     "label": "relevant"
    },
    {
     "id": 14695,
     "title": "建议前先确认对方风险承受力",
-    "score": 0.01371,
+    "score": 0.01349,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损",
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策",
     "content_excerpt": "在给出投资建议前，需了解对方的成本价、持仓时间及心理承受能力。若对方已处于亏损且恐慌，应优先评估反弹概率，而非简单安抚。可建议设置止损点，减少后续责任。",
     "label": "partial"
    },
@@ -575,7 +575,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理调节, 抄底",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理调节",
     "content_excerpt": "当损失已成事实且无法挽回时，停止反复思虑‘如果当初’。主动将损失重新定义为一种‘自愿付出’（如捐赠），而非‘被动剥夺’，能有效降低心理痛苦，防止因情绪化而做出报复性交易或抄底等非理性决策。",
     "label": "relevant"
    },
@@ -592,9 +592,21 @@
     "label": "irrelevant"
    },
    {
+    "id": 14453,
+    "title": "重建信心前先小规模验证",
+    "score": 0.01269,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 职业转型",
+    "content_excerpt": "经历重大亏损后，决策者常怀疑自身能力，但直接放弃或盲目回归都不可取。可执行做法：先以小额资金或模拟盘进行低风险交易，记录决策和结果，连续多次达到预期后，再逐步增加仓位。这能客观检验市场敏感度，避免因情绪化判断而二次受伤。",
+    "label": "partial"
+   },
+   {
     "id": 13501,
     "title": "牛市中的认知偏差",
-    "score": 0.01269,
+    "score": 0.0125,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -604,28 +616,16 @@
     "label": "irrelevant"
    },
    {
-    "id": 15082,
-    "title": "峰值幻觉导致决策瘫痪",
-    "score": 0.0125,
+    "id": 18627,
+    "title": "侥幸心理与1%幻觉",
+    "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资心理, 风险控制, 止损",
-    "content_excerpt": "常见陷阱是将账户曾达到的高峰视为应得资产，导致回撤时产生‘亏了3000万’的错觉，从而拒绝止损。这种心理会放大损失厌恶，使决策者拖延离场，最终可能损失更多。规避方法是定期提醒自己：未兑现的利润不是你的钱，只有落袋才算收益。",
-    "label": "relevant"
-   },
-   {
-    "id": 14453,
-    "title": "重建信心前先小规模验证",
-    "score": 0.01232,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 金融投资, 职业转型, 仓位",
-    "content_excerpt": "经历重大亏损后，决策者常怀疑自身能力，但直接放弃或盲目回归都不可取。可执行做法：先以小额资金或模拟盘进行低风险交易，记录决策和结果，连续多次达到预期后，再逐步增加仓位。这能客观检验市场敏感度，避免因情绪化判断而二次受伤。",
-    "label": "partial"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险认知",
+    "content_excerpt": "面对高风险市场，人们常因‘总有1%的人赚钱’而忽视大概率亏损的现实，陷入侥幸心理。这种思维会诱导过度冒险，应通过独立思考和概率评估来抵制。",
+    "label": "irrelevant"
    }
   ]
  },
@@ -636,122 +636,122 @@
    {
     "id": 14080,
     "title": "杠杆加仓的复利幻觉与爆仓风险",
-    "score": 0.0209,
+    "score": 0.01393,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 杠杆",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制",
     "content_excerpt": "通过配资加仓，资产从70万增至5000万，看似成功，但最终平仓后负债百万。陷阱在于：杠杆放大盈利时易产生过度自信，忽视市场极端波动风险。决策者应警惕'经验、胆量和魄力'可能导致的过度杠杆，需设定硬性风控规则，如最大杠杆倍数和单日亏损限额。",
+    "label": "relevant"
+   },
+   {
+    "id": 17843,
+    "title": "牛市用杠杆基金替代个股追涨",
+    "score": 0.01371,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 市场交易",
+    "content_excerpt": "在确认上涨行情后，选择看好的行业板块，通过分级基金B份额等杠杆工具获取超额收益，而非直接买入个股。操作步骤：1) 确认市场处于牛市或强势反弹；2) 基于行业前景选择板块；3) 使用杠杆基金（如证券B、资源B）进行配置，注意交易门槛低至200",
+    "label": "partial"
+   },
+   {
+    "id": 15144,
+    "title": "避免杠杆和借贷炒股",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资风险, 财务安全",
+    "content_excerpt": "使用杠杆或借贷资金炒股会放大风险，一旦市场不利，可能导致本金和债务双重损失。散户应避免此类操作，因为信息不对称和庄家操纵下，杠杆交易极易导致爆仓。",
     "label": "relevant"
    },
    {
     "id": 14616,
     "title": "小本金高杠杆的幻觉",
-    "score": 0.02024,
+    "score": 0.01328,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资心理, 风险控制, 杠杆",
+    "tags": "小说萃取, 天涯神贴精选, 投资心理, 风险控制",
     "content_excerpt": "小本金投资者常因短期收益而忽视风险，如用5000元本金追求换手机，但市场操纵下可能血本无归。避免因羡慕他人收益而盲目跟风，应评估自身风险承受能力，不轻易加杠杆。",
-    "label": "relevant"
-   },
-   {
-    "id": 15144,
-    "title": "避免杠杆和借贷炒股",
-    "score": 0.01992,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资风险, 财务安全, 杠杆,爆仓",
-    "content_excerpt": "使用杠杆或借贷资金炒股会放大风险，一旦市场不利，可能导致本金和债务双重损失。散户应避免此类操作，因为信息不对称和庄家操纵下，杠杆交易极易导致爆仓。",
     "label": "relevant"
    },
    {
     "id": 13852,
     "title": "牛市杠杆持仓的滚动操作法",
-    "score": 0.01962,
+    "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 杠杆,止损,仓位",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理",
     "content_excerpt": "在牛市中，若选择持有高杠杆仓位，可采取'核心标的+高频滚动'策略：选定一只板块龙头股，在每次大幅回调（如跌20%）后，基于其历史反弹规律（如反弹30%-50%）果断加仓或持有，而非止损离场。同时，通过频繁买卖积累市场经验，但需明确接受由此产",
     "label": "partial"
    },
    {
-    "id": 13935,
-    "title": "忽视市场风险易导致杠杆爆仓",
-    "score": 0.01932,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 杠杆",
-    "content_excerpt": "在资本市场中，若忽视风险，尤其是杠杆资金的使用，一旦暴跌，可能血本无归。需警惕高收益背后的高风险，避免因盲目自信而陷入困境。",
-    "label": "relevant"
-   },
-   {
     "id": 14940,
     "title": "两次杠杆实现资金倍增",
-    "score": 0.01903,
+    "score": 0.01288,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理, 杠杆,止损",
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理",
     "content_excerpt": "在初始资金有限时，通过第一次杠杆操作（如10倍）获取市场敞口，盈利后提取部分利润进行第二次杠杆操作（如再次10倍），从而在短时间内将资金规模放大至百倍。关键在于每次杠杆操作前需确认市场趋势明确，且设置严格的止损线，避免因反向波动导致本金损失",
     "label": "partial"
    },
    {
-    "id": 14083,
-    "title": "杠杆放大风险，剩余资本需谨慎",
-    "score": 0.01875,
+    "id": 14485,
+    "title": "高杠杆操作需严格止损",
+    "score": 0.01269,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 杠杆,爆仓,强平,股灾",
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理",
+    "content_excerpt": "在股市中，使用高倍配资杠杆时，必须设定明确的止损线，避免因市场暴跌导致资金归零。操作者应预先计算最大可承受亏损，并在达到阈值时果断平仓，而非抱有侥幸心理。",
+    "label": "relevant"
+   },
+   {
+    "id": 14083,
+    "title": "杠杆放大风险，剩余资本需谨慎",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理",
     "content_excerpt": "在经历杠杆爆仓后，剩余资本往往大幅缩水，此时若继续使用高杠杆，风险敞口将成倍放大。决策者需清醒评估自身资本规模与市场波动性，避免因急于翻本而忽视极端行情下的强平风险。历史教训表明，中产阶级在股灾中损失最重，正是杠杆与资本不匹配的后果。",
     "label": "relevant"
    },
    {
-    "id": 14485,
-    "title": "高杠杆操作需严格止损",
-    "score": 0.01848,
+    "id": 13935,
+    "title": "忽视市场风险易导致杠杆爆仓",
+    "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理, 杠杆,止损",
-    "content_excerpt": "在股市中，使用高倍配资杠杆时，必须设定明确的止损线，避免因市场暴跌导致资金归零。操作者应预先计算最大可承受亏损，并在达到阈值时果断平仓，而非抱有侥幸心理。",
-    "label": "partial"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理",
+    "content_excerpt": "在资本市场中，若忽视风险，尤其是杠杆资金的使用，一旦暴跌，可能血本无归。需警惕高收益背后的高风险，避免因盲目自信而陷入困境。",
+    "label": "relevant"
    },
    {
     "id": 13566,
     "title": "高杠杆下分批建仓与T+0降成本",
-    "score": 0.01821,
+    "score": 0.01214,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股票交易, 高杠杆投资, 杠杆,仓位",
+    "tags": "小说萃取, 天涯神贴精选, 股票交易, 高杠杆投资",
     "content_excerpt": "在高杠杆满仓状态下，采用分批小额买入（如每次一万股）以降低对市场的冲击，并在横盘区间逐步建仓，不追求最低价。同时，利用涨停板出货后低位接回筹码，再回补其他相关标的，实现成本降低和仓位优化。此方法适用于波动较大但趋势明确的短期交易场景。",
     "label": "partial"
-   },
-   {
-    "id": 13528,
-    "title": "高杠杆放大风险与收益不对称性",
-    "score": 0.01771,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险认知, 杠杆,强平",
-    "content_excerpt": "高杠杆交易中，亏损的速度远快于盈利，且风险不对称。市场剧烈波动时，杠杆盘易被强制平仓，导致本金损失殆尽，即使市场随后反弹也与己无关。",
-    "label": "relevant"
    }
   ]
  },
@@ -1699,7 +1699,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场谈判, 人际冲突",
     "content_excerpt": "当对方以高地位或利益拉拢时，先列举自身经历中的具体待遇差异（如职位、资源、尊重程度），以此作为拒绝依据。这能有效暴露对方论点的漏洞，同时强化自身立场的合理性。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 6315,
@@ -3037,7 +3037,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 这就是人性, 职场霸凌, 校园欺凌, 家庭关系",
     "content_excerpt": "当他人欺负你时，若其行为无需付出代价，则欺凌会持续。通过明确表达不满、采取反击或引入第三方仲裁，增加对方行为的实际成本，可有效降低欺凌频率。关键在于行动的一致性，而非情绪化的爆发。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 19879,
@@ -3085,7 +3085,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场形象, 人际边界",
     "content_excerpt": "若一味追求八面玲珑、不得罪人，易被贴上‘老好人’、‘马屁精’标签，导致他人敬而远之，限制发展。需警惕：过度迎合他人会丧失个性，反而降低信任。应通过适度冲突和暴露弱点来维持真实感。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 10355,
@@ -3292,21 +3292,9 @@
     "label": "partial"
    },
    {
-    "id": 15693,
-    "title": "投资时机看市场周期信号",
-    "score": 0.01371,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 房产投资, 市场分析, 杠杆",
-    "content_excerpt": "当市场处于复苏初期且无明显过热迹象时，可适度参与但需放缓节奏；若出现高杠杆机会，需权衡收益与风险，避免因过度保守错失良机，也避免因激进导致损失。",
-    "label": "partial"
-   },
-   {
     "id": 17458,
     "title": "全民狂热时入场易被套牢",
-    "score": 0.01349,
+    "score": 0.01371,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -3314,6 +3302,18 @@
     "tags": "小说萃取, 天涯神贴精选, 投资理财, 职场决策",
     "content_excerpt": "当投资话题成为全民谈资，往往意味着市场已进入非理性繁荣阶段。此时入场，风险远大于收益。应避免在他人暴富故事刺激下冲动跟风，而应冷静评估市场估值和自身风险承受能力。",
     "label": "relevant"
+   },
+   {
+    "id": 15693,
+    "title": "投资时机看市场周期信号",
+    "score": 0.01349,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 房产投资, 市场分析",
+    "content_excerpt": "当市场处于复苏初期且无明显过热迹象时，可适度参与但需放缓节奏；若出现高杠杆机会，需权衡收益与风险，避免因过度保守错失良机，也避免因激进导致损失。",
+    "label": "partial"
    },
    {
     "id": 13501,
@@ -3359,26 +3359,14 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 个人理财, 杠杆,融资",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 个人理财",
     "content_excerpt": "在进入高风险市场前，先检查资金是否为闲钱，是否涉及借贷或杠杆。只有无负债、无融资的资金才适合长期投资，否则应避免。",
     "label": "relevant"
    },
    {
-    "id": 14695,
-    "title": "建议前先确认对方风险承受力",
-    "score": 0.0125,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损",
-    "content_excerpt": "在给出投资建议前，需了解对方的成本价、持仓时间及心理承受能力。若对方已处于亏损且恐慌，应优先评估反弹概率，而非简单安抚。可建议设置止损点，减少后续责任。",
-    "label": "irrelevant"
-   },
-   {
     "id": 18659,
     "title": "避免盲目跟风投资",
-    "score": 0.01232,
+    "score": 0.0125,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -3390,13 +3378,25 @@
    {
     "id": 15298,
     "title": "宏观政策解读与保本优先",
-    "score": 0.01214,
+    "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理",
     "content_excerpt": "投资不能脱离宏观环境，需关注政策动向。一旦市场有风吹草动，应立即以保本为先，及时减仓或退出，避免因忽视系统性风险而遭受重大损失。",
+    "label": "partial"
+   },
+   {
+    "id": 18366,
+    "title": "投资前先判断目标群体",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险决策",
+    "content_excerpt": "面对高收益另类投资，先问自己是否属于该投资品的目标群体。若该品类主要面向资金充裕、经验丰富的专业投资者，普通投资者应谨慎进入，避免因资金或经验不足而承担过高风险。",
     "label": "partial"
    }
   ]
@@ -3408,62 +3408,26 @@
    {
     "id": 13952,
     "title": "下跌途中勿盲目抄底",
-    "score": 0.02024,
+    "score": 0.01349,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 抄底",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理",
     "content_excerpt": "在下跌趋势未明确反转前，任何看似便宜的价位都可能继续下跌。抄底需等待趋势确认信号（如成交量萎缩、止跌企稳），否则容易陷入连续被套的困境。",
     "label": "relevant"
    },
    {
     "id": 13965,
     "title": "避免在极端下跌中盲目抄底",
-    "score": 0.01992,
+    "score": 0.01328,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.5,
     "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为金融, 抄底",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为金融",
     "content_excerpt": "在连续暴跌和跌停潮中，投资者易受'超跌反弹'心理驱动而抄底，但若市场缺乏有效支撑且政策失效，抄底可能导致更大损失。应避免基于情绪或短期反弹预期操作，而应等待趋势明确反转信号。",
     "label": "relevant"
-   },
-   {
-    "id": 14216,
-    "title": "暴跌中筛选相对强势股",
-    "score": 0.01932,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股市投资, 危机决策, 抄底",
-    "content_excerpt": "在系统性下跌中，不盲目抄底，而是对比同类标的的跌幅，选择跌幅较小、未跌停的个股作为候选。这类股票往往有主力护盘或基本面支撑，反弹时弹性更大。操作上，先观察开盘后的相对强度，再决定是否介入。",
-    "label": "partial"
-   },
-   {
-    "id": 14093,
-    "title": "股灾全程在场且试图抄底",
-    "score": 0.01903,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为金融, 抄底",
-    "content_excerpt": "在下跌趋势中，因前期盈利产生‘着迷’情绪，持续留在市场并试图抄底，是导致损失扩大的典型陷阱。该行为源于对‘热点’和‘反弹’的侥幸预期，而非基于市场结构变化的理性判断。",
-    "label": "relevant"
-   },
-   {
-    "id": 14092,
-    "title": "市场免疫利好时停止常规操作",
-    "score": 0.01747,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.65,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 抄底",
-    "content_excerpt": "在极端行情中，若市场对持续出台的利好消息毫无反应，说明常规信息已失效。此时应停止依据消息面或基本面进行抄底、加仓等操作，因为决策锚点已从‘信息有效性’转变为‘市场情绪惯性’，继续沿用旧逻辑只会扩大损失。",
-    "label": "partial"
    },
    {
     "id": 13980,
@@ -3473,14 +3437,26 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 止损,抄底",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制",
     "content_excerpt": "在下跌趋势中，'抄底'行为常因缺乏趋势确认而失败。常见陷阱是：将短期反弹误认为反转，或受他人成功案例激励而忽视自身风险承受力。规避方法：1) 设定明确的入场条件（如连续三日收阳）；2) 分批建仓而非一次性投入；3) 预设止损位。此教训适用于",
     "label": "relevant"
    },
    {
+    "id": 14093,
+    "title": "股灾全程在场且试图抄底",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为金融",
+    "content_excerpt": "在下跌趋势中，因前期盈利产生‘着迷’情绪，持续留在市场并试图抄底，是导致损失扩大的典型陷阱。该行为源于对‘热点’和‘反弹’的侥幸预期，而非基于市场结构变化的理性判断。",
+    "label": "partial"
+   },
+   {
     "id": 14041,
     "title": "避免被市场共识绑架",
-    "score": 0.0125,
+    "score": 0.01269,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.5,
@@ -3488,6 +3464,18 @@
     "tags": "小说萃取, 天涯神贴精选, 投资心理, 决策偏差",
     "content_excerpt": "在极端行情中，市场共识可能极度悲观，但决策者不应盲目跟随。需区分事实与情绪，基于自身资金状况和风险承受能力独立判断。若所有专家一致看空，反而可能意味着市场已接近底部，但前提是个人有足够的流动性支撑。",
     "label": "partial"
+   },
+   {
+    "id": 13650,
+    "title": "用规则约束抄底冲动",
+    "score": 0.0125,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制",
+    "content_excerpt": "当市场出现大幅下跌时，抄底冲动强烈，但需预先设定仓位限制和价格区间。若标的价格超出预期范围，即使感觉有机会也应放弃，以规则对抗情绪。",
+    "label": "relevant"
    },
    {
     "id": 13377,
@@ -3509,21 +3497,33 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 杠杆,爆仓,强平,止损",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理",
     "content_excerpt": "在极端市场下跌中，若持仓杠杆过高或接近强制平仓线，应优先考虑立即止损离场，而非等待反弹。快速割肉虽损失部分本金，但可避免后续爆仓或长期钝刀割肉式的更大消耗。操作上需在暴跌初期设定明确止损点，并严格执行。",
     "label": "partial"
    },
    {
-    "id": 13650,
-    "title": "用规则约束抄底冲动",
+    "id": 14216,
+    "title": "暴跌中筛选相对强势股",
     "score": 0.01181,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 仓位,抄底",
-    "content_excerpt": "当市场出现大幅下跌时，抄底冲动强烈，但需预先设定仓位限制和价格区间。若标的价格超出预期范围，即使感觉有机会也应放弃，以规则对抗情绪。",
-    "label": "relevant"
+    "tags": "小说萃取, 天涯神贴精选, 股市投资, 危机决策",
+    "content_excerpt": "在系统性下跌中，不盲目抄底，而是对比同类标的的跌幅，选择跌幅较小、未跌停的个股作为候选。这类股票往往有主力护盘或基本面支撑，反弹时弹性更大。操作上，先观察开盘后的相对强度，再决定是否介入。",
+    "label": "partial"
+   },
+   {
+    "id": 14788,
+    "title": "极端行情中先确认市场环境",
+    "score": 0.01164,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理",
+    "content_excerpt": "当市场出现连续跌停、成交量异常放大等极端现象时，不应依赖历史经验或过往成功模式，而应先判断是否属于系统性风险。若环境异常，应优先降低杠杆、控制仓位，避免因流动性枯竭导致爆仓。",
+    "label": "partial"
    }
   ]
  },
@@ -3577,7 +3577,7 @@
     "is_low_confidence": true,
     "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场融入, 跨文化沟通",
     "content_excerpt": "决策时，应优先考虑环境规则和他人需求，而非固守个人习惯。判断标准是：若主动调整能降低冲突、提升合作效率，则值得改变。这要求个体具备观察力和灵活性，避免因自我中心而错失融入机会。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 5458,
@@ -3625,7 +3625,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 打破你的学生思维, 职场沟通, 远程协作",
     "content_excerpt": "在暂时离岗期间，若岗位未被正式替代，应主动与团队保持联系，定期汇报个人进展，表达对岗位的重视和回归意愿。这能强化你仍是该岗位最佳人选的认知，避免被边缘化。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 23041,
@@ -4057,7 +4057,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 这就是人性, 职场协作, 家庭沟通",
     "content_excerpt": "在他人未求助时，强行施以帮助，尤其是公开场合，可能触发对方的羞耻感和自尊受损，导致拒绝甚至敌意。施助者应避免将帮助行为公开化或道德化，以免让对方感到被怜悯或工具化。",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
     "id": 19790,
@@ -4405,7 +4405,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 这就是人性, 个人成长, 习惯养成",
     "content_excerpt": "当自律计划频繁失败时，先审视目标是否超出当前能力范围。将宏大目标拆解为每日可完成的最小动作，如从'每天跑步20分钟'改为'每周三次快走10分钟'，降低启动门槛，减少心理抗拒。",
-    "label": "partial"
+    "label": "relevant"
    }
   ]
  },
@@ -4927,7 +4927,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 打破你的学生思维, 学习规划, 自我提升",
     "content_excerpt": "盲目跟风学习热门技能或课程，缺乏与目标方向的关联，导致投入产出比低。应先明确目标，再定向准备，否则易陷入无效努力。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 19694,
@@ -4963,7 +4963,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 打破你的学生思维, 自我认知, 职业规划",
     "content_excerpt": "轻易说出'不喜欢'是逃避深度自我探索的表现。真正的困难在于明确自己热爱什么。若只停留在否定现状，而不主动寻找替代方向，将永远无法走出困境。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 21279,
@@ -5035,7 +5035,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 个人成长, 学习策略",
     "content_excerpt": "在阅读前先明确目的：若为消遣，则接受其短暂性；若为实用，则需选择能提炼出可操作知识的材料。将阅读内容与具体现实目标（如技能提升、职业发展）挂钩，避免沉溺于幻想性内容，确保阅读产出能增强应对现实的能力。",
-    "label": "relevant"
+    "label": "partial"
    }
   ]
  },
@@ -5179,7 +5179,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 这就是人性, 职场协作, 家庭沟通, 社交关系",
     "content_excerpt": "在提供帮助前，先判断对方是否明确请求或暗示需要帮助。若未请求，应主动询问对方需求，而非直接采取行动。基于自身假设的帮助可能被视为打扰或侵犯，导致善意被拒。具体操作：先问'你需要帮助吗？'或'你希望我怎么帮你？'，再决定行动。",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
     "id": 20132,
@@ -5191,7 +5191,7 @@
     "is_low_confidence": true,
     "tags": "小说萃取, 这就是人性, 团队协作, 朋友相处",
     "content_excerpt": "判断标准：若该问题最终结果由对方承担，则建议权归对方，自己不应越界。只有当自己也是决策者或执行者时，才主动提出方案。这能有效减少人际摩擦，并促使对方自主成长。",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
     "id": 19600,
@@ -5203,7 +5203,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场合作, 社交关系",
     "content_excerpt": "在提供帮助或物质支持前，先评估双方关系性质（如亲疏、平等性）和对方真实需求，避免盲目给予。根据关系阶段和对方反馈，动态调整投入程度，确保给予行为被接受且不造成负担。",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
     "id": 19888,
@@ -5215,7 +5215,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 这就是人性, 职场谈判, 公益慈善, 人际关系",
     "content_excerpt": "在决定帮助他人时，需反思自身动机：是否为了获得道德优越感、社会认可或自我满足？若帮助行为伴随强烈的自我感动或期待回报，则可能偏离对方真实需求，导致帮助变成负担。判断标准：若帮助需要牺牲自身利益且无回报，是否仍愿意做？若犹豫，则动机可能不纯。",
-    "label": "partial"
+    "label": "relevant"
    },
    {
     "id": 19626,
@@ -5227,7 +5227,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场社交, 个人成长",
     "content_excerpt": "在建立或维持友谊时，先评估对方是否具备与自己相当或更高的能力、资源或支持性。若对方无过人之处且无法提供帮助，关系可能缺乏稳定基础。操作上，可列出对方能带来的具体价值（如知识、人脉、情感支持），并与自身能提供的进行对比，确保双方贡献均衡。",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
     "id": 19527,
@@ -5479,7 +5479,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 时间管理, 社群运营",
     "content_excerpt": "在谣言扩散时，若逐一私信解释，会消耗大量时间精力，且可能被谣言制造者利用。应集中公开辟谣，并引导粉丝到统一渠道（如群聊）获取信息，既提高效率，又减少信息碎片化。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 12494,
@@ -5518,21 +5518,9 @@
     "label": "partial"
    },
    {
-    "id": 15262,
-    "title": "执着劝说可能触发逆反心理",
-    "score": 0.01308,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 沟通技巧, 冲突管理, 止损",
-    "content_excerpt": "当对方已明确拒绝建议时，反复劝说（如祥林嫂式啰嗦）会强化其逆反心理，使其更坚持原选择。应识别对方的坚定信号，及时止损，避免关系恶化。",
-    "label": "relevant"
-   },
-   {
     "id": 10317,
     "title": "忽视对方信仰体系导致劝谏失败",
-    "score": 0.01288,
+    "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5540,6 +5528,18 @@
     "tags": "小说萃取, 天涯神贴精选, 职场沟通, 家庭沟通",
     "content_excerpt": "若劝谏者仅从自身立场出发，忽视决策者已固化的信仰或利益，劝谏不仅无效，还可能被视为挑衅。例如，秦二世认为君主享乐是正当的，而臣子劝其节俭则被解读为不忠。因此，在提出反对意见前，需先理解对方的价值观，否则可能引发反效果。",
     "label": "relevant"
+   },
+   {
+    "id": 12909,
+    "title": "用间接媒介降低防御",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场谈判, 家庭沟通",
+    "content_excerpt": "当需要说服对方采取重大行动时，直接建议易引发抵触。可先选择对方可能信任的第三方媒介（如算命、咨询），以客观或神秘的方式切入，降低对方心理防线，为后续建议铺路。",
+    "label": "partial"
    }
   ]
  },
@@ -5547,42 +5547,6 @@
   "query": "金融危机来了，普通人应该囤现金还是囤黄金？",
   "category": "金融危机",
   "results": [
-   {
-    "id": 15896,
-    "title": "分散配置，兼顾流动性与抗通胀",
-    "score": 0.01992,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 资产配置, 个人理财, 黄金",
-    "content_excerpt": "面对通胀与衰退并存，不应全仓单一资产。可将部分储蓄转换为黄金或资源挂钩货币，以对冲通胀风险，同时保持流动性。操作上，根据个人风险承受能力，设定黄金或相关资产的比例（如10-20%），并定期调整。",
-    "label": "relevant"
-   },
-   {
-    "id": 16960,
-    "title": "避免盲目投机黄金",
-    "score": 0.01932,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资风险, 个人理财, 黄金",
-    "content_excerpt": "黄金虽长期看涨，但短期波动剧烈，普通人不应将所有资金投入。投机行为风险高，应基于长期趋势和自身风险承受能力配置，而非追逐短期涨跌。",
-    "label": "relevant"
-   },
-   {
-    "id": 16958,
-    "title": "选择负责任央行货币及股票",
-    "score": 0.01614,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 外汇投资, 股票配置, 黄金",
-    "content_excerpt": "在通胀环境下，选择央行政策稳健的货币（如澳元）作为持有对象，并配置以该货币计价的保险类股票，优先农业和基础产品板块。同时，用黄金对冲美元风险，但避免过度投机，因黄金短期波动大，长期方向才明确。",
-    "label": "relevant"
-   },
    {
     "id": 16957,
     "title": "通胀时持有现金而非房产",
@@ -5608,6 +5572,18 @@
     "label": "partial"
    },
    {
+    "id": 15896,
+    "title": "分散配置，兼顾流动性与抗通胀",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 资产配置, 个人理财",
+    "content_excerpt": "面对通胀与衰退并存，不应全仓单一资产。可将部分储蓄转换为黄金或资源挂钩货币，以对冲通胀风险，同时保持流动性。操作上，根据个人风险承受能力，设定黄金或相关资产的比例（如10-20%），并定期调整。",
+    "label": "relevant"
+   },
+   {
     "id": 15817,
     "title": "持有现金对抗通胀的误区",
     "score": 0.01308,
@@ -5617,7 +5593,19 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 财务规划, 通胀应对",
     "content_excerpt": "在通胀预期下，持有现金会因购买力下降而受损，但盲目购买泡沫资产同样危险。常见误区是认为现金安全，或认为所有资产都能保值。正确做法是选择有实际价值支撑或定价权的资产，并动态调整配置。",
-    "label": "relevant"
+    "label": "partial"
+   },
+   {
+    "id": 16960,
+    "title": "避免盲目投机黄金",
+    "score": 0.01288,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资风险, 个人理财",
+    "content_excerpt": "黄金虽长期看涨，但短期波动剧烈，普通人不应将所有资金投入。投机行为风险高，应基于长期趋势和自身风险承受能力配置，而非追逐短期涨跌。",
+    "label": "partial"
    },
    {
     "id": 18634,
@@ -5666,6 +5654,18 @@
     "tags": "小说萃取, 天涯神贴精选, 个人理财, 风险管理",
     "content_excerpt": "在宏观经济不确定时期，决策者应优先考虑现金的流动性价值，而非长期利息节省。通胀预期高或经济转折点出现时，现金的购买力可能下降，但持有现金提供了应对突发机会或风险的能力。因此，决策锚点是灵活性与安全，而非静态的财务计算。",
     "label": "relevant"
+   },
+   {
+    "id": 19468,
+    "title": "通缩环境下优先持币观望",
+    "score": 0.01181,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 职业规划",
+    "content_excerpt": "当判断所处环境进入通缩（资源减少）时，应调整策略为保守：减少非必要投资，增加现金持有比例。因为行业整体萎缩时，个体努力难以抵消趋势，持币可保留选择权，避免资产缩水。操作上，先确认行业数据（如市场规模、同行数量），再决定是否收缩。",
+    "label": "partial"
    }
   ]
  },
@@ -5722,21 +5722,33 @@
     "label": "relevant"
    },
    {
+    "id": 14695,
+    "title": "建议前先确认对方风险承受力",
+    "score": 0.01164,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策",
+    "content_excerpt": "在给出投资建议前，需了解对方的成本价、持仓时间及心理承受能力。若对方已处于亏损且恐慌，应优先评估反弹概率，而非简单安抚。可建议设置止损点，减少后续责任。",
+    "label": "irrelevant"
+   },
+   {
     "id": 14649,
     "title": "极端行情下先确认流动性",
-    "score": 0.01164,
+    "score": 0.01149,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理",
     "content_excerpt": "在恐慌性下跌中，不要依赖历史经验或心理预期，先观察盘面委托单：若卖单堆积且无买单，说明流动性枯竭，应立即采取行动（如割肉或挂单），而非等待反弹。",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
     "id": 14455,
     "title": "利用外部信号捕捉出逃窗口",
-    "score": 0.01149,
+    "score": 0.01133,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5748,7 +5760,7 @@
    {
     "id": 7078,
     "title": "制造稀缺恐慌提升转化",
-    "score": 0.01133,
+    "score": 0.01118,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.7,
@@ -5758,26 +5770,14 @@
     "label": "irrelevant"
    },
    {
-    "id": 14695,
-    "title": "建议前先确认对方风险承受力",
-    "score": 0.01118,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损",
-    "content_excerpt": "在给出投资建议前，需了解对方的成本价、持仓时间及心理承受能力。若对方已处于亏损且恐慌，应优先评估反弹概率，而非简单安抚。可建议设置止损点，减少后续责任。",
-    "label": "irrelevant"
-   },
-   {
     "id": 16268,
     "title": "危机中主动寻找价值洼地",
-    "score": 0.01104,
+    "score": 0.0109,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 仓位",
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理",
     "content_excerpt": "当外部环境出现系统性恐慌时，决策者应将危机视为机会窗口而非威胁。具体操作：1) 列出危机中价格错配的资产类别（如房地产、股票、货币）；2) 筛选因流动性挤兑而非基本面恶化导致的低估标的；3) 在他人退出时以可控仓位介入，并预设退出条件。",
     "label": "relevant"
    },
@@ -5799,30 +5799,6 @@
   "query": "做空是怎么操作的？普通人能玩吗？",
   "category": "金融危机",
   "results": [
-   {
-    "id": 14777,
-    "title": "识别双重角色操纵模式",
-    "score": 0.01962,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 政策分析, 做空",
-    "content_excerpt": "在市场中，若同一主体既做空又做多，则其行为可能构成操纵。操作步骤：1) 追踪大额资金流向，识别是否同一来源在下跌和上涨阶段均活跃；2) 分析价格波动是否呈现先急跌后急拉的对称性；3) 对比官方救市声明与实际资金行为，判断是否言行一致。此模式",
-    "label": "partial"
-   },
-   {
-    "id": 13667,
-    "title": "识别官方信号与市场背离",
-    "score": 0.01875,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 政策解读, 做空",
-    "content_excerpt": "当官方在非低位时过度宣传利好，且伴随做空工具开放，则信号可能具有误导性。操作上，对比官方表态时间与市场走势，若利好发布后市场短期即反转，则需警惕信号失真。",
-    "label": "partial"
-   },
    {
     "id": 18015,
     "title": "模拟盘验证后再实盘",
@@ -5848,6 +5824,18 @@
     "label": "irrelevant"
    },
    {
+    "id": 15951,
+    "title": "识别坐庄模式并设止损",
+    "score": 0.01308,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 股市投资, 投机交易",
+    "content_excerpt": "在投机市场中，识别主力资金的操作手法（如题材炒作、舆论引导），避免成为接盘者。具体步骤：观察成交量与价格异动，分析舆论热点，设定明确的止盈止损点，一旦达到条件果断执行。",
+    "label": "irrelevant"
+   },
+   {
     "id": 13786,
     "title": "盲目跟风高位唱多",
     "score": 0.01288,
@@ -5860,21 +5848,9 @@
     "label": "irrelevant"
    },
    {
-    "id": 15951,
-    "title": "识别坐庄模式并设止损",
-    "score": 0.01269,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股市投资, 投机交易, 止损",
-    "content_excerpt": "在投机市场中，识别主力资金的操作手法（如题材炒作、舆论引导），避免成为接盘者。具体步骤：观察成交量与价格异动，分析舆论热点，设定明确的止盈止损点，一旦达到条件果断执行。",
-    "label": "irrelevant"
-   },
-   {
     "id": 14678,
     "title": "投机市场中的分层策略选择",
-    "score": 0.01181,
+    "score": 0.01214,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5886,7 +5862,7 @@
    {
     "id": 17479,
     "title": "转折点双向操作",
-    "score": 0.01164,
+    "score": 0.01197,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5898,25 +5874,49 @@
    {
     "id": 14369,
     "title": "超短打板操作法：快进快出",
-    "score": 0.01149,
+    "score": 0.01181,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股市交易, 高频决策, 止损,套牢",
+    "tags": "小说萃取, 天涯神贴精选, 股市交易, 高频决策",
     "content_excerpt": "在股市中，采用超短线交易策略，聚焦涨停板（打板），利用资金优势在涨停瞬间买入，次日或短期内卖出，追求快速复利。核心是速度优先，不恋战，严格止损止盈，避免深度套牢。",
     "label": "irrelevant"
    },
    {
     "id": 14468,
     "title": "学习游资手法但保持独立",
-    "score": 0.01104,
+    "score": 0.01133,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.5,
     "is_low_confidence": true,
     "tags": "小说萃取, 天涯神贴精选, 股市投资, 技术分析",
     "content_excerpt": "游资敢死队通过钻研技术和高频操作获得高胜率，但散户模仿时需注意资金规模差异。可学习其技术分析框架，但应结合自身资金量和风险偏好，避免盲目复制。",
+    "label": "irrelevant"
+   },
+   {
+    "id": 13889,
+    "title": "选择小盘股以增强控制力",
+    "score": 0.01118,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 市场交易",
+    "content_excerpt": "当资金量较大时，优先选择小盘股或成交量较小的标的，因为资金足以推动价格至涨停并封板，且次日出货相对容易。避免大盘股因流动性过强而无法影响价格，导致操作失败。",
+    "label": "irrelevant"
+   },
+   {
+    "id": 13608,
+    "title": "利用盘面挂单特征进行高抛低吸",
+    "score": 0.01104,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 金融交易, 投资决策",
+    "content_excerpt": "在交易中，观察特定价位的挂单量，若该价位反复出现且成交活跃，可视为短期支撑/阻力。在此价位挂出卖单，待价格回落后低位接回，每次赚取固定差价。需确保盘面特征稳定，并严格控制仓位，避免单次亏损抵消多次收益。",
     "label": "irrelevant"
    }
   ]
@@ -5925,42 +5925,6 @@
   "query": "听说日本汇率崩了，对普通中国人有什么影响？",
   "category": "金融危机",
   "results": [
-   {
-    "id": 18658,
-    "title": "汇率变动影响资本流动",
-    "score": 0.01992,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 宏观经济, 外汇风险, 汇率",
-    "content_excerpt": "货币升值或贬值会影响热钱进出和债务偿还。升值时热钱不愿离开，贬值时可能外逃。投资者需理解汇率政策对资产价值的影响，避免因汇率波动造成损失。",
-    "label": "partial"
-   },
-   {
-    "id": 17302,
-    "title": "黑市汇率作为资本外逃预警",
-    "score": 0.01678,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 宏观经济监测, 风险管理, 汇率",
-    "content_excerpt": "当官方汇率受管制时，持续观察黑市美元兑人民币汇率，若出现反转且持续，可能预示资本大规模出逃，进而导致经济崩溃。此方法适用于监测经济风险，尤其在政治干预扭曲市场时，地下经济数据更真实。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 18688,
-    "title": "以汇率趋势为锚",
-    "score": 0.01635,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 金融分析, 汇率",
-    "content_excerpt": "决策时依据汇率变动方向，而非市场噪音或他人建议。本币升值时避免兑换外币，贬值时果断兑换，并等待进一步贬值后换回，以获取差价收益。",
-    "label": "partial"
-   },
    {
     "id": 18522,
     "title": "汇率变动影响双轨评估",
@@ -5995,6 +5959,18 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 行业分析",
     "content_excerpt": "面对本币贬值，先按行业属性分类：出口导向型（如纺织、玩具）通常受益，进口依赖型（如依赖进口原料的化工）受损。其次，分析成本端：若原材料主要来自国内，则成本压力小，受益更明显。最后，确认结汇币种：以美元结汇的企业，贬值直接增加汇兑收益。综合这",
+    "label": "partial"
+   },
+   {
+    "id": 18658,
+    "title": "汇率变动影响资本流动",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 宏观经济, 外汇风险",
+    "content_excerpt": "货币升值或贬值会影响热钱进出和债务偿还。升值时热钱不愿离开，贬值时可能外逃。投资者需理解汇率政策对资产价值的影响，避免因汇率波动造成损失。",
     "label": "partial"
    },
    {
@@ -6044,6 +6020,30 @@
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理",
     "content_excerpt": "当面临持有房产与货币贬值的两难时，核心判断依据是个人对'通胀贬值幅度'与'房价暴跌幅度'相对大小的预期。若认为贬值更深，则持有房产为优；若认为暴跌更深，则放弃持有。此判断基于主观预期，需明确自身乐观或悲观倾向。",
     "label": "irrelevant"
+   },
+   {
+    "id": 18871,
+    "title": "避免被崩溃论或无敌论误导",
+    "score": 0.01232,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 风险认知, 心态管理",
+    "content_excerpt": "面对经济悲观或乐观言论，保持理性：崩溃论忽略系统维稳机制，无敌论忽视结构性风险。实际应关注精英人口计划生育等控制手段，理解系统不会轻易崩溃，但个体需防范财富再分配中的损失。",
+    "label": "irrelevant"
+   },
+   {
+    "id": 17493,
+    "title": "贬值预期下提前购汇",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 出境旅游, 外汇管理",
+    "content_excerpt": "若预期本币继续贬值，出境游前应兑换好全部现金，避免刷卡消费后延期还款时因汇率上升而支付更多。若本币升值，则可延期还款以享受汇率红利。",
+    "label": "partial"
    }
   ]
  },
@@ -6088,28 +6088,28 @@
     "label": "irrelevant"
    },
    {
+    "id": 13670,
+    "title": "权威信息与市场信号背离时以市场为准",
+    "score": 0.01328,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理",
+    "content_excerpt": "当官方媒体或监管机构持续发布乐观言论，但市场实际交易数据（如做空量、杠杆爆仓率）显示相反趋势时，应优先依据市场信号调整仓位。操作上：每日对比官方表态与盘面数据，若背离持续超过3个交易日，视为高风险信号，启动减仓流程。",
+    "label": "irrelevant"
+   },
+   {
     "id": 15159,
     "title": "以每日希望维持长期参与",
-    "score": 0.01328,
+    "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 用户留存, 激励机制",
     "content_excerpt": "设计每日开奖机制，让参与者每天都有机会中奖，即使今天未中，明天仍有希望。这种高频反馈能维持用户的持续关注和行动，避免因长期无回报而流失。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 13670,
-    "title": "权威信息与市场信号背离时以市场为准",
-    "score": 0.01308,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 做空,杠杆,爆仓,仓位",
-    "content_excerpt": "当官方媒体或监管机构持续发布乐观言论，但市场实际交易数据（如做空量、杠杆爆仓率）显示相反趋势时，应优先依据市场信号调整仓位。操作上：每日对比官方表态与盘面数据，若背离持续超过3个交易日，视为高风险信号，启动减仓流程。",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
     "id": 14785,
@@ -6145,7 +6145,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 活动策划, 用户激励",
     "content_excerpt": "抽奖机制中，选择普通人无法事先操控的公开数据（如股市指数、彩票号码）作为中奖依据，避免暗箱操作。这能建立信任，让参与者感到'众生平等'，从而持续参与。",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
     "id": 13460,
@@ -6167,7 +6167,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股市交易, 高杠杆操作, 仓位",
+    "tags": "小说萃取, 天涯神贴精选, 股市交易, 高杠杆操作",
     "content_excerpt": "在涨停板封单量逐渐减少时，预判开板时机，提前分批卖出，避免因等待最高价而错失流动性。执行时需紧盯盘面，在封单即将消失的瞬间完成大部分仓位了结。",
     "label": "irrelevant"
    }
