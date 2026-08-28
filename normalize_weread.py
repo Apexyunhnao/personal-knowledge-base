@@ -6,13 +6,14 @@
 import os, re, sys, unicodedata, argparse
 
 ap = argparse.ArgumentParser()
-ap.add_argument("src", nargs="?", default="/mnt/e/Projects/rag-qa-project/tmp_weread_exporter/weread-exporter-main/output/81232dc0719502df812cbba/chapters")
+ap.add_argument("src", nargs="?", default=r"E:\Projects\rag-qa-project\tmp_weread_exporter\weread-exporter-main\output\81232dc0719502df812cbba\chapters")
 ap.add_argument("book", nargs="?", default="打破你的学生思维")
 args = ap.parse_args()
 
 SRC = args.src
 BOOK = args.book
-DST = f"/mnt/e/Projects/rag-qa-project/inputs/{BOOK}"
+BASE = os.path.dirname(os.path.abspath(__file__))
+DST = os.path.join(BASE, "inputs", BOOK)
 
 def clean_text(text):
     """清洗：去 md 标记、零宽字符、压缩空白"""

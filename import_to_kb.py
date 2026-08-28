@@ -25,8 +25,13 @@ import extract_pipeline as ep
 from hybrid_search import _get_notes_collection, sync_note_embedding, remove_note_embedding
 
 # ── 常量(对应项目书) ──
-BOOK_TAG = "小说萃取"
-CONF_CAP = 0.7          # 来源层上限(小说)
+try:
+    from extract_pipeline import EXTRACT_MODE as _EXTRACT_MODE
+except Exception:
+    _EXTRACT_MODE = "novel"
+# 知识模式（科普/案例书）不要"小说萃取"标签——book 卡被当小说处理是历史 Bug
+BOOK_TAG = "书籍萃取" if _EXTRACT_MODE == "knowledge" else "小说萃取"
+CONF_CAP = 0.9 if _EXTRACT_MODE == "knowledge" else 0.7  # 非虚构来源上限可更高
 MERGE_THRESHOLD = 0.93  # 跨书合并阈值(实测: text2vec对决策文本区分度差, 0.8导致93%坍缩, 提到0.93待校准)
 LOW_CONF = 0.6          # 低置信度线
 QUALITY_FLOOR = 0.5     # 入库质量下限: confidence < 0.5 直接丢弃(不入库不占向量空间)
@@ -49,9 +54,15 @@ def chapter_hash(book: str, chapter: str) -> str:
     base = os.path.join(os.path.dirname(os.path.abspath(__file__)), "inputs", book)
     if os.path.isdir(base):
         # 按章节标题匹配: 文件名形如 0002_第2章 必死之局？.txt
-        chapter_key = chapter.replace("第", "").split(" ")[0]
+        # 2026-08-28 修复: json title 是"二金融危机就要来了", 文件名带"0004_"序号+空格
+        # 归一化(去空格/序号前缀/第字)后模糊匹配, 否则 hash 永远取不到→每次全量重入
+        chapter_norm = chapter.replace("第", "").replace(" ", "")
         for fn in sorted(os.listdir(base)):
-            if fn.endswith(".txt") and chapter_key in fn:
+            fn_norm = fn.replace("第", "").replace(" ", "")
+            # 去文件名序号前缀(0004_ / 0004- 等)
+            import re as _re
+            fn_norm = _re.sub(r"^\d+[_\-]", "", fn_norm)
+            if chapter_norm in fn_norm or fn_norm in chapter_norm:
                 txt_path = os.path.join(base, fn)
                 break
     if not txt_path:
@@ -150,6 +161,7 @@ def _source_type_for(book: str) -> str:
     if any(k in book for k in (
         "学生思维", "微信读书",
         "人情世故", "人性的弱点", "这就是人性",  # 2026-08-27 新增微信读书实体书
+        "半小时漫画", "金钱心理学", "原子习惯", "自控力", "非暴力沟通", "学会提问",  # 2026-08-28 微信读书实体书
     )):
         return "book"       # 出版书籍（微信读书）
     if "天涯" in book:
@@ -185,8 +197,10 @@ def _record_discarded(book: str, card: dict):
 
 def build_note_data(card: dict, book: str, chapter: str, ref: str, chapter_hash_val: str) -> dict:
     """组装 learning_notes 字段"""
-    core_tags = card.get("scenario_tags", {}).get("core", []) if isinstance(card.get("scenario_tags"), dict) else (card.get("scenario_tags") or [])[:3]
-    ext_tags = card.get("scenario_tags", {}).get("ext", []) if isinstance(card.get("scenario_tags"), dict) else []
+    # 兼容两种卡片 schema: knowledge 模式用 tags, novel 模式用 scenario_tags
+    raw_tags = card.get("tags") or card.get("scenario_tags", [])
+    core_tags = raw_tags.get("core", []) if isinstance(raw_tags, dict) else (raw_tags or [])[:3]
+    ext_tags = raw_tags.get("ext", []) if isinstance(raw_tags, dict) else []
     if not isinstance(core_tags, list): core_tags = []
     if not isinstance(ext_tags, list): ext_tags = []
 

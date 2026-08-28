@@ -510,9 +510,9 @@
    {
     "id": 22833,
     "title": "投资亏损时用热爱支撑坚持",
-    "score": 0.01905,
+    "score": 0.02063,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "金钱心理学, 投资决策, 长期坚持",
@@ -534,9 +534,9 @@
    {
     "id": 22665,
     "title": "投资失败后先设安全垫再复盘",
-    "score": 0.015,
+    "score": 0.01625,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "金钱心理学, 投资理财, 风险管理",
@@ -958,6 +958,18 @@
     "label": "partial"
    },
    {
+    "id": 23041,
+    "title": "面对跳槽诱惑时先检验离开动机",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "金钱心理学, 职业决策, 职场谈判",
+    "content_excerpt": "当产生离开当前工作或行业的念头时，先自我诊断动机：是否因'这山望着那山高'的错觉，或想回避当前的不适与牺牲？若两者皆是，则坚守原地更可能带来复利回报。具体操作：写下离开理由，区分'追求更好'与'逃避困难'，若后者占主导，则推迟决策至少一个月",
+    "label": "partial"
+   },
+   {
     "id": 6071,
     "title": "犹豫跳槽时先问领导晋升路径",
     "score": 0.01831,
@@ -991,18 +1003,6 @@
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 职业规划, 财务管理",
     "content_excerpt": "频繁更换工作且未聚焦长期目标，会导致积蓄耗尽、技能无积累。避免因短期不满而跳槽，每次换工作前需确认新岗位是否服务于长期目标，并设定至少1-2年的投入期。",
-    "label": "partial"
-   },
-   {
-    "id": 5983,
-    "title": "转岗机会恐惧时先看长期潜力",
-    "score": 0.01757,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "打破你的学生思维, 职场心理, 职业发展",
-    "content_excerpt": "在职场中，因担心能力不足或得罪高层而拒绝转岗，可能错失成长机会。应区分短期信心与长期潜力，避免让恐惧主导决策。",
     "label": "partial"
    }
   ]
@@ -1288,9 +1288,21 @@
     "label": "partial"
    },
    {
+    "id": 23291,
+    "title": "【普通人应对危机】保持信心+理财+健康，危机终将过去",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 普通人, 信心, 理财",
+    "content_excerpt": "明确结论：普通人面对金融危机应保持信心，做好理财措施，养好身体，避免恐慌性抛售和挤兑。理由：危机根源是信心缺失，恐慌行为会加剧危机；历史表明危机终将过去，保持冷静可减少损失。适用边界：适用于一般性金融危机，不适用于极端情况（如战争、政权更迭",
+    "label": "partial"
+   },
+   {
     "id": 6000,
     "title": "职场环境恶劣时扎根内功积累",
-    "score": 0.01884,
+    "score": 0.01857,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.65,
@@ -1370,18 +1382,6 @@
     "tags": "小说萃取, 天涯神贴精选, 职业规划, 家庭决策",
     "content_excerpt": "当面临稳定工作与创业的两难时，不采取非此即彼的极端选择。先评估自身性格是否适合冒险，若不确定，可采取一人留守、一人尝试，或利用业余时间兼职创业，以最小成本验证可行性，避免因冲动辞职而失去保障。",
     "label": "relevant"
-   },
-   {
-    "id": 15685,
-    "title": "经济下行期选择服务业切入点",
-    "score": 0.01214,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.65,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 创业方向, 经济周期",
-    "content_excerpt": "在经济不景气时创业，应优先选择服务业，尤其是需求刚性且供给不足的细分领域。例如空调清洗换液、白蚁防治等，这些服务需求受经济周期影响小，且可通过外包师傅分包轻资产运营。",
-    "label": "partial"
    }
   ]
  },
@@ -1624,15 +1624,15 @@
     "label": "irrelevant"
    },
    {
-    "id": 6081,
-    "title": "岗位变动时先列清单对照差距再问经理",
-    "score": 0.01625,
+    "id": 23041,
+    "title": "面对跳槽诱惑时先检验离开动机",
+    "score": 0.01667,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "打破你的学生思维, 职场发展, 岗位变动",
-    "content_excerpt": "在面临岗位变动时，先列出岗位职责、任职条件、技能要求和企业文化，逐项对照自身能力，明确差距。然后主动与直属经理沟通，确认其期望，避免主观猜测。",
+    "tags": "金钱心理学, 职业决策, 职场谈判",
+    "content_excerpt": "当产生离开当前工作或行业的念头时，先自我诊断动机：是否因'这山望着那山高'的错觉，或想回避当前的不适与牺牲？若两者皆是，则坚守原地更可能带来复利回报。具体操作：写下离开理由，区分'追求更好'与'逃避困难'，若后者占主导，则推迟决策至少一个月",
     "label": "irrelevant"
    }
   ]
@@ -1987,7 +1987,7 @@
     "is_low_confidence": false,
     "tags": "这就是人性, 个人成长, 习惯养成",
     "content_excerpt": "当自律计划频繁失败时，先审视目标是否超出当前能力范围。将宏大目标拆解为每日可完成的最小动作，如从'每天跑步20分钟'改为'每周三次快走10分钟'，降低启动门槛，减少心理抗拒。",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
     "id": 5478,
@@ -2128,16 +2128,16 @@
     "label": "partial"
    },
    {
-    "id": 6208,
-    "title": "职业迷茫时先开放探索再定方向",
-    "score": 0.01733,
+    "id": 23041,
+    "title": "面对跳槽诱惑时先检验离开动机",
+    "score": 0.01781,
     "source": "vector",
     "source_type": "book",
-    "confidence": 0.7,
+    "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "打破你的学生思维, 职业规划, 心态调整",
-    "content_excerpt": "认识自己是一个长期过程，若自我认知仍模糊，不应气馁或急于求成。适合的工作可能不止一种，保持开放心态，避免因暂时模糊而限制职业探索。",
-    "label": "partial"
+    "tags": "金钱心理学, 职业决策, 职场谈判",
+    "content_excerpt": "当产生离开当前工作或行业的念头时，先自我诊断动机：是否因'这山望着那山高'的错觉，或想回避当前的不适与牺牲？若两者皆是，则坚守原地更可能带来复利回报。具体操作：写下离开理由，区分'追求更好'与'逃避困难'，若后者占主导，则推迟决策至少一个月",
+    "label": "irrelevant"
    }
   ]
  },
@@ -2410,6 +2410,30 @@
     "label": "relevant"
    },
    {
+    "id": 20344,
+    "title": "自我提升受阻时先检查计划明确度而非动力",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "原子习惯, 个人成长, 自我管理",
+    "content_excerpt": "当你发现自己“缺乏动力”无法坚持某个目标时，停止归因于意志力。转而审视你的计划是否具体到“何时何地做何事”。如果计划仍是“我想做得更多”这类模糊表述，那么问题不是动力不足，而是缺少可执行的细节。先制定精确计划，再谈执行。",
+    "label": "relevant"
+   },
+   {
+    "id": 22020,
+    "title": "意志力耗尽时硬撑高难度任务会失败",
+    "score": 0.02063,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 职场效率, 个人成长",
+    "content_excerpt": "在自控力已因工作、通勤等消耗殆尽后，仍试图进行需要高度自律的活动（如创业规划），往往效率低下或放弃。常见误区是忽视能量限制，强行用意志力对抗疲惫，结果导致任务拖延或质量下降。应识别此陷阱，转而安排低认知负荷活动。",
+    "label": "partial"
+   },
+   {
     "id": 20063,
     "title": "制定计划时先问低谷期能否坚持",
     "score": 0.02031,
@@ -2431,38 +2455,14 @@
     "is_low_confidence": false,
     "tags": "这就是人性, 情绪管理, 职场压力",
     "content_excerpt": "常见误区是执着于'事情应按自己期待发展'，导致当现实偏离时产生强烈痛苦。避免此陷阱需主动监控自身期待是否过高，并练习弹性调整，而非固守预设结果。",
-    "label": "partial"
-   },
-   {
-    "id": 20344,
-    "title": "自我提升受阻时先检查计划明确度而非动力",
-    "score": 0.01935,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "原子习惯, 个人成长, 自我管理",
-    "content_excerpt": "当你发现自己“缺乏动力”无法坚持某个目标时，停止归因于意志力。转而审视你的计划是否具体到“何时何地做何事”。如果计划仍是“我想做得更多”这类模糊表述，那么问题不是动力不足，而是缺少可执行的细节。先制定精确计划，再谈执行。",
-    "label": "relevant"
-   },
-   {
-    "id": 22020,
-    "title": "意志力耗尽时硬撑高难度任务会失败",
-    "score": 0.01905,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 职场效率, 个人成长",
-    "content_excerpt": "在自控力已因工作、通勤等消耗殆尽后，仍试图进行需要高度自律的活动（如创业规划），往往效率低下或放弃。常见误区是忽视能量限制，强行用意志力对抗疲惫，结果导致任务拖延或质量下降。应识别此陷阱，转而安排低认知负荷活动。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 22012,
     "title": "意志力如肌肉，使用后需恢复，否则会暂时失效",
-    "score": 0.01818,
+    "score": 0.0197,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "自控力, 个人效率, 健康管理",
@@ -2472,9 +2472,9 @@
    {
     "id": 22329,
     "title": "拖延任务时先坚持做10分钟再允许放弃",
-    "score": 0.01765,
+    "score": 0.01912,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "自控力, 职场效率, 学习提升",
@@ -2484,9 +2484,9 @@
    {
     "id": 20315,
     "title": "目标违背人性时先调整系统而非硬扛",
-    "score": 0.01739,
+    "score": 0.01884,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "原子习惯, 个人成长, 目标管理",
@@ -2496,9 +2496,9 @@
    {
     "id": 22019,
     "title": "自控力如肌肉会疲劳，需按能量分配任务",
-    "score": 0.01714,
+    "score": 0.01857,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "自控力, 心理学应用, 习惯养成",
@@ -2508,9 +2508,9 @@
    {
     "id": 20689,
     "title": "任务过易或过难时警惕动力下降",
-    "score": 0.0169,
+    "score": 0.01831,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "原子习惯, 自我管理, 团队管理",
@@ -2584,6 +2584,18 @@
     "label": "relevant"
    },
    {
+    "id": 22015,
+    "title": "核心目标受挤时早起先定优先级",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 职场发展, 目标管理",
+    "content_excerpt": "当日常琐事和他人需求不断侵占时间，导致长期目标（如创业）被搁置时，模仿案例中的做法：每天早起后，在开始常规工作前，先花固定时间（如45分钟）处理与核心目标相关的任务，并明确当天最重要的三件事。这样即使后续被琐事淹没，核心目标也已获得实质性推",
+    "label": "partial"
+   },
+   {
     "id": 5763,
     "title": "职业选择纠结时先澄清目标再排序",
     "score": 0.01912,
@@ -2606,18 +2618,6 @@
     "tags": "打破你的学生思维, 职业规划, 人生决策",
     "content_excerpt": "面对方向模糊时，先向内盘点自身职业优势（做什么比别人好），再向外扫描环境趋势与可用资源，最后将两者交叉，围绕优势而非兴趣或专业出身建立能力。操作上可列出优势清单与环境机会清单，寻找交集点。",
     "label": "irrelevant"
-   },
-   {
-    "id": 22015,
-    "title": "核心目标受挤时早起先定优先级",
-    "score": 0.01818,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 职场发展, 目标管理",
-    "content_excerpt": "当日常琐事和他人需求不断侵占时间，导致长期目标（如创业）被搁置时，模仿案例中的做法：每天早起后，在开始常规工作前，先花固定时间（如45分钟）处理与核心目标相关的任务，并明确当天最重要的三件事。这样即使后续被琐事淹没，核心目标也已获得实质性推",
-    "label": "relevant"
    },
    {
     "id": 5916,
@@ -2650,6 +2650,18 @@
   "category": "执行力",
   "results": [
    {
+    "id": 21279,
+    "title": "阅读新书时用淘金式提问替代逐字记忆",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "学会提问, 学习提升, 信息筛选",
+    "content_excerpt": "当阅读非虚构类书籍时，不要只画线和做笔记，而是边读边问：作者为何提出这个主张？论证中有哪些漏洞？在页边写批注记录质疑。即使对主题不熟悉，也能通过提问发现不合理之处，从而形成自己的判断。",
+    "label": "relevant"
+   },
+   {
     "id": 19694,
     "title": "两遍阅读法：速览后精读",
     "score": 0.0197,
@@ -2659,18 +2671,6 @@
     "is_low_confidence": false,
     "tags": "人性的弱点, 阅读学习, 知识管理",
     "content_excerpt": "第一遍快速浏览全书或章节，获取整体框架和兴趣点；第二遍回到开头逐章精读，深入理解细节。此方法虽初看耗时，但长期能节省时间并提升理解深度，适用于复杂知识的学习。",
-    "label": "partial"
-   },
-   {
-    "id": 21279,
-    "title": "阅读新书时用淘金式提问替代逐字记忆",
-    "score": 0.01875,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "学会提问, 学习提升, 信息筛选",
-    "content_excerpt": "当阅读非虚构类书籍时，不要只画线和做笔记，而是边读边问：作者为何提出这个主张？论证中有哪些漏洞？在页边写批注记录质疑。即使对主题不熟悉，也能通过提问发现不合理之处，从而形成自己的判断。",
     "label": "partial"
    },
    {
@@ -2776,6 +2776,18 @@
   "category": "执行力",
   "results": [
    {
+    "id": 22073,
+    "title": "疲惫时挺过第一波再决定",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人成长, 职场执行",
+    "content_excerpt": "当感到疲惫而想放弃时，先尝试向前迈出一步，挺过第一波疲惫感。这能区分真实极限与心理抗拒，避免过早放弃。",
+    "label": "relevant"
+   },
+   {
     "id": 20088,
     "title": "职场受挫时先区分可变与不可变因素",
     "score": 0.02097,
@@ -2812,15 +2824,27 @@
     "label": "partial"
    },
    {
-    "id": 22073,
-    "title": "疲惫时挺过第一波再决定",
-    "score": 0.01967,
+    "id": 22053,
+    "title": "自控力挑战时挺过第一波疲惫感",
+    "score": 0.0194,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "自控力, 个人成长, 职场执行",
-    "content_excerpt": "当感到疲惫而想放弃时，先尝试向前迈出一步，挺过第一波疲惫感。这能区分真实极限与心理抗拒，避免过早放弃。",
+    "tags": "自控力, 职场效率, 学习自律",
+    "content_excerpt": "当你在工作或学习中感到疲惫想放弃时，不要立即停止。先挑战自己，挺过第一波疲惫感，通常这波感觉是心理性的，并非真正耗竭。具体操作：设定一个短时目标（如再坚持5分钟），观察自己的表现和感受。如果挺过后感觉好转，说明意志力尚有储备；如果持续疲惫，",
+    "label": "relevant"
+   },
+   {
+    "id": 22295,
+    "title": "自我怀疑时用良师益友视角开导自己",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人成长, 目标管理",
+    "content_excerpt": "当因挫折而自我怀疑时，想象自己是一位信任你、希望你成功的良师益友，会如何鼓励你。用这种外部视角给出具体建议，避免陷入自我批评的陷阱。例如，告诉自己'现在做的努力都会让你更靠近目标'，而不是否定自己。",
     "label": "relevant"
    },
    {
@@ -2857,42 +2881,18 @@
     "is_low_confidence": false,
     "tags": "这就是人性, 亲密关系, 职场合作",
     "content_excerpt": "在亲密关系或日常互动中，主动降低对外部事件或他人行为的期待，将期望值设定在较低水平。当结果未达预期时，痛苦感会减轻；当结果超出预期时，则产生惊喜。操作上，可先列出对某事的期待，评估其可控性，将不可控部分剔除，仅保留自身可努力的部分。",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
-    "id": 22053,
-    "title": "自控力挑战时挺过第一波疲惫感",
-    "score": 0.01791,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 职场效率, 学习自律",
-    "content_excerpt": "当你在工作或学习中感到疲惫想放弃时，不要立即停止。先挑战自己，挺过第一波疲惫感，通常这波感觉是心理性的，并非真正耗竭。具体操作：设定一个短时目标（如再坚持5分钟），观察自己的表现和感受。如果挺过后感觉好转，说明意志力尚有储备；如果持续疲惫，",
-    "label": "relevant"
-   },
-   {
-    "id": 22295,
-    "title": "自我怀疑时用良师益友视角开导自己",
-    "score": 0.01739,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人成长, 目标管理",
-    "content_excerpt": "当因挫折而自我怀疑时，想象自己是一位信任你、希望你成功的良师益友，会如何鼓励你。用这种外部视角给出具体建议，避免陷入自我批评的陷阱。例如，告诉自己'现在做的努力都会让你更靠近目标'，而不是否定自己。",
-    "label": "relevant"
-   },
-   {
-    "id": 19955,
-    "title": "项目失败时先复盘自身决策",
-    "score": 0.01711,
+    "id": 22292,
+    "title": "进度滞后时用朋友视角安慰自己",
+    "score": 0.01781,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "这就是人性, 职场谈判, 团队管理, 个人成长",
-    "content_excerpt": "遇到挫折时，先检查自身行为中可调整的部分，而不是急于将原因指向外部。因为外部因素不可控，而自身行为是可控的。通过内归因，能快速找到行动切入点，避免陷入无力感。例如，项目失败时，先问自己哪些决策可优化，而非抱怨市场环境。",
+    "tags": "自控力, 目标管理, 自我激励",
+    "content_excerpt": "当因未达每日目标而自责时，想象好友遭遇同样挫折，你会如何鼓励他。用同理心话语替代自我批评，如'这只是人性部分'或'你尊敬的人也有此经历'，以降低情绪阻力，重拾行动动力。",
     "label": "relevant"
    }
   ]
@@ -2916,9 +2916,9 @@
    {
     "id": 21572,
     "title": "判断事实断言可信时先看证据效力",
-    "score": 0.01935,
+    "score": 0.02097,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "学会提问, 职场谈判, 家庭沟通",
@@ -2928,9 +2928,9 @@
    {
     "id": 21297,
     "title": "选择信赖对象时以论证质量为准而非身份",
-    "score": 0.01765,
+    "score": 0.01912,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "学会提问, 信息筛选, 决策咨询",
@@ -3364,21 +3364,9 @@
     "label": "relevant"
    },
    {
-    "id": 14695,
-    "title": "建议前先确认对方风险承受力",
-    "score": 0.0125,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损",
-    "content_excerpt": "在给出投资建议前，需了解对方的成本价、持仓时间及心理承受能力。若对方已处于亏损且恐慌，应优先评估反弹概率，而非简单安抚。可建议设置止损点，减少后续责任。",
-    "label": "partial"
-   },
-   {
     "id": 18659,
     "title": "避免盲目跟风投资",
-    "score": 0.01232,
+    "score": 0.0125,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -3390,13 +3378,25 @@
    {
     "id": 15298,
     "title": "宏观政策解读与保本优先",
-    "score": 0.01214,
+    "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理",
     "content_excerpt": "投资不能脱离宏观环境，需关注政策动向。一旦市场有风吹草动，应立即以保本为先，及时减仓或退出，避免因忽视系统性风险而遭受重大损失。",
+    "label": "partial"
+   },
+   {
+    "id": 18366,
+    "title": "投资前先判断目标群体",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险决策",
+    "content_excerpt": "面对高收益另类投资，先问自己是否属于该投资品的目标群体。若该品类主要面向资金充裕、经验丰富的专业投资者，普通投资者应谨慎进入，避免因资金或经验不足而承担过高风险。",
     "label": "partial"
    }
   ]
@@ -3514,16 +3514,16 @@
     "label": "relevant"
    },
    {
-    "id": 14091,
-    "title": "损失既定后改用认知重评降痛",
-    "score": 0.01639,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.6,
+    "id": 23455,
+    "title": "【恐慌抄底】危机中普通人找便宜货的3条原则：不接飞刀、只买看得懂、分批建仓",
+    "score": 0.01667,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.85,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理调节, 抄底",
-    "content_excerpt": "当损失已成事实且无法挽回时，停止反复思虑‘如果当初’。主动将损失重新定义为一种‘自愿付出’（如捐赠），而非‘被动剥夺’，能有效降低心理痛苦，防止因情绪化而做出报复性交易或抄底等非理性决策。",
-    "label": "irrelevant"
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 恐慌抄底, 逆向投资, 分批建仓",
+    "content_excerpt": "市场恐慌抛售时普通人想捡便宜货，必须守三条原则：一是不要接飞刀——下跌趋势未确认前不急着买，等恐慌释放、成交量萎缩后再考虑；二是只买看得懂的资产——暴跌中的股票/基金如果基本面看不懂，便宜也不是机会，可能继续跌；三是分批建仓而非一把梭——用",
+    "label": "relevant"
    }
   ]
  },
@@ -3625,14 +3625,14 @@
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 职场沟通, 远程协作",
     "content_excerpt": "在暂时离岗期间，若岗位未被正式替代，应主动与团队保持联系，定期汇报个人进展，表达对岗位的重视和回归意愿。这能强化你仍是该岗位最佳人选的认知，避免被边缘化。",
-    "label": "partial"
+    "label": "relevant"
    },
    {
     "id": 23041,
     "title": "面对跳槽诱惑时先检验离开动机",
-    "score": 0.015,
+    "score": 0.01625,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "金钱心理学, 职业决策, 职场谈判",
@@ -3667,7 +3667,7 @@
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 职业选择, 职场规划",
     "content_excerpt": "在职业起步阶段，选择提供规范培训的企业，即使岗位低微，也能获得系统性的知识积累，为未来职业发展打下基础。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 5442,
@@ -3679,7 +3679,7 @@
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 职业规划, 求职选择",
     "content_excerpt": "在选择实习时，不要被企业知名度迷惑。大企业可能分工过细，实习内容浅层；小企业可能提供直接面对客户或核心业务的机会。操作上，列出每个机会的具体任务，评估其与核心业务的关联度，优先选择能深度参与、获得实质技能的机会。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 5624,
@@ -3691,7 +3691,7 @@
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 职场谈判, 职业规划",
     "content_excerpt": "在求职时，优先选择管理成熟、有内部选才机制的大企业，或职责灵活的小企业，而非仅看岗位名称。判断标准是平台能否提供接触目标职能或转岗的可能性，而非一步到位。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 5878,
@@ -3715,7 +3715,7 @@
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 职业规划, 转行",
     "content_excerpt": "当缺乏目标行业直接背景时，先进入相关但要求较低的岗位，将其视为带薪实习，系统学习行业知识、技能和标准，积累可迁移经验，为后续跳槽至一线公司铺路。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 5444,
@@ -3727,7 +3727,7 @@
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 职业规划, 求职陷阱",
     "content_excerpt": "常见误区是认为名企实习必然提升简历价值，但大企业分工细，可能只安排搜索资料等边缘任务，导致实习收获有限。避免仅凭企业知名度做选择，需深入了解实际工作内容。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 5828,
@@ -3739,7 +3739,7 @@
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 实习选择, 能力提升",
     "content_excerpt": "不要将实习局限于大公司，公益机构、校内项目等同样能锻炼综合能力。根据目标选择最合适的实习形式，而非追求名气。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 5491,
@@ -3763,7 +3763,7 @@
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 职场选择, 职业规划",
     "content_excerpt": "面对工作选择，不要被公司名气或待遇迷惑，应评估该职位能否培养关键能力、是否与长期职业目标契合。即使起点低，只要相关，用心去做，就能积累对未来有用的经验。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 5877,
@@ -3820,6 +3820,18 @@
     "label": "partial"
    },
    {
+    "id": 21080,
+    "title": "自我责备二十分钟后要警觉",
+    "score": 0.01831,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.5,
+    "is_low_confidence": false,
+    "tags": "非暴力沟通, 情绪管理, 时间管理",
+    "content_excerpt": "在失误后，若持续自我批评超过一定时间（如二十分钟），需意识到这是无效内耗。此时应主动切换思维模式，从责备转向需要分析，否则会加剧负面情绪，阻碍问题解决。",
+    "label": "partial"
+   },
+   {
     "id": 19722,
     "title": "安全监督时先问原因再给建议",
     "score": 0.01806,
@@ -3856,23 +3868,11 @@
     "label": "partial"
    },
    {
-    "id": 21080,
-    "title": "自我责备二十分钟后要警觉",
-    "score": 0.0169,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.5,
-    "is_low_confidence": false,
-    "tags": "非暴力沟通, 情绪管理, 时间管理",
-    "content_excerpt": "在失误后，若持续自我批评超过一定时间（如二十分钟），需意识到这是无效内耗。此时应主动切换思维模式，从责备转向需要分析，否则会加剧负面情绪，阻碍问题解决。",
-    "label": "irrelevant"
-   },
-   {
     "id": 20912,
     "title": "批评下属失误时先陈述感受再关联自身期望",
-    "score": 0.01558,
+    "score": 0.01688,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 职场沟通, 家庭沟通",
@@ -3979,7 +3979,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场谈判, 家庭沟通",
     "content_excerpt": "在介入他人事务前，评估该行为是否可能被对方视为对私人领域的侵犯。若存在风险，即使对方邀请，也选择保守策略，如倾听或委婉拒绝，以维护关系长期稳定。",
-    "label": "irrelevant"
+    "label": "partial"
    },
    {
     "id": 19497,
@@ -4198,6 +4198,18 @@
     "label": "relevant"
    },
    {
+    "id": 21119,
+    "title": "对方情绪激动时先倾听再表达",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "非暴力沟通, 职场谈判, 亲密关系",
+    "content_excerpt": "在表达自己的愤怒前，先判断对方是否处于情绪中。若对方情绪未平复，先用心倾听并表达理解，待对方感到被倾听后，再表达自己的感受和需要。这能避免对方因情绪而无法接收信息。",
+    "label": "relevant"
+   },
+   {
     "id": 19796,
     "title": "客户发火时先共情再给方案",
     "score": 0.0194,
@@ -4210,23 +4222,11 @@
     "label": "relevant"
    },
    {
-    "id": 21119,
-    "title": "对方情绪激动时先倾听再表达",
-    "score": 0.01818,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "非暴力沟通, 职场谈判, 亲密关系",
-    "content_excerpt": "在表达自己的愤怒前，先判断对方是否处于情绪中。若对方情绪未平复，先用心倾听并表达理解，待对方感到被倾听后，再表达自己的感受和需要。这能避免对方因情绪而无法接收信息。",
-    "label": "relevant"
-   },
-   {
     "id": 20899,
     "title": "对方痛苦时先区分责任归属再行动",
-    "score": 0.01739,
+    "score": 0.01884,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 亲密关系, 职场协作",
@@ -4234,35 +4234,23 @@
     "label": "partial"
    },
    {
-    "id": 19664,
-    "title": "孩子发脾气时先找需求再沟通",
-    "score": 0.01733,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 亲子沟通, 青春期教育",
-    "content_excerpt": "当孩子发脾气时，不要急于压制或说教。先冷静分析其行为背后的心理需求（如渴望被认可、希望自主决策），然后以平等沟通的方式询问原因，表达理解，共同协商解决方案。避免使用权威命令，否则会加剧对抗。",
-    "label": "partial"
-   },
-   {
     "id": 21100,
     "title": "被忽视请求时先区分观察与评价再问内在原因",
-    "score": 0.0169,
+    "score": 0.01831,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.65,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 职场沟通, 家庭关系",
     "content_excerpt": "当感到生气时，先写下客观观察（如'请求未获反馈'），不添加指责性评价。然后问自己'为什么生气？'，将原因从他人行为转向自身感受和需要（如需要尊重或回应）。这能打破'他人导致情绪'的惯性思维，为有效沟通铺路。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 21019,
     "title": "引导对方表达感受时提供具体选项",
-    "score": 0.01667,
+    "score": 0.01806,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 心理咨询, 医患沟通",
@@ -4272,14 +4260,26 @@
    {
     "id": 21134,
     "title": "批评指责无效时转向需求表达",
-    "score": 0.01644,
+    "score": 0.01781,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 职场谈判, 亲密关系",
     "content_excerpt": "在生气时，判断沟通策略的标准是：批评和指责是否有助于传达心声？若无效，则转向直接说出自己的需要。因为直接表达需要比指责他人更可能使愿望得到满足。此判断基于沟通有效性而非道德正确。",
     "label": "partial"
+   },
+   {
+    "id": 21010,
+    "title": "对方情绪激烈时先撤离而非硬撑沟通",
+    "score": 0.01757,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "非暴力沟通, 冲突调解, 情绪管理",
+    "content_excerpt": "当自己或对方处于强烈情绪中，继续对话可能无效甚至恶化。此时应判断：若对方无法留意你的感受和需要，不要强行表达，而是选择换一个环境，给自己时间和空间调整状态。等双方都平静后，再回来继续沟通。这比在情绪高峰时强行解决问题更有效。",
+    "label": "relevant"
    }
   ]
  },
@@ -4300,6 +4300,18 @@
     "label": "irrelevant"
    },
    {
+    "id": 22004,
+    "title": "慢性压力下自控失败时勿自我标签为废物",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人成长, 职场谈判",
+    "content_excerpt": "当面对强大意志力挑战失败时，避免得出'我是软弱、懒惰、毫无意志力的废物'的结论。慢性压力会使大脑和身体处于非自控状态，此时迎接挑战的是最冲动的自己。错误归因会消耗心理能量，导致后续更严重的失控。正确做法是调整身心状态后再评估。",
+    "label": "relevant"
+   },
+   {
     "id": 5526,
     "title": "想学新技能时先定目标再选课",
     "score": 0.02063,
@@ -4310,6 +4322,42 @@
     "tags": "打破你的学生思维, 学习规划, 自我提升",
     "content_excerpt": "盲目跟风学习热门技能或课程，缺乏与目标方向的关联，导致投入产出比低。应先明确目标，再定向准备，否则易陷入无效努力。",
     "label": "irrelevant"
+   },
+   {
+    "id": 20698,
+    "title": "厌倦是成功最大威胁，需用纪律对抗",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "原子习惯, 习惯养成, 长期坚持",
+    "content_excerpt": "习惯一旦成为常规，乐趣会下降，厌倦成为主要放弃诱因。应对方法是建立纪律，即无论情绪如何都按计划行动，从而超越业余水平。",
+    "label": "partial"
+   },
+   {
+    "id": 21982,
+    "title": "深夜拖延时先定义'我不要'而非'我要'",
+    "score": 0.02,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人管理, 习惯养成",
+    "content_excerpt": "当你想早睡却总拖延时，不要直接强迫自己'去睡觉'，而是识别哪些行为（如刷社交、清理冰箱）在阻碍你，并设定具体停止规则（如11点关电子设备）。规则要明确到无需决策，这样能减少意志力消耗，让身体自然感到疲惫。",
+    "label": "partial"
+   },
+   {
+    "id": 21979,
+    "title": "睡眠不足时用补觉、储存睡眠和打盹恢复自控力",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 职场效率, 健康管理",
+    "content_excerpt": "当面临睡眠不足导致自控力下降时，不必追求每晚8小时。可采取三种策略：周末补觉恢复前额皮质；周初多睡储存能量应对后续不足；白天打盹减少连续清醒时间。这些方法能快速恢复意志力，尤其适合时间紧张者。",
+    "label": "partial"
    },
    {
     "id": 6055,
@@ -4324,59 +4372,11 @@
     "label": "irrelevant"
    },
    {
-    "id": 22004,
-    "title": "慢性压力下自控失败时勿自我标签为废物",
-    "score": 0.01935,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人成长, 职场谈判",
-    "content_excerpt": "当面对强大意志力挑战失败时，避免得出'我是软弱、懒惰、毫无意志力的废物'的结论。慢性压力会使大脑和身体处于非自控状态，此时迎接挑战的是最冲动的自己。错误归因会消耗心理能量，导致后续更严重的失控。正确做法是调整身心状态后再评估。",
-    "label": "relevant"
-   },
-   {
-    "id": 20698,
-    "title": "厌倦是成功最大威胁，需用纪律对抗",
-    "score": 0.01875,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "原子习惯, 习惯养成, 长期坚持",
-    "content_excerpt": "习惯一旦成为常规，乐趣会下降，厌倦成为主要放弃诱因。应对方法是建立纪律，即无论情绪如何都按计划行动，从而超越业余水平。",
-    "label": "partial"
-   },
-   {
-    "id": 21982,
-    "title": "深夜拖延时先定义'我不要'而非'我要'",
-    "score": 0.01846,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人管理, 习惯养成",
-    "content_excerpt": "当你想早睡却总拖延时，不要直接强迫自己'去睡觉'，而是识别哪些行为（如刷社交、清理冰箱）在阻碍你，并设定具体停止规则（如11点关电子设备）。规则要明确到无需决策，这样能减少意志力消耗，让身体自然感到疲惫。",
-    "label": "partial"
-   },
-   {
-    "id": 21979,
-    "title": "睡眠不足时用补觉、储存睡眠和打盹恢复自控力",
-    "score": 0.01818,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 职场效率, 健康管理",
-    "content_excerpt": "当面临睡眠不足导致自控力下降时，不必追求每晚8小时。可采取三种策略：周末补觉恢复前额皮质；周初多睡储存能量应对后续不足；白天打盹减少连续清醒时间。这些方法能快速恢复意志力，尤其适合时间紧张者。",
-    "label": "irrelevant"
-   },
-   {
     "id": 22053,
     "title": "自控力挑战时挺过第一波疲惫感",
-    "score": 0.01739,
+    "score": 0.01884,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "自控力, 职场效率, 学习自律",
@@ -4386,9 +4386,9 @@
    {
     "id": 20689,
     "title": "任务过易或过难时警惕动力下降",
-    "score": 0.01714,
+    "score": 0.01857,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "原子习惯, 自我管理, 团队管理",
@@ -4396,16 +4396,16 @@
     "label": "irrelevant"
    },
    {
-    "id": 20062,
-    "title": "自律计划屡败时先降门槛拆小目标",
-    "score": 0.01711,
+    "id": 22019,
+    "title": "自控力如肌肉会疲劳，需按能量分配任务",
+    "score": 0.01781,
     "source": "vector",
     "source_type": "book",
-    "confidence": 0.6,
+    "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "这就是人性, 个人成长, 习惯养成",
-    "content_excerpt": "当自律计划频繁失败时，先审视目标是否超出当前能力范围。将宏大目标拆解为每日可完成的最小动作，如从'每天跑步20分钟'改为'每周三次快走10分钟'，降低启动门槛，减少心理抗拒。",
-    "label": "relevant"
+    "tags": "自控力, 心理学应用, 习惯养成",
+    "content_excerpt": "自控力是有限资源，每次使用后大脑活跃度下降，类似肌肉疲劳。因此，重要任务应安排在意志力充沛时段，而非依赖意志力硬撑。这解释了为何晚间难以坚持新习惯——能量已耗尽。",
+    "label": "partial"
    }
   ]
  },
@@ -4459,7 +4459,7 @@
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 学业规划, 职业发展",
     "content_excerpt": "在考研前先确定未来职业路径（科研/教研/行政），然后倒推研究生期间需积累的GPA、论文、项目、海外经历及人际网络，使学习行动有明确目标导向。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 5740,
@@ -4531,7 +4531,7 @@
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 职业规划, 决策分析",
     "content_excerpt": "在决策时，要意识到自己可能因信息不足而列出有限的选项，就像只能从颜色、造型、甜度选糖，却忽略了口感。因此，需主动扩展认知边界，通过实习、访谈或调研获取更多维度的信息，避免基于片面标准做决定。",
-    "label": "relevant"
+    "label": "partial"
    }
   ]
  },
@@ -4645,7 +4645,7 @@
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 职业规划, 人生决策",
     "content_excerpt": "当面临多重选择且方向不明时，先列出所有选项及其硬性条件，然后盘点自身现有能力（如考试技能）与资源，明确差距。最后通过自问'我是谁、要什么'来确立决策基准，避免被外部机会牵着走。",
-    "label": "partial"
+    "label": "relevant"
    },
    {
     "id": 5676,
@@ -4666,6 +4666,54 @@
   "category": "执行力",
   "results": [
    {
+    "id": 21982,
+    "title": "深夜拖延时先定义'我不要'而非'我要'",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人管理, 习惯养成",
+    "content_excerpt": "当你想早睡却总拖延时，不要直接强迫自己'去睡觉'，而是识别哪些行为（如刷社交、清理冰箱）在阻碍你，并设定具体停止规则（如11点关电子设备）。规则要明确到无需决策，这样能减少意志力消耗，让身体自然感到疲惫。",
+    "label": "partial"
+   },
+   {
+    "id": 20204,
+    "title": "低起点时先重建生活秩序再叠加习惯",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "原子习惯, 个人成长, 习惯养成",
+    "content_excerpt": "当处于劣势或混乱状态时，不要急于追求大目标。先从固定睡眠时间、整理房间等小习惯入手，这些行为能快速恢复掌控感。掌控感是后续学习、锻炼等习惯的基石。具体操作：设定固定作息，保持环境整洁，每天执行，直到成为自动行为。",
+    "label": "partial"
+   },
+   {
+    "id": 21976,
+    "title": "睡眠不足时先补觉再谈自律",
+    "score": 0.02063,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人成长, 健康管理",
+    "content_excerpt": "当你连续多日睡眠不足6小时，且感到压力增大、易受诱惑、注意力涣散时，不要直接硬扛或依赖咖啡因。应优先安排一次完整睡眠（如早睡或午休），因为睡眠不足会导致前额皮质功能紊乱，使自控力生理性下降。只有恢复能量，后续的自控行为才可能有效。",
+    "label": "partial"
+   },
+   {
+    "id": 20600,
+    "title": "培养新习惯时先优化环境提示再简化步骤",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "原子习惯, 个人成长, 习惯养成",
+    "content_excerpt": "要建立新习惯，先确保环境中有明显的触发线索（如把书放在枕边），再降低执行难度（如只读一页），最后在完成后给予即时奖励（如划掉清单）。这样既增加当下行动概率，也提升未来重复可能性。",
+    "label": "partial"
+   },
+   {
     "id": 20062,
     "title": "自律计划屡败时先降门槛拆小目标",
     "score": 0.02,
@@ -4678,59 +4726,11 @@
     "label": "partial"
    },
    {
-    "id": 21982,
-    "title": "深夜拖延时先定义'我不要'而非'我要'",
-    "score": 0.01967,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人管理, 习惯养成",
-    "content_excerpt": "当你想早睡却总拖延时，不要直接强迫自己'去睡觉'，而是识别哪些行为（如刷社交、清理冰箱）在阻碍你，并设定具体停止规则（如11点关电子设备）。规则要明确到无需决策，这样能减少意志力消耗，让身体自然感到疲惫。",
-    "label": "partial"
-   },
-   {
-    "id": 20204,
-    "title": "低起点时先重建生活秩序再叠加习惯",
-    "score": 0.01935,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "原子习惯, 个人成长, 习惯养成",
-    "content_excerpt": "当处于劣势或混乱状态时，不要急于追求大目标。先从固定睡眠时间、整理房间等小习惯入手，这些行为能快速恢复掌控感。掌控感是后续学习、锻炼等习惯的基石。具体操作：设定固定作息，保持环境整洁，每天执行，直到成为自动行为。",
-    "label": "relevant"
-   },
-   {
-    "id": 21976,
-    "title": "睡眠不足时先补觉再谈自律",
-    "score": 0.01905,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人成长, 健康管理",
-    "content_excerpt": "当你连续多日睡眠不足6小时，且感到压力增大、易受诱惑、注意力涣散时，不要直接硬扛或依赖咖啡因。应优先安排一次完整睡眠（如早睡或午休），因为睡眠不足会导致前额皮质功能紊乱，使自控力生理性下降。只有恢复能量，后续的自控行为才可能有效。",
-    "label": "partial"
-   },
-   {
-    "id": 20600,
-    "title": "培养新习惯时先优化环境提示再简化步骤",
-    "score": 0.01875,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "原子习惯, 个人成长, 习惯养成",
-    "content_excerpt": "要建立新习惯，先确保环境中有明显的触发线索（如把书放在枕边），再降低执行难度（如只读一页），最后在完成后给予即时奖励（如划掉清单）。这样既增加当下行动概率，也提升未来重复可能性。",
-    "label": "partial"
-   },
-   {
     "id": 20542,
     "title": "设定宏大目标时先拆出两分钟引子习惯",
-    "score": 0.01818,
+    "score": 0.0197,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "原子习惯, 个人成长, 习惯养成",
@@ -4740,9 +4740,9 @@
    {
     "id": 21979,
     "title": "睡眠不足时用补觉、储存睡眠和打盹恢复自控力",
-    "score": 0.01791,
+    "score": 0.0194,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "自控力, 职场效率, 健康管理",
@@ -4752,9 +4752,9 @@
    {
     "id": 20310,
     "title": "养成新习惯时先拆解提示与渴求再设计行动",
-    "score": 0.01765,
+    "score": 0.01912,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "原子习惯, 个人成长, 习惯养成",
@@ -4764,9 +4764,9 @@
    {
     "id": 20332,
     "title": "创建习惯记分卡提升自我意识",
-    "score": 0.01739,
+    "score": 0.01884,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "原子习惯, 个人管理, 习惯养成",
@@ -4776,9 +4776,9 @@
    {
     "id": 20538,
     "title": "培养新习惯时先缩减为两分钟版本",
-    "score": 0.01714,
+    "score": 0.01857,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "原子习惯, 个人成长, 习惯养成",
@@ -4794,13 +4794,61 @@
    {
     "id": 22329,
     "title": "拖延任务时先坚持做10分钟再允许放弃",
-    "score": 0.01967,
+    "score": 0.02131,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "自控力, 职场效率, 学习提升",
     "content_excerpt": "当面对需要'我要做'的任务（如工作、学习）时，将法则调整为'坚持做10分钟，然后就可以放弃'。这降低了启动的心理门槛。一旦开始，往往会产生继续的惯性，从而克服拖延。适用于启动困难但一旦开始就能持续的情况。",
+    "label": "relevant"
+   },
+   {
+    "id": 22390,
+    "title": "面临拖延抉择时先想象未来具体场景",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 时间管理, 目标规划",
+    "content_excerpt": "当你在现在开始项目还是推迟之间犹豫时，不要抽象思考未来回报，而是具体想象未来某个时刻的场景，如下周在杂货店购物或开会。想象越生动，大脑越能直接感知当前选择的后果，从而增强延迟满足感，减少未来后悔。",
+    "label": "relevant"
+   },
+   {
+    "id": 21982,
+    "title": "深夜拖延时先定义'我不要'而非'我要'",
+    "score": 0.02063,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人管理, 习惯养成",
+    "content_excerpt": "当你想早睡却总拖延时，不要直接强迫自己'去睡觉'，而是识别哪些行为（如刷社交、清理冰箱）在阻碍你，并设定具体停止规则（如11点关电子设备）。规则要明确到无需决策，这样能减少意志力消耗，让身体自然感到疲惫。",
+    "label": "partial"
+   },
+   {
+    "id": 22378,
+    "title": "拖延恐惧时先承认现状再找适配方案",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "自控力, 健康管理, 职业发展",
+    "content_excerpt": "当因恐惧而长期拖延时，停止幻想‘未来会变勇敢’，承认当下的自己就是唯一行动者。然后寻找能容忍恐惧的解决方案，例如选择擅长处理同类问题的专业人士或使用辅助工具，而非强迫自己‘克服恐惧’。最后将行动与未来利益绑定，明确这是‘为未来的自己负责’，",
+    "label": "relevant"
+   },
+   {
+    "id": 22038,
+    "title": "拖延清理壁橱时设分阶段期限",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人成长, 时间管理",
+    "content_excerpt": "面对长期拖延的任务，如清理壁橱，可将其拆解为每周小目标：第一周仅打开柜门观察，第二周整理挂件，第三周丢弃过时物品，第四周处理捐赠。通过设定2个月期限，不仅完成任务，还能提升整体自控力，改善其他习惯。",
     "label": "relevant"
    },
    {
@@ -4816,18 +4864,6 @@
     "label": "partial"
    },
    {
-    "id": 22390,
-    "title": "面临拖延抉择时先想象未来具体场景",
-    "score": 0.01935,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 时间管理, 目标规划",
-    "content_excerpt": "当你在现在开始项目还是推迟之间犹豫时，不要抽象思考未来回报，而是具体想象未来某个时刻的场景，如下周在杂货店购物或开会。想象越生动，大脑越能直接感知当前选择的后果，从而增强延迟满足感，减少未来后悔。",
-    "label": "relevant"
-   },
-   {
     "id": 6130,
     "title": "项目延期时先抓关键部分保底",
     "score": 0.01912,
@@ -4840,59 +4876,11 @@
     "label": "partial"
    },
    {
-    "id": 21982,
-    "title": "深夜拖延时先定义'我不要'而非'我要'",
-    "score": 0.01905,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人管理, 习惯养成",
-    "content_excerpt": "当你想早睡却总拖延时，不要直接强迫自己'去睡觉'，而是识别哪些行为（如刷社交、清理冰箱）在阻碍你，并设定具体停止规则（如11点关电子设备）。规则要明确到无需决策，这样能减少意志力消耗，让身体自然感到疲惫。",
-    "label": "partial"
-   },
-   {
-    "id": 22378,
-    "title": "拖延恐惧时先承认现状再找适配方案",
-    "score": 0.01875,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "自控力, 健康管理, 职业发展",
-    "content_excerpt": "当因恐惧而长期拖延时，停止幻想‘未来会变勇敢’，承认当下的自己就是唯一行动者。然后寻找能容忍恐惧的解决方案，例如选择擅长处理同类问题的专业人士或使用辅助工具，而非强迫自己‘克服恐惧’。最后将行动与未来利益绑定，明确这是‘为未来的自己负责’，",
-    "label": "relevant"
-   },
-   {
-    "id": 22038,
-    "title": "拖延清理壁橱时设分阶段期限",
-    "score": 0.01818,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人成长, 时间管理",
-    "content_excerpt": "面对长期拖延的任务，如清理壁橱，可将其拆解为每周小目标：第一周仅打开柜门观察，第二周整理挂件，第三周丢弃过时物品，第四周处理捐赠。通过设定2个月期限，不仅完成任务，还能提升整体自控力，改善其他习惯。",
-    "label": "relevant"
-   },
-   {
-    "id": 5884,
-    "title": "恐惧时先迈小步再评估",
-    "score": 0.01757,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "打破你的学生思维, 求职, 决策",
-    "content_excerpt": "面对机会时，若因恐惧而犹豫，可先采取最小可行行动（如报名），而非直接要求自己完成整个任务。行动后允许自己重新评估，但避免在行动前过度纠结。这能打破拖延循环，积累正向反馈。",
-    "label": "relevant"
-   },
-   {
     "id": 20767,
     "title": "同事拖延时用观察+感受+需求+请求沟通",
-    "score": 0.01739,
+    "score": 0.01884,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 职场协作, 冲突解决",
@@ -4902,13 +4890,25 @@
    {
     "id": 20747,
     "title": "行动滞后时检验真实动机",
-    "score": 0.01714,
+    "score": 0.01857,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "原子习惯, 个人成长, 职业规划",
     "content_excerpt": "若你声称想做某事却迟迟未动，说明真实欲望不足。此时应承认动机差距，要么调整目标以匹配行动，要么重新激发内在渴求，避免自我欺骗。",
+    "label": "relevant"
+   },
+   {
+    "id": 22123,
+    "title": "面对诱惑时，将决策转化为长期承诺",
+    "score": 0.01831,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "自控力, 自我管理, 习惯养成",
+    "content_excerpt": "当面临短期诱惑（如吃糖、拖延）时，不要问'现在想不想做'，而是问'是否愿意承担长期后果'。例如，问自己'我想不想一年里每天下午都吃糖？'，这迫使你考虑行为的累积效应，从而抑制即时冲动。适用于饮食控制、拖延症等场景。",
     "label": "relevant"
    }
   ]
@@ -4968,9 +4968,9 @@
    {
     "id": 21279,
     "title": "阅读新书时用淘金式提问替代逐字记忆",
-    "score": 0.01519,
+    "score": 0.01646,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "学会提问, 学习提升, 信息筛选",
@@ -5179,7 +5179,7 @@
     "is_low_confidence": false,
     "tags": "这就是人性, 职场协作, 家庭沟通, 社交关系",
     "content_excerpt": "在提供帮助前，先判断对方是否明确请求或暗示需要帮助。若未请求，应主动询问对方需求，而非直接采取行动。基于自身假设的帮助可能被视为打扰或侵犯，导致善意被拒。具体操作：先问'你需要帮助吗？'或'你希望我怎么帮你？'，再决定行动。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 20132,
@@ -5191,7 +5191,7 @@
     "is_low_confidence": false,
     "tags": "这就是人性, 团队协作, 朋友相处",
     "content_excerpt": "判断标准：若该问题最终结果由对方承担，则建议权归对方，自己不应越界。只有当自己也是决策者或执行者时，才主动提出方案。这能有效减少人际摩擦，并促使对方自主成长。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 19600,
@@ -5203,7 +5203,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场合作, 社交关系",
     "content_excerpt": "在提供帮助或物质支持前，先评估双方关系性质（如亲疏、平等性）和对方真实需求，避免盲目给予。根据关系阶段和对方反馈，动态调整投入程度，确保给予行为被接受且不造成负担。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 19888,
@@ -5215,7 +5215,7 @@
     "is_low_confidence": false,
     "tags": "这就是人性, 职场谈判, 公益慈善, 人际关系",
     "content_excerpt": "在决定帮助他人时，需反思自身动机：是否为了获得道德优越感、社会认可或自我满足？若帮助行为伴随强烈的自我感动或期待回报，则可能偏离对方真实需求，导致帮助变成负担。判断标准：若帮助需要牺牲自身利益且无回报，是否仍愿意做？若犹豫，则动机可能不纯。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 19626,
@@ -5227,7 +5227,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场社交, 个人成长",
     "content_excerpt": "在建立或维持友谊时，先评估对方是否具备与自己相当或更高的能力、资源或支持性。若对方无过人之处且无法提供帮助，关系可能缺乏稳定基础。操作上，可列出对方能带来的具体价值（如知识、人脉、情感支持），并与自身能提供的进行对比，确保双方贡献均衡。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 19527,
@@ -5251,7 +5251,7 @@
     "is_low_confidence": false,
     "tags": "这就是人性, 人际信任, 决策失误",
     "content_excerpt": "常见误区：认为对方在某一方面的真诚表现足以证明其整体可信度。这种以偏概全的认知会导致放松警惕，将隐私和关键资源完全托付。一旦对方因利益驱动背叛，损失将不可挽回。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 9273,
@@ -5434,23 +5434,11 @@
     "label": "partial"
    },
    {
-    "id": 19980,
-    "title": "听到\"人家说\"时追问信息源核实",
-    "score": 0.01711,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "这就是人性, 职场决策, 家庭沟通",
-    "content_excerpt": "当听到‘人家说’或类似转述时，主动追问‘这个‘人家’是谁？’并核实其背景、语境和可信度。避免接受无法追溯来源的信息，区分行家见解与道听途说。具体操作：列出信息源、评估其权威性、检查是否被曲解。",
-    "label": "partial"
-   },
-   {
     "id": 21261,
     "title": "盲目信任权威时忽视其利益动机",
-    "score": 0.01644,
+    "score": 0.01781,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "学会提问, 信息素养, 消费陷阱",
@@ -5460,13 +5448,25 @@
    {
     "id": 22989,
     "title": "孩子生病时警惕民间疗法陷阱",
-    "score": 0.016,
+    "score": 0.01733,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "金钱心理学, 家庭决策, 医疗选择",
     "content_excerpt": "当决策者面临资源匮乏（如身无分文）且后果严重（如孩子生病）时，极易接受未经证实的方案（如燃烧木棍刺胸）。此时应主动寻求专业医疗意见，或至少对比多种来源，避免因绝望而将‘诱人虚构’视为唯一希望。",
+    "label": "partial"
+   },
+   {
+    "id": 19980,
+    "title": "听到\"人家说\"时追问信息源核实",
+    "score": 0.01711,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "这就是人性, 职场决策, 家庭沟通",
+    "content_excerpt": "当听到‘人家说’或类似转述时，主动追问‘这个‘人家’是谁？’并核实其背景、语境和可信度。避免接受无法追溯来源的信息，区分行家见解与道听途说。具体操作：列出信息源、评估其权威性、检查是否被曲解。",
     "label": "partial"
    },
    {
@@ -5515,7 +5515,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场谈判, 公共演讲",
     "content_excerpt": "当劝说者自身利用同一套逻辑谋取私利时，其理论的可信度会受损，但理论本身仍可能正确。需区分理论价值与劝说者动机，避免因个人操守否定方法论。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 15262,
@@ -5548,9 +5548,93 @@
   "category": "金融危机",
   "results": [
    {
+    "id": 23452,
+    "title": "【现金vs黄金】金融危机时普通人以现金为主、黄金为辅（10-15%以内）",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.85,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 现金避险, 黄金避险, 资产配置",
+    "content_excerpt": "金融危机本质是信用收缩，现金流动性最强、最抗跌，是普通人第一选择；黄金是最终支付手段，但无现金流、短期波动大，适合中长期避险而非短期救命钱。普通人配置逻辑：流动性优先（现金/活期）为主，黄金占比不超过总资产的10-15%作为购买力对冲。恶性",
+    "label": "relevant"
+   },
+   {
+    "id": 23192,
+    "title": "【普通人应对】危机中现金为王，黄金是硬通货",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 现金为王, 黄金避险, 危机应对",
+    "content_excerpt": "在货币信用崩溃、资产价格暴跌的危机中，持有现金（尤其是黄金）比持有股票、房产更安全。1837年美国大恐慌中，纸币无人信任，黄金成为唯一硬通货，而股票和房产价值暴跌。但需注意，黄金也可能因政府政策或外部冲击而短缺，因此多元化配置和保持流动性是",
+    "label": "relevant"
+   },
+   {
+    "id": 23164,
+    "title": "【普通人应对泡沫】泡沫破裂前，现金为王，勿接飞刀",
+    "score": 0.02063,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 现金为王, 泡沫破裂, 普通人避险",
+    "content_excerpt": "结论：当资产价格明显脱离实际价值且全民狂热时，普通人应保持现金，避免参与投机。理由：泡沫破裂时资产流动性枯竭，贱卖无人接盘，而现金保持购买力。适用边界：适用于识别明显的投机泡沫（如郁金香），不适用于正常市场波动；需结合基本面判断，避免因恐慌",
+    "label": "partial"
+   },
+   {
+    "id": 23291,
+    "title": "【普通人应对危机】保持信心+理财+健康，危机终将过去",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 普通人, 信心, 理财",
+    "content_excerpt": "明确结论：普通人面对金融危机应保持信心，做好理财措施，养好身体，避免恐慌性抛售和挤兑。理由：危机根源是信心缺失，恐慌行为会加剧危机；历史表明危机终将过去，保持冷静可减少损失。适用边界：适用于一般性金融危机，不适用于极端情况（如战争、政权更迭",
+    "label": "partial"
+   },
+   {
+    "id": 23144,
+    "title": "【普通人应对】危机中把握经济周期比恐慌更重要",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 经济周期, 危机应对, 普通人",
+    "content_excerpt": "结论：普通人应理解经济周期，在低点布局（如就业、投资），而非恐慌。理由：历史显示危机后往往有复苏机遇，如中国高铁和电商在次贷危机后崛起。适用边界：需有前瞻性和风险承受力，不适用于所有个体。",
+    "label": "partial"
+   },
+   {
+    "id": 23264,
+    "title": "【普通人应对货币危机】恐慌性换汇可能加速贬值，但持有外币资产可避险",
+    "score": 0.0194,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 货币危机, 外币避险, 普通人应对",
+    "content_excerpt": "在货币危机中，普通人若持有本币资产，可能面临购买力下降；若提前兑换成外币（如美元），可避免贬值损失。但恐慌性换汇会加剧贬值，形成恶性循环。对于普通人，若预判本币大幅贬值，可适度配置外币资产；但需注意外汇管制和兑换成本。",
+    "label": "irrelevant"
+   },
+   {
+    "id": 23181,
+    "title": "【普通人启示】纸币信用崩溃时黄金的避险价值",
+    "score": 0.01831,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 黄金避险, 纸币信用, 普通人",
+    "content_excerpt": "当纸币信用崩溃时，黄金作为硬通货具有避险价值。密西西比泡沫中，纸币因黄金储备不足而贬值，民众挤兑黄金。普通人应关注货币背后的资产支撑，警惕过度依赖纸币的金融体系。但黄金也非绝对安全，需结合具体历史背景。",
+    "label": "relevant"
+   },
+   {
     "id": 15896,
     "title": "分散配置，兼顾流动性与抗通胀",
-    "score": 0.01992,
+    "score": 0.01821,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5560,112 +5644,28 @@
     "label": "relevant"
    },
    {
+    "id": 23137,
+    "title": "普通人应对危机：危机中蕴含机会，但需识别危险",
+    "score": 0.01806,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 危机应对, 机会, 普通人",
+    "content_excerpt": "结论：金融危机中既有危险也有机会，普通人应学会识别危险并把握机会。理由：危机导致资产价格暴跌、失业率上升，但同时也可能带来低价买入资产或转型的机遇。适用边界：机会并非人人可得，需具备资金储备和判断力，且危机持续时间可能很长，需有足够耐心和生",
+    "label": "partial"
+   },
+   {
     "id": 16960,
     "title": "避免盲目投机黄金",
-    "score": 0.01932,
+    "score": 0.01723,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资风险, 个人理财, 黄金",
     "content_excerpt": "黄金虽长期看涨，但短期波动剧烈，普通人不应将所有资金投入。投机行为风险高，应基于长期趋势和自身风险承受能力配置，而非追逐短期涨跌。",
-    "label": "relevant"
-   },
-   {
-    "id": 16958,
-    "title": "选择负责任央行货币及股票",
-    "score": 0.01614,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 外汇投资, 股票配置, 黄金",
-    "content_excerpt": "在通胀环境下，选择央行政策稳健的货币（如澳元）作为持有对象，并配置以该货币计价的保险类股票，优先农业和基础产品板块。同时，用黄金对冲美元风险，但避免过度投机，因黄金短期波动大，长期方向才明确。",
-    "label": "relevant"
-   },
-   {
-    "id": 16957,
-    "title": "通胀时持有现金而非房产",
-    "score": 0.01393,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 个人投资, 资产配置",
-    "content_excerpt": "在全面通胀预期下，传统观念认为买房抗通胀，但实际房产流动性差且泡沫风险高，现金虽贬值但亏损最少。决策时应比较各类资产的抗跌性，优先选择流动性高、贬值幅度小的资产，而非盲目跟风。",
     "label": "partial"
-   },
-   {
-    "id": 18823,
-    "title": "通缩期现金为王，收力应变",
-    "score": 0.01349,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 个人理财, 经济危机应对",
-    "content_excerpt": "在通缩环境下，持有现金看似低效，实为保存流动性和应变能力。操作上，将资金配置于低风险工具（如银行存款），避免因投资波动导致本金损失。核心是评估经济周期，优先保障资金安全，而非追求短期收益。",
-    "label": "partial"
-   },
-   {
-    "id": 15817,
-    "title": "持有现金对抗通胀的误区",
-    "score": 0.01308,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 财务规划, 通胀应对",
-    "content_excerpt": "在通胀预期下，持有现金会因购买力下降而受损，但盲目购买泡沫资产同样危险。常见误区是认为现金安全，或认为所有资产都能保值。正确做法是选择有实际价值支撑或定价权的资产，并动态调整配置。",
-    "label": "relevant"
-   },
-   {
-    "id": 18634,
-    "title": "危机中先确认对方核心数据",
-    "score": 0.01269,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险评估",
-    "content_excerpt": "在不确定时期，不要被表面财富数字迷惑，应比较资产的实际购买力或投资潜力。例如，拥有1000万但贬值90%的人，可能不如将10万投资于增值资产的人。决策前需评估对方的资产结构而非绝对金额。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 18336,
-    "title": "避免混淆投资与收藏属性",
-    "score": 0.01232,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资理财, 消费决策",
-    "content_excerpt": "投资实物黄金时，应明确区分投资品与收藏品。发行量大的金币虽不适合收藏，但单位含金量高、流动性好，是投资优选；反之，若追求收藏增值，则需关注稀缺性。混淆两者可能导致决策失误。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 16138,
-    "title": "通胀期购房多贷款保现金",
-    "score": 0.01214,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 家庭财务规划, 购房决策",
-    "content_excerpt": "在通胀预期下，购房决策应优先考虑多贷款，以利用通胀使债务实际价值缩水，同时保留家庭现金储备以应对突发变故。具体操作：评估家庭现金储备，确保至少保留足够应急资金；比较贷款与现金支出的长期成本；避免因传统观念而过度减少贷款。",
-    "label": "partial"
-   },
-   {
-    "id": 19126,
-    "title": "不确定性下现金为王",
-    "score": 0.01197,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 个人理财, 风险管理",
-    "content_excerpt": "在宏观经济不确定时期，决策者应优先考虑现金的流动性价值，而非长期利息节省。通胀预期高或经济转折点出现时，现金的购买力可能下降，但持有现金提供了应对突发机会或风险的能力。因此，决策锚点是灵活性与安全，而非静态的财务计算。",
-    "label": "relevant"
    }
   ]
  },
@@ -5673,6 +5673,18 @@
   "query": "怎么在别人恐慌抛售的时候找到便宜货？",
   "category": "金融危机",
   "results": [
+   {
+    "id": 23455,
+    "title": "【恐慌抄底】危机中普通人找便宜货的3条原则：不接飞刀、只买看得懂、分批建仓",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.85,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 恐慌抄底, 逆向投资, 分批建仓",
+    "content_excerpt": "市场恐慌抛售时普通人想捡便宜货，必须守三条原则：一是不要接飞刀——下跌趋势未确认前不急着买，等恐慌释放、成交量萎缩后再考虑；二是只买看得懂的资产——暴跌中的股票/基金如果基本面看不懂，便宜也不是机会，可能继续跌；三是分批建仓而非一把梭——用",
+    "label": "relevant"
+   },
    {
     "id": 17669,
     "title": "恐慌抛售是主力洗盘的陷阱",
@@ -5688,7 +5700,7 @@
    {
     "id": 18501,
     "title": "观察先行资金动向作为决策锚点",
-    "score": 0.01328,
+    "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5700,7 +5712,7 @@
    {
     "id": 17718,
     "title": "市场恐慌时逆向买入",
-    "score": 0.01288,
+    "score": 0.01269,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5712,31 +5724,31 @@
    {
     "id": 15432,
     "title": "利用市场低迷期寻找机会",
-    "score": 0.01269,
+    "score": 0.0125,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资, 商业决策",
     "content_excerpt": "在市场低迷或资金短缺时，主动寻找被低估的资产，如低价房产。通过理清思路，抓住时机进行买卖，可能获得高收益。这需要提前准备和敏锐的观察力。",
-    "label": "relevant"
+    "label": "partial"
    },
    {
     "id": 14649,
     "title": "极端行情下先确认流动性",
-    "score": 0.01164,
+    "score": 0.01149,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理",
     "content_excerpt": "在恐慌性下跌中，不要依赖历史经验或心理预期，先观察盘面委托单：若卖单堆积且无买单，说明流动性枯竭，应立即采取行动（如割肉或挂单），而非等待反弹。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 14455,
     "title": "利用外部信号捕捉出逃窗口",
-    "score": 0.01149,
+    "score": 0.01133,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5748,7 +5760,7 @@
    {
     "id": 7078,
     "title": "制造稀缺恐慌提升转化",
-    "score": 0.01133,
+    "score": 0.01118,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.7,
@@ -5760,7 +5772,7 @@
    {
     "id": 14695,
     "title": "建议前先确认对方风险承受力",
-    "score": 0.01118,
+    "score": 0.01104,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5772,7 +5784,7 @@
    {
     "id": 16268,
     "title": "危机中主动寻找价值洼地",
-    "score": 0.01104,
+    "score": 0.0109,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5780,18 +5792,6 @@
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 仓位",
     "content_excerpt": "当外部环境出现系统性恐慌时，决策者应将危机视为机会窗口而非威胁。具体操作：1) 列出危机中价格错配的资产类别（如房地产、股票、货币）；2) 筛选因流动性挤兑而非基本面恶化导致的低估标的；3) 在他人退出时以可控仓位介入，并预设退出条件。",
     "label": "relevant"
-   },
-   {
-    "id": 4396,
-    "title": "以流动性吸收能力定节奏",
-    "score": 0.00968,
-    "source": "vector",
-    "source_type": "novel",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融市场, 资源分配",
-    "content_excerpt": "在恐慌性抛售中，决策者应基于市场当前能吸收的成交量来设定出货速度，而非仅凭自身持仓压力。判断依据包括：当日恐慌是否只是第一波、后续是否有机构被迫调整资产负债表。若预期后续仍有抛压，则拉长周期，避免在流动性最差时集中出货。",
-    "label": "irrelevant"
    }
   ]
  },
@@ -5800,33 +5800,57 @@
   "category": "金融危机",
   "results": [
    {
+    "id": 23453,
+    "title": "【做空门槛】普通人不要做空：A股融券门槛高、做空成本高、风险无限",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.9,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 做空, 融券, 投资风险",
+    "content_excerpt": "做空是借入资产卖出、预期跌后低价买回还券赚差价，但普通人操作面临三重障碍：一是国内A股融券门槛高（50万资产+券源稀缺），绝大多数人没有做空工具；二是做空成本高（融券利息+强制平仓风险）；三是亏损理论上无限（股价可以一直涨，而做多最多亏10",
+    "label": "relevant"
+   },
+   {
+    "id": 23261,
+    "title": "【做空】借入资产卖出后低价买回赚差价的机制",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.9,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 做空, 金融操作, 价格下跌",
+    "content_excerpt": "做空是一种金融操作，核心是预期资产价格下跌。步骤：1) 借入资产（如股票、货币）并卖出获得现金；2) 等待资产价格下跌；3) 用更少的现金买回相同数量的资产归还借出方，赚取差价。风险在于若价格不跌反涨，亏损可能无限。此机制在1997年索罗斯",
+    "label": "relevant"
+   },
+   {
     "id": 14777,
     "title": "识别双重角色操纵模式",
-    "score": 0.01962,
+    "score": 0.01903,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 政策分析, 做空",
     "content_excerpt": "在市场中，若同一主体既做空又做多，则其行为可能构成操纵。操作步骤：1) 追踪大额资金流向，识别是否同一来源在下跌和上涨阶段均活跃；2) 分析价格波动是否呈现先急跌后急拉的对称性；3) 对比官方救市声明与实际资金行为，判断是否言行一致。此模式",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 13667,
     "title": "识别官方信号与市场背离",
-    "score": 0.01875,
+    "score": 0.01821,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 政策解读, 做空",
     "content_excerpt": "当官方在非低位时过度宣传利好，且伴随做空工具开放，则信号可能具有误导性。操作上，对比官方表态时间与市场走势，若利好发布后市场短期即反转，则需警惕信号失真。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 18015,
     "title": "模拟盘验证后再实盘",
-    "score": 0.01371,
+    "score": 0.01328,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5838,7 +5862,7 @@
    {
     "id": 14383,
     "title": "警惕人为诱多陷阱",
-    "score": 0.01328,
+    "score": 0.01288,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5850,7 +5874,7 @@
    {
     "id": 13786,
     "title": "盲目跟风高位唱多",
-    "score": 0.01288,
+    "score": 0.0125,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5862,7 +5886,7 @@
    {
     "id": 15951,
     "title": "识别坐庄模式并设止损",
-    "score": 0.01269,
+    "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -5872,51 +5896,27 @@
     "label": "irrelevant"
    },
    {
+    "id": 13508,
+    "title": "新股民空杯心态的风险",
+    "score": 0.01164,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资新手, 决策心理",
+    "content_excerpt": "缺乏经验的新手容易因空杯心态而忽视风险，盲目追涨。应主动学习风险知识，避免因无心理阴影而过度自信。",
+    "label": "irrelevant"
+   },
+   {
     "id": 14678,
     "title": "投机市场中的分层策略选择",
-    "score": 0.01181,
+    "score": 0.01133,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 职场竞争",
     "content_excerpt": "根据自身资源与能力，将市场参与者分为三类：操控者（有资源背景）、跟随者（有信仰技巧资金）、盲目者（无准备）。决策前先定位自己，选择对应策略：操控、跟随或退出。不可盲目模仿他人，因为资源禀赋不同。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 17479,
-    "title": "转折点双向操作",
-    "score": 0.01164,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理",
-    "content_excerpt": "在预期大起时投入资本引导狂热，在崩溃前率先卖空。关键在于事前做足研究和准备，使冒险有高胜率。操作上需在转折处果断进出，利用市场脆弱性。",
-    "label": "partial"
-   },
-   {
-    "id": 14369,
-    "title": "超短打板操作法：快进快出",
-    "score": 0.01149,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股市交易, 高频决策, 止损,套牢",
-    "content_excerpt": "在股市中，采用超短线交易策略，聚焦涨停板（打板），利用资金优势在涨停瞬间买入，次日或短期内卖出，追求快速复利。核心是速度优先，不恋战，严格止损止盈，避免深度套牢。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 14468,
-    "title": "学习游资手法但保持独立",
-    "score": 0.01104,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 股市投资, 技术分析",
-    "content_excerpt": "游资敢死队通过钻研技术和高频操作获得高胜率，但散户模仿时需注意资金规模差异。可学习其技术分析框架，但应结合自身资金量和风险偏好，避免盲目复制。",
     "label": "irrelevant"
    }
   ]
@@ -5926,15 +5926,63 @@
   "category": "金融危机",
   "results": [
    {
-    "id": 18658,
-    "title": "汇率变动影响资本流动",
-    "score": 0.01992,
+    "id": 23264,
+    "title": "【普通人应对货币危机】恐慌性换汇可能加速贬值，但持有外币资产可避险",
+    "score": 0.02131,
     "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 宏观经济, 外汇风险, 汇率",
-    "content_excerpt": "货币升值或贬值会影响热钱进出和债务偿还。升值时热钱不愿离开，贬值时可能外逃。投资者需理解汇率政策对资产价值的影响，避免因汇率波动造成损失。",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 货币危机, 外币避险, 普通人应对",
+    "content_excerpt": "在货币危机中，普通人若持有本币资产，可能面临购买力下降；若提前兑换成外币（如美元），可避免贬值损失。但恐慌性换汇会加剧贬值，形成恶性循环。对于普通人，若预判本币大幅贬值，可适度配置外币资产；但需注意外汇管制和兑换成本。",
+    "label": "partial"
+   },
+   {
+    "id": 23245,
+    "title": "【日本泡沫破裂】1989-1991年央行加息刺破股市楼市泡沫，导致长期衰退",
+    "score": 0.02063,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.8,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 日本泡沫, 加息刺破泡沫, 消失的十年",
+    "content_excerpt": "日本在1980年代后期经历股市楼市泡沫，央行行长三重野康上台后连续五次加息，刺破泡沫。股价房价暴跌，企业倒闭，银行坏账激增，金融体系崩溃，日本陷入长达十余年的经济停滞，即“消失的十年”。普通人资产大幅缩水，破产者众多，社会心态趋于保守，出现",
+    "label": "partial"
+   },
+   {
+    "id": 23235,
+    "title": "【广场协议】1985年美日德法英五国干预汇率，日元升值导致日本经济停滞十年",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.8,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 广场协议, 日元升值, 日本经济停滞",
+    "content_excerpt": "《广场协议》是1985年9月22日美国、日本、联邦德国、法国、英国五国财长在纽约广场饭店签订的协议，核心是联合干预外汇市场，诱导美元对日元、马克等货币贬值。日本被迫签署后，日元大幅升值，出口竞争力下降，为应对升值冲击，日本央行大幅降息，催生",
+    "label": "partial"
+   },
+   {
+    "id": 23241,
+    "title": "【宽松货币政策】降息+增发货币刺激内需的机制与副作用",
+    "score": 0.0194,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.8,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 宽松货币政策, 广场协议, 日元升值",
+    "content_excerpt": "日本在《广场协议》后为应对日元升值导致的出口困境，采取宽松货币政策：央行降息降低存款收益，同时增发货币增加市场流动性。这促使民众将存款取出消费，意图刺激内需、实现出口转内销。但该政策导致市场上货币过多，货币贬值，为后续资产泡沫埋下隐患。",
+    "label": "partial"
+   },
+   {
+    "id": 23243,
+    "title": "日本泡沫经济：1980年代低利率与日元升值催生股市楼市暴涨",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.8,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 日本泡沫, 低利率, 日元升值",
+    "content_excerpt": "1980年代，日本央行大幅降息，低利率促使民众和企业大量借贷投资。日元升值吸引外国资本涌入日本股市和楼市，推动资产价格飞涨。东京土地市值一度相当于美国4倍，福布斯富豪榜前四名均为日本房地产大佬，日本企业狂购美国资产如帝国大厦。实体经济因出口",
     "label": "partial"
    },
    {
@@ -5947,7 +5995,31 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 宏观经济, 组织变革, 汇率",
     "content_excerpt": "市场暴跌可能被用作锁定资金、消灭流动性的工具，以服务于更宏观的政策目标（如汇率开放）。操作启示：1) 当市场波动与宏观政策挂钩时，个体行为可能被牺牲；2) 关注政策目标与市场行为的关联，而非仅看表面经济数据；3) 在重大政策转型期，需警惕流",
+    "label": "irrelevant"
+   },
+   {
+    "id": 18658,
+    "title": "汇率变动影响资本流动",
+    "score": 0.01875,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 宏观经济, 外汇风险, 汇率",
+    "content_excerpt": "货币升值或贬值会影响热钱进出和债务偿还。升值时热钱不愿离开，贬值时可能外逃。投资者需理解汇率政策对资产价值的影响，避免因汇率波动造成损失。",
     "label": "partial"
+   },
+   {
+    "id": 23291,
+    "title": "【普通人应对危机】保持信心+理财+健康，危机终将过去",
+    "score": 0.01857,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 普通人, 信心, 理财",
+    "content_excerpt": "明确结论：普通人面对金融危机应保持信心，做好理财措施，养好身体，避免恐慌性抛售和挤兑。理由：危机根源是信心缺失，恐慌行为会加剧危机；历史表明危机终将过去，保持冷静可减少损失。适用边界：适用于一般性金融危机，不适用于极端情况（如战争、政权更迭",
+    "label": "irrelevant"
    },
    {
     "id": 14781,
@@ -5959,90 +6031,18 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 汇率",
     "content_excerpt": "将投资标的置于宏观经济框架中，观察利率、汇率、热钱流动的联动效应。当利率下行、本币贬值、股市暴涨暴跌组合出现时，可能预示系统性收割。操作上，需定期跟踪宏观指标，避免孤立分析单一市场。",
-    "label": "partial"
-   },
-   {
-    "id": 14797,
-    "title": "系统性风险转移",
-    "score": 0.01821,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 风险管理, 经济调控, 汇率",
-    "content_excerpt": "通过设计市场机制，将系统性风险从核心领域（如汇率）转移到次要领域（如股市），从而在整体上维持稳定。此原理适用于资源有限、无法同时应对所有风险时，需主动选择风险承担点。",
-    "label": "partial"
-   },
-   {
-    "id": 14808,
-    "title": "用经济杠杆替代直接冲突",
-    "score": 0.01793,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 国际博弈, 商业竞争, 汇率",
-    "content_excerpt": "在对抗中，优先使用经济手段（如汇率操纵、债务工具）而非军事或政治直接对抗，以降低流血和管理成本。具体操作包括：分析对方经济脆弱点，利用金融工具施加压力，同时保持自身行动隐蔽性。",
     "label": "irrelevant"
    },
    {
-    "id": 15676,
-    "title": "以可持续性为决策锚点",
-    "score": 0.01765,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 战略决策, 风险管理, 汇率",
-    "content_excerpt": "在权衡不同路径时，决策者应优先考虑方案的长期可持续性，而非短期收益或压力缓解。例如，渐进式汇率调整虽可能延长阵痛，但避免了激进调整带来的不可逆冲击。",
-    "label": "partial"
-   },
-   {
-    "id": 15718,
-    "title": "用相对数据替代绝对判断",
-    "score": 0.01739,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 市场分析, 汇率",
-    "content_excerpt": "在评估市场风险时，不要依赖单一绝对数值（如房价），而应构建相对指标（如房价/收入比、房价/汇率），并与历史或国际参照系对比。同时，明确标注数据来源和不确定性，避免过度自信。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 15719,
-    "title": "锚定历史参照而非专家意见",
-    "score": 0.01713,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险判断, 汇率",
-    "content_excerpt": "当专家观点众说纷纭时，应优先使用可验证的历史数据作为决策锚点。通过对比类似市场（如日本房地产泡沫）的演变，识别关键变量（如汇率、收入增长），而非盲目相信专家结论。",
-    "label": "partial"
-   },
-   {
-    "id": 15721,
-    "title": "避免盲人摸象式片面分析",
-    "score": 0.01687,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 市场分析, 决策陷阱, 汇率",
-    "content_excerpt": "在复杂系统中，单一维度（如房价绝对值）或单一专家观点容易导致错误结论。应整合多维度数据（收入、汇率、周期），并承认数据不确定性，防止以偏概全。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 17302,
-    "title": "黑市汇率作为资本外逃预警",
-    "score": 0.01678,
+    "id": 23139,
+    "title": "【亚洲金融风暴】1997香港加息刺破房价，普通人财富缩水",
+    "score": 0.01831,
     "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
+    "source_type": "book",
+    "confidence": 0.8,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 宏观经济监测, 风险管理, 汇率",
-    "content_excerpt": "当官方汇率受管制时，持续观察黑市美元兑人民币汇率，若出现反转且持续，可能预示资本大规模出逃，进而导致经济崩溃。此方法适用于监测经济风险，尤其在政治干预扭曲市场时，地下经济数据更真实。",
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 亚洲金融风暴, 香港, 房地产泡沫",
+    "content_excerpt": "1997年亚洲金融风暴，索罗斯等做空香港。香港为保卫联系汇率制被迫加息，导致房地产价格下跌，居民财富缩水，贷款购房者损失惨重。最终中央政府支持香港击退投机者。案例显示加息应对资本外流时对资产价格的冲击。",
     "label": "partial"
    }
   ]
@@ -6178,6 +6178,42 @@
   "category": "负样本",
   "results": [
    {
+    "id": 21696,
+    "title": "伴侣不回消息时先列情境原因再下结论",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.65,
+    "is_low_confidence": false,
+    "tags": "学会提问, 人际沟通, 亲密关系",
+    "content_excerpt": "当对方未及时回应时，不要立即归因于'他生我气了'。先列出至少两个替代原因，如'他可能忙于工作/学习'或'手机不在身边'。然后根据已知线索（如对方近期日程、习惯）评估哪个更合理。这能避免因情绪化归因而引发冲突。",
+    "label": "irrelevant"
+   },
+   {
+    "id": 20886,
+    "title": "表达不满时用'我……因为我……'句式",
+    "score": 0.02,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "非暴力沟通, 职场沟通, 家庭沟通, 亲密关系",
+    "content_excerpt": "当感到生气或失望时，避免说'你让我生气'或'你错了'，改用'我（感到）……因为我……'，例如'老板说话不算数，我很生气，因为我想有个长假去看弟弟'。这能清晰传达自身需要，减少对方防御，增加积极回应概率。",
+    "label": "irrelevant"
+   },
+   {
+    "id": 21100,
+    "title": "被忽视请求时先区分观察与评价再问内在原因",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.65,
+    "is_low_confidence": false,
+    "tags": "非暴力沟通, 职场沟通, 家庭关系",
+    "content_excerpt": "当感到生气时，先写下客观观察（如'请求未获反馈'），不添加指责性评价。然后问自己'为什么生气？'，将原因从他人行为转向自身感受和需要（如需要尊重或回应）。这能打破'他人导致情绪'的惯性思维，为有效沟通铺路。",
+    "label": "irrelevant"
+   },
+   {
     "id": 19557,
     "title": "沟通中先确认对方核心数据",
     "score": 0.0194,
@@ -6190,51 +6226,27 @@
     "label": "irrelevant"
    },
    {
-    "id": 21696,
-    "title": "伴侣不回消息时先列情境原因再下结论",
-    "score": 0.01935,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.65,
-    "is_low_confidence": false,
-    "tags": "学会提问, 人际沟通, 亲密关系",
-    "content_excerpt": "当对方未及时回应时，不要立即归因于'他生我气了'。先列出至少两个替代原因，如'他可能忙于工作/学习'或'手机不在身边'。然后根据已知线索（如对方近期日程、习惯）评估哪个更合理。这能避免因情绪化归因而引发冲突。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 20886,
-    "title": "表达不满时用'我……因为我……'句式",
-    "score": 0.01846,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "非暴力沟通, 职场沟通, 家庭沟通, 亲密关系",
-    "content_excerpt": "当感到生气或失望时，避免说'你让我生气'或'你错了'，改用'我（感到）……因为我……'，例如'老板说话不算数，我很生气，因为我想有个长假去看弟弟'。这能清晰传达自身需要，减少对方防御，增加积极回应概率。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 21100,
-    "title": "被忽视请求时先区分观察与评价再问内在原因",
-    "score": 0.01818,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.65,
-    "is_low_confidence": false,
-    "tags": "非暴力沟通, 职场沟通, 家庭关系",
-    "content_excerpt": "当感到生气时，先写下客观观察（如'请求未获反馈'），不添加指责性评价。然后问自己'为什么生气？'，将原因从他人行为转向自身感受和需要（如需要尊重或回应）。这能打破'他人导致情绪'的惯性思维，为有效沟通铺路。",
-    "label": "irrelevant"
-   },
-   {
     "id": 20888,
     "title": "指责他人时避免只提他人行为",
-    "score": 0.01765,
+    "score": 0.01912,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 家庭沟通, 职场沟通, 亲密关系",
     "content_excerpt": "在表达不满时，若只提及他人行为（如'你没打电话，我很伤心'），容易让对方感到被攻击，引发防御。应转为表达自身感受与需要，如'你没打电话，我很难过，因为我重视我们的联系'。适用于所有关系沟通。",
+    "label": "irrelevant"
+   },
+   {
+    "id": 21059,
+    "title": "对方沉默时先猜感受再表达自己",
+    "score": 0.01757,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "非暴力沟通, 职场沟通, 家庭沟通",
+    "content_excerpt": "当对方沉默不语时，先放下自己的不安，用具体猜测询问对方的感受或需要（如'你生气了吗？'），若无效则表达自己的感受（如'我很担心你'），并持续交替反馈和表达，保持耐心，不强迫回应。",
     "label": "irrelevant"
    },
    {
@@ -6259,18 +6271,6 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场关系, 团队协作",
     "content_excerpt": "当团队氛围突变时，不要急于自我归因。先记录具体行为变化（如对话减少、回避眼神），再通过非正式渠道（如午餐闲聊）试探性询问，区分是个人误解还是群体性排斥。此步骤可避免陷入自我怀疑的被动状态。",
-    "label": "irrelevant"
-   },
-   {
-    "id": 21059,
-    "title": "对方沉默时先猜感受再表达自己",
-    "score": 0.01622,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "非暴力沟通, 职场沟通, 家庭沟通",
-    "content_excerpt": "当对方沉默不语时，先放下自己的不安，用具体猜测询问对方的感受或需要（如'你生气了吗？'），若无效则表达自己的感受（如'我很担心你'），并持续交替反馈和表达，保持耐心，不强迫回应。",
     "label": "irrelevant"
    },
    {
@@ -6558,9 +6558,9 @@
    {
     "id": 22636,
     "title": "面对不确定结果时先拆解运气与能力成分",
-    "score": 0.01714,
+    "score": 0.01857,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "金钱心理学, 投资决策, 职业规划",
@@ -6577,7 +6577,7 @@
     "is_low_confidence": false,
     "tags": "这就是人性, 个人成长, 职场决策",
     "content_excerpt": "将'认命'从消极词汇转为积极认知工具：先识别客观限制，再区分可改变与不可改变因素，据此调整策略。避免非此即彼的二元思维，既不盲目坚持也不轻易放弃。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 6337,
@@ -6613,7 +6613,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职场晋升, 个人成长",
     "content_excerpt": "当面对'天生注定'的论调时，先分析其是否基于可验证事实。若无法验证（如面相、血统），则将其视为权力话语而非客观规律。将注意力转移到可改变的行为上，如提升技能、建立关系、创造业绩，用实际成果替代宿命标签。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 8676,
@@ -6637,7 +6637,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 咨询沟通, 教育指导",
     "content_excerpt": "面对'如何改变命运'这类抽象问题，不展开理论，而是给出具体行动（'多施财'），将问题落地。这既满足了提问者的部分需求，又避免了陷入无休止的思辨，节省时间。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 15498,
@@ -6649,7 +6649,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 价值观, 个人成长",
     "content_excerpt": "不承认历史或文化决定个人命运，认为机遇和努力共同塑造结果。在看似无望的环境中，个人努力仍可能产生微小但实质的影响，因此不应放弃行动。这一原则强调主观能动性，而非被动接受外部条件。",
-    "label": "partial"
+    "label": "irrelevant"
    },
    {
     "id": 11240,
@@ -6673,7 +6673,7 @@
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 个人成长, 目标管理",
     "content_excerpt": "心态可以调整，但命运改变需要持续努力和实际付出。因此，在设定目标时，应摒弃空谈，制定可执行的行动计划，并接受改变过程的艰难性，避免因期望过高而放弃。",
-    "label": "partial"
+    "label": "irrelevant"
    }
   ]
  }

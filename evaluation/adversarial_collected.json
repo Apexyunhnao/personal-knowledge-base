@@ -430,9 +430,9 @@
    {
     "id": 22833,
     "title": "投资亏损时用热爱支撑坚持",
-    "score": 0.01905,
+    "score": 0.02063,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "金钱心理学, 投资决策, 长期坚持"
@@ -450,9 +450,9 @@
    {
     "id": 22665,
     "title": "投资失败后先设安全垫再复盘",
-    "score": 0.015,
+    "score": 0.01625,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "金钱心理学, 投资理财, 风险管理"
@@ -806,6 +806,16 @@
     "tags": "打破你的学生思维, 技能提升, 学习规划"
    },
    {
+    "id": 23041,
+    "title": "面对跳槽诱惑时先检验离开动机",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "金钱心理学, 职业决策, 职场谈判"
+   },
+   {
     "id": 6071,
     "title": "犹豫跳槽时先问领导晋升路径",
     "score": 0.01831,
@@ -834,16 +844,6 @@
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 职业规划, 财务管理"
-   },
-   {
-    "id": 5983,
-    "title": "转岗机会恐惧时先看长期潜力",
-    "score": 0.01757,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "打破你的学生思维, 职场心理, 职业发展"
    }
   ]
  },
@@ -1084,9 +1084,19 @@
     "tags": "打破你的学生思维, 教育规划, 财务独立"
    },
    {
+    "id": 23291,
+    "title": "【普通人应对危机】保持信心+理财+健康，危机终将过去",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 普通人, 信心, 理财"
+   },
+   {
     "id": 6000,
     "title": "职场环境恶劣时扎根内功积累",
-    "score": 0.01884,
+    "score": 0.01857,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.65,
@@ -1152,16 +1162,6 @@
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 职业规划, 家庭决策"
-   },
-   {
-    "id": 15685,
-    "title": "经济下行期选择服务业切入点",
-    "score": 0.01214,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.65,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 创业方向, 经济周期"
    }
   ]
  },
@@ -1366,14 +1366,14 @@
     "tags": "打破你的学生思维, 求职面试, 企业选择"
    },
    {
-    "id": 6081,
-    "title": "岗位变动时先列清单对照差距再问经理",
-    "score": 0.01625,
+    "id": 23041,
+    "title": "面对跳槽诱惑时先检验离开动机",
+    "score": 0.01667,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "打破你的学生思维, 职场发展, 岗位变动"
+    "tags": "金钱心理学, 职业决策, 职场谈判"
    }
   ]
  },
@@ -1790,14 +1790,14 @@
     "tags": "打破你的学生思维, 职业规划, 自我认知"
    },
    {
-    "id": 6208,
-    "title": "职业迷茫时先开放探索再定方向",
-    "score": 0.01733,
+    "id": 23041,
+    "title": "面对跳槽诱惑时先检验离开动机",
+    "score": 0.01781,
     "source": "vector",
     "source_type": "book",
-    "confidence": 0.7,
+    "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "打破你的学生思维, 职业规划, 心态调整"
+    "tags": "金钱心理学, 职业决策, 职场谈判"
    }
   ]
  },
@@ -2028,6 +2028,26 @@
     "tags": "这就是人性, 个人成长, 习惯养成"
    },
    {
+    "id": 20344,
+    "title": "自我提升受阻时先检查计划明确度而非动力",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "原子习惯, 个人成长, 自我管理"
+   },
+   {
+    "id": 22020,
+    "title": "意志力耗尽时硬撑高难度任务会失败",
+    "score": 0.02063,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 职场效率, 个人成长"
+   },
+   {
     "id": 20063,
     "title": "制定计划时先问低谷期能否坚持",
     "score": 0.02031,
@@ -2048,31 +2068,11 @@
     "tags": "这就是人性, 情绪管理, 职场压力"
    },
    {
-    "id": 20344,
-    "title": "自我提升受阻时先检查计划明确度而非动力",
-    "score": 0.01935,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "原子习惯, 个人成长, 自我管理"
-   },
-   {
-    "id": 22020,
-    "title": "意志力耗尽时硬撑高难度任务会失败",
-    "score": 0.01905,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 职场效率, 个人成长"
-   },
-   {
     "id": 22012,
     "title": "意志力如肌肉，使用后需恢复，否则会暂时失效",
-    "score": 0.01818,
+    "score": 0.0197,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "自控力, 个人效率, 健康管理"
@@ -2080,9 +2080,9 @@
    {
     "id": 22329,
     "title": "拖延任务时先坚持做10分钟再允许放弃",
-    "score": 0.01765,
+    "score": 0.01912,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "自控力, 职场效率, 学习提升"
@@ -2090,9 +2090,9 @@
    {
     "id": 20315,
     "title": "目标违背人性时先调整系统而非硬扛",
-    "score": 0.01739,
+    "score": 0.01884,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "原子习惯, 个人成长, 目标管理"
@@ -2100,9 +2100,9 @@
    {
     "id": 22019,
     "title": "自控力如肌肉会疲劳，需按能量分配任务",
-    "score": 0.01714,
+    "score": 0.01857,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "自控力, 心理学应用, 习惯养成"
@@ -2110,9 +2110,9 @@
    {
     "id": 20689,
     "title": "任务过易或过难时警惕动力下降",
-    "score": 0.0169,
+    "score": 0.01831,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "原子习惯, 自我管理, 团队管理"
@@ -2174,6 +2174,16 @@
     "tags": "打破你的学生思维, 职场效率, 时间管理"
    },
    {
+    "id": 22015,
+    "title": "核心目标受挤时早起先定优先级",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 职场发展, 目标管理"
+   },
+   {
     "id": 5763,
     "title": "职业选择纠结时先澄清目标再排序",
     "score": 0.01912,
@@ -2192,16 +2202,6 @@
     "confidence": 0.65,
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 职业规划, 人生决策"
-   },
-   {
-    "id": 22015,
-    "title": "核心目标受挤时早起先定优先级",
-    "score": 0.01818,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 职场发展, 目标管理"
    },
    {
     "id": 5916,
@@ -2230,6 +2230,16 @@
   "category": "执行力",
   "results": [
    {
+    "id": 21279,
+    "title": "阅读新书时用淘金式提问替代逐字记忆",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "学会提问, 学习提升, 信息筛选"
+   },
+   {
     "id": 19694,
     "title": "两遍阅读法：速览后精读",
     "score": 0.0197,
@@ -2238,16 +2248,6 @@
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "人性的弱点, 阅读学习, 知识管理"
-   },
-   {
-    "id": 21279,
-    "title": "阅读新书时用淘金式提问替代逐字记忆",
-    "score": 0.01875,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "学会提问, 学习提升, 信息筛选"
    },
    {
     "id": 19977,
@@ -2336,6 +2336,16 @@
   "category": "执行力",
   "results": [
    {
+    "id": 22073,
+    "title": "疲惫时挺过第一波再决定",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人成长, 职场执行"
+   },
+   {
     "id": 20088,
     "title": "职场受挫时先区分可变与不可变因素",
     "score": 0.02097,
@@ -2366,14 +2376,24 @@
     "tags": "这就是人性, 个人成长, 习惯养成"
    },
    {
-    "id": 22073,
-    "title": "疲惫时挺过第一波再决定",
-    "score": 0.01967,
+    "id": 22053,
+    "title": "自控力挑战时挺过第一波疲惫感",
+    "score": 0.0194,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "自控力, 个人成长, 职场执行"
+    "tags": "自控力, 职场效率, 学习自律"
+   },
+   {
+    "id": 22295,
+    "title": "自我怀疑时用良师益友视角开导自己",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人成长, 目标管理"
    },
    {
     "id": 6120,
@@ -2406,34 +2426,14 @@
     "tags": "这就是人性, 亲密关系, 职场合作"
    },
    {
-    "id": 22053,
-    "title": "自控力挑战时挺过第一波疲惫感",
-    "score": 0.01791,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 职场效率, 学习自律"
-   },
-   {
-    "id": 22295,
-    "title": "自我怀疑时用良师益友视角开导自己",
-    "score": 0.01739,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人成长, 目标管理"
-   },
-   {
-    "id": 19955,
-    "title": "项目失败时先复盘自身决策",
-    "score": 0.01711,
+    "id": 22292,
+    "title": "进度滞后时用朋友视角安慰自己",
+    "score": 0.01781,
     "source": "vector",
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "这就是人性, 职场谈判, 团队管理, 个人成长"
+    "tags": "自控力, 目标管理, 自我激励"
    }
   ]
  },
@@ -2454,9 +2454,9 @@
    {
     "id": 21572,
     "title": "判断事实断言可信时先看证据效力",
-    "score": 0.01935,
+    "score": 0.02097,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "学会提问, 职场谈判, 家庭沟通"
@@ -2464,9 +2464,9 @@
    {
     "id": 21297,
     "title": "选择信赖对象时以论证质量为准而非身份",
-    "score": 0.01765,
+    "score": 0.01912,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "学会提问, 信息筛选, 决策咨询"
@@ -2830,19 +2830,9 @@
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 个人理财, 杠杆, 融资"
    },
    {
-    "id": 14695,
-    "title": "建议前先确认对方风险承受力",
-    "score": 0.0125,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 职场沟通, 投资决策, 止损"
-   },
-   {
     "id": 18659,
     "title": "避免盲目跟风投资",
-    "score": 0.01232,
+    "score": 0.0125,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -2852,12 +2842,22 @@
    {
     "id": 15298,
     "title": "宏观政策解读与保本优先",
-    "score": 0.01214,
+    "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
+   },
+   {
+    "id": 18366,
+    "title": "投资前先判断目标群体",
+    "score": 0.01214,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险决策"
    }
   ]
  },
@@ -2956,14 +2956,14 @@
     "tags": "小说萃取, 天涯神贴精选, 金融投资, 风险控制, 抄底"
    },
    {
-    "id": 14091,
-    "title": "损失既定后改用认知重评降痛",
-    "score": 0.01639,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.6,
+    "id": 23455,
+    "title": "【恐慌抄底】危机中普通人找便宜货的3条原则：不接飞刀、只买看得懂、分批建仓",
+    "score": 0.01667,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.85,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理调节, 抄底"
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 恐慌抄底, 逆向投资, 分批建仓"
    }
   ]
  },
@@ -3054,9 +3054,9 @@
    {
     "id": 23041,
     "title": "面对跳槽诱惑时先检验离开动机",
-    "score": 0.015,
+    "score": 0.01625,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "金钱心理学, 职业决策, 职场谈判"
@@ -3214,6 +3214,16 @@
     "tags": "这就是人性, 职场复盘, 家庭冲突"
    },
    {
+    "id": 21080,
+    "title": "自我责备二十分钟后要警觉",
+    "score": 0.01831,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.5,
+    "is_low_confidence": false,
+    "tags": "非暴力沟通, 情绪管理, 时间管理"
+   },
+   {
     "id": 19722,
     "title": "安全监督时先问原因再给建议",
     "score": 0.01806,
@@ -3244,21 +3254,11 @@
     "tags": "人性的弱点, 领导力, 个人成长"
    },
    {
-    "id": 21080,
-    "title": "自我责备二十分钟后要警觉",
-    "score": 0.0169,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.5,
-    "is_low_confidence": false,
-    "tags": "非暴力沟通, 情绪管理, 时间管理"
-   },
-   {
     "id": 20912,
     "title": "批评下属失误时先陈述感受再关联自身期望",
-    "score": 0.01558,
+    "score": 0.01688,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 职场沟通, 家庭沟通"
@@ -3532,6 +3532,16 @@
     "tags": "人性的弱点, 心理学应用, 沟通技巧"
    },
    {
+    "id": 21119,
+    "title": "对方情绪激动时先倾听再表达",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "非暴力沟通, 职场谈判, 亲密关系"
+   },
+   {
     "id": 19796,
     "title": "客户发火时先共情再给方案",
     "score": 0.0194,
@@ -3542,41 +3552,21 @@
     "tags": "人性的弱点, 职场谈判, 家庭沟通, 客户服务"
    },
    {
-    "id": 21119,
-    "title": "对方情绪激动时先倾听再表达",
-    "score": 0.01818,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "非暴力沟通, 职场谈判, 亲密关系"
-   },
-   {
     "id": 20899,
     "title": "对方痛苦时先区分责任归属再行动",
-    "score": 0.01739,
+    "score": 0.01884,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 亲密关系, 职场协作"
    },
    {
-    "id": 19664,
-    "title": "孩子发脾气时先找需求再沟通",
-    "score": 0.01733,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 亲子沟通, 青春期教育"
-   },
-   {
     "id": 21100,
     "title": "被忽视请求时先区分观察与评价再问内在原因",
-    "score": 0.0169,
+    "score": 0.01831,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.65,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 职场沟通, 家庭关系"
@@ -3584,9 +3574,9 @@
    {
     "id": 21019,
     "title": "引导对方表达感受时提供具体选项",
-    "score": 0.01667,
+    "score": 0.01806,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 心理咨询, 医患沟通"
@@ -3594,12 +3584,22 @@
    {
     "id": 21134,
     "title": "批评指责无效时转向需求表达",
-    "score": 0.01644,
+    "score": 0.01781,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 职场谈判, 亲密关系"
+   },
+   {
+    "id": 21010,
+    "title": "对方情绪激烈时先撤离而非硬撑沟通",
+    "score": 0.01757,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "非暴力沟通, 冲突调解, 情绪管理"
    }
   ]
  },
@@ -3618,6 +3618,16 @@
     "tags": "打破你的学生思维, 职场心态, 自我认知"
    },
    {
+    "id": 22004,
+    "title": "慢性压力下自控失败时勿自我标签为废物",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人成长, 职场谈判"
+   },
+   {
     "id": 5526,
     "title": "想学新技能时先定目标再选课",
     "score": 0.02063,
@@ -3626,6 +3636,36 @@
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "打破你的学生思维, 学习规划, 自我提升"
+   },
+   {
+    "id": 20698,
+    "title": "厌倦是成功最大威胁，需用纪律对抗",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "原子习惯, 习惯养成, 长期坚持"
+   },
+   {
+    "id": 21982,
+    "title": "深夜拖延时先定义'我不要'而非'我要'",
+    "score": 0.02,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人管理, 习惯养成"
+   },
+   {
+    "id": 21979,
+    "title": "睡眠不足时用补觉、储存睡眠和打盹恢复自控力",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 职场效率, 健康管理"
    },
    {
     "id": 6055,
@@ -3638,51 +3678,11 @@
     "tags": "打破你的学生思维, 职场压力, 时间管理"
    },
    {
-    "id": 22004,
-    "title": "慢性压力下自控失败时勿自我标签为废物",
-    "score": 0.01935,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人成长, 职场谈判"
-   },
-   {
-    "id": 20698,
-    "title": "厌倦是成功最大威胁，需用纪律对抗",
-    "score": 0.01875,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "原子习惯, 习惯养成, 长期坚持"
-   },
-   {
-    "id": 21982,
-    "title": "深夜拖延时先定义'我不要'而非'我要'",
-    "score": 0.01846,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人管理, 习惯养成"
-   },
-   {
-    "id": 21979,
-    "title": "睡眠不足时用补觉、储存睡眠和打盹恢复自控力",
-    "score": 0.01818,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 职场效率, 健康管理"
-   },
-   {
     "id": 22053,
     "title": "自控力挑战时挺过第一波疲惫感",
-    "score": 0.01739,
+    "score": 0.01884,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "自控力, 职场效率, 学习自律"
@@ -3690,22 +3690,22 @@
    {
     "id": 20689,
     "title": "任务过易或过难时警惕动力下降",
-    "score": 0.01714,
+    "score": 0.01857,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "原子习惯, 自我管理, 团队管理"
    },
    {
-    "id": 20062,
-    "title": "自律计划屡败时先降门槛拆小目标",
-    "score": 0.01711,
+    "id": 22019,
+    "title": "自控力如肌肉会疲劳，需按能量分配任务",
+    "score": 0.01781,
     "source": "vector",
     "source_type": "book",
-    "confidence": 0.6,
+    "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "这就是人性, 个人成长, 习惯养成"
+    "tags": "自控力, 心理学应用, 习惯养成"
    }
   ]
  },
@@ -3926,6 +3926,46 @@
   "category": "执行力",
   "results": [
    {
+    "id": 21982,
+    "title": "深夜拖延时先定义'我不要'而非'我要'",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人管理, 习惯养成"
+   },
+   {
+    "id": 20204,
+    "title": "低起点时先重建生活秩序再叠加习惯",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "原子习惯, 个人成长, 习惯养成"
+   },
+   {
+    "id": 21976,
+    "title": "睡眠不足时先补觉再谈自律",
+    "score": 0.02063,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人成长, 健康管理"
+   },
+   {
+    "id": 20600,
+    "title": "培养新习惯时先优化环境提示再简化步骤",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "原子习惯, 个人成长, 习惯养成"
+   },
+   {
     "id": 20062,
     "title": "自律计划屡败时先降门槛拆小目标",
     "score": 0.02,
@@ -3936,51 +3976,11 @@
     "tags": "这就是人性, 个人成长, 习惯养成"
    },
    {
-    "id": 21982,
-    "title": "深夜拖延时先定义'我不要'而非'我要'",
-    "score": 0.01967,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人管理, 习惯养成"
-   },
-   {
-    "id": 20204,
-    "title": "低起点时先重建生活秩序再叠加习惯",
-    "score": 0.01935,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "原子习惯, 个人成长, 习惯养成"
-   },
-   {
-    "id": 21976,
-    "title": "睡眠不足时先补觉再谈自律",
-    "score": 0.01905,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人成长, 健康管理"
-   },
-   {
-    "id": 20600,
-    "title": "培养新习惯时先优化环境提示再简化步骤",
-    "score": 0.01875,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "原子习惯, 个人成长, 习惯养成"
-   },
-   {
     "id": 20542,
     "title": "设定宏大目标时先拆出两分钟引子习惯",
-    "score": 0.01818,
+    "score": 0.0197,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "原子习惯, 个人成长, 习惯养成"
@@ -3988,9 +3988,9 @@
    {
     "id": 21979,
     "title": "睡眠不足时用补觉、储存睡眠和打盹恢复自控力",
-    "score": 0.01791,
+    "score": 0.0194,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "自控力, 职场效率, 健康管理"
@@ -3998,9 +3998,9 @@
    {
     "id": 20310,
     "title": "养成新习惯时先拆解提示与渴求再设计行动",
-    "score": 0.01765,
+    "score": 0.01912,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "原子习惯, 个人成长, 习惯养成"
@@ -4008,9 +4008,9 @@
    {
     "id": 20332,
     "title": "创建习惯记分卡提升自我意识",
-    "score": 0.01739,
+    "score": 0.01884,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "原子习惯, 个人管理, 习惯养成"
@@ -4018,9 +4018,9 @@
    {
     "id": 20538,
     "title": "培养新习惯时先缩减为两分钟版本",
-    "score": 0.01714,
+    "score": 0.01857,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "原子习惯, 个人成长, 习惯养成"
@@ -4034,12 +4034,52 @@
    {
     "id": 22329,
     "title": "拖延任务时先坚持做10分钟再允许放弃",
-    "score": 0.01967,
+    "score": 0.02131,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "自控力, 职场效率, 学习提升"
+   },
+   {
+    "id": 22390,
+    "title": "面临拖延抉择时先想象未来具体场景",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 时间管理, 目标规划"
+   },
+   {
+    "id": 21982,
+    "title": "深夜拖延时先定义'我不要'而非'我要'",
+    "score": 0.02063,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人管理, 习惯养成"
+   },
+   {
+    "id": 22378,
+    "title": "拖延恐惧时先承认现状再找适配方案",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "自控力, 健康管理, 职业发展"
+   },
+   {
+    "id": 22038,
+    "title": "拖延清理壁橱时设分阶段期限",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "自控力, 个人成长, 时间管理"
    },
    {
     "id": 19913,
@@ -4052,16 +4092,6 @@
     "tags": "这就是人性, 情绪管理, 职场压力"
    },
    {
-    "id": 22390,
-    "title": "面临拖延抉择时先想象未来具体场景",
-    "score": 0.01935,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 时间管理, 目标规划"
-   },
-   {
     "id": 6130,
     "title": "项目延期时先抓关键部分保底",
     "score": 0.01912,
@@ -4072,51 +4102,11 @@
     "tags": "打破你的学生思维, 自我管理, 危机处理"
    },
    {
-    "id": 21982,
-    "title": "深夜拖延时先定义'我不要'而非'我要'",
-    "score": 0.01905,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人管理, 习惯养成"
-   },
-   {
-    "id": 22378,
-    "title": "拖延恐惧时先承认现状再找适配方案",
-    "score": 0.01875,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "自控力, 健康管理, 职业发展"
-   },
-   {
-    "id": 22038,
-    "title": "拖延清理壁橱时设分阶段期限",
-    "score": 0.01818,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "自控力, 个人成长, 时间管理"
-   },
-   {
-    "id": 5884,
-    "title": "恐惧时先迈小步再评估",
-    "score": 0.01757,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "打破你的学生思维, 求职, 决策"
-   },
-   {
     "id": 20767,
     "title": "同事拖延时用观察+感受+需求+请求沟通",
-    "score": 0.01739,
+    "score": 0.01884,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 职场协作, 冲突解决"
@@ -4124,12 +4114,22 @@
    {
     "id": 20747,
     "title": "行动滞后时检验真实动机",
-    "score": 0.01714,
+    "score": 0.01857,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "原子习惯, 个人成长, 职业规划"
+   },
+   {
+    "id": 22123,
+    "title": "面对诱惑时，将决策转化为长期承诺",
+    "score": 0.01831,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "自控力, 自我管理, 习惯养成"
    }
   ]
  },
@@ -4180,9 +4180,9 @@
    {
     "id": 21279,
     "title": "阅读新书时用淘金式提问替代逐字记忆",
-    "score": 0.01519,
+    "score": 0.01646,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "学会提问, 学习提升, 信息筛选"
@@ -4572,6 +4572,26 @@
     "tags": "这就是人性, 家庭沟通, 职业规划"
    },
    {
+    "id": 21261,
+    "title": "盲目信任权威时忽视其利益动机",
+    "score": 0.01781,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "学会提问, 信息素养, 消费陷阱"
+   },
+   {
+    "id": 22989,
+    "title": "孩子生病时警惕民间疗法陷阱",
+    "score": 0.01733,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "金钱心理学, 家庭决策, 医疗选择"
+   },
+   {
     "id": 19980,
     "title": "听到\"人家说\"时追问信息源核实",
     "score": 0.01711,
@@ -4580,26 +4600,6 @@
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "这就是人性, 职场决策, 家庭沟通"
-   },
-   {
-    "id": 21261,
-    "title": "盲目信任权威时忽视其利益动机",
-    "score": 0.01644,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "学会提问, 信息素养, 消费陷阱"
-   },
-   {
-    "id": 22989,
-    "title": "孩子生病时警惕民间疗法陷阱",
-    "score": 0.016,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "金钱心理学, 家庭决策, 医疗选择"
    },
    {
     "id": 12602,
@@ -4668,9 +4668,79 @@
   "category": "金融危机",
   "results": [
    {
+    "id": 23452,
+    "title": "【现金vs黄金】金融危机时普通人以现金为主、黄金为辅（10-15%以内）",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.85,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 现金避险, 黄金避险, 资产配置"
+   },
+   {
+    "id": 23192,
+    "title": "【普通人应对】危机中现金为王，黄金是硬通货",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 现金为王, 黄金避险, 危机应对"
+   },
+   {
+    "id": 23164,
+    "title": "【普通人应对泡沫】泡沫破裂前，现金为王，勿接飞刀",
+    "score": 0.02063,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 现金为王, 泡沫破裂, 普通人避险"
+   },
+   {
+    "id": 23291,
+    "title": "【普通人应对危机】保持信心+理财+健康，危机终将过去",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 普通人, 信心, 理财"
+   },
+   {
+    "id": 23144,
+    "title": "【普通人应对】危机中把握经济周期比恐慌更重要",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 经济周期, 危机应对, 普通人"
+   },
+   {
+    "id": 23264,
+    "title": "【普通人应对货币危机】恐慌性换汇可能加速贬值，但持有外币资产可避险",
+    "score": 0.0194,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 货币危机, 外币避险, 普通人应对"
+   },
+   {
+    "id": 23181,
+    "title": "【普通人启示】纸币信用崩溃时黄金的避险价值",
+    "score": 0.01831,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 黄金避险, 纸币信用, 普通人"
+   },
+   {
     "id": 15896,
     "title": "分散配置，兼顾流动性与抗通胀",
-    "score": 0.01992,
+    "score": 0.01821,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4678,94 +4748,24 @@
     "tags": "小说萃取, 天涯神贴精选, 资产配置, 个人理财, 黄金"
    },
    {
+    "id": 23137,
+    "title": "普通人应对危机：危机中蕴含机会，但需识别危险",
+    "score": 0.01806,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 危机应对, 机会, 普通人"
+   },
+   {
     "id": 16960,
     "title": "避免盲目投机黄金",
-    "score": 0.01932,
+    "score": 0.01723,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资风险, 个人理财, 黄金"
-   },
-   {
-    "id": 16958,
-    "title": "选择负责任央行货币及股票",
-    "score": 0.01614,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 外汇投资, 股票配置, 黄金"
-   },
-   {
-    "id": 16957,
-    "title": "通胀时持有现金而非房产",
-    "score": 0.01393,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 个人投资, 资产配置"
-   },
-   {
-    "id": 18823,
-    "title": "通缩期现金为王，收力应变",
-    "score": 0.01349,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 个人理财, 经济危机应对"
-   },
-   {
-    "id": 15817,
-    "title": "持有现金对抗通胀的误区",
-    "score": 0.01308,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 财务规划, 通胀应对"
-   },
-   {
-    "id": 18634,
-    "title": "危机中先确认对方核心数据",
-    "score": 0.01269,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险评估"
-   },
-   {
-    "id": 18336,
-    "title": "避免混淆投资与收藏属性",
-    "score": 0.01232,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资理财, 消费决策"
-   },
-   {
-    "id": 16138,
-    "title": "通胀期购房多贷款保现金",
-    "score": 0.01214,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 家庭财务规划, 购房决策"
-   },
-   {
-    "id": 19126,
-    "title": "不确定性下现金为王",
-    "score": 0.01197,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 个人理财, 风险管理"
    }
   ]
  },
@@ -4773,6 +4773,16 @@
   "query": "怎么在别人恐慌抛售的时候找到便宜货？",
   "category": "金融危机",
   "results": [
+   {
+    "id": 23455,
+    "title": "【恐慌抄底】危机中普通人找便宜货的3条原则：不接飞刀、只买看得懂、分批建仓",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.85,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 恐慌抄底, 逆向投资, 分批建仓"
+   },
    {
     "id": 17669,
     "title": "恐慌抛售是主力洗盘的陷阱",
@@ -4786,7 +4796,7 @@
    {
     "id": 18501,
     "title": "观察先行资金动向作为决策锚点",
-    "score": 0.01328,
+    "score": 0.01308,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4796,7 +4806,7 @@
    {
     "id": 17718,
     "title": "市场恐慌时逆向买入",
-    "score": 0.01288,
+    "score": 0.01269,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4806,7 +4816,7 @@
    {
     "id": 15432,
     "title": "利用市场低迷期寻找机会",
-    "score": 0.01269,
+    "score": 0.0125,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4816,7 +4826,7 @@
    {
     "id": 14649,
     "title": "极端行情下先确认流动性",
-    "score": 0.01164,
+    "score": 0.01149,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4826,7 +4836,7 @@
    {
     "id": 14455,
     "title": "利用外部信号捕捉出逃窗口",
-    "score": 0.01149,
+    "score": 0.01133,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4836,7 +4846,7 @@
    {
     "id": 7078,
     "title": "制造稀缺恐慌提升转化",
-    "score": 0.01133,
+    "score": 0.01118,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.7,
@@ -4846,7 +4856,7 @@
    {
     "id": 14695,
     "title": "建议前先确认对方风险承受力",
-    "score": 0.01118,
+    "score": 0.01104,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4856,22 +4866,12 @@
    {
     "id": 16268,
     "title": "危机中主动寻找价值洼地",
-    "score": 0.01104,
+    "score": 0.0109,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 仓位"
-   },
-   {
-    "id": 4396,
-    "title": "以流动性吸收能力定节奏",
-    "score": 0.00968,
-    "source": "vector",
-    "source_type": "novel",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 从做空次贷危机开始收割世界, 金融市场, 资源分配"
    }
   ]
  },
@@ -4880,9 +4880,29 @@
   "category": "金融危机",
   "results": [
    {
+    "id": 23453,
+    "title": "【做空门槛】普通人不要做空：A股融券门槛高、做空成本高、风险无限",
+    "score": 0.02131,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.9,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 做空, 融券, 投资风险"
+   },
+   {
+    "id": 23261,
+    "title": "【做空】借入资产卖出后低价买回赚差价的机制",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.9,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 做空, 金融操作, 价格下跌"
+   },
+   {
     "id": 14777,
     "title": "识别双重角色操纵模式",
-    "score": 0.01962,
+    "score": 0.01903,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4892,7 +4912,7 @@
    {
     "id": 13667,
     "title": "识别官方信号与市场背离",
-    "score": 0.01875,
+    "score": 0.01821,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4902,7 +4922,7 @@
    {
     "id": 18015,
     "title": "模拟盘验证后再实盘",
-    "score": 0.01371,
+    "score": 0.01328,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4912,7 +4932,7 @@
    {
     "id": 14383,
     "title": "警惕人为诱多陷阱",
-    "score": 0.01328,
+    "score": 0.01288,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4922,7 +4942,7 @@
    {
     "id": 13786,
     "title": "盲目跟风高位唱多",
-    "score": 0.01288,
+    "score": 0.0125,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4932,7 +4952,7 @@
    {
     "id": 15951,
     "title": "识别坐庄模式并设止损",
-    "score": 0.01269,
+    "score": 0.01232,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -4940,44 +4960,24 @@
     "tags": "小说萃取, 天涯神贴精选, 股市投资, 投机交易, 止损"
    },
    {
-    "id": 14678,
-    "title": "投机市场中的分层策略选择",
-    "score": 0.01181,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 职场竞争"
-   },
-   {
-    "id": 17479,
-    "title": "转折点双向操作",
+    "id": 13508,
+    "title": "新股民空杯心态的风险",
     "score": 0.01164,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
+    "tags": "小说萃取, 天涯神贴精选, 投资新手, 决策心理"
    },
    {
-    "id": 14369,
-    "title": "超短打板操作法：快进快出",
-    "score": 0.01149,
+    "id": 14678,
+    "title": "投机市场中的分层策略选择",
+    "score": 0.01133,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股市交易, 高频决策, 止损,套牢"
-   },
-   {
-    "id": 14468,
-    "title": "学习游资手法但保持独立",
-    "score": 0.01104,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 股市投资, 技术分析"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 职场竞争"
    }
   ]
  },
@@ -4986,14 +4986,54 @@
   "category": "金融危机",
   "results": [
    {
-    "id": 18658,
-    "title": "汇率变动影响资本流动",
-    "score": 0.01992,
+    "id": 23264,
+    "title": "【普通人应对货币危机】恐慌性换汇可能加速贬值，但持有外币资产可避险",
+    "score": 0.02131,
     "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 宏观经济, 外汇风险, 汇率"
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 货币危机, 外币避险, 普通人应对"
+   },
+   {
+    "id": 23245,
+    "title": "【日本泡沫破裂】1989-1991年央行加息刺破股市楼市泡沫，导致长期衰退",
+    "score": 0.02063,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.8,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 日本泡沫, 加息刺破泡沫, 消失的十年"
+   },
+   {
+    "id": 23235,
+    "title": "【广场协议】1985年美日德法英五国干预汇率，日元升值导致日本经济停滞十年",
+    "score": 0.02031,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.8,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 广场协议, 日元升值, 日本经济停滞"
+   },
+   {
+    "id": 23241,
+    "title": "【宽松货币政策】降息+增发货币刺激内需的机制与副作用",
+    "score": 0.0194,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.8,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 宽松货币政策, 广场协议, 日元升值"
+   },
+   {
+    "id": 23243,
+    "title": "日本泡沫经济：1980年代低利率与日元升值催生股市楼市暴涨",
+    "score": 0.01884,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.8,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 日本泡沫, 低利率, 日元升值"
    },
    {
     "id": 14779,
@@ -5006,6 +5046,26 @@
     "tags": "小说萃取, 天涯神贴精选, 宏观经济, 组织变革, 汇率"
    },
    {
+    "id": 18658,
+    "title": "汇率变动影响资本流动",
+    "score": 0.01875,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 宏观经济, 外汇风险, 汇率"
+   },
+   {
+    "id": 23291,
+    "title": "【普通人应对危机】保持信心+理财+健康，危机终将过去",
+    "score": 0.01857,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 普通人, 信心, 理财"
+   },
+   {
     "id": 14781,
     "title": "宏观联动分析识别收割局",
     "score": 0.01851,
@@ -5016,74 +5076,14 @@
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 汇率"
    },
    {
-    "id": 14797,
-    "title": "系统性风险转移",
-    "score": 0.01821,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 风险管理, 经济调控, 汇率"
-   },
-   {
-    "id": 14808,
-    "title": "用经济杠杆替代直接冲突",
-    "score": 0.01793,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 国际博弈, 商业竞争, 汇率"
-   },
-   {
-    "id": 15676,
-    "title": "以可持续性为决策锚点",
-    "score": 0.01765,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 战略决策, 风险管理, 汇率"
-   },
-   {
-    "id": 15718,
-    "title": "用相对数据替代绝对判断",
-    "score": 0.01739,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 市场分析, 汇率"
-   },
-   {
-    "id": 15719,
-    "title": "锚定历史参照而非专家意见",
-    "score": 0.01713,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险判断, 汇率"
-   },
-   {
-    "id": 15721,
-    "title": "避免盲人摸象式片面分析",
-    "score": 0.01687,
-    "source": "",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 市场分析, 决策陷阱, 汇率"
-   },
-   {
-    "id": 17302,
-    "title": "黑市汇率作为资本外逃预警",
-    "score": 0.01678,
+    "id": 23139,
+    "title": "【亚洲金融风暴】1997香港加息刺破房价，普通人财富缩水",
+    "score": 0.01831,
     "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
+    "source_type": "book",
+    "confidence": 0.8,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 宏观经济监测, 风险管理, 汇率"
+    "tags": "书籍萃取, 半小时漫画经济学-金融危机合集, 亚洲金融风暴, 香港, 房地产泡沫"
    }
   ]
  },
@@ -5198,6 +5198,36 @@
   "category": "负样本",
   "results": [
    {
+    "id": 21696,
+    "title": "伴侣不回消息时先列情境原因再下结论",
+    "score": 0.02097,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.65,
+    "is_low_confidence": false,
+    "tags": "学会提问, 人际沟通, 亲密关系"
+   },
+   {
+    "id": 20886,
+    "title": "表达不满时用'我……因为我……'句式",
+    "score": 0.02,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "非暴力沟通, 职场沟通, 家庭沟通, 亲密关系"
+   },
+   {
+    "id": 21100,
+    "title": "被忽视请求时先区分观察与评价再问内在原因",
+    "score": 0.0197,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.65,
+    "is_low_confidence": false,
+    "tags": "非暴力沟通, 职场沟通, 家庭关系"
+   },
+   {
     "id": 19557,
     "title": "沟通中先确认对方核心数据",
     "score": 0.0194,
@@ -5208,44 +5238,24 @@
     "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场沟通, 社交对话"
    },
    {
-    "id": 21696,
-    "title": "伴侣不回消息时先列情境原因再下结论",
-    "score": 0.01935,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.65,
-    "is_low_confidence": false,
-    "tags": "学会提问, 人际沟通, 亲密关系"
-   },
-   {
-    "id": 20886,
-    "title": "表达不满时用'我……因为我……'句式",
-    "score": 0.01846,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "非暴力沟通, 职场沟通, 家庭沟通, 亲密关系"
-   },
-   {
-    "id": 21100,
-    "title": "被忽视请求时先区分观察与评价再问内在原因",
-    "score": 0.01818,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.65,
-    "is_low_confidence": false,
-    "tags": "非暴力沟通, 职场沟通, 家庭关系"
-   },
-   {
     "id": 20888,
     "title": "指责他人时避免只提他人行为",
-    "score": 0.01765,
+    "score": 0.01912,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
     "tags": "非暴力沟通, 家庭沟通, 职场沟通, 亲密关系"
+   },
+   {
+    "id": 21059,
+    "title": "对方沉默时先猜感受再表达自己",
+    "score": 0.01757,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "非暴力沟通, 职场沟通, 家庭沟通"
    },
    {
     "id": 6079,
@@ -5266,16 +5276,6 @@
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 别人不说，你一定要懂的人情世故, 职场关系, 团队协作"
-   },
-   {
-    "id": 21059,
-    "title": "对方沉默时先猜感受再表达自己",
-    "score": 0.01622,
-    "source": "vector",
-    "source_type": "note",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "非暴力沟通, 职场沟通, 家庭沟通"
    },
    {
     "id": 9053,
@@ -5518,9 +5518,9 @@
    {
     "id": 22636,
     "title": "面对不确定结果时先拆解运气与能力成分",
-    "score": 0.01714,
+    "score": 0.01857,
     "source": "vector",
-    "source_type": "note",
+    "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "金钱心理学, 投资决策, 职业规划"

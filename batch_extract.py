@@ -28,7 +28,7 @@ import extract_pipeline as ep
 #   2. 人性的弱点（40章）✅ 完成 166卡
 #   3. 这就是人性（85章）← 当前
 # 每次换书改这一行即可（outputs/ 按书名隔离）
-BOOK = "金钱心理学"
+BOOK = "半小时漫画经济学-金融危机合集"
 INPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "inputs", BOOK)
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "outputs", BOOK)
 
