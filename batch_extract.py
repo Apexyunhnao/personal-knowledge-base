@@ -28,7 +28,7 @@ import extract_pipeline as ep
 #   2. 人性的弱点（40章）✅ 完成 166卡
 #   3. 这就是人性（85章）← 当前
 # 每次换书改这一行即可（outputs/ 按书名隔离）
-BOOK = "半小时漫画经济学-金融危机合集"
+BOOK = "周期"
 INPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "inputs", BOOK)
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "outputs", BOOK)
 
@@ -134,10 +134,12 @@ def main():
             print(f"[{i}/{len(todo)}] 读取失败 {fname}: {e}")
             fail_list.append(fname)
             continue
-        title = raw.split("\n", 1)[0].strip()
-        # 清洗标题装饰符号(网站可能在章节名加 ◈ 等), 避免 outputs 文件名/入库幂等键漂移
+        # 2026-08-28 修复：title 从文件名提取（去 000N_ 前缀），不从 txt 首行
+        # （normalize 后 txt 首行是 canvas 双页拼接的"标题+正文"，取首行会污染 json title）
         import re
+        title = re.sub(r"^\d+_", "", fname)
         title = re.sub(r"[◈◆■□●○]\s*", "", title).strip()
+        title = os.path.splitext(title)[0].strip()
         result = extract_chapter(client, title, raw)
         n = len(result["cards"])
         total_cards += n

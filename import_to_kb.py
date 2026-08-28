@@ -220,6 +220,9 @@ def build_note_data(card: dict, book: str, chapter: str, ref: str, chapter_hash_
 
     # tags: 小说萃取 + 书名 + 核心(≤3) + 扩展(全保留)
     tags = [BOOK_TAG, book] + core_tags[:3] + ext_tags
+    # 2026-08-28: forecast 预测/断言卡加"预测"标签，检索时可区分/降权
+    if card.get("node_type") == "forecast" and "预测" not in tags:
+        tags.append("预测")
     tags = list(dict.fromkeys([t for t in tags if t]))  # 去重保序
 
     # content: 卡内容 + 微案例(展示用)
