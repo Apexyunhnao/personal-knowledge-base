@@ -69,17 +69,25 @@ def select_model(page, site_key):
     """各家模型/深度模式选择"""
     name = SITES[site_key]["name"]
     if site_key == "deepseek":
-        for c in ["深度思考", "DeepThink"]:
-            try:
-                loc = page.locator(f"text={c}").first
-                if loc.count():
-                    loc.click(timeout=3000)
-                    page.wait_for_timeout(800)
-                    print(f"  [{name}] ✓ 深度思考 已开启")
-                    return
-            except Exception:
-                continue
-        print(f"  [{name}] 未找到深度思考按钮")
+        # 2026-08-28 修复：深度思考是 div.ds-toggle-button 开关（非 button），
+        # 用 text= 匹配可能点到历史残留且不生效。精确点 toggle 并验证 active class。
+        try:
+            loc = page.locator("div.ds-toggle-button:has-text('深度思考')").first
+            loc.wait_for(state="visible", timeout=8000)
+            # 若已激活则跳过（激活 class 是 ds-toggle-button--selected，实测 2026-08-28）
+            cls = loc.get_attribute("class") or ""
+            if "selected" in cls or "is-active" in cls or "active" in cls or "checked" in cls:
+                print(f"  [{name}] ✓ 深度思考 已开启（原本就激活）")
+                return
+            loc.click(timeout=5000)
+            page.wait_for_timeout(1000)
+            cls2 = loc.get_attribute("class") or ""
+            if "selected" in cls2 or "is-active" in cls2 or "active" in cls2 or "checked" in cls2:
+                print(f"  [{name}] ✓ 深度思考 已开启")
+            else:
+                print(f"  [{name}] ⚠️ 已点击但未检测到激活（class={cls2[:50]}）")
+        except Exception as e:
+            print(f"  [{name}] 未找到深度思考按钮: {str(e)[:60]}")
     elif site_key == "doubao":
         # 已选 2.1 Turbo 则跳过（模型按钮文本会变成新模型名）
         try:
