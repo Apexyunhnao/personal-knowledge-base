@@ -117,7 +117,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 杠杆,爆仓,强平,止损"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 杠杆, 爆仓, 强平, 止损"
    },
    {
     "id": 14695,
@@ -207,7 +207,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 做空,杠杆,爆仓,仓位"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 做空, 杠杆, 爆仓, 仓位"
    }
   ]
  },
@@ -382,6 +382,26 @@
     "tags": "小说萃取, 天涯神贴精选, 投资, 危机管理, 止损"
    },
    {
+    "id": 13287,
+    "title": "牛市诱惑下忽视周期风险",
+    "score": 0.01793,
+    "source": "",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 职业转型, 投资决策, 止损,熊市"
+   },
+   {
+    "id": 13309,
+    "title": "过度自信导致忽视风险",
+    "score": 0.01765,
+    "source": "",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理陷阱, 止损"
+   },
+   {
     "id": 15145,
     "title": "死守或止损的二选一策略",
     "score": 0.01747,
@@ -392,34 +412,14 @@
     "tags": "小说萃取, 天涯神贴精选, 投资策略, 止损纪律, 止损"
    },
    {
-    "id": 13943,
-    "title": "牛市急跌中幻想反弹导致套牢",
-    "score": 0.01723,
-    "source": "vector",
+    "id": 13323,
+    "title": "目标提前达成后需重新评估风险",
+    "score": 0.01739,
+    "source": "",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 止损"
-   },
-   {
-    "id": 13611,
-    "title": "预设止损线防止情绪失控",
-    "score": 0.01678,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 风险管理, 项目管理, 止损"
-   },
-   {
-    "id": 18020,
-    "title": "设定具体止盈目标及时兑现",
-    "score": 0.01371,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资理财, 目标管理"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 止损"
    }
   ]
  },
@@ -435,7 +435,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 金钱心理学, 投资决策, 长期坚持"
+    "tags": "金钱心理学, 投资决策, 长期坚持"
    },
    {
     "id": 54,
@@ -445,7 +445,7 @@
     "source_type": "note",
     "confidence": 0.65,
     "is_low_confidence": false,
-    "tags": "财商,批判思维,幸存者偏差,被动收入,消费vs投资"
+    "tags": "财商, 批判思维, 幸存者偏差, 被动收入, 消费vs投资"
    },
    {
     "id": 22665,
@@ -455,7 +455,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 金钱心理学, 投资理财, 风险管理"
+    "tags": "金钱心理学, 投资理财, 风险管理"
    },
    {
     "id": 14457,
@@ -534,6 +534,16 @@
   "category": "投资心态",
   "results": [
    {
+    "id": 13528,
+    "title": "高杠杆放大风险与收益不对称性",
+    "score": 0.03223,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险认知, 杠杆, 强平"
+   },
+   {
     "id": 14080,
     "title": "杠杆加仓的复利幻觉与爆仓风险",
     "score": 0.0209,
@@ -561,7 +571,7 @@
     "source_type": "forum",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资风险, 财务安全, 杠杆,爆仓"
+    "tags": "小说萃取, 天涯神贴精选, 投资风险, 财务安全, 杠杆, 爆仓"
    },
    {
     "id": 13852,
@@ -571,7 +581,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 杠杆,止损,仓位"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 杠杆, 止损, 仓位"
    },
    {
     "id": 13935,
@@ -591,7 +601,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理, 杠杆,止损"
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理, 杠杆, 止损"
    },
    {
     "id": 14083,
@@ -601,7 +611,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 杠杆,爆仓,强平,股灾"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 杠杆, 爆仓, 强平, 股灾"
    },
    {
     "id": 14485,
@@ -611,27 +621,17 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理, 杠杆,止损"
+    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险管理, 杠杆, 止损"
    },
    {
-    "id": 13566,
-    "title": "高杠杆下分批建仓与T+0降成本",
+    "id": 13251,
+    "title": "高杠杆下忽视黑天鹅风险",
     "score": 0.01821,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股票交易, 高杠杆投资, 杠杆,仓位"
-   },
-   {
-    "id": 13528,
-    "title": "高杠杆放大风险与收益不对称性",
-    "score": 0.01771,
-    "source": "vector",
+    "source": "",
     "source_type": "forum",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险认知, 杠杆,强平"
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 风险管理, 杠杆, 爆仓, 强平, 止损"
    }
   ]
  },
@@ -647,7 +647,7 @@
     "source_type": "book",
     "confidence": 0.65,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 求职面试, 简历撰写"
+    "tags": "打破你的学生思维, 求职面试, 简历撰写"
    },
    {
     "id": 5894,
@@ -657,7 +657,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 心理障碍"
+    "tags": "打破你的学生思维, 职业规划, 心理障碍"
    },
    {
     "id": 19586,
@@ -677,7 +677,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 招聘选拔, 求职复盘"
+    "tags": "打破你的学生思维, 招聘选拔, 求职复盘"
    },
    {
     "id": 5606,
@@ -687,7 +687,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 求职陷阱, 职业决策"
+    "tags": "打破你的学生思维, 求职陷阱, 职业决策"
    },
    {
     "id": 5802,
@@ -697,7 +697,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场招聘, 简历筛选"
+    "tags": "打破你的学生思维, 职场招聘, 简历筛选"
    },
    {
     "id": 5965,
@@ -707,7 +707,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 招聘面试"
+    "tags": "打破你的学生思维, 职业规划, 招聘面试"
    },
    {
     "id": 5792,
@@ -717,7 +717,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 学业决策"
+    "tags": "打破你的学生思维, 职业规划, 学业决策"
    },
    {
     "id": 5387,
@@ -727,7 +727,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 求职准备"
+    "tags": "打破你的学生思维, 职业规划, 求职准备"
    },
    {
     "id": 5701,
@@ -737,7 +737,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 教育决策"
+    "tags": "打破你的学生思维, 职业规划, 教育决策"
    }
   ]
  },
@@ -753,7 +753,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 职业规划"
+    "tags": "打破你的学生思维, 职场谈判, 职业规划"
    },
    {
     "id": 6185,
@@ -763,7 +763,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 跳槽决策"
+    "tags": "打破你的学生思维, 职业规划, 跳槽决策"
    },
    {
     "id": 5720,
@@ -773,7 +773,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 求职面试, 自我提升"
+    "tags": "打破你的学生思维, 求职面试, 自我提升"
    },
    {
     "id": 19965,
@@ -783,7 +783,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职业发展, 个人成长"
+    "tags": "这就是人性, 职业发展, 个人成长"
    },
    {
     "id": 6184,
@@ -793,7 +793,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 求职, 风险管理"
+    "tags": "打破你的学生思维, 求职, 风险管理"
    },
    {
     "id": 5521,
@@ -803,7 +803,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 技能提升, 学习规划"
+    "tags": "打破你的学生思维, 技能提升, 学习规划"
    },
    {
     "id": 6071,
@@ -813,7 +813,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场沟通, 信息收集"
+    "tags": "打破你的学生思维, 职场沟通, 信息收集"
    },
    {
     "id": 5820,
@@ -823,7 +823,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场发展, 自我提升"
+    "tags": "打破你的学生思维, 职场发展, 自我提升"
    },
    {
     "id": 6015,
@@ -833,7 +833,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 财务管理"
+    "tags": "打破你的学生思维, 职业规划, 财务管理"
    },
    {
     "id": 5983,
@@ -843,7 +843,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场心理, 职业发展"
+    "tags": "打破你的学生思维, 职场心理, 职业发展"
    }
   ]
  },
@@ -859,7 +859,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 职场生存"
+    "tags": "打破你的学生思维, 职业规划, 职场生存"
    },
    {
     "id": 6145,
@@ -868,8 +868,8 @@
     "source": "vector",
     "source_type": "book",
     "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 打破你的学生思维, 职场沟通, 个人发展"
+    "is_low_confidence": false,
+    "tags": "打破你的学生思维, 职场沟通, 个人发展"
    },
    {
     "id": 6084,
@@ -879,7 +879,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场发展, 人际沟通"
+    "tags": "打破你的学生思维, 职场发展, 人际沟通"
    },
    {
     "id": 20004,
@@ -888,8 +888,8 @@
     "source": "vector",
     "source_type": "book",
     "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 这就是人性, 冲突解决, 竞争策略"
+    "is_low_confidence": false,
+    "tags": "这就是人性, 冲突解决, 竞争策略"
    },
    {
     "id": 6190,
@@ -899,7 +899,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 上下级沟通"
+    "tags": "打破你的学生思维, 职场谈判, 上下级沟通"
    },
    {
     "id": 19595,
@@ -965,7 +965,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 心理障碍"
+    "tags": "打破你的学生思维, 职业规划, 心理障碍"
    },
    {
     "id": 5930,
@@ -975,7 +975,7 @@
     "source_type": "book",
     "confidence": 0.65,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 求职面试, 简历撰写"
+    "tags": "打破你的学生思维, 求职面试, 简历撰写"
    },
    {
     "id": 6184,
@@ -985,7 +985,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 求职, 风险管理"
+    "tags": "打破你的学生思维, 求职, 风险管理"
    },
    {
     "id": 19586,
@@ -1005,7 +1005,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 职业规划"
+    "tags": "打破你的学生思维, 职场谈判, 职业规划"
    },
    {
     "id": 5387,
@@ -1015,7 +1015,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 求职准备"
+    "tags": "打破你的学生思维, 职业规划, 求职准备"
    },
    {
     "id": 5976,
@@ -1025,7 +1025,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场面试, 职业规划"
+    "tags": "打破你的学生思维, 职场面试, 职业规划"
    },
    {
     "id": 5454,
@@ -1035,7 +1035,7 @@
     "source_type": "book",
     "confidence": 0.65,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 求职决策"
+    "tags": "打破你的学生思维, 职业规划, 求职决策"
    },
    {
     "id": 6183,
@@ -1045,7 +1045,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 求职, 职业转型"
+    "tags": "打破你的学生思维, 求职, 职业转型"
    },
    {
     "id": 6188,
@@ -1055,7 +1055,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 人生规划, 决策思维"
+    "tags": "打破你的学生思维, 人生规划, 决策思维"
    }
   ]
  },
@@ -1071,7 +1071,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业选择, 决策判断"
+    "tags": "打破你的学生思维, 职业选择, 决策判断"
    },
    {
     "id": 5658,
@@ -1081,7 +1081,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 教育规划, 财务独立"
+    "tags": "打破你的学生思维, 教育规划, 财务独立"
    },
    {
     "id": 6000,
@@ -1091,7 +1091,7 @@
     "source_type": "book",
     "confidence": 0.65,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场发展, 职业规划"
+    "tags": "打破你的学生思维, 职场发展, 职业规划"
    },
    {
     "id": 18941,
@@ -1187,7 +1187,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 团队协作, 绩效评估"
+    "tags": "这就是人性, 团队协作, 绩效评估"
    },
    {
     "id": 19790,
@@ -1197,7 +1197,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 人性的弱点, 职场谈判, 家庭沟通, 团队协作"
+    "tags": "人性的弱点, 职场谈判, 家庭沟通, 团队协作"
    },
    {
     "id": 19514,
@@ -1227,7 +1227,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场合作, 家庭沟通"
+    "tags": "这就是人性, 职场合作, 家庭沟通"
    },
    {
     "id": 19875,
@@ -1237,7 +1237,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场冲突, 人际纠纷"
+    "tags": "这就是人性, 职场冲突, 人际纠纷"
    },
    {
     "id": 19637,
@@ -1257,7 +1257,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场竞争, 团队管理"
+    "tags": "这就是人性, 职场竞争, 团队管理"
    },
    {
     "id": 12010,
@@ -1283,7 +1283,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 求职面试, 职场谈判"
+    "tags": "打破你的学生思维, 求职面试, 职场谈判"
    },
    {
     "id": 19560,
@@ -1303,7 +1303,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 企业选择"
+    "tags": "打破你的学生思维, 职业规划, 企业选择"
    },
    {
     "id": 20162,
@@ -1313,7 +1313,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通"
+    "tags": "这就是人性, 职场谈判, 家庭沟通"
    },
    {
     "id": 6083,
@@ -1323,7 +1323,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 职业决策"
+    "tags": "打破你的学生思维, 职场谈判, 职业决策"
    },
    {
     "id": 5951,
@@ -1333,7 +1333,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 岗位匹配"
+    "tags": "打破你的学生思维, 职业规划, 岗位匹配"
    },
    {
     "id": 5992,
@@ -1343,7 +1343,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 职业规划"
+    "tags": "打破你的学生思维, 职场谈判, 职业规划"
    },
    {
     "id": 5514,
@@ -1353,7 +1353,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业探索, 信息收集"
+    "tags": "打破你的学生思维, 职业探索, 信息收集"
    },
    {
     "id": 5920,
@@ -1363,7 +1363,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 求职面试, 企业选择"
+    "tags": "打破你的学生思维, 求职面试, 企业选择"
    },
    {
     "id": 6081,
@@ -1373,7 +1373,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场发展, 岗位变动"
+    "tags": "打破你的学生思维, 职场发展, 岗位变动"
    }
   ]
  },
@@ -1389,7 +1389,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场关系, 领导意图分析"
+    "tags": "打破你的学生思维, 职场关系, 领导意图分析"
    },
    {
     "id": 20015,
@@ -1398,8 +1398,8 @@
     "source": "vector",
     "source_type": "book",
     "confidence": 0.55,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 这就是人性, 销售谈判, 冲突管理"
+    "is_low_confidence": false,
+    "tags": "这就是人性, 销售谈判, 冲突管理"
    },
    {
     "id": 6083,
@@ -1409,7 +1409,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 职业决策"
+    "tags": "打破你的学生思维, 职场谈判, 职业决策"
    },
    {
     "id": 10089,
@@ -1535,7 +1535,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场协作, 家庭沟通, 社交关系"
+    "tags": "这就是人性, 职场协作, 家庭沟通, 社交关系"
    },
    {
     "id": 20149,
@@ -1545,7 +1545,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通"
+    "tags": "这就是人性, 职场谈判, 家庭沟通"
    },
    {
     "id": 19630,
@@ -1601,7 +1601,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 压力管理, 心态调整"
+    "tags": "这就是人性, 压力管理, 心态调整"
    },
    {
     "id": 5401,
@@ -1611,7 +1611,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+    "tags": "打破你的学生思维, 职业规划, 人生决策"
    },
    {
     "id": 5583,
@@ -1621,7 +1621,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+    "tags": "打破你的学生思维, 职业规划, 人生决策"
    },
    {
     "id": 5651,
@@ -1631,7 +1631,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 学业压力, 职业规划"
+    "tags": "打破你的学生思维, 学业压力, 职业规划"
    },
    {
     "id": 5403,
@@ -1641,7 +1641,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 决策心理"
+    "tags": "打破你的学生思维, 职业规划, 决策心理"
    },
    {
     "id": 19968,
@@ -1651,7 +1651,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 心理调适, 社会比较"
+    "tags": "这就是人性, 心理调适, 社会比较"
    },
    {
     "id": 19836,
@@ -1661,7 +1661,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通, 个人成长"
+    "tags": "这就是人性, 职场谈判, 家庭沟通, 个人成长"
    },
    {
     "id": 20062,
@@ -1671,7 +1671,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 个人成长, 习惯养成"
+    "tags": "这就是人性, 个人成长, 习惯养成"
    },
    {
     "id": 5478,
@@ -1681,7 +1681,7 @@
     "source_type": "book",
     "confidence": 0.65,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 自我认知, 心理成长"
+    "tags": "打破你的学生思维, 自我认知, 心理成长"
    },
    {
     "id": 19955,
@@ -1691,7 +1691,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 团队管理, 个人成长"
+    "tags": "这就是人性, 职场谈判, 团队管理, 个人成长"
    }
   ]
  },
@@ -1707,7 +1707,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场压力, 时间管理"
+    "tags": "打破你的学生思维, 职场压力, 时间管理"
    },
    {
     "id": 5418,
@@ -1717,7 +1717,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 自我认知"
+    "tags": "打破你的学生思维, 职业规划, 自我认知"
    },
    {
     "id": 6057,
@@ -1726,8 +1726,8 @@
     "source": "vector",
     "source_type": "book",
     "confidence": 0.55,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 打破你的学生思维, 职场决策, 自我管理"
+    "is_low_confidence": false,
+    "tags": "打破你的学生思维, 职场决策, 自我管理"
    },
    {
     "id": 6212,
@@ -1737,7 +1737,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 自我认知, 决策心理"
+    "tags": "打破你的学生思维, 自我认知, 决策心理"
    },
    {
     "id": 5482,
@@ -1747,7 +1747,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 自我认知"
+    "tags": "打破你的学生思维, 职业规划, 自我认知"
    },
    {
     "id": 5835,
@@ -1757,7 +1757,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场心态, 自我认知"
+    "tags": "打破你的学生思维, 职场心态, 自我认知"
    },
    {
     "id": 5426,
@@ -1767,7 +1767,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 自我认知"
+    "tags": "打破你的学生思维, 职业规划, 自我认知"
    },
    {
     "id": 5562,
@@ -1777,7 +1777,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业选择, 自我认知"
+    "tags": "打破你的学生思维, 职业选择, 自我认知"
    },
    {
     "id": 6209,
@@ -1787,7 +1787,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 自我认知"
+    "tags": "打破你的学生思维, 职业规划, 自我认知"
    },
    {
     "id": 6208,
@@ -1797,7 +1797,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 心态调整"
+    "tags": "打破你的学生思维, 职业规划, 心态调整"
    }
   ]
  },
@@ -1806,16 +1806,6 @@
   "category": "人生规划",
   "results": [
    {
-    "id": 5460,
-    "title": "转行无经验时先进低门槛岗当带薪实习",
-    "score": 0.03,
-    "source": "vector",
-    "source_type": "book",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 转行"
-   },
-   {
     "id": 5779,
     "title": "转行前先列岗位硬性要求做差距分析",
     "score": 0.02131,
@@ -1823,7 +1813,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场转型, 技能提升"
+    "tags": "打破你的学生思维, 职场转型, 技能提升"
    },
    {
     "id": 5967,
@@ -1833,7 +1823,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 行业分析, 职业转型"
+    "tags": "打破你的学生思维, 行业分析, 职业转型"
    },
    {
     "id": 5984,
@@ -1843,7 +1833,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 职场选择"
+    "tags": "打破你的学生思维, 职业规划, 职场选择"
    },
    {
     "id": 6201,
@@ -1853,7 +1843,17 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业选择, 自我认知"
+    "tags": "打破你的学生思维, 职业选择, 自我认知"
+   },
+   {
+    "id": 5460,
+    "title": "转行无经验时先进低门槛岗当带薪实习",
+    "score": 0.02,
+    "source": "vector",
+    "source_type": "book",
+    "confidence": 0.7,
+    "is_low_confidence": false,
+    "tags": "打破你的学生思维, 职业规划, 转行"
    },
    {
     "id": 5552,
@@ -1863,7 +1863,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 转行决策, 能力评估"
+    "tags": "打破你的学生思维, 转行决策, 能力评估"
    },
    {
     "id": 5576,
@@ -1873,7 +1873,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 创业, 个人发展"
+    "tags": "打破你的学生思维, 创业, 个人发展"
    },
    {
     "id": 5631,
@@ -1883,7 +1883,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业转型, 个人发展"
+    "tags": "打破你的学生思维, 职业转型, 个人发展"
    },
    {
     "id": 5571,
@@ -1893,7 +1893,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划"
+    "tags": "打破你的学生思维, 职业规划"
    },
    {
     "id": 5526,
@@ -1903,7 +1903,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 学习规划, 自我提升"
+    "tags": "打破你的学生思维, 学习规划, 自我提升"
    }
   ]
  },
@@ -1919,7 +1919,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 心态调整"
+    "tags": "打破你的学生思维, 职业规划, 心态调整"
    },
    {
     "id": 5725,
@@ -1929,7 +1929,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+    "tags": "打破你的学生思维, 职业规划, 人生决策"
    },
    {
     "id": 5450,
@@ -1939,7 +1939,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 心态调整"
+    "tags": "打破你的学生思维, 职业规划, 心态调整"
    },
    {
     "id": 5431,
@@ -1949,7 +1949,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 家庭决策"
+    "tags": "打破你的学生思维, 职业规划, 家庭决策"
    },
    {
     "id": 5500,
@@ -1959,7 +1959,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 自我认知"
+    "tags": "打破你的学生思维, 职业规划, 自我认知"
    },
    {
     "id": 5423,
@@ -1969,7 +1969,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 自我认知"
+    "tags": "打破你的学生思维, 职业规划, 自我认知"
    },
    {
     "id": 5519,
@@ -1979,7 +1979,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+    "tags": "打破你的学生思维, 职业规划, 人生决策"
    },
    {
     "id": 6188,
@@ -1989,7 +1989,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 人生规划, 决策思维"
+    "tags": "打破你的学生思维, 人生规划, 决策思维"
    },
    {
     "id": 5494,
@@ -1999,7 +1999,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 自我认知"
+    "tags": "打破你的学生思维, 职业规划, 自我认知"
    },
    {
     "id": 5383,
@@ -2009,7 +2009,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 导师咨询"
+    "tags": "打破你的学生思维, 职业规划, 导师咨询"
    }
   ]
  },
@@ -2025,7 +2025,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 个人成长, 习惯养成"
+    "tags": "这就是人性, 个人成长, 习惯养成"
    },
    {
     "id": 20063,
@@ -2035,7 +2035,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 自我管理, 目标规划"
+    "tags": "这就是人性, 自我管理, 目标规划"
    },
    {
     "id": 19913,
@@ -2045,7 +2045,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 情绪管理, 职场压力"
+    "tags": "这就是人性, 情绪管理, 职场压力"
    },
    {
     "id": 20344,
@@ -2055,7 +2055,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 原子习惯, 个人成长, 自我管理"
+    "tags": "原子习惯, 个人成长, 自我管理"
    },
    {
     "id": 22020,
@@ -2065,7 +2065,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 职场效率, 个人成长"
+    "tags": "自控力, 职场效率, 个人成长"
    },
    {
     "id": 22012,
@@ -2075,7 +2075,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 个人效率, 健康管理"
+    "tags": "自控力, 个人效率, 健康管理"
    },
    {
     "id": 22329,
@@ -2085,7 +2085,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 职场效率, 学习提升"
+    "tags": "自控力, 职场效率, 学习提升"
    },
    {
     "id": 20315,
@@ -2095,7 +2095,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 原子习惯, 个人成长, 目标管理"
+    "tags": "原子习惯, 个人成长, 目标管理"
    },
    {
     "id": 22019,
@@ -2105,7 +2105,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 心理学应用, 习惯养成"
+    "tags": "自控力, 心理学应用, 习惯养成"
    },
    {
     "id": 20689,
@@ -2115,7 +2115,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 原子习惯, 自我管理, 团队管理"
+    "tags": "原子习惯, 自我管理, 团队管理"
    }
   ]
  },
@@ -2131,7 +2131,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场压力, 时间管理"
+    "tags": "打破你的学生思维, 职场压力, 时间管理"
    },
    {
     "id": 6057,
@@ -2140,8 +2140,8 @@
     "source": "vector",
     "source_type": "book",
     "confidence": 0.55,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 打破你的学生思维, 职场决策, 自我管理"
+    "is_low_confidence": false,
+    "tags": "打破你的学生思维, 职场决策, 自我管理"
    },
    {
     "id": 5626,
@@ -2151,7 +2151,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 求职面试"
+    "tags": "打破你的学生思维, 职业规划, 求职面试"
    },
    {
     "id": 5562,
@@ -2161,7 +2161,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业选择, 自我认知"
+    "tags": "打破你的学生思维, 职业选择, 自我认知"
    },
    {
     "id": 6056,
@@ -2171,7 +2171,7 @@
     "source_type": "book",
     "confidence": 0.65,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场效率, 时间管理"
+    "tags": "打破你的学生思维, 职场效率, 时间管理"
    },
    {
     "id": 5763,
@@ -2181,7 +2181,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业选择, 教育决策"
+    "tags": "打破你的学生思维, 职业选择, 教育决策"
    },
    {
     "id": 6200,
@@ -2191,7 +2191,7 @@
     "source_type": "book",
     "confidence": 0.65,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+    "tags": "打破你的学生思维, 职业规划, 人生决策"
    },
    {
     "id": 22015,
@@ -2201,7 +2201,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 职场发展, 目标管理"
+    "tags": "自控力, 职场发展, 目标管理"
    },
    {
     "id": 5916,
@@ -2211,7 +2211,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业发展, 个人成长"
+    "tags": "打破你的学生思维, 职业发展, 个人成长"
    },
    {
     "id": 5586,
@@ -2221,7 +2221,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 自我提升"
+    "tags": "打破你的学生思维, 职业规划, 自我提升"
    }
   ]
  },
@@ -2237,7 +2237,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 人性的弱点, 阅读学习, 知识管理"
+    "tags": "人性的弱点, 阅读学习, 知识管理"
    },
    {
     "id": 21279,
@@ -2247,7 +2247,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 学会提问, 学习提升, 信息筛选"
+    "tags": "学会提问, 学习提升, 信息筛选"
    },
    {
     "id": 19977,
@@ -2257,7 +2257,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场决策, 学习成长"
+    "tags": "这就是人性, 职场决策, 学习成长"
    },
    {
     "id": 12477,
@@ -2343,7 +2343,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 个人成长, 职场决策"
+    "tags": "这就是人性, 个人成长, 职场决策"
    },
    {
     "id": 19837,
@@ -2353,7 +2353,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通, 个人成长"
+    "tags": "这就是人性, 职场谈判, 家庭沟通, 个人成长"
    },
    {
     "id": 20062,
@@ -2363,7 +2363,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 个人成长, 习惯养成"
+    "tags": "这就是人性, 个人成长, 习惯养成"
    },
    {
     "id": 22073,
@@ -2373,7 +2373,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 个人成长, 职场执行"
+    "tags": "自控力, 个人成长, 职场执行"
    },
    {
     "id": 6120,
@@ -2383,7 +2383,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 个人成长, 心理建设"
+    "tags": "打破你的学生思维, 个人成长, 心理建设"
    },
    {
     "id": 19836,
@@ -2393,7 +2393,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通, 个人成长"
+    "tags": "这就是人性, 职场谈判, 家庭沟通, 个人成长"
    },
    {
     "id": 19918,
@@ -2403,7 +2403,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 亲密关系, 职场合作"
+    "tags": "这就是人性, 亲密关系, 职场合作"
    },
    {
     "id": 22053,
@@ -2413,7 +2413,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 职场效率, 学习自律"
+    "tags": "自控力, 职场效率, 学习自律"
    },
    {
     "id": 22295,
@@ -2423,7 +2423,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 个人成长, 目标管理"
+    "tags": "自控力, 个人成长, 目标管理"
    },
    {
     "id": 19955,
@@ -2433,7 +2433,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 团队管理, 个人成长"
+    "tags": "这就是人性, 职场谈判, 团队管理, 个人成长"
    }
   ]
  },
@@ -2459,7 +2459,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 学会提问, 职场谈判, 家庭沟通"
+    "tags": "学会提问, 职场谈判, 家庭沟通"
    },
    {
     "id": 21297,
@@ -2469,7 +2469,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 学会提问, 信息筛选, 决策咨询"
+    "tags": "学会提问, 信息筛选, 决策咨询"
    },
    {
     "id": 19035,
@@ -2555,7 +2555,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场霸凌, 校园欺凌, 家庭关系"
+    "tags": "这就是人性, 职场霸凌, 校园欺凌, 家庭关系"
    },
    {
     "id": 19879,
@@ -2565,7 +2565,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 人际关系, 社会观察"
+    "tags": "这就是人性, 人际关系, 社会观察"
    },
    {
     "id": 19875,
@@ -2575,7 +2575,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场冲突, 人际纠纷"
+    "tags": "这就是人性, 职场冲突, 人际纠纷"
    },
    {
     "id": 20003,
@@ -2585,7 +2585,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场生存, 社交关系"
+    "tags": "这就是人性, 职场生存, 社交关系"
    },
    {
     "id": 6850,
@@ -2661,7 +2661,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场关系, 领导意图分析"
+    "tags": "打破你的学生思维, 职场关系, 领导意图分析"
    },
    {
     "id": 6011,
@@ -2671,7 +2671,7 @@
     "source_type": "book",
     "confidence": 0.65,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 个人成长"
+    "tags": "打破你的学生思维, 职场谈判, 个人成长"
    },
    {
     "id": 6180,
@@ -2681,7 +2681,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场认知, 职业发展"
+    "tags": "打破你的学生思维, 职场认知, 职业发展"
    },
    {
     "id": 6182,
@@ -2691,7 +2691,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 企业选择"
+    "tags": "打破你的学生思维, 职业规划, 企业选择"
    },
    {
     "id": 5618,
@@ -2701,7 +2701,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 家庭沟通"
+    "tags": "打破你的学生思维, 职场谈判, 家庭沟通"
    },
    {
     "id": 10089,
@@ -2827,7 +2827,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 个人理财, 杠杆,融资"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 个人理财, 杠杆, 融资"
    },
    {
     "id": 14695,
@@ -2868,7 +2868,7 @@
    {
     "id": 13952,
     "title": "下跌途中勿盲目抄底",
-    "score": 0.02024,
+    "score": 0.03845,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -2878,7 +2878,7 @@
    {
     "id": 13965,
     "title": "避免在极端下跌中盲目抄底",
-    "score": 0.01992,
+    "score": 0.03785,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.5,
@@ -2886,19 +2886,9 @@
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为金融, 抄底"
    },
    {
-    "id": 14216,
-    "title": "暴跌中筛选相对强势股",
-    "score": 0.01932,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 股市投资, 危机决策, 抄底"
-   },
-   {
     "id": 14093,
     "title": "股灾全程在场且试图抄底",
-    "score": 0.01903,
+    "score": 0.03497,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -2906,9 +2896,19 @@
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 行为金融, 抄底"
    },
    {
+    "id": 14216,
+    "title": "暴跌中筛选相对强势股",
+    "score": 0.03482,
+    "source": "vector",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 股市投资, 危机决策, 抄底"
+   },
+   {
     "id": 14092,
     "title": "市场免疫利好时停止常规操作",
-    "score": 0.01747,
+    "score": 0.03363,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.65,
@@ -2918,7 +2918,7 @@
    {
     "id": 13980,
     "title": "盲目抄底易被'活埋'",
-    "score": 0.01308,
+    "score": 0.02485,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
@@ -2926,44 +2926,44 @@
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 止损,抄底"
    },
    {
-    "id": 14041,
-    "title": "避免被市场共识绑架",
-    "score": 0.0125,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 天涯神贴精选, 投资心理, 决策偏差"
-   },
-   {
-    "id": 13377,
-    "title": "识别高风险接力游戏并规避",
-    "score": 0.01232,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制"
-   },
-   {
-    "id": 14057,
-    "title": "暴跌初期果断止损保命",
-    "score": 0.01214,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 杠杆,爆仓,强平,止损"
-   },
-   {
     "id": 13650,
     "title": "用规则约束抄底冲动",
-    "score": 0.01181,
+    "score": 0.02414,
     "source": "vector",
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险控制, 仓位,抄底"
+   },
+   {
+    "id": 13997,
+    "title": "流动性枯竭时放弃卖出幻想",
+    "score": 0.01739,
+    "source": "",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 危机应对, 抄底"
+   },
+   {
+    "id": 14029,
+    "title": "误判跌停板为抄底机会",
+    "score": 0.01687,
+    "source": "",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 金融投资, 风险控制, 抄底"
+   },
+   {
+    "id": 14091,
+    "title": "损失既定后改用认知重评降痛",
+    "score": 0.01639,
+    "source": "",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 心理调节, 抄底"
    }
   ]
  },
@@ -2979,7 +2979,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场发展, 岗位变动"
+    "tags": "打破你的学生思维, 职场发展, 岗位变动"
    },
    {
     "id": 5982,
@@ -2989,7 +2989,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场决策, 职业规划"
+    "tags": "打破你的学生思维, 职场决策, 职业规划"
    },
    {
     "id": 5983,
@@ -2999,7 +2999,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场心理, 职业发展"
+    "tags": "打破你的学生思维, 职场心理, 职业发展"
    },
    {
     "id": 19646,
@@ -3019,7 +3019,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场晋升, 角色定位"
+    "tags": "打破你的学生思维, 职场晋升, 角色定位"
    },
    {
     "id": 6038,
@@ -3029,7 +3029,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 职场生存"
+    "tags": "打破你的学生思维, 职业规划, 职场生存"
    },
    {
     "id": 6191,
@@ -3039,7 +3039,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 职业规划"
+    "tags": "打破你的学生思维, 职场谈判, 职业规划"
    },
    {
     "id": 6087,
@@ -3049,7 +3049,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场沟通, 远程协作"
+    "tags": "打破你的学生思维, 职场沟通, 远程协作"
    },
    {
     "id": 23041,
@@ -3059,7 +3059,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 金钱心理学, 职业决策, 职场谈判"
+    "tags": "金钱心理学, 职业决策, 职场谈判"
    },
    {
     "id": 7512,
@@ -3085,7 +3085,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业选择, 职场规划"
+    "tags": "打破你的学生思维, 职业选择, 职场规划"
    },
    {
     "id": 5442,
@@ -3095,7 +3095,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 求职选择"
+    "tags": "打破你的学生思维, 职业规划, 求职选择"
    },
    {
     "id": 5624,
@@ -3105,7 +3105,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 职业规划"
+    "tags": "打破你的学生思维, 职场谈判, 职业规划"
    },
    {
     "id": 5878,
@@ -3115,7 +3115,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 公司选择"
+    "tags": "打破你的学生思维, 职业规划, 公司选择"
    },
    {
     "id": 5460,
@@ -3125,7 +3125,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 转行"
+    "tags": "打破你的学生思维, 职业规划, 转行"
    },
    {
     "id": 5444,
@@ -3135,7 +3135,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 求职陷阱"
+    "tags": "打破你的学生思维, 职业规划, 求职陷阱"
    },
    {
     "id": 5828,
@@ -3145,7 +3145,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 实习选择, 能力提升"
+    "tags": "打破你的学生思维, 实习选择, 能力提升"
    },
    {
     "id": 5491,
@@ -3155,7 +3155,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业决策, 压力应对"
+    "tags": "打破你的学生思维, 职业决策, 压力应对"
    },
    {
     "id": 5457,
@@ -3165,7 +3165,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场选择, 职业规划"
+    "tags": "打破你的学生思维, 职场选择, 职业规划"
    },
    {
     "id": 5877,
@@ -3175,7 +3175,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场新人, 实习选择"
+    "tags": "打破你的学生思维, 职场新人, 实习选择"
    }
   ]
  },
@@ -3191,7 +3191,7 @@
     "source_type": "book",
     "confidence": 0.65,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 责任规避"
+    "tags": "打破你的学生思维, 职场谈判, 责任规避"
    },
    {
     "id": 19650,
@@ -3211,7 +3211,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场复盘, 家庭冲突"
+    "tags": "这就是人性, 职场复盘, 家庭冲突"
    },
    {
     "id": 19722,
@@ -3221,7 +3221,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 人性的弱点, 职场管理, 安全监督"
+    "tags": "人性的弱点, 职场管理, 安全监督"
    },
    {
     "id": 6190,
@@ -3231,7 +3231,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场谈判, 上下级沟通"
+    "tags": "打破你的学生思维, 职场谈判, 上下级沟通"
    },
    {
     "id": 19780,
@@ -3240,8 +3240,8 @@
     "source": "vector",
     "source_type": "book",
     "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 人性的弱点, 领导力, 个人成长"
+    "is_low_confidence": false,
+    "tags": "人性的弱点, 领导力, 个人成长"
    },
    {
     "id": 21080,
@@ -3250,8 +3250,8 @@
     "source": "vector",
     "source_type": "note",
     "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 非暴力沟通, 情绪管理, 时间管理"
+    "is_low_confidence": false,
+    "tags": "非暴力沟通, 情绪管理, 时间管理"
    },
    {
     "id": 20912,
@@ -3261,7 +3261,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 非暴力沟通, 职场沟通, 家庭沟通"
+    "tags": "非暴力沟通, 职场沟通, 家庭沟通"
    },
    {
     "id": 12088,
@@ -3297,7 +3297,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场合作, 家庭沟通"
+    "tags": "这就是人性, 职场合作, 家庭沟通"
    },
    {
     "id": 19540,
@@ -3403,7 +3403,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场, 家庭沟通"
+    "tags": "这就是人性, 职场, 家庭沟通"
    },
    {
     "id": 19889,
@@ -3413,7 +3413,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场协作, 家庭沟通"
+    "tags": "这就是人性, 职场协作, 家庭沟通"
    },
    {
     "id": 19790,
@@ -3423,7 +3423,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 人性的弱点, 职场谈判, 家庭沟通, 团队协作"
+    "tags": "人性的弱点, 职场谈判, 家庭沟通, 团队协作"
    },
    {
     "id": 20150,
@@ -3433,7 +3433,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通"
+    "tags": "这就是人性, 职场谈判, 家庭沟通"
    },
    {
     "id": 20149,
@@ -3443,7 +3443,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通"
+    "tags": "这就是人性, 职场谈判, 家庭沟通"
    },
    {
     "id": 19599,
@@ -3463,7 +3463,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场, 社交"
+    "tags": "这就是人性, 职场, 社交"
    },
    {
     "id": 20148,
@@ -3473,7 +3473,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 家庭沟通"
+    "tags": "这就是人性, 职场谈判, 家庭沟通"
    },
    {
     "id": 19597,
@@ -3509,7 +3509,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 人性的弱点, 冲突调解, 人际交往"
+    "tags": "人性的弱点, 冲突调解, 人际交往"
    },
    {
     "id": 19550,
@@ -3529,7 +3529,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 人性的弱点, 心理学应用, 沟通技巧"
+    "tags": "人性的弱点, 心理学应用, 沟通技巧"
    },
    {
     "id": 19796,
@@ -3539,7 +3539,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 人性的弱点, 职场谈判, 家庭沟通, 客户服务"
+    "tags": "人性的弱点, 职场谈判, 家庭沟通, 客户服务"
    },
    {
     "id": 21119,
@@ -3549,7 +3549,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 非暴力沟通, 职场谈判, 亲密关系"
+    "tags": "非暴力沟通, 职场谈判, 亲密关系"
    },
    {
     "id": 20899,
@@ -3559,7 +3559,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 非暴力沟通, 亲密关系, 职场协作"
+    "tags": "非暴力沟通, 亲密关系, 职场协作"
    },
    {
     "id": 19664,
@@ -3579,7 +3579,7 @@
     "source_type": "note",
     "confidence": 0.65,
     "is_low_confidence": false,
-    "tags": "小说萃取, 非暴力沟通, 职场沟通, 家庭关系"
+    "tags": "非暴力沟通, 职场沟通, 家庭关系"
    },
    {
     "id": 21019,
@@ -3589,7 +3589,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 非暴力沟通, 心理咨询, 医患沟通"
+    "tags": "非暴力沟通, 心理咨询, 医患沟通"
    },
    {
     "id": 21134,
@@ -3599,7 +3599,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 非暴力沟通, 职场谈判, 亲密关系"
+    "tags": "非暴力沟通, 职场谈判, 亲密关系"
    }
   ]
  },
@@ -3615,7 +3615,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场心态, 自我认知"
+    "tags": "打破你的学生思维, 职场心态, 自我认知"
    },
    {
     "id": 5526,
@@ -3625,7 +3625,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 学习规划, 自我提升"
+    "tags": "打破你的学生思维, 学习规划, 自我提升"
    },
    {
     "id": 6055,
@@ -3635,7 +3635,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场压力, 时间管理"
+    "tags": "打破你的学生思维, 职场压力, 时间管理"
    },
    {
     "id": 22004,
@@ -3645,7 +3645,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 个人成长, 职场谈判"
+    "tags": "自控力, 个人成长, 职场谈判"
    },
    {
     "id": 20698,
@@ -3655,7 +3655,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 原子习惯, 习惯养成, 长期坚持"
+    "tags": "原子习惯, 习惯养成, 长期坚持"
    },
    {
     "id": 21982,
@@ -3665,7 +3665,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 个人管理, 习惯养成"
+    "tags": "自控力, 个人管理, 习惯养成"
    },
    {
     "id": 21979,
@@ -3675,7 +3675,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 职场效率, 健康管理"
+    "tags": "自控力, 职场效率, 健康管理"
    },
    {
     "id": 22053,
@@ -3685,7 +3685,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 职场效率, 学习自律"
+    "tags": "自控力, 职场效率, 学习自律"
    },
    {
     "id": 20689,
@@ -3695,7 +3695,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 原子习惯, 自我管理, 团队管理"
+    "tags": "原子习惯, 自我管理, 团队管理"
    },
    {
     "id": 20062,
@@ -3705,7 +3705,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 个人成长, 习惯养成"
+    "tags": "这就是人性, 个人成长, 习惯养成"
    }
   ]
  },
@@ -3721,7 +3721,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 教育规划, 职业发展"
+    "tags": "打破你的学生思维, 教育规划, 职业发展"
    },
    {
     "id": 5722,
@@ -3731,7 +3731,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 心理决策"
+    "tags": "打破你的学生思维, 职业规划, 心理决策"
    },
    {
     "id": 6135,
@@ -3741,7 +3741,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 教育选择, 人生规划"
+    "tags": "打破你的学生思维, 教育选择, 人生规划"
    },
    {
     "id": 5471,
@@ -3751,7 +3751,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 学业规划, 职业发展"
+    "tags": "打破你的学生思维, 学业规划, 职业发展"
    },
    {
     "id": 5740,
@@ -3761,7 +3761,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 教育选择"
+    "tags": "打破你的学生思维, 职业规划, 教育选择"
    },
    {
     "id": 5715,
@@ -3771,7 +3771,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 教育选择"
+    "tags": "打破你的学生思维, 职业规划, 教育选择"
    },
    {
     "id": 5530,
@@ -3781,7 +3781,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 教育规划, 目标管理"
+    "tags": "打破你的学生思维, 教育规划, 目标管理"
    },
    {
     "id": 5790,
@@ -3791,7 +3791,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+    "tags": "打破你的学生思维, 职业规划, 人生决策"
    },
    {
     "id": 5401,
@@ -3801,7 +3801,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+    "tags": "打破你的学生思维, 职业规划, 人生决策"
    },
    {
     "id": 5452,
@@ -3811,7 +3811,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 决策分析"
+    "tags": "打破你的学生思维, 职业规划, 决策分析"
    }
   ]
  },
@@ -3827,7 +3827,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+    "tags": "打破你的学生思维, 职业规划, 人生决策"
    },
    {
     "id": 5592,
@@ -3837,7 +3837,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业发展, 地域选择"
+    "tags": "打破你的学生思维, 职业发展, 地域选择"
    },
    {
     "id": 5616,
@@ -3846,8 +3846,8 @@
     "source": "vector",
     "source_type": "book",
     "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生选择"
+    "is_low_confidence": false,
+    "tags": "打破你的学生思维, 职业规划, 人生选择"
    },
    {
     "id": 5605,
@@ -3857,7 +3857,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业选择, 决策权衡"
+    "tags": "打破你的学生思维, 职业选择, 决策权衡"
    },
    {
     "id": 5573,
@@ -3867,7 +3867,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业决策, 家庭沟通"
+    "tags": "打破你的学生思维, 职业决策, 家庭沟通"
    },
    {
     "id": 5606,
@@ -3877,7 +3877,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 求职陷阱, 职业决策"
+    "tags": "打破你的学生思维, 求职陷阱, 职业决策"
    },
    {
     "id": 5584,
@@ -3887,7 +3887,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+    "tags": "打破你的学生思维, 职业规划, 人生决策"
    },
    {
     "id": 5612,
@@ -3897,7 +3897,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 职场陷阱"
+    "tags": "打破你的学生思维, 职业规划, 职场陷阱"
    },
    {
     "id": 5401,
@@ -3907,7 +3907,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 人生决策"
+    "tags": "打破你的学生思维, 职业规划, 人生决策"
    },
    {
     "id": 5676,
@@ -3917,7 +3917,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 自我认知"
+    "tags": "打破你的学生思维, 职业规划, 自我认知"
    }
   ]
  },
@@ -3933,7 +3933,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 个人成长, 习惯养成"
+    "tags": "这就是人性, 个人成长, 习惯养成"
    },
    {
     "id": 21982,
@@ -3943,7 +3943,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 个人管理, 习惯养成"
+    "tags": "自控力, 个人管理, 习惯养成"
    },
    {
     "id": 20204,
@@ -3953,7 +3953,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 原子习惯, 个人成长, 习惯养成"
+    "tags": "原子习惯, 个人成长, 习惯养成"
    },
    {
     "id": 21976,
@@ -3963,7 +3963,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 个人成长, 健康管理"
+    "tags": "自控力, 个人成长, 健康管理"
    },
    {
     "id": 20600,
@@ -3973,7 +3973,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 原子习惯, 个人成长, 习惯养成"
+    "tags": "原子习惯, 个人成长, 习惯养成"
    },
    {
     "id": 20542,
@@ -3983,7 +3983,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 原子习惯, 个人成长, 习惯养成"
+    "tags": "原子习惯, 个人成长, 习惯养成"
    },
    {
     "id": 21979,
@@ -3993,7 +3993,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 职场效率, 健康管理"
+    "tags": "自控力, 职场效率, 健康管理"
    },
    {
     "id": 20310,
@@ -4003,7 +4003,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 原子习惯, 个人成长, 习惯养成"
+    "tags": "原子习惯, 个人成长, 习惯养成"
    },
    {
     "id": 20332,
@@ -4013,7 +4013,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 原子习惯, 个人管理, 习惯养成"
+    "tags": "原子习惯, 个人管理, 习惯养成"
    },
    {
     "id": 20538,
@@ -4023,7 +4023,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 原子习惯, 个人成长, 习惯养成"
+    "tags": "原子习惯, 个人成长, 习惯养成"
    }
   ]
  },
@@ -4039,7 +4039,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 职场效率, 学习提升"
+    "tags": "自控力, 职场效率, 学习提升"
    },
    {
     "id": 19913,
@@ -4049,7 +4049,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 情绪管理, 职场压力"
+    "tags": "这就是人性, 情绪管理, 职场压力"
    },
    {
     "id": 22390,
@@ -4059,7 +4059,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 时间管理, 目标规划"
+    "tags": "自控力, 时间管理, 目标规划"
    },
    {
     "id": 6130,
@@ -4069,7 +4069,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 自我管理, 危机处理"
+    "tags": "打破你的学生思维, 自我管理, 危机处理"
    },
    {
     "id": 21982,
@@ -4079,7 +4079,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 个人管理, 习惯养成"
+    "tags": "自控力, 个人管理, 习惯养成"
    },
    {
     "id": 22378,
@@ -4089,7 +4089,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 健康管理, 职业发展"
+    "tags": "自控力, 健康管理, 职业发展"
    },
    {
     "id": 22038,
@@ -4099,7 +4099,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 自控力, 个人成长, 时间管理"
+    "tags": "自控力, 个人成长, 时间管理"
    },
    {
     "id": 5884,
@@ -4109,7 +4109,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 求职, 决策"
+    "tags": "打破你的学生思维, 求职, 决策"
    },
    {
     "id": 20767,
@@ -4119,7 +4119,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 非暴力沟通, 职场协作, 冲突解决"
+    "tags": "非暴力沟通, 职场协作, 冲突解决"
    },
    {
     "id": 20747,
@@ -4129,7 +4129,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 原子习惯, 个人成长, 职业规划"
+    "tags": "原子习惯, 个人成长, 职业规划"
    }
   ]
  },
@@ -4145,7 +4145,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 学习规划, 自我提升"
+    "tags": "打破你的学生思维, 学习规划, 自我提升"
    },
    {
     "id": 19694,
@@ -4155,7 +4155,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 人性的弱点, 阅读学习, 知识管理"
+    "tags": "人性的弱点, 阅读学习, 知识管理"
    },
    {
     "id": 6016,
@@ -4164,8 +4164,8 @@
     "source": "vector",
     "source_type": "book",
     "confidence": 0.5,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 打破你的学生思维, 个人成长, 资源管理"
+    "is_low_confidence": false,
+    "tags": "打破你的学生思维, 个人成长, 资源管理"
    },
    {
     "id": 5489,
@@ -4175,7 +4175,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 自我认知, 职业规划"
+    "tags": "打破你的学生思维, 自我认知, 职业规划"
    },
    {
     "id": 21279,
@@ -4185,7 +4185,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 学会提问, 学习提升, 信息筛选"
+    "tags": "学会提问, 学习提升, 信息筛选"
    },
    {
     "id": 12238,
@@ -4357,7 +4357,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场协作, 家庭沟通, 社交关系"
+    "tags": "这就是人性, 职场协作, 家庭沟通, 社交关系"
    },
    {
     "id": 20132,
@@ -4366,8 +4366,8 @@
     "source": "vector",
     "source_type": "book",
     "confidence": 0.55,
-    "is_low_confidence": true,
-    "tags": "小说萃取, 这就是人性, 团队协作, 朋友相处"
+    "is_low_confidence": false,
+    "tags": "这就是人性, 团队协作, 朋友相处"
    },
    {
     "id": 19600,
@@ -4387,7 +4387,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场谈判, 公益慈善, 人际关系"
+    "tags": "这就是人性, 职场谈判, 公益慈善, 人际关系"
    },
    {
     "id": 19626,
@@ -4417,7 +4417,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 人际信任, 决策失误"
+    "tags": "这就是人性, 人际信任, 决策失误"
    },
    {
     "id": 9273,
@@ -4463,7 +4463,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 消费决策, 信息辨别"
+    "tags": "这就是人性, 消费决策, 信息辨别"
    },
    {
     "id": 19311,
@@ -4569,7 +4569,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 家庭沟通, 职业规划"
+    "tags": "这就是人性, 家庭沟通, 职业规划"
    },
    {
     "id": 19980,
@@ -4579,7 +4579,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 职场决策, 家庭沟通"
+    "tags": "这就是人性, 职场决策, 家庭沟通"
    },
    {
     "id": 21261,
@@ -4589,7 +4589,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 学会提问, 信息素养, 消费陷阱"
+    "tags": "学会提问, 信息素养, 消费陷阱"
    },
    {
     "id": 22989,
@@ -4599,7 +4599,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 金钱心理学, 家庭决策, 医疗选择"
+    "tags": "金钱心理学, 家庭决策, 医疗选择"
    },
    {
     "id": 12602,
@@ -4996,6 +4996,86 @@
     "tags": "小说萃取, 天涯神贴精选, 宏观经济, 外汇风险, 汇率"
    },
    {
+    "id": 14779,
+    "title": "流动性消灭的宏观意图",
+    "score": 0.01881,
+    "source": "",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 宏观经济, 组织变革, 汇率"
+   },
+   {
+    "id": 14781,
+    "title": "宏观联动分析识别收割局",
+    "score": 0.01851,
+    "source": "",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理, 汇率"
+   },
+   {
+    "id": 14797,
+    "title": "系统性风险转移",
+    "score": 0.01821,
+    "source": "",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 风险管理, 经济调控, 汇率"
+   },
+   {
+    "id": 14808,
+    "title": "用经济杠杆替代直接冲突",
+    "score": 0.01793,
+    "source": "",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 国际博弈, 商业竞争, 汇率"
+   },
+   {
+    "id": 15676,
+    "title": "以可持续性为决策锚点",
+    "score": 0.01765,
+    "source": "",
+    "source_type": "forum",
+    "confidence": 0.5,
+    "is_low_confidence": true,
+    "tags": "小说萃取, 天涯神贴精选, 战略决策, 风险管理, 汇率"
+   },
+   {
+    "id": 15718,
+    "title": "用相对数据替代绝对判断",
+    "score": 0.01739,
+    "source": "",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 市场分析, 汇率"
+   },
+   {
+    "id": 15719,
+    "title": "锚定历史参照而非专家意见",
+    "score": 0.01713,
+    "source": "",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险判断, 汇率"
+   },
+   {
+    "id": 15721,
+    "title": "避免盲人摸象式片面分析",
+    "score": 0.01687,
+    "source": "",
+    "source_type": "forum",
+    "confidence": 0.6,
+    "is_low_confidence": false,
+    "tags": "小说萃取, 天涯神贴精选, 市场分析, 决策陷阱, 汇率"
+   },
+   {
     "id": 17302,
     "title": "黑市汇率作为资本外逃预警",
     "score": 0.01678,
@@ -5004,86 +5084,6 @@
     "confidence": 0.6,
     "is_low_confidence": false,
     "tags": "小说萃取, 天涯神贴精选, 宏观经济监测, 风险管理, 汇率"
-   },
-   {
-    "id": 18688,
-    "title": "以汇率趋势为锚",
-    "score": 0.01635,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 金融分析, 汇率"
-   },
-   {
-    "id": 18522,
-    "title": "汇率变动影响双轨评估",
-    "score": 0.01393,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 个人理财, 国际业务"
-   },
-   {
-    "id": 17692,
-    "title": "换汇理财需比较综合收益",
-    "score": 0.01371,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 个人理财, 汇率决策"
-   },
-   {
-    "id": 17854,
-    "title": "汇率波动下筛选受益行业三步法",
-    "score": 0.01349,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 行业分析"
-   },
-   {
-    "id": 17856,
-    "title": "汇率传导机制",
-    "score": 0.01308,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 宏观经济, 企业财务"
-   },
-   {
-    "id": 18109,
-    "title": "高杠杆外汇风险巨大",
-    "score": 0.01288,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.7,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资理财, 风险警示"
-   },
-   {
-    "id": 17277,
-    "title": "盲目崇拜市场神话的风险",
-    "score": 0.01269,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资风险, 市场认知"
-   },
-   {
-    "id": 16026,
-    "title": "权衡通胀与房价跌幅",
-    "score": 0.0125,
-    "source": "vector",
-    "source_type": "forum",
-    "confidence": 0.6,
-    "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 风险管理"
    }
   ]
  },
@@ -5139,7 +5139,7 @@
     "source_type": "forum",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 做空,杠杆,爆仓,仓位"
+    "tags": "小说萃取, 天涯神贴精选, 投资决策, 危机管理, 做空, 杠杆, 爆仓, 仓位"
    },
    {
     "id": 14785,
@@ -5215,7 +5215,7 @@
     "source_type": "note",
     "confidence": 0.65,
     "is_low_confidence": false,
-    "tags": "小说萃取, 学会提问, 人际沟通, 亲密关系"
+    "tags": "学会提问, 人际沟通, 亲密关系"
    },
    {
     "id": 20886,
@@ -5225,7 +5225,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 非暴力沟通, 职场沟通, 家庭沟通, 亲密关系"
+    "tags": "非暴力沟通, 职场沟通, 家庭沟通, 亲密关系"
    },
    {
     "id": 21100,
@@ -5235,7 +5235,7 @@
     "source_type": "note",
     "confidence": 0.65,
     "is_low_confidence": false,
-    "tags": "小说萃取, 非暴力沟通, 职场沟通, 家庭关系"
+    "tags": "非暴力沟通, 职场沟通, 家庭关系"
    },
    {
     "id": 20888,
@@ -5245,7 +5245,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 非暴力沟通, 家庭沟通, 职场沟通, 亲密关系"
+    "tags": "非暴力沟通, 家庭沟通, 职场沟通, 亲密关系"
    },
    {
     "id": 6079,
@@ -5255,7 +5255,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场适应, 心态调整"
+    "tags": "打破你的学生思维, 职场适应, 心态调整"
    },
    {
     "id": 19635,
@@ -5275,7 +5275,7 @@
     "source_type": "note",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 非暴力沟通, 职场沟通, 家庭沟通"
+    "tags": "非暴力沟通, 职场沟通, 家庭沟通"
    },
    {
     "id": 9053,
@@ -5417,7 +5417,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 学习规划, 自我提升"
+    "tags": "打破你的学生思维, 学习规划, 自我提升"
    },
    {
     "id": 6018,
@@ -5427,7 +5427,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 技能学习, 职业转型"
+    "tags": "打破你的学生思维, 技能学习, 职业转型"
    },
    {
     "id": 5460,
@@ -5437,7 +5437,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 转行"
+    "tags": "打破你的学生思维, 职业规划, 转行"
    },
    {
     "id": 5779,
@@ -5447,7 +5447,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场转型, 技能提升"
+    "tags": "打破你的学生思维, 职场转型, 技能提升"
    },
    {
     "id": 5820,
@@ -5457,7 +5457,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场发展, 自我提升"
+    "tags": "打破你的学生思维, 职场发展, 自我提升"
    },
    {
     "id": 5521,
@@ -5467,7 +5467,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 技能提升, 学习规划"
+    "tags": "打破你的学生思维, 技能提升, 学习规划"
    },
    {
     "id": 5576,
@@ -5477,7 +5477,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 创业, 个人发展"
+    "tags": "打破你的学生思维, 创业, 个人发展"
    },
    {
     "id": 6204,
@@ -5487,7 +5487,7 @@
     "source_type": "book",
     "confidence": 0.7,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职业规划, 自我认知"
+    "tags": "打破你的学生思维, 职业规划, 自我认知"
    },
    {
     "id": 5877,
@@ -5497,7 +5497,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 打破你的学生思维, 职场新人, 实习选择"
+    "tags": "打破你的学生思维, 职场新人, 实习选择"
    },
    {
     "id": 6421,
@@ -5523,7 +5523,7 @@
     "source_type": "note",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 金钱心理学, 投资决策, 职业规划"
+    "tags": "金钱心理学, 投资决策, 职业规划"
    },
    {
     "id": 20088,
@@ -5533,7 +5533,7 @@
     "source_type": "book",
     "confidence": 0.6,
     "is_low_confidence": false,
-    "tags": "小说萃取, 这就是人性, 个人成长, 职场决策"
+    "tags": "这就是人性, 个人成长, 职场决策"
    },
    {
     "id": 6337,
