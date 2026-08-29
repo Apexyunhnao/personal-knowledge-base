@@ -311,13 +311,15 @@ pre:hover .copy-btn{opacity:1}
       <div x-show="!sidebarSearchQuery">
         <div class="section-title">浏览</div>
         <button @click="browseTable='notes';loadBroswe()" :class="{active:browseTable==='notes'}" class="table-btn">📝 知识库 <span class="count" x-text="stats.notes"></span></button>
+        <button @click="browseTable='housing';loadBroswe()" :class="{active:browseTable==='housing'}" class="table-btn">🏠 租房 <span class="count" x-text="stats.housing||0"></span></button>
+        <button @click="browseTable='events';loadBroswe()" :class="{active:browseTable==='events'}" class="table-btn">💼 职场 <span class="count" x-text="stats.events||0"></span></button>
         <div class="section-title mt-3">操作</div>
         <button @click="showTrash=true;loadTrash()" class="table-btn">🗑 回收站</button>
         <button @click="createBackup()" class="table-btn">💾 创建备份</button>
         <div class="section-title mt-3" x-show="browseTable==='notes'">知识库</div>
         <div x-show="!browseItems||browseItems.length===0" class="text-muted text-xs" style="padding:12px 8px">点击上方浏览</div>
         <template x-for="item in browseItems" :key="item.id">
-          <div class="browse-item" @click="viewItem(item)"><div class="bi-title" x-text="item.title||item.name||item.company"></div><div class="bi-meta" x-text="item.topic||item.tech_stack||item.position"></div><div class="bi-tags"><template x-for="t in (item.tag_list||[])"><span class="bi-tag" x-text="t.name"></span></template></div></div>
+          <div class="browse-item" @click="viewItem(item)"><div class="bi-title" x-text="item.title||item.name||item.company||item.address"></div><div class="bi-meta" x-text="item.topic||item.tech_stack||item.position||item.event_type||item.platform||item.city||''"></div><div class="bi-tags"><template x-for="t in (item.tag_list||[])"><span class="bi-tag" x-text="t.name"></span></template></div></div>
         </template>
       </div>
     </div>

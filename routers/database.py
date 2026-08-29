@@ -1,6 +1,6 @@
 """资料库 CRUD 路由"""
 from fastapi import APIRouter, Body
-from repositories import project_repo, application_repo, note_repo
+from repositories import project_repo, application_repo, note_repo, housing_repo, event_repo
 
 router = APIRouter(prefix="/db", tags=["资料库"])
 
@@ -8,8 +8,10 @@ TABLES = {
     "projects": project_repo,
     "applications": application_repo,
     "notes": note_repo,
+    "housing": housing_repo,
+    "events": event_repo,
 }
-TABLE_NAMES = {"projects": "项目经历", "applications": "求职记录", "notes": "学习笔记"}
+TABLE_NAMES = {"projects": "项目经历", "applications": "求职记录", "notes": "学习笔记", "housing": "租房记录", "events": "职场事件"}
 
 
 @router.get("/stats")

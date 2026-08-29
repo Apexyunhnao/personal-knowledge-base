@@ -31,3 +31,28 @@ tmp_*.zip
 
 # 临时备份
 *.bak-*
+
+# 输出目录（全书导出/分析文档，含版权内容，个人存档可、公开不可）
+outputs/
+
+# 网页AI自动化调试脚本（复用浏览器登录态，含本地路径/账号信息，不入 git）
+three_ai.py
+chatgpt_ai.py
+cdp_*.py
+probe_ai_*.py
+verify_cdp_login.py
+crawl_ttkan.py
+web-ai-review-plan.md
+
+# 一次性/本地批处理脚本（入库流水线，非产品代码）
+night_extract_windows.py
+export_books_batch.py
+
+# 密码读取/浏览器调试（绝对不入 git）
+read_chrome_passwords.py
+tmp_gemini_state*.png
+
+# 评估中间产物（本地保留，仓库只留最新基线 v16）
+evaluation/adversarial_*_v15_baseline*.json
+evaluation/retrieval_judged_*.json
+evaluation/tags_*.json

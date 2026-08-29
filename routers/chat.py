@@ -7,7 +7,7 @@ from fastapi import APIRouter, Request, UploadFile, File, Form
 from fastapi.responses import StreamingResponse
 from openai import OpenAI
 from dotenv import load_dotenv
-from repositories import project_repo, application_repo, note_repo
+from repositories import project_repo, application_repo, note_repo, housing_repo, event_repo
 
 logger = logging.getLogger(__name__)
 
@@ -28,6 +28,8 @@ TOOLS = [
     {"type":"function","function":{"name":"update_item","description":"修改知识条目","parameters":{"type":"object","properties":{"table":{"type":"string","enum":["notes"]},"item_id":{"type":"integer"},"changes":{"type":"object"}},"required":["table","item_id","changes"]}}},
     {"type":"function","function":{"name":"delete_item","description":"删除知识条目（软删除，可恢复）","parameters":{"type":"object","properties":{"table":{"type":"string","enum":["notes"]},"item_id":{"type":"integer"}},"required":["table","item_id"]}}},
     {"type":"function","function":{"name":"get_stats","description":"知识库统计","parameters":{"type":"object","properties":{}}}},
+    {"type":"function","function":{"name":"save_housing","description":"记录一条租房信息（看房/已定/入住/已退）。用户说租房/看房/签合同/退房时调用。","parameters":{"type":"object","properties":{"city":{"type":"string","description":"城市，默认广州"},"district":{"type":"string","description":"区域，如天河区"},"address":{"type":"string","description":"地址/小区"},"rent_monthly":{"type":"number","description":"月租金（元）"},"deposit":{"type":"number","description":"押金（元）"},"contract_start":{"type":"string","description":"合同开始日期"},"contract_end":{"type":"string","description":"合同结束日期"},"landlord":{"type":"string","description":"房东/中介名称"},"contact":{"type":"string","description":"联系方式"},"platform":{"type":"string","description":"来源平台（贝壳/自如/豆瓣/中介/转租等）"},"status":{"type":"string","enum":["看房","已定","入住","已退"],"description":"状态，默认看房"},"pitfalls":{"type":"string","description":"踩坑/注意事项"},"notes":{"type":"string","description":"备注"},"tags":{"type":"string","description":"逗号分隔标签"}},"required":["address"]}}},
+    {"type":"function","function":{"name":"save_event","description":"记录一条职场事件（入职/任务/会议/冲突/考核/涨薪/离职/其他）。用户说职场/上班/同事/领导/入职/离职/被裁等经历时调用。","parameters":{"type":"object","properties":{"event_date":{"type":"string","description":"发生日期"},"event_type":{"type":"string","enum":["入职","任务","会议","冲突","考核","涨薪","离职","其他"],"description":"事件类型"},"title":{"type":"string","description":"事件标题（精炼）"},"detail":{"type":"string","description":"事件详情"},"handling":{"type":"string","description":"我怎么处理的"},"lesson":{"type":"string","description":"教训/经验"},"tags":{"type":"string","description":"逗号分隔标签"}},"required":["title"]}}},
 ]
 
 SYSTEM_PROMPT = """你是「知识库助手」，帮助用户管理个人知识。
@@ -49,6 +51,11 @@ SYSTEM_PROMPT = """你是「知识库助手」，帮助用户管理个人知识�
 - 概念之间的关系、对比、你的判断
 - 面试会讲到的知识点
 - 判断标准：半年后 Google 搜不到你这段话 → 存
+
+### 生活事务记录（调用 save_housing / save_event）
+- 用户说「租房/看房/签合同/退房/押金」等 → save_housing 记录一条租房信息
+- 用户说职场经历（入职/上班/同事/领导/被骂/任务/离职/被裁/涨薪）→ save_event 记录职场事件
+- 这类记录存完直接告知用户已记录，简短确认即可
 
 对不值得存的内容，直接回答，不要调用任何工具。回答末尾可以提醒用户：「这条不需要存入知识库，网上随时能查到。」
 
@@ -103,7 +110,7 @@ def build_catalog_prompt():
     except:
         return SYSTEM_PROMPT
 
-REPOS = {"projects":project_repo,"applications":application_repo,"notes":note_repo}
+REPOS = {"projects":project_repo,"applications":application_repo,"notes":note_repo,"housing":housing_repo,"events":event_repo}
 IMAGE_EXT = {'.png','.jpg','.jpeg','.gif','.webp','.bmp'}
 
 # ── 文件处理 ──
@@ -190,11 +197,19 @@ def execute_tool(name, args):
         elif name == "get_stats":
             from db import get_conn
             c = get_conn(); stats = {}
-            for tbl,short in [("projects","projects"),("job_applications","applications"),("learning_notes","notes")]:
+            for tbl,short in [("projects","projects"),("job_applications","applications"),("learning_notes","notes"),("housing_records","housing"),("work_events","events")]:
                 stats[short] = c.execute(f"SELECT COUNT(*) FROM {tbl} WHERE deleted_at IS NULL").fetchone()[0]
-            stats["trash"] = c.execute("SELECT COUNT(*) FROM (SELECT id FROM projects WHERE deleted_at IS NOT NULL UNION ALL SELECT id FROM job_applications WHERE deleted_at IS NOT NULL UNION ALL SELECT id FROM learning_notes WHERE deleted_at IS NOT NULL)").fetchone()[0]
+            stats["trash"] = c.execute("SELECT COUNT(*) FROM (SELECT id FROM projects WHERE deleted_at IS NOT NULL UNION ALL SELECT id FROM job_applications WHERE deleted_at IS NOT NULL UNION ALL SELECT id FROM learning_notes WHERE deleted_at IS NOT NULL UNION ALL SELECT id FROM housing_records WHERE deleted_at IS NOT NULL UNION ALL SELECT id FROM work_events WHERE deleted_at IS NOT NULL)").fetchone()[0]
             stats["tags"] = c.execute("SELECT COUNT(*) FROM tags").fetchone()[0]
             return json.dumps({"ok":True,"stats":stats},ensure_ascii=False)
+        elif name == "save_housing":
+            data = {k: args[k] for k in ("city","district","address","rent_monthly","deposit","contract_start","contract_end","landlord","contact","platform","status","pitfalls","notes","tags") if k in args and args[k] not in (None,"")}
+            hid = housing_repo.create(data)
+            return json.dumps({"ok":True,"id":hid,"address":data.get("address",""),"status":data.get("status","看房")},ensure_ascii=False)
+        elif name == "save_event":
+            data = {k: args[k] for k in ("event_date","event_type","title","detail","handling","lesson","tags") if k in args and args[k] not in (None,"")}
+            eid = event_repo.create(data)
+            return json.dumps({"ok":True,"id":eid,"title":data.get("title",""),"event_type":data.get("event_type","其他")},ensure_ascii=False)
         return json.dumps({"ok":False,"error":f"未知:{name}"})
     except Exception as e:
         return json.dumps({"ok":False,"error":str(e)},ensure_ascii=False)

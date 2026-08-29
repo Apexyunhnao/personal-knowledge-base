@@ -27,6 +27,8 @@ TABLE_MAP = {
     "projects": "projects",
     "applications": "job_applications",
     "notes": "learning_notes",
+    "housing": "housing_records",
+    "events": "work_events",
 }
 REVERSE_MAP = {v: k for k, v in TABLE_MAP.items()}
 
@@ -42,6 +44,14 @@ COLUMN_WHITELIST = {
     },
     "learning_notes": {
         "title", "topic", "tags", "content", "source", "format", "frontmatter",
+    },
+    "housing_records": {
+        "city", "district", "address", "rent_monthly", "deposit",
+        "contract_start", "contract_end", "landlord", "contact", "platform",
+        "status", "pitfalls", "notes", "tags",
+    },
+    "work_events": {
+        "event_date", "event_type", "title", "detail", "handling", "lesson", "tags",
     },
 }
 
@@ -162,6 +172,43 @@ def init_db():
             link_text TEXT NOT NULL,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             UNIQUE(source_table, source_id, target_table, target_id)
+        );
+
+        -- 租房记录（广深求职生活维度）
+        CREATE TABLE IF NOT EXISTS housing_records (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            city TEXT DEFAULT '广州',
+            district TEXT,
+            address TEXT,
+            rent_monthly REAL,
+            deposit REAL,
+            contract_start TEXT,
+            contract_end TEXT,
+            landlord TEXT,
+            contact TEXT,
+            platform TEXT,
+            status TEXT DEFAULT '看房' CHECK(status IN ('看房','已定','入住','已退')),
+            pitfalls TEXT,
+            notes TEXT,
+            tags TEXT DEFAULT '',
+            deleted_at TIMESTAMP NULL,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+
+        -- 职场事件日志（入职/任务/冲突/考核/离职等）
+        CREATE TABLE IF NOT EXISTS work_events (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            event_date TEXT,
+            event_type TEXT DEFAULT '其他' CHECK(event_type IN ('入职','任务','会议','冲突','考核','涨薪','离职','其他')),
+            title TEXT NOT NULL,
+            detail TEXT,
+            handling TEXT,
+            lesson TEXT,
+            tags TEXT DEFAULT '',
+            deleted_at TIMESTAMP NULL,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
 
         -- FTS5 索引
@@ -705,6 +752,8 @@ def stats() -> dict:
             "projects": db.execute("SELECT COUNT(*) FROM projects WHERE deleted_at IS NULL").fetchone()[0],
             "applications": db.execute("SELECT COUNT(*) FROM job_applications WHERE deleted_at IS NULL").fetchone()[0],
             "notes": db.execute("SELECT COUNT(*) FROM learning_notes WHERE deleted_at IS NULL").fetchone()[0],
+            "housing": db.execute("SELECT COUNT(*) FROM housing_records WHERE deleted_at IS NULL").fetchone()[0],
+            "events": db.execute("SELECT COUNT(*) FROM work_events WHERE deleted_at IS NULL").fetchone()[0],
             "documents": db.execute("SELECT COUNT(*) FROM documents").fetchone()[0],
             "tags": db.execute("SELECT COUNT(*) FROM tags").fetchone()[0],
             "trash": trash_count(),

@@ -23,8 +23,18 @@ from hybrid_search import hybrid_search
 from openai import OpenAI
 
 EVAL_DIR = "evaluation"
-COLLECT_FILE = os.path.join(EVAL_DIR, "adversarial_collected.json")
-JUDGE_FILE = os.path.join(EVAL_DIR, "adversarial_judged.json")
+
+
+def collect_file(ver: str) -> str:
+    return os.path.join(EVAL_DIR, f"adversarial_collected_v{ver}.json")
+
+
+def judge_file(ver: str) -> str:
+    return os.path.join(EVAL_DIR, f"adversarial_judged_v{ver}.json")
+
+
+def report_file(ver: str) -> str:
+    return os.path.join(EVAL_DIR, f"report_v{ver}.md")
 
 # (query, 板块) — 合并三份 AI 对抗集，去重保留覆盖最全
 QUERIES = [
@@ -90,6 +100,11 @@ QUERIES = [
     ("怎么在别人恐慌抛售的时候找到便宜货？", "金融危机"),
     ("做空是怎么操作的？普通人能玩吗？", "金融危机"),
     ("听说日本汇率崩了，对普通中国人有什么影响？", "金融危机"),
+    # ===== v1.6 扩容（2026-08-29）：求职生活板块（用户真实场景）=====
+    ("去深圳实习，第一次租房怎么防止押金被扣？", "求职生活"),
+    ("试用期被公司延长/劝退，法律上怎么办？", "求职生活"),
+    ("第一份工作做不下去，要不要走？", "求职生活"),
+    ("广州和深圳，去哪个城市发展更好？", "求职生活"),
     # 负样本（无答案/无关 query，测系统是否胡编；单独统计不混入召回率）
     ("明天双色球开奖号码是多少？", "负样本"),
     ("我家的猫为什么突然不理我了？", "负样本"),
@@ -99,7 +114,7 @@ QUERIES = [
 ]
 
 
-def collect():
+def collect(ver: str = "16"):
     os.makedirs(EVAL_DIR, exist_ok=True)
     data = []
     for i, (q, cat) in enumerate(QUERIES, 1):
@@ -121,18 +136,19 @@ def collect():
         data.append({"query": q, "category": cat, "results": items})
         print(f"[{i}/{len(QUERIES)}] {q[:28]} -> {len(items)} 条 ({time.time()-t0:.1f}s)")
         time.sleep(0.1)
-    with open(COLLECT_FILE, "w", encoding="utf-8") as f:
+    out = collect_file(ver)
+    with open(out, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
-    print(f"落盘: {COLLECT_FILE}")
+    print(f"落盘: {out}")
 
 
-def judge():
+def judge(ver: str = "16"):
     api_key = os.getenv("DEEPSEEK_API_KEY")
     if not api_key:
         print("DEEPSEEK_API_KEY 未设置"); sys.exit(1)
     client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com")
 
-    with open(COLLECT_FILE, encoding="utf-8") as f:
+    with open(collect_file(ver), encoding="utf-8") as f:
         data = json.load(f)
 
     import sqlite3
@@ -192,7 +208,8 @@ def judge():
         print(f"[{i}/{len(data)}] {q[:28]} -> relevant {n_rel}/10")
         time.sleep(0.3)
 
-    with open(JUDGE_FILE, "w", encoding="utf-8") as f:
+    out = judge_file(ver)
+    with open(out, "w", encoding="utf-8") as f:
         json.dump(judged, f, ensure_ascii=False, indent=1)
 
     # ── 指标 ──
@@ -201,6 +218,9 @@ def judge():
     p5s, p10s = [], []
     by_cat = {}
     neg_all = neg_irrel = 0  # 负样本单独统计（测胡编，不混入召回率）
+    hit5 = hit10 = 0
+    n_pos_q = 0
+    mrrs = []
     for item in judged:
         rs = [r for r in item["results"] if "error" not in r]
         if not rs:
@@ -211,16 +231,24 @@ def judge():
         if item["category"] == "负样本":
             neg_all += len(rs); neg_irrel += irr
             continue  # 负样本不计入召回率/P@5
+        n_pos_q += 1
         total_all += len(rs); total_rel += rel; total_partial += part; total_irrel += irr
         if len(rs) >= 5:
             p5s.append(sum(1 for r in rs[:5] if r["label"] == "relevant") / 5)
         if len(rs) >= 10:
             p10s.append(sum(1 for r in rs[:10] if r["label"] == "relevant") / 10)
+        # hit@K / MRR（基于 relevant）
+        rel_idx = next((i for i, r in enumerate(rs) if r["label"] == "relevant"), None)
+        if rel_idx is not None:
+            hit10 += 1
+            mrrs.append(1.0 / (rel_idx + 1))
+            if rel_idx < 5:
+                hit5 += 1
         cat = item["category"]
         by_cat.setdefault(cat, {"rel": 0, "part": 0, "total": 0})
         by_cat[cat]["rel"] += rel; by_cat[cat]["part"] += part; by_cat[cat]["total"] += len(rs)
 
-    n = sum(1 for i in judged if i["category"] != "负样本")
+    n = n_pos_q
     print(f"query 数: {n}（不含负样本，负样本 {len(judged)-n} 条）")
     rp = total_rel + total_partial
     print(f"总条数: {total_all}  相关: {total_rel} ({total_rel/total_all*100:.1f}%)  "
@@ -229,6 +257,8 @@ def judge():
     print(f"**对抗集召回率(相关+部分): {rp/total_all*100:.1f}%**")
     print(f"Precision@5: {sum(p5s)/len(p5s)*100:.1f}%  (n={len(p5s)})")
     print(f"Precision@10: {sum(p10s)/len(p10s)*100:.1f}%  (n={len(p10s)})")
+    print(f"Hit@5: {hit5}/{n} = {hit5/n*100:.1f}%   Hit@10: {hit10}/{n} = {hit10/n*100:.1f}%")
+    print(f"MRR: {sum(mrrs)/len(mrrs):.3f}  (n={len(mrrs)})")
     if neg_all:
         print(f"负样本正确拒绝率(irrelevant占比): {neg_irrel/neg_all*100:.1f}%  ({neg_irrel}/{neg_all})  ← 越高越好，低说明系统胡编")
     print("\n=== 按板块（负样本单独）===")
@@ -236,16 +266,44 @@ def judge():
         rp_cat = v["rel"] + v["part"]
         print(f"  {cat}: {rp_cat}/{v['total']} ({rp_cat/v['total']*100:.1f}%)  rel={v['rel']} part={v['part']}")
 
+    # ── 写报告 ──
+    lines = [f"# 对抗集评估报告 v{ver}", ""]
+    lines.append(f"- 时间: {time.strftime('%Y-%m-%d %H:%M')}")
+    lines.append(f"- query 数: {n}（正样本）+ {len(judged)-n}（负样本）")
+    lines.append("")
+    lines.append("| 指标 | 值 |")
+    lines.append("|---|---|")
+    lines.append(f"| 召回率(相关+部分) | {rp/total_all*100:.1f}% |")
+    lines.append(f"| 严格相关率 | {total_rel/total_all*100:.1f}% |")
+    lines.append(f"| Precision@5 | {sum(p5s)/len(p5s)*100:.1f}% |")
+    lines.append(f"| Precision@10 | {sum(p10s)/len(p10s)*100:.1f}% |")
+    lines.append(f"| Hit@5 | {hit5}/{n} = {hit5/n*100:.1f}% |")
+    lines.append(f"| Hit@10 | {hit10}/{n} = {hit10/n*100:.1f}% |")
+    lines.append(f"| MRR | {sum(mrrs)/len(mrrs):.3f} |")
+    lines.append(f"| 负样本拒绝率 | {neg_irrel/neg_all*100:.1f}% |" if neg_all else "")
+    lines.append("")
+    lines.append("## 按板块")
+    lines.append("| 板块 | 可用率 | rel | part |")
+    lines.append("|---|---|---|---|")
+    for cat, v in sorted(by_cat.items()):
+        rp_cat = v["rel"] + v["part"]
+        lines.append(f"| {cat} | {rp_cat}/{v['total']} ({rp_cat/v['total']*100:.1f}%) | {v['rel']} | {v['part']} |")
+    rep = report_file(ver)
+    with open(rep, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+    print(f"\n报告: {rep}")
+
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--collect-only", action="store_true")
     ap.add_argument("--judge-only", action="store_true")
+    ap.add_argument("--version", default="16", help="版本号，默认 16")
     args = ap.parse_args()
     if args.judge_only:
-        judge()
+        judge(args.version)
     elif args.collect_only:
-        collect()
+        collect(args.version)
     else:
-        collect()
-        judge()
+        collect(args.version)
+        judge(args.version)

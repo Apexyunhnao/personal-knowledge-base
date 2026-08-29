@@ -1,28 +1,66 @@
-# 个人资料库
+# 个人决策知识库（Personal Decision KB）
 
-基于 DeepSeek 的 AI 知识管理系统。支持聊天式知识存入、混合检索（全文+语义）、自动整理归纳、视觉识别、语音输入。
+一个面向个人决策支持的中文 RAG 系统：2.3 万+ 张方法论卡片（职场/投资/人生规划/认知鉴别等 8 大板块），通过混合检索把「对的卡片」在 top10 里捞出来，帮助用户在真实决策场景中做判断。已接入 Hermes Agent 作为外部记忆（MCP 工具）。
 
-## 核心能力
+> 定位：**决策提醒卡片库**，不是聊天机器人。核心是检索质量——「让对的卡片出现在 top10」，而不是让 LLM 编一个看起来合理的回答。
 
-- **聊天式知识管理**：通过对话让 AI 帮你整理、存储、检索个人知识
-- **智能存/不存判断**：自动判断内容是否值得存入（消化过的理解存，API 文档/新闻不存）
-- **自动合并整理**：同主题内容自动合并到已有笔记，避免碎片化
-- **混合检索**：FTS5 全文搜索 + ChromaDB 语义搜索（RRF 融合排序）
-- **文件支持**：上传 PDF/Markdown/TXT/图片，自动提取文字
-- **视觉识别**：摄像头拍照 → Qwen-VL 识别 → 知识库检索回答
-- **语音输入**：录音 → ASR 转文字 → 直接提问或一键整理成笔记
-- **知识图谱**：WikiLinks 双向链接 + D3.js 力导向图可视化
-- **监控反馈**：问答质量记录 + 好/差评反馈，自动识别 Bad Case
+## 核心指标（对抗集 v16，2026-08-29）
 
-## 技术栈
+| 指标 | 值 |
+|---|---|
+| 卡片数 | 23,858（5664 标签） |
+| 对抗集 query | 52 正样本 + 5 负样本（8 大板块） |
+| Hit@10 | **94.2%**（49/52） |
+| Hit@5 | 92.3% |
+| MRR | 0.728 |
+| 召回率（relevant+partial） | 77.9% |
+| 负样本拒绝率 | 66.0%（测系统是否胡编） |
+| 最强板块 | 人生规划 94.3% / 执行力 87.1% / 投资心态 86.2% |
+| 待改进 | 求职生活 65.0% / 人际博弈 67.1% / 金融危机 57.5% |
 
-- **LLM**：DeepSeek（Function Calling）
-- **Embedding**：text2vec-base-chinese
-- **向量库**：ChromaDB
-- **全文搜索**：SQLite FTS5
-- **框架**：FastAPI + 原生 SQLite
-- **图片识别**：Qwen-VL（DashScope）
-- **语音识别**：Qwen3-ASR-Flash（DashScope）
+完整评估：`evaluation/report_v16.md`；评估方法论：`evaluation/README.md`。
+
+## 为什么做（场景动机）
+
+个人做重大决策（职场去留、投资心态、人生规划）时，最缺的不是"信息"，而是**经历过类似困境的人留下的方法论**。这个系统把书/经验帖/攻略文萃取成结构化方法论卡片，检索到"对的卡片"帮用户触发决策思考——而不是让 AI 直接给答案。
+
+## 怎么做（技术架构）
+
+```
+用户 query
+   ↓
+混合检索（双路召回）
+  ├─ FTS5 全文检索（SQLite，关键词精确匹配）
+  └─ 向量检索（ChromaDB + bge-small 中文 embedding，语义匹配）
+   ↓
+RRF 融合（rank-based 融合，不依赖两路 score 空间对齐）
+   ↓
+标签加权 + 来源权重（书>笔记>论坛>小说）+ 低置信度过滤
+   ↓
+top10 卡片 → 展示 / 喂给 LLM 生成回答 / 喂给 Agent 做决策
+```
+
+关键设计：
+- **RRF 融合**：FTS5 和向量检索的 score 空间不同，直接加权不可靠；RRF 按 rank 融合更鲁棒
+- **来源权重**：书（1.3）> 笔记 > 论坛 > 小说，控制内容可信度
+- **低置信度过滤**：小说萃取卡置信度低，默认过滤，避免污染召回
+- **评估驱动**：53+ 条真实场景 query 对抗集，每轮迭代跑分，有历史基线（v1→v16）
+
+## 数据（卡片从哪来）
+
+- 23,858 张有效卡片，5664 标签，SQLite + ChromaDB 双存储，启动时向量索引一致性校验
+- 数据来源：方法论书籍萃取（金融危机/求职/向上管理/自控力等）、经验帖（天涯精选）、网页攻略文（租房/职场避坑）、手写 QA 卡
+- 萃取管线：微信读书导出 → DeepSeek 四步法（困境定义→方法拆解→锚点识别→原理映射）→ 方法论卡片 → 入库
+- 完整库本地自用；公开仓库不含原始书籍/帖子全文（版权考虑），只含代码和评估数据
+
+## 功能
+
+- **混合检索 API**：`GET /search?q=...`
+- **聊天问答**：检索 + LLM 生成（DeepSeek）
+- **个人事务维度**：租房记录 / 职场事件表 + CRUD + 聊天录入（"记一条租房信息"）
+- **MCP 接入**：`mcp_kb_server.py`，作为 Hermes Agent 外部记忆（kb_search / kb_get / kb_save）
+- **Web 前端**：检索、聊天、侧边栏个人事务入口
+- **评估闭环**：`eval_adversarial.py --version N` 一条龙跑 collect+judge+报告
 
 ## 快速开始
 
@@ -30,71 +68,46 @@
 # 1. 安装依赖
 pip install -r requirements.txt
 
-# 2. 配置环境变量（.env）
+# 2. 配置 .env
 DEEPSEEK_API_KEY=your_key
-DASHSCOPE_API_KEY=your_key  # 图片/语音识别用
 
-# 3. 启动服务
-python3 -m uvicorn app:app --host 0.0.0.0 --port 8000
+# 3. 启动
+python -m uvicorn app:app --host 0.0.0.0 --port 8000
+# 浏览器打开 http://localhost:8000
 
-# 4. 浏览器打开 http://localhost:8000
+# 4. 跑评估（可选）
+python eval_adversarial.py --version 16
 ```
 
-## 项目结构
+> 需要 bge-small 中文 embedding 模型，首次启动自动下载到 models/（或在 hybrid_search.py 里配置 HF_HUB_OFFLINE）。
+
+## 目录结构
 
 ```
-├── app.py                  # FastAPI 入口（路由挂载）
-├── rag_engine.py           # RAG 核心：嵌入 + 检索 + 生成
-├── hybrid_search.py        # 混合检索：FTS5 + ChromaDB + RRF 融合
-├── db.py                   # 数据库连接
-├── personal_db.py          # 个人知识库管理
-├── routers/                # API 路由
-│   ├── chat.py             #   聊天端点（核心）
-│   ├── vision.py           #   视觉识别（拍照 → 知识库检索）
-│   ├── voice.py            #   语音识别（ASR + 整理存笔记）
-│   ├── database.py         #   数据库 CRUD
-│   ├── tags.py             #   标签管理
-│   ├── trash.py            #   回收站
-│   ├── documents.py        #   文档上传
-│   ├── backup.py           #   备份恢复
-│   ├── notes_md.py         #   笔记导出
-│   ├── links.py            #   知识图谱
-│   └── monitor.py          #   问答质量监控
+├── app.py                  # FastAPI 入口
+├── hybrid_search.py        # 混合检索核心（FTS5 + Chroma + RRF + 加权）
+├── rag_engine.py           # RAG 问答（检索 + LLM 生成）
+├── mcp_kb_server.py        # MCP 服务器（Agent 外部记忆接入）
+├── eval_adversarial.py     # 对抗集评估（collect+judge+报告）
+├── personal_db.py          # SQLite 数据层（notes/tags/housing/events）
+├── routers/                # API 路由（chat/database/tags/backup/monitor...）
 ├── repositories/           # 数据访问层
-├── templates/              # 前端页面（含视觉识别页 / 知识图谱页）
+├── evaluation/             # 对抗集 query、基线、报告
+├── templates/              # 前端
 └── tests/                  # 测试
 ```
 
-## 工作原理
+## 评估迭代历史
 
-```
-用户输入 → DeepSeek 判断「存/不存」
-              ↓ 值得存
-         FTS5 + ChromaDB 混合搜索
-              ↓
-         合并到已有笔记 / 新建笔记
-              ↓
-         向量化 → ChromaDB 索引
-```
+| 版本 | query | Hit@10 | 说明 |
+|---|---|---|---|
+| v16 | 57 | 94.2% | 新增求职生活板块（2026-08-29） |
+| v15 | 53 | 81.1% | 金融危机补卡收官 |
+| v14 | 53 | — | 周期板块补充 |
+| v13 | 53 | ~80% | 对抗集扩容 26→53 |
+| v1 | 27 | — | 首版评估 |
 
-聊天查询时：
-
-```
-提问 → FTS5 关键词 + ChromaDB 语义 → RRF 融合排序 → DeepSeek 基于结果回答
-```
-
-视觉识别：
-
-```
-拍照 → Qwen-VL 识别图片内容 → DeepSeek 提取关键词
-     → ChromaDB 搜索知识库 → DeepSeek 合成回答
-```
-
-语音输入：
-
-```
-录音 → Qwen3-ASR-Flash 转文字 → 填入提问框 / 一键整理成笔记
-```
+> 指标口径变化：早期版本用"召回率（rel+partial）"，v16 起补充 Hit@K/MRR（更贴近"能否真回答"）。
 
 ## License
 
